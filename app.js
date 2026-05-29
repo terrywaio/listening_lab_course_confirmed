@@ -1,4 +1,4 @@
-const APP_VERSION = "20260529-lms-1";
+const APP_VERSION = "20260529-lms-2";
 const STORAGE_PREFIX = "listening-lab-lms:v1:";
 const MAX_PRE_SUBMIT_LISTENS = 3;
 
@@ -319,12 +319,13 @@ async function ensureProfile() {
   if (data) return data;
 
   const fallbackName = user.user_metadata?.full_name || user.email?.split("@")[0] || "Student";
-  const { error: insertError } = await state.supabase.from("profiles").upsert({
+  const { error: insertError } = await state.supabase.from("profiles").insert({
     id: user.id,
     email: user.email,
     full_name: fallbackName,
+    role: "student",
   });
-  if (insertError) throw insertError;
+  if (insertError && insertError.code !== "23505") throw insertError;
 
   const { data: created, error: fetchError } = await state.supabase
     .from("profiles")
