@@ -290,3 +290,11 @@ with check (
 
 grant execute on function public.current_user_role() to authenticated;
 grant execute on function public.is_teacher() to authenticated;
+
+grant usage on schema public to authenticated;
+grant usage on type public.user_role to authenticated;
+
+grant select, insert on table public.profiles to authenticated;
+grant select, insert, update, delete on table public.assignments to authenticated;
+grant select, insert, update on table public.assignment_progress to authenticated;
+grant select, insert, update on table public.segment_progress to authenticated;
