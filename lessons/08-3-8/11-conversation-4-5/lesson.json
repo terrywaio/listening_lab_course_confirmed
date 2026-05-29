@@ -1,0 +1,26 @@
+{
+  "title": "3.8 对话 4-5",
+  "source": {
+    "textId": "3.8__3-8-m4a",
+    "textName": "3.8 听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/3.8（答案+文本校对了/3.8 听力.m4a.docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\3.8线下【后续继续补充】.zip::3.8线下【后续继续补充】/3.8 -完整一套/3.8 听力/3.8 听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 3.8; listening keyword",
+    "unitType": "conversation",
+    "unitLabel": "4-5"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 999.0,
+      "end": 1060.0,
+      "speaker": "讲话人4/5",
+      "module": "",
+      "text": "Listen to a conversation. I was training a new employee yesterday. and I noticed that several pieces of info in the documents we use don't reflect our current practices here in the computer lab. Would you be able to help me update everything and print new copies? Sure. Do you want to work on it together or split it up? So you do have. and I do have, which do you think will be faster? We have three new staff members starting next week, so we should have it done by then. Let's divide and conquer then."
+    }
+  ]
+}

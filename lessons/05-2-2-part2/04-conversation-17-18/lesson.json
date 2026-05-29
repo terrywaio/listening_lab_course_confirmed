@@ -1,0 +1,26 @@
+{
+  "title": "2.2 Part 2 对话 17-18",
+  "source": {
+    "textId": "2.2__part2__2-2-m4a",
+    "textName": "2.2 听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/2.2（答案+文本校对了/2.2 听力.m4a.docx",
+    "audioSource": "D:\\TOELF\\1月+2月部分.zip::1月+2月部分/2.2（done)-答案全对/2.2 听力/2.2 听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 2.2; part match part2; listening keyword",
+    "unitType": "conversation",
+    "unitLabel": "17-18"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 352.0,
+      "end": 399.0,
+      "speaker": "题目17/18",
+      "module": "",
+      "text": "Listen to a conversation. what do you know about this rock festival is happening? Not much. Do you know what time that starts? IT kicks off three. P. M, that's perfect. H, I remember hearing the, there be food trucks. Oh, right. And a dance floor. No way you can keep us away. Let's get there early so we can get a good bit spot."
+    }
+  ]
+}

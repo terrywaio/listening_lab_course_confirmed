@@ -1,0 +1,26 @@
+{
+  "title": "2.2 Part 2 对话 6-7",
+  "source": {
+    "textId": "2.2__part2__2-2-m4a",
+    "textName": "2.2 听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/2.2（答案+文本校对了/2.2 听力.m4a.docx",
+    "audioSource": "D:\\TOELF\\1月+2月部分.zip::1月+2月部分/2.2（done)-答案全对/2.2 听力/2.2 听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 2.2; part match part2; listening keyword",
+    "unitType": "conversation",
+    "unitLabel": "6-7"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 1144.0,
+      "end": 1204.0,
+      "speaker": "题目6/7",
+      "module": "",
+      "text": "Listen to a conversation. Lia, you've been taking guitar lessons, right? How's that going? It's good. I'm having fun. And there are four, five songs. I can play pretty well. Now I've been think I just finished a big work project, so I've got some spare time. If you will wait here a minute, I'll give you my teachers information. She's great. Do you do IT online or in person? I took a few lessons in person to get started. It's helpful to have someone show you some basic things. But now we do IT online and IT works well."
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "title": "3.4 M2 对话 6-7",
+  "source": {
+    "textId": "3.4__3-4-m4a",
+    "textName": "3.4-听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/3.4（答案+文本校对了/3.4-听力.m4a.docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\3.4.zip::3.4/听力/3.4-听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 3.4; listening keyword",
+    "unitType": "conversation",
+    "unitLabel": "6-7"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 1232.0,
+      "end": 1304.0,
+      "speaker": "题目6/7",
+      "module": "M2",
+      "text": "Listen to a conversation. My schoolwork is really stressing me out. Have you considered trying yoga? My sister's taking a yoga class and says it's great for stress. I haven't. But if it sounds like a good idea, do you know where I might start? Have you done yoga yourself? I haven't, but I know there are lots of classes for beginners. You should really also think about taking vacation during spring break. When's the last time you went . anywhere for fun? Thanks, but I like the yoga idea better. Don't you find out where your sister attends her class and let me know."
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "title": "4.6 单句",
+  "source": {
+    "textId": "4.6__part1__4-6-q1-m4a-1",
+    "textName": "4.6 听力(缺q1).m4a(1).docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/4.6 听力(缺q1).m4a(1).docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\4.6.zip::4.6/4.6 听力(缺q1).m4a/4.6 听力(缺q1).m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 4.6; part match part1; listening keyword",
+    "unitType": "single",
+    "unitLabel": "单句"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": null,
+      "end": null,
+      "speaker": "",
+      "module": "",
+      "text": "Module 1："
+    },
+    {
+      "id": "s002",
+      "start": 11.0,
+      "end": 22.0,
+      "speaker": "题目2",
+      "module": "",
+      "text": "Are you planning to attend the campus tech meetup?"
+    },
+    {
+      "id": "s003",
+      "start": 22.0,
+      "end": 39.0,
+      "speaker": "题目3",
+      "module": "",
+      "text": "How do you spend your Sunday mornings?"
+    },
+    {
+      "id": "s004",
+      "start": 39.0,
+      "end": 55.0,
+      "speaker": "题目4",
+      "module": "",
+      "text": "Still tied up with that group project."
+    },
+    {
+      "id": "s005",
+      "start": 55.0,
+      "end": 69.0,
+      "speaker": "题目5",
+      "module": "",
+      "text": "What did you think of the new software?"
+    },
+    {
+      "id": "s006",
+      "start": 69.0,
+      "end": 90.0,
+      "speaker": "题目6",
+      "module": "",
+      "text": "I thought the professor said the exam would be cumulative."
+    },
+    {
+      "id": "s007",
+      "start": 90.0,
+      "end": 109.0,
+      "speaker": "题目7",
+      "module": "",
+      "text": "The museum downtown just opened an exhibit on the history of music."
+    },
+    {
+      "id": "s008",
+      "start": 109.0,
+      "end": 122.0,
+      "speaker": "题目8",
+      "module": "",
+      "text": "Where does the study group meet?"
+    },
+    {
+      "id": "s009",
+      "start": 122.0,
+      "end": 139.0,
+      "speaker": "题目9",
+      "module": "",
+      "text": "You haven't completed the survey for class yet."
+    },
+    {
+      "id": "s010",
+      "start": 139.0,
+      "end": 157.0,
+      "speaker": "题目10",
+      "module": "",
+      "text": "The bookstore has a section on self help books."
+    },
+    {
+      "id": "s011",
+      "start": 157.0,
+      "end": 176.0,
+      "speaker": "题目11",
+      "module": "",
+      "text": "How did you find out about this gallery show?"
+    },
+    {
+      "id": "s012",
+      "start": 176.0,
+      "end": 191.0,
+      "speaker": "题目12",
+      "module": "",
+      "text": "What time does the daycare open?"
+    },
+    {
+      "id": "s013",
+      "start": 926.0,
+      "end": 939.0,
+      "speaker": "题目1",
+      "module": "",
+      "text": "I thought the presentation on ancient glaciers was fascinating."
+    },
+    {
+      "id": "s014",
+      "start": 952.0,
+      "end": 971.0,
+      "speaker": "题目3",
+      "module": "",
+      "text": "I was sure the professor mentioned an optional assignment."
+    }
+  ]
+}

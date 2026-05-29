@@ -1,0 +1,26 @@
+{
+  "title": "4.29 对话 17-18",
+  "source": {
+    "textId": "4.29__4-29-m4a",
+    "textName": "4.29 听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/4.29 听力.m4a.docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-05\\4.29.zip::4.29/4.29 听力.m4a/4.29 听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 4.29; listening keyword",
+    "unitType": "conversation",
+    "unitLabel": "17-18"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 317.0,
+      "end": 387.0,
+      "speaker": "讲话人17/18",
+      "module": "",
+      "text": "Listen to a conversation. Have you heard about the new business competition? Students have the chance to present business plans to a committee, and the winner will get some funding to actually start their business. Oh, cool. Do you have any good ideas? Yeah, I was thinking about a business reselling secondhand clothing. I could collect clothes from students who want to sell them and set up an online store with photos. And when something sold weshare the profits. Interesting. I've heard about things like that. I'd need strong promotion and advertising. though. Well, that is my area of expertise. Let's discuss."
+    }
+  ]
+}

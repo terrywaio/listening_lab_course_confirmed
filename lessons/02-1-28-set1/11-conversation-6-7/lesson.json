@@ -1,0 +1,26 @@
+{
+  "title": "1.28 套一 对话 6-7",
+  "source": {
+    "textId": "1.28__set1__1-28-part1-m4a-1",
+    "textName": "1.28套一听力part1.m4a(1).docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/1.28（答案+文本校对了/1.28套一听力part1.m4a(1).docx",
+    "audioSource": "D:\\TOELF\\1月+2月部分.zip::1月+2月部分/1.28-答案全对/1.28 套一听力音频/1.28套一听力part1.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 1.28; part match set1; listening keyword",
+    "unitType": "conversation",
+    "unitLabel": "6-7"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 1149.0,
+      "end": null,
+      "speaker": "题目6/7",
+      "module": "",
+      "text": "Listen to a conversation. I saw a new painting exhibition at the art museum. Have you moved to your new apartment? Moving to my new apartment has taken up all of my free time recently. There's so much packing and unpacking to do. How's the exhibit? There's a good variety of paintings, and their arrangement is really creative. I just wish it featured some stuff from artists in our area. We have so many talented painters here whose work is worth seeing. But all in all, it's quite awesome. I'll go check it out this weekend before it closes. I should be all moved in by then. 题目8/9/10/11 - 1:26 (重新计时) Listen to a talk on a psychology podcast. There are many different factors that influence human behavior. One is related to social influence, the idea that our behavior can be shaped by group pressure. To test this idea, a psychologist named Solomon Asch conducted a famous study in the 1950s, which has become hugely influential in the field. In his experiment, Asch invited American university students to take part in a visual judgment task. Each participant was placed in a group of seven to nine people, all but one of whom were working with the researcher. The group members were shown a standard line on one card and three comparison lines on another card. One comparison line matched the standard, while the other two were clearly different lengths. Basically, the correct choice was totally obvious. Each person announced out loud which line matched the standard, and those who were in on the study deliberately gave the wrong answer first; the real participant answered last. Across 12 trials, 75% of participants conformed with the incorrect answers that people in the group had given before them at least once—so they chose the line that was clearly wrong. This indicates the power of group pressure. This study was replicated in 1980, roughly thirty years after Asch conducted his experiment. The subjects in this experiment were British university students. Interestingly, conformity was much lower with these participants. This suggests that conformity may be influenced by culture and the country people grow up in."
+    }
+  ]
+}

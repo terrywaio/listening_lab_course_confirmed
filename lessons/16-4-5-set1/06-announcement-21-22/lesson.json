@@ -1,0 +1,26 @@
+{
+  "title": "4.5 套一 公告 21-22",
+  "source": {
+    "textId": "4.5__set1__4-5-m4a-2",
+    "textName": "4.5 套一 听力.m4a(2).docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/4.5 套一 听力.m4a(2).docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\4.5.zip::4.5/4.5 套一 听力.m4a/4.5 套一 听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 4.5; part match set1; listening keyword",
+    "unitType": "announcement",
+    "unitLabel": "21-22"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 393.0,
+      "end": 456.0,
+      "speaker": "题目21/22",
+      "module": "",
+      "text": "Listen to an announcement in a University dormitory. Attention, residents, they're sorry about the recent disturbances caused by late night construction work last night. Unfortunately, the work was necessary to address urgent issues with frozen pipes caused by the recent cold weather. Over the next few weeks, construction crews will be working to replace other pipes. Issues do not occur again. This work will occur during daytime hours, and we will try to minimize the disruption for students. Thank you for your understanding."
+    }
+  ]
+}

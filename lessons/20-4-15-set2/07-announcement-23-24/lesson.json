@@ -1,0 +1,26 @@
+{
+  "title": "4.15 套二 公告 23-24",
+  "source": {
+    "textId": "4.15__set2__4-15-m4a",
+    "textName": "4.15 套二 听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/4.15 套二 听力.m4a.docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\4.15.zip::4.15/4.15 套一 听力.m4a/4.15 套二 听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 4.15; part match set2; listening keyword",
+    "unitType": "announcement",
+    "unitLabel": "23-24"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 533.0,
+      "end": 593.0,
+      "speaker": "题目23/24",
+      "module": "",
+      "text": "Listen to an announcement in a classroom. Good afternoon, students. I'm sorry for the confusion regarding the deadlines for your upcoming assignments. As I wrote in this morning's email, the due dates on your syllabus are incorrect. Your research paper is actually due on Wednesday the 31​st, and your group presentations are due the following Friday. I regret any inconvenience this has caused. On the other hand, this means you have some extra time to complete your assignments. If you have any questions, feel free to reach out during office hours."
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "title": "4.15 套二 讲座 12-15",
+  "source": {
+    "textId": "4.15__set2__4-15-m4a",
+    "textName": "4.15 套二 听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/4.15 套二 听力.m4a.docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\4.15.zip::4.15/4.15 套一 听力.m4a/4.15 套二 听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 4.15; part match set2; listening keyword",
+    "unitType": "lecture",
+    "unitLabel": "12-15"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 1314.0,
+      "end": null,
+      "speaker": "题目12/13/14/15",
+      "module": "",
+      "text": "Listen to a talk in a psychology class. cognitive dissonance is a term that describes the mental discomfort a person experiences due to contradictory behaviors or beliefs. The concept was introduced by psychologist Leon festger in 1957. According to Festinger, people are motivated to reduce this discomfort by changing their beliefs or behaviors. This motivation can be used in product marketing. If a consumer is worried about the environmental impact of gasoline cars, but still drives one, this could cause cognitive dissonance. A marketing campaign for electric vehicles could take advantage of this by highlighting the harm done by gasoline cars and so increase the dissonance. Then electric cars can be implicitly touted as a way of resolving the mental conflict. Cognitive dissonance can also be useful in education because it can encourage critical thinking. Say that a student believes that the American Revolution in the 17 hundreds was driven only by a desire for independent rule. Then a teacher might present evidence that economic factors like taxation and trade restrictions also played a role. The resulting mental discomfort might stimulate the student to start questioning their initial belief and to seek more information on the subject. Understanding cognitive dissonance can help us promote positive behavioral change."
+    }
+  ]
+}

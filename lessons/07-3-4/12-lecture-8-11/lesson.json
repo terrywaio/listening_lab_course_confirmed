@@ -1,0 +1,26 @@
+{
+  "title": "3.4 M2 讲座 8-11",
+  "source": {
+    "textId": "3.4__3-4-m4a",
+    "textName": "3.4-听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/3.4（答案+文本校对了/3.4-听力.m4a.docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\3.4.zip::3.4/听力/3.4-听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 3.4; listening keyword",
+    "unitType": "lecture",
+    "unitLabel": "8-11"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 1304.0,
+      "end": 1524.0,
+      "speaker": "题目8/9/10/11",
+      "module": "M2",
+      "text": "Listen to a talk on an astronomy podcast. When I was growing up, Pluto was known as the 9th planet in our system. Alas, Pluto was demoted to dwarf planet status in 2006. And not only because it's so small, maybe half the width of the United States. It's mainly because in 2006, it was decided that planets had to meet three criteria. They had to orbit the sun and be round in shape, check and check. But they also had to be the main object in their orbit, which, well, Pluto is in the Kuiper belt, the Kiper belt region, in the far outer reaches of the solar system, with many other bodies that orbit the sun. So Pluto lost its planet status. As a result, many scientists dismissed Pluto as just a ball of ice anyway. However, about ten years later, the new horizon spacecraft sent back new images and data showing that Pluto is far more complex than previously thought. We're talking volcanoes, dunes. I mean, get this. Pluto has a deep basin with three types of ice, and new horizons images suggest there's convection in the basin of ice. With convection, warmer ice rises to the surface, then cools and sinks at the edge of the basin, so the surface is continuously rejuvenating, renewing itself. Moreover, under the basin of ice may be something astonishing. A saltwater ocean life could exist there. This means many neighboring bodies in the Kuiper belt could also have oceans and potentially be habitable."
+    }
+  ]
+}

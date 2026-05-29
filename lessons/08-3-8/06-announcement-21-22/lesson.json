@@ -1,0 +1,26 @@
+{
+  "title": "3.8 公告 21-22",
+  "source": {
+    "textId": "3.8__3-8-m4a",
+    "textName": "3.8 听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/3.8（答案+文本校对了/3.8 听力.m4a.docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\3.8线下【后续继续补充】.zip::3.8线下【后续继续补充】/3.8 -完整一套/3.8 听力/3.8 听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 3.8; listening keyword",
+    "unitType": "announcement",
+    "unitLabel": "21-22"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 422.0,
+      "end": 506.0,
+      "speaker": "讲话人21/22",
+      "module": "",
+      "text": "Listen announcement at a school event. I want to tell you all what to expect on tomorrow's field trip to Goya nature reserve. You'll start your visit in the auditorium. You'll get to hear from some experts in the field, including an ornithologist and a botanist. You'll take that information with you and use it to help you understand the wildlife you see while exploring nearby trails. Then after lunch, there’ll be two options, a mountain hike for experienced climbers only, or a trip to the tide pool for anyone interested."
+    }
+  ]
+}

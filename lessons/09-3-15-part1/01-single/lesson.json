@@ -1,0 +1,114 @@
+{
+  "title": "3.15 单句",
+  "source": {
+    "textId": "3.15__part1__3-15-part1-m4a",
+    "textName": "3.15 听力part1.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/3.15（答案+文本校对了/3.15 听力part1.m4a.docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\3.15.zip::3.15/3.15 听力part1/3.15 听力part1.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 3.15; part match part1; listening keyword",
+    "unitType": "single",
+    "unitLabel": "单句"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 9.0,
+      "end": 25.0,
+      "speaker": "题目1",
+      "module": "M1",
+      "text": "Why did you decide to transfer to this University?"
+    },
+    {
+      "id": "s002",
+      "start": 25.0,
+      "end": 38.0,
+      "speaker": "题目2",
+      "module": "M1",
+      "text": "Can you turn down the volume?"
+    },
+    {
+      "id": "s003",
+      "start": 38.0,
+      "end": 55.0,
+      "speaker": "题目3",
+      "module": "M1",
+      "text": "Are you traveling to the University swim meet this weekend?"
+    },
+    {
+      "id": "s004",
+      "start": 55.0,
+      "end": 67.0,
+      "speaker": "题目4",
+      "module": "M1",
+      "text": "I just learned that Abby and I have the same advisor."
+    },
+    {
+      "id": "s005",
+      "start": 67.0,
+      "end": 82.0,
+      "speaker": "题目5",
+      "module": "M1",
+      "text": "Did you apply new associate professor position?"
+    },
+    {
+      "id": "s006",
+      "start": 82.0,
+      "end": 96.0,
+      "speaker": "题目6",
+      "module": "M1",
+      "text": "Did you end up going to the seminar?"
+    },
+    {
+      "id": "s007",
+      "start": 96.0,
+      "end": 111.0,
+      "speaker": "题目7",
+      "module": "M1",
+      "text": "Are you joining us for dinner tonight?"
+    },
+    {
+      "id": "s008",
+      "start": 111.0,
+      "end": 127.0,
+      "speaker": "题目8",
+      "module": "M1",
+      "text": "Which room is your class in?"
+    },
+    {
+      "id": "s009",
+      "start": 127.0,
+      "end": 144.0,
+      "speaker": "题目9",
+      "module": "M1",
+      "text": "Would you like to visit the campus museum or the park?"
+    },
+    {
+      "id": "s010",
+      "start": 144.0,
+      "end": 156.0,
+      "speaker": "题目10",
+      "module": "M1",
+      "text": "Maybe the power went out for this whole area."
+    },
+    {
+      "id": "s011",
+      "start": 156.0,
+      "end": 170.0,
+      "speaker": "题目11",
+      "module": "M1",
+      "text": "Where can I get a good meal near campus?"
+    },
+    {
+      "id": "s012",
+      "start": 170.0,
+      "end": 190.0,
+      "speaker": "题目12",
+      "module": "M1",
+      "text": "What items does the campus cafeteria usually run out of?"
+    }
+  ]
+}

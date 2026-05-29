@@ -1,0 +1,26 @@
+{
+  "title": "3.15 M1 对话 13-14",
+  "source": {
+    "textId": "3.15__part1__3-15-part1-m4a",
+    "textName": "3.15 听力part1.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/3.15（答案+文本校对了/3.15 听力part1.m4a.docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\3.15.zip::3.15/3.15 听力part1/3.15 听力part1.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 3.15; part match part1; listening keyword",
+    "unitType": "conversation",
+    "unitLabel": "13-14"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 190.0,
+      "end": 251.0,
+      "speaker": "题目13/14",
+      "module": "M1",
+      "text": "Listen to a conversation. Hi, did you get the email from our professor about the system upgrade? Yes, I did. It says the upgrade will happen overnight on Saturday，right? They mentioned that we might experience some downtime on Sunday morning. Okay, well, most people won't be working in the lab then. Do we need to back up our files? Yes, it recommended backing up everything before the weekend. Good to know. I'll make sure to do that."
+    }
+  ]
+}

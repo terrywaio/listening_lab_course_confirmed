@@ -1,0 +1,26 @@
+{
+  "title": "1.28 套一 讲座 12-15",
+  "source": {
+    "textId": "1.28__set1__1-28-part1-m4a-1",
+    "textName": "1.28套一听力part1.m4a(1).docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/1.28（答案+文本校对了/1.28套一听力part1.m4a(1).docx",
+    "audioSource": "D:\\TOELF\\1月+2月部分.zip::1月+2月部分/1.28-答案全对/1.28 套一听力音频/1.28套一听力part1.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 1.28; part match set1; listening keyword",
+    "unitType": "lecture",
+    "unitLabel": "12-15"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 279.0,
+      "end": null,
+      "speaker": "题目12/13/14/15",
+      "module": "",
+      "text": "Listen to a talk in an environmental science class. Some years ago, the government of Tanzania in Africa proposed building a 452-kilometer paved road in the north of the country with the goal of boosting transportation and economic growth. The proposed route, though, would go through Serengeti National Park, a UNESCO World Heritage Site, and conservationists raised alarms. The road would bisect the annual migration corridor of wildebeests and other animals, potentially putting enormous pressure on their populations and disrupting the ecosystem in general. The models used by the conservationists showed that blocking the corridor could reduce wildebeest populations by up to one third, disrupt predator-prey dynamics, and fragment the ecosystem that supports lions, cheetahs, and countless other species. Increased traffic would also heighten poaching risks and introduce invasive species. The evidence wasn't conclusive, but because the risk was so serious and the consequences probably severe, the government decided to halt the project. That decision reflects what is known as the precautionary principle: when an action or policy poses a plausible risk of serious or irreversible harm, we shouldn't wait for absolute scientific certainty before deciding what to do. Why is this important? The consequences of indecision can be expensive or impossible to repair. Consider asbestos, once a widely used material for insulation and fireproofing. It was later linked to life-threatening adverse effects on human health. But for decades, lack of consensus among researchers delayed government action, and by the time bans on asbestos were enacted, millions had been exposed, leading to costly litigation, cleanup, and preventable deaths."
+    }
+  ]
+}

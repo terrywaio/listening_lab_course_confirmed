@@ -1,0 +1,26 @@
+{
+  "title": "4.13 套一 对话 6-7",
+  "source": {
+    "textId": "4.13__set1__4-13-m4a",
+    "textName": "4.13 套一 听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/4.13 套一 听力.m4a.docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\4.13.zip::4.13/4.13 套一 听力.m4a/4.13 套一 听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 4.13; part match set1; listening keyword",
+    "unitType": "conversation",
+    "unitLabel": "6-7"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 1107.0,
+      "end": 1188.0,
+      "speaker": "题目6/7",
+      "module": "",
+      "text": "Listen to a conversation. Have you checked out the new restaurant downtown? The sushi is made by an award winning chef and is absolutely top notch. I'd love to, but I'm saving money for a vacation. Do you have specific plans? Not yet, but I'd love to spend a month somewhere in nature. Have you considered a camping trip? You could just pack a tent and a sleeping bag into your car and travel all around the mountains while sleeping at campsites. No need for hotels or plane tickets. Well, I do love me a comfortable bed at the end of an eventful day."
+    }
+  ]
+}

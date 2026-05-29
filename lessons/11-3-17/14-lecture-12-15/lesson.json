@@ -1,0 +1,26 @@
+{
+  "title": "3.17 M2 讲座 12-15",
+  "source": {
+    "textId": "3.17__3-17-listening-m4a",
+    "textName": "3.17-listening.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/3.17(答案+文本校对了/3.17-listening.m4a.docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-05\\3.17.zip::3.17/3.17-listening.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 3.17; listening keyword",
+    "unitType": "lecture",
+    "unitLabel": "12-15"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 1518.0,
+      "end": null,
+      "speaker": "题目12/13/14/15",
+      "module": "M2",
+      "text": "Listen to a talk in an architecture class. The east gate center in Harare, Zimbabwe, is a mixed use complex combining retail spaces and offices. When the architect Mick pierce was asked to design the building in the early 19 nineties, he faced a big challenge how to keep all its shops and offices cool without traditional air conditioning and do it during an economic crisis, energy costs were high and importing advanced air conditioners was impossible. To solve this dilemma, pierce looked to termite mounds. Termites are insects that live in large colonies. They build big mounds on the ground throughout the African Savana the mounds are amazing structures rise 3m above ground and extend another one to 3m below the ground. The underground chambers connect to the above ground chimneys through a maze of tunnels. And this entire system works like natural climate control. Warm air rises and escapes through the top, while cooler air flows in from below. The thick walls of soil and clay absorb heat during the day and release it at night. Termites fine tune airflow by opening and closing vents, adding or removing soil to enlarge or seal passages. On hot days, they open more vents for cooling. At night, they close them to keep warmth in. Pierce borrowed these ideas. The east gate center's walls are made from thick materials like concrete and brick, and there's a system of ducts and adjustable louvers throughout the building to mimic those vents. The result, a building that uses far less energy than its conventional counterparts."
+    }
+  ]
+}

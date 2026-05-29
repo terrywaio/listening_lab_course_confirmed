@@ -1,0 +1,26 @@
+{
+  "title": "3.18 对话 15-16",
+  "source": {
+    "textId": "3.18__part1__3-18-m4a-1",
+    "textName": "3.18 听力.m4a(1).docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/3.18(答案+文本校对了/3.18 听力.m4a(1).docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\3.18-忘记放进去了.zip::3.18-忘记放进去了/3.18 听力/3.18 听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 3.18; part unknown; listening keyword",
+    "unitType": "conversation",
+    "unitLabel": "15-16"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 241.0,
+      "end": 302.0,
+      "speaker": "题目15/16",
+      "module": "",
+      "text": "Listen to a conversation. Hi, this is Sarah calling from the campus tutoring center. I just wanted to confirm your biology session with Raoul tomorrow at noon. I'm glad you called my manager at work needs me to go in tomorrow. I get off at three. Hmm, okay, let me check the schedule. Rouel is not available at that time, but we could put you in with Kira at 330. That would be perfect. I've worked with her before and she's great. Thank you."
+    }
+  ]
+}

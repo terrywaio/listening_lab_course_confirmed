@@ -1,0 +1,26 @@
+{
+  "title": "3.4 M1 公告 23-24",
+  "source": {
+    "textId": "3.4__3-4-m4a",
+    "textName": "3.4-听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/3.4（答案+文本校对了/3.4-听力.m4a.docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\3.4.zip::3.4/听力/3.4-听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 3.4; listening keyword",
+    "unitType": "announcement",
+    "unitLabel": "23-24"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 571.0,
+      "end": 643.0,
+      "speaker": "题目23/24",
+      "module": "M1",
+      "text": "Listen to an announcement in a classroom. As a reminder, online course evaluations are now open. While in my case, because of my experience, the University won't use these to make any decisions on my employment, I don't want you to think that they don't matter. I take students feedback seriously and have made several changes to the course and assignments based on past suggestions. Honest but constructive feedback with specific suggestions is of great benefit to all. Lastly, don't forget that you can't view your grades until you've submitted your evaluations."
+    }
+  ]
+}

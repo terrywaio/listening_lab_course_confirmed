@@ -1,0 +1,26 @@
+{
+  "title": "3.17 M1 对话 13-14",
+  "source": {
+    "textId": "3.17__3-17-listening-m4a",
+    "textName": "3.17-listening.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/3.17(答案+文本校对了/3.17-listening.m4a.docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-05\\3.17.zip::3.17/3.17-listening.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 3.17; listening keyword",
+    "unitType": "conversation",
+    "unitLabel": "13-14"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 207.0,
+      "end": 279.0,
+      "speaker": "讲话13/14",
+      "module": "M1",
+      "text": "Listen to a conversation. Hi, this is Sarah calling from the campus tutoring center. I just wanted to confirm your biology session with Raoul tomorrow at noon. I’m glad you called my manager at work needs me to go in tomorrow. I get off at three. Hmm, okay, let me check the schedule. Roules not available at that time, but we could put you in with Kira at 330. That’ll be perfect. I've worked with her before and she's great. Thank you."
+    }
+  ]
+}

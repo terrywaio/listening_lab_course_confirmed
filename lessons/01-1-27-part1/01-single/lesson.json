@@ -1,0 +1,138 @@
+{
+  "title": "1.27 单句",
+  "source": {
+    "textId": "1.27__part1__1-27-m4a",
+    "textName": "1.27听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/1.27（答案+文本校对了/1.27听力.m4a.docx",
+    "audioSource": "D:\\TOELF\\1月+2月部分.zip::1月+2月部分/1.27-答案全对/1.27听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 1.27; part match part1; listening keyword",
+    "unitType": "single",
+    "unitLabel": "单句"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 12.0,
+      "end": 30.0,
+      "speaker": "题目1",
+      "module": "M1",
+      "text": "Where can I find the same materials?"
+    },
+    {
+      "id": "s002",
+      "start": 30.0,
+      "end": 41.0,
+      "speaker": "题目2",
+      "module": "M1",
+      "text": "When does the show start?"
+    },
+    {
+      "id": "s003",
+      "start": 41.0,
+      "end": 62.0,
+      "speaker": "题目3",
+      "module": "M1",
+      "text": "Where should we go for our team outing?"
+    },
+    {
+      "id": "s004",
+      "start": 62.0,
+      "end": 76.0,
+      "speaker": "题目4",
+      "module": "M1",
+      "text": "How do I submit the application form?"
+    },
+    {
+      "id": "s005",
+      "start": 76.0,
+      "end": 90.0,
+      "speaker": "题目5",
+      "module": "M1",
+      "text": "Who is the guest speaker?"
+    },
+    {
+      "id": "s006",
+      "start": 90.0,
+      "end": 115.0,
+      "speaker": "题目6",
+      "module": "M1",
+      "text": "Where should we meet for lunch?"
+    },
+    {
+      "id": "s007",
+      "start": 115.0,
+      "end": 128.0,
+      "speaker": "题目7",
+      "module": "M1",
+      "text": "Would you want to nominate for class president?"
+    },
+    {
+      "id": "s008",
+      "start": 128.0,
+      "end": 146.0,
+      "speaker": "题目8",
+      "module": "M1",
+      "text": "Who can make copies of her class notes?"
+    },
+    {
+      "id": "s009",
+      "start": 146.0,
+      "end": 161.0,
+      "speaker": "题目9",
+      "module": "M1",
+      "text": "Who will be speaking at graduation tomorrow?"
+    },
+    {
+      "id": "s010",
+      "start": 161.0,
+      "end": 177.0,
+      "speaker": "题目10",
+      "module": "M1",
+      "text": "What happened at the graduate student conference?"
+    },
+    {
+      "id": "s011",
+      "start": 177.0,
+      "end": 193.0,
+      "speaker": "题目11",
+      "module": "M1",
+      "text": "How long have you been on the tennis team?"
+    },
+    {
+      "id": "s012",
+      "start": 193.0,
+      "end": 217.0,
+      "speaker": "题目12",
+      "module": "M1",
+      "text": "The creative writing workshop starts at eleven AM."
+    },
+    {
+      "id": "s013",
+      "start": 912.0,
+      "end": 927.0,
+      "speaker": "题目1",
+      "module": "M2",
+      "text": "How far is the beach from campus?"
+    },
+    {
+      "id": "s014",
+      "start": 927.0,
+      "end": 943.0,
+      "speaker": "题目2",
+      "module": "M2",
+      "text": "This will be discussed at today's student volunteer meeting."
+    },
+    {
+      "id": "s015",
+      "start": 943.0,
+      "end": 958.0,
+      "speaker": "题目3",
+      "module": "M2",
+      "text": "Is the library open today?"
+    }
+  ]
+}

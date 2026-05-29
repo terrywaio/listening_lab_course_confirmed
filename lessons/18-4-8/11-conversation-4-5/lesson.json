@@ -1,0 +1,26 @@
+{
+  "title": "4.8 对话 4-5",
+  "source": {
+    "textId": "4.8__4-8-m4a",
+    "textName": "4.8听力音频.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/4.8听力音频.m4a.docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\4.8.zip::4.8/4.8听力音频.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 4.8; listening keyword",
+    "unitType": "conversation",
+    "unitLabel": "4-5"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 1098.0,
+      "end": 1169.0,
+      "speaker": "题目4/5",
+      "module": "",
+      "text": "Listen to a conversation. I'm so excited about our road trip this weekend. I'm all packed and got the food and snacks for the trip. I thought David was supposed to prepare snacks. No, it was me. David signed up to bring water for everyone I see. Are you all packed? Yes. I just want to get my car checked before we leave. I'm taking it to the mechanic tomorrow morning. Good idea. By the way, I just checked, and there might be light showers in the afternoon, but overall good weather on our route."
+    }
+  ]
+}

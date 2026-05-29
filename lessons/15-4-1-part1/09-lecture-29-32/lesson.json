@@ -1,0 +1,26 @@
+{
+  "title": "4.1 讲座 29-32",
+  "source": {
+    "textId": "4.1__part1__4-1-m4a-1",
+    "textName": "4.1听力.m4a(1).docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/4.1听力.m4a(1).docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\4.1.zip::4.1/4.1听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 4.1; part match part1; listening keyword",
+    "unitType": "lecture",
+    "unitLabel": "29-32"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 688.0,
+      "end": 892.0,
+      "speaker": "题目29/30/31/32",
+      "module": "",
+      "text": "Listen to a talk in a literature class. So today we're looking at the hero's journey, a storytelling pattern that shows up in myths, literature, narratives from all over the world. This structure was brought into the spotlight by Joseph Campbell, an American mythologist. In his book the hero with a thousand faces, Campbell studied myths across cultures and noticed they shared a common structure. Campbell called it the mono myth, and he believed it reflected something universal about the human experience. The journey usually kicks off with a call to adventure, some kind of invitation or challenge that pulls the hero out of their everyday life. They might resist at 1​st, but eventually they accept, often with a mentor's help. Then come the trials, tests that push the hero to grow. At the center of it all is the abyss, the toughest part, where the hero faces their greatest fear or enemy. If they make it through, they're transformed. And here's the key part. They return with a gift, some kind of insight, wisdom or ability that can help others. That gift is what makes the journey meaningful, not just for the hero, but for their community. Now, some critics argue this model oversimplifies storytelling. It can flatten out cultural differences and force diverse stories into a single mold. Still, I'd argue it's influential because it taps into something deeply human, the idea that struggle leads to growth and that we come back changed. Module 2："
+    }
+  ]
+}

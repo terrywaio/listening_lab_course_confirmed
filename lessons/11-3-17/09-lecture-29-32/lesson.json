@@ -1,0 +1,26 @@
+{
+  "title": "3.17 M1 讲座 29-32",
+  "source": {
+    "textId": "3.17__3-17-listening-m4a",
+    "textName": "3.17-listening.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/3.17(答案+文本校对了/3.17-listening.m4a.docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-05\\3.17.zip::3.17/3.17-listening.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 3.17; listening keyword",
+    "unitType": "lecture",
+    "unitLabel": "29-32"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 861.0,
+      "end": 1070.0,
+      "speaker": "题目29/30/31/32",
+      "module": "M1",
+      "text": "Listen to a talk in an art history class. when we think of the Renaissance, we often picture grand paintings and sculptures, but a lesser known art form also flourished during this period. Tapestry weaving tapestries were not only decorative pieces, but also served practical purposes, such as insulating the cold stone walls of castles. Artists of the era use tapestries to depict intricate scenes from mythology, religion and daily life, often incorporating vibrant colors and rich textures. An advantage of tapestries was their portability. Unlike frescoes, which were fixed to walls, tapestries could be rolled up and transported from one location to another, allowing their owners to display their wealth wherever they went. This portability also had a downside, however, tapestries were susceptible to damage during transit. Even today, museums face challenges preserving these unique artworks due to their fragile nature. The creation of a tapestry was a labor intensive process requiring collaboration between designers, weavers and dyers. Unlike paintings which could be completed by a single artist, tapestries were team efforts, and it was common for a designer's sketches to be translated by skilled weavers into woven masterpieces. The intricate craftsmanship required to produce these artworks offers a glimpse into the collaborative spirit of the Renaissance era."
+    }
+  ]
+}

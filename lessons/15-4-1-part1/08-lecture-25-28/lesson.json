@@ -1,0 +1,26 @@
+{
+  "title": "4.1 讲座 25-28",
+  "source": {
+    "textId": "4.1__part1__4-1-m4a-1",
+    "textName": "4.1听力.m4a(1).docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/4.1听力.m4a(1).docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\4.1.zip::4.1/4.1听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 4.1; part match part1; listening keyword",
+    "unitType": "lecture",
+    "unitLabel": "25-28"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 551.0,
+      "end": 688.0,
+      "speaker": "题目25/26/27/28",
+      "module": "",
+      "text": "Listen to a talk on a science podcast. Let's move on in our renewable energy series to discuss solar power, which is arguably the most abundant resource available. Solar power takes energy from the sun's rays and converts it to electricity or heat. The primary technology for this is solar panels made up of photovoltaic cells, which generate an electric current when sunlight hits them. The advantages of solar power are well known, and the most important may be the fact that it produces zero harmful pollutants. Any industrial endeavor will produce carbon dioxide in one way or another, and manufacturing solar panels itself requires energy sourced from fossil fuels. But on the whole, the industry has a much lower carbon footprint than coal or natural gas, and this makes it key to reducing greenhouse gas emissions. Another advantage, in one we don't talk about enough, is that solar power can provide energy access in remote and underserved areas far from the grid. So what are the disadvantages? Solar panel efficiency is affected by cloud cover and other weather, which of course reduces the amount of sunlight reaching the panels. That said, innovations in battery storage systems do allow for the storage of solar energy for use during non Sunny periods. Panel lifespan is quite good at 25 to 30 years, but improvements in efficiency are paradoxically driving panels to be replaced much earlier than that. So waste is increasing faster than expected. This is a problem because recycling them is expensive and most panels end up in landfills."
+    }
+  ]
+}

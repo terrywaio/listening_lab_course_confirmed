@@ -1,0 +1,26 @@
+{
+  "title": "4.29 对话 13-14",
+  "source": {
+    "textId": "4.29__4-29-m4a",
+    "textName": "4.29 听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/4.29 听力.m4a.docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-05\\4.29.zip::4.29/4.29 听力.m4a/4.29 听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 4.29; listening keyword",
+    "unitType": "conversation",
+    "unitLabel": "13-14"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 194.0,
+      "end": 250.0,
+      "speaker": "讲话人13/14",
+      "module": "",
+      "text": "Listen to a conversation. I need to return this sweater. I bought it yesterday, but it's too small for me. Sure. Do you have the receipt? Yes, I have it right here. Great. We can process the return. Do you want to exchange it for a larger size or get a refund? I'd like to exchange it, please. No problem. I'll get another in that color for you from our stock. Thank you."
+    }
+  ]
+}

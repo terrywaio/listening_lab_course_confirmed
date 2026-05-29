@@ -1,0 +1,26 @@
+{
+  "title": "4.20 对话 17-18",
+  "source": {
+    "textId": "4.20__4-20-m4a",
+    "textName": "4.20听力音频.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/4.20听力音频.m4a.docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\4.20.zip::4.20/4.20听力音频.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 4.20; listening keyword",
+    "unitType": "conversation",
+    "unitLabel": "17-18"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 435.0,
+      "end": 512.0,
+      "speaker": "题目17/18",
+      "module": "",
+      "text": "Listen to a conversation. Hi, Lisa. Have you managed to set up the new software on your computer? Not yet. I tried installing it, but I keep getting an error message. Did you check if your system meets the software requirements? Yes, my computer is definitely compatible, so I think it might be a network issue. You should contact it support, they can help you sort it out. Good idea. I'll give them a call this afternoon. Let me know how it goes."
+    }
+  ]
+}

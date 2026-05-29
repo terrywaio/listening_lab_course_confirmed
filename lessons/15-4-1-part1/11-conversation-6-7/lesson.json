@@ -1,0 +1,26 @@
+{
+  "title": "4.1 对话 6-7",
+  "source": {
+    "textId": "4.1__part1__4-1-m4a-1",
+    "textName": "4.1听力.m4a(1).docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/4.1听力.m4a(1).docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\4.1.zip::4.1/4.1听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 4.1; part match part1; listening keyword",
+    "unitType": "conversation",
+    "unitLabel": "6-7"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 989.0,
+      "end": 1049.0,
+      "speaker": "题目6/7",
+      "module": "",
+      "text": "Listen to a conversation. Lisa, you've been taking guitar lessons, right? How's that going? It's good. I'm having fun, and there are four or five songs I can play pretty well. Now I've been thinking about it myself. I just finished a big work project, so I've got some spare time. If you'll wait here a minute, I'll give you my teacher's information. She's great. Do you do it online or in person? I took a few lessons in person to get started. It's helpful to have someone show you some basic things. But now we do it online and it works well."
+    }
+  ]
+}

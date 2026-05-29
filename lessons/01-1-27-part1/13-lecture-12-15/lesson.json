@@ -1,0 +1,26 @@
+{
+  "title": "1.27 M2 讲座 12-15",
+  "source": {
+    "textId": "1.27__part1__1-27-m4a",
+    "textName": "1.27听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/1.27（答案+文本校对了/1.27听力.m4a.docx",
+    "audioSource": "D:\\TOELF\\1月+2月部分.zip::1月+2月部分/1.27-答案全对/1.27听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 1.27; part match part1; listening keyword",
+    "unitType": "lecture",
+    "unitLabel": "12-15"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 1260.0,
+      "end": null,
+      "speaker": "题目12/13/14/15",
+      "module": "M2",
+      "text": "Listen to a talk in a geography class. Urbanization is frequently associated with negative outcomes—pollution, overcrowding, and especially traffic congestion. In many cities, poor planning has led to increased noise and emissions as well as reduced quality of life. However, urbanization doesn't have to be this way. If approached thoughtfully, an alternative to traffic jams and congested city streets is to foster sustainable transportation. Copenhagen, in Denmark, for instance, has made bicycles a central part of its urban design. The city's extensive network of protected bike lanes and bicycle‑friendly policies have encouraged residents to choose bicycles over cars. In addition to lowering automobile emissions, this shift has also improved public health and reduced traffic‑related stress. Also, when kept under control and planned properly, urbanization—in this case, compact urban living—minimizes land use and energy consumption. Compared to sprawling suburban development, suburban neighborhoods require large plots of land for individual homes, roads, and parking. When housing, services, and infrastructure are concentrated, this can actually preserve surrounding natural areas and agricultural land. So even though this may seem strange, urban growth is actually more compatible with environmental conservation. Urbanization also, by necessity, has led to some innovative thinking, especially concerning the efficient use of land and space. Many cities are incorporating such innovation in food production by creating rooftop farms and using vertical agriculture, which grows crops in stacked vertical layers. In particular, Singapore has invested in high‑tech urban farming systems that grow vegetables in controlled environments, helping increase local food supply and reduce dependence on imports."
+    }
+  ]
+}

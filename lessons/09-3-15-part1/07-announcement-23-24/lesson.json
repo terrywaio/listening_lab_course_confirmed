@@ -1,0 +1,26 @@
+{
+  "title": "3.15 M1 公告 23-24",
+  "source": {
+    "textId": "3.15__part1__3-15-part1-m4a",
+    "textName": "3.15 听力part1.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/3.15（答案+文本校对了/3.15 听力part1.m4a.docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\3.15.zip::3.15/3.15 听力part1/3.15 听力part1.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 3.15; part match part1; listening keyword",
+    "unitType": "announcement",
+    "unitLabel": "23-24"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 492.0,
+      "end": 543.0,
+      "speaker": "题目23/24",
+      "module": "M1",
+      "text": "Let's listen to an announcement at a University Club meeting. There's just one more thing I need to mention. This weekend's fundraising event for our film club has been postponed. As you know, we were supposed to set up a car wash in the basketball stadium parking lot. Several members have alerted me about scheduling conflicts, so we're going to push this activity back until next month. In the meantime, if you have any suggestions about other fundraising activities, I'm all ears."
+    }
+  ]
+}

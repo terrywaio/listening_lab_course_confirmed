@@ -1,0 +1,26 @@
+{
+  "title": "4.8 讲座 12-15",
+  "source": {
+    "textId": "4.8__4-8-m4a",
+    "textName": "4.8听力音频.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/4.8听力音频.m4a.docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\4.8.zip::4.8/4.8听力音频.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 4.8; listening keyword",
+    "unitType": "lecture",
+    "unitLabel": "12-15"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 1429.0,
+      "end": null,
+      "speaker": "题目12/13/14/15",
+      "module": "",
+      "text": "Listen to a talk in an archaeology class. For decades, archaeologists believed that complex societies and the monumental architecture, the large buildings signifying them, only emerged after agriculture, and that farming was essential for societal development. After all, before agriculture developed, people tended not to settle in a single place, but moved from place to place in search of food. We call such people nomadic hunter gatherers. They were continuously on the move to hunt and collect food, and for people who aren't settled, it was more practical to live in small mobile groups rather than in complex societies. Also, it was believed. But the excavation of the ancient site of Gobeli tepee threw a wrench in this whole story. Quebekley Tepe, dating back about 11000 years, consists of multiple massive pillars arranged in circles and is considered the world's oldest known temple. Remarkably, it predates the earliest evidence of agriculture in the area by several thousand years. This suggests spiritual practices, not agriculture, may have caused early communities to form. Many scholars interpret the site as a ceremonial center, a periodic gathering place for nomadic hunter gatherers. More recently, archaeologists there did find traces of things like food processing areas, stone tools for grinding grains, as well as actual plant residues. Yet these residues come from local wild grains, not domesticated crops, and the structures may not indicate year round habitation. So while Gobeklitepe might have hosted temporary gatherings, the evidence still supports the idea that spiritual practices played a central role in early societal development."
+    }
+  ]
+}

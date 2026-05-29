@@ -1,0 +1,26 @@
+{
+  "title": "3.18 公告 19-20",
+  "source": {
+    "textId": "3.18__part1__3-18-m4a-1",
+    "textName": "3.18 听力.m4a(1).docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/3.18(答案+文本校对了/3.18 听力.m4a(1).docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\3.18-忘记放进去了.zip::3.18-忘记放进去了/3.18 听力/3.18 听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 3.18; part unknown; listening keyword",
+    "unitType": "announcement",
+    "unitLabel": "19-20"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 350.0,
+      "end": 412.0,
+      "speaker": "题目19/20",
+      "module": "",
+      "text": "Listen to an announcement in a classroom. Good morning, everyone. Next Wednesday, I'll be attena day, so our class Wednesday will be canceled. However, I will be creating an online lesson for you to complete that day in itbe, available starting Monday. So you may want to get a head start on it. And remember, you can always email me with any questions."
+    }
+  ]
+}

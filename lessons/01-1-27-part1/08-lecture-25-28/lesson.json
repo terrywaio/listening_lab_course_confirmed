@@ -1,0 +1,26 @@
+{
+  "title": "1.27 M1 讲座 25-28",
+  "source": {
+    "textId": "1.27__part1__1-27-m4a",
+    "textName": "1.27听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/1.27（答案+文本校对了/1.27听力.m4a.docx",
+    "audioSource": "D:\\TOELF\\1月+2月部分.zip::1月+2月部分/1.27-答案全对/1.27听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 1.27; part match part1; listening keyword",
+    "unitType": "lecture",
+    "unitLabel": "25-28"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 565.0,
+      "end": 713.0,
+      "speaker": "题目25/26/27/28",
+      "module": "M1",
+      "text": "Listen to a talk in a psychology class. Positive reinforcement is a powerful concept in psychology and behavior training. It means giving a reward after someone performs an action you want them to do again. The basic idea is that if a behavior leads to a positive outcome, it's more likely to be repeated. In other words, we tend to repeat actions that bring us something positive. This principle applies to both humans and animals, but the way it works can differ. Animals need to receive rewards immediately after the desired behavior. For example, if a dog sits and gets a treat right away, it learns that sitting leads to something good. If the reward comes too late, the connection is lost. Humans, however, can understand delayed rewards. They might work hard today because they're aiming for a future goal, like earning a degree, or they might feel motivated by praise even if the reward is intangible. But rewards must be used carefully. If a parent gives a child candy to stop whining, the child may learn that whining gets rewarded. It's like watering weeds instead of flowers. You're encouraging the wrong behavior. And if rewards are given too frequently, they can reduce a person's internal motivation, making them rely more on external incentives to take action. So while positive reinforcement is effective, it works best when applied thoughtfully and with clear intent."
+    }
+  ]
+}

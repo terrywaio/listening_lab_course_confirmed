@@ -1,0 +1,130 @@
+{
+  "title": "3.17 单句",
+  "source": {
+    "textId": "3.17__3-17-listening-m4a",
+    "textName": "3.17-listening.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/3.17(答案+文本校对了/3.17-listening.m4a.docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-05\\3.17.zip::3.17/3.17-listening.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 3.17; listening keyword",
+    "unitType": "single",
+    "unitLabel": "单句"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 13.0,
+      "end": 29.0,
+      "speaker": "题目1",
+      "module": "M1",
+      "text": "What time does the registrar's office pen tomorrow?"
+    },
+    {
+      "id": "s002",
+      "start": 29.0,
+      "end": 45.0,
+      "speaker": "题目2",
+      "module": "M1",
+      "text": "I don't know how many people will join us tonight for study group."
+    },
+    {
+      "id": "s003",
+      "start": 45.0,
+      "end": 60.0,
+      "speaker": "题目3",
+      "module": "M1",
+      "text": "Where can I find the class notes?"
+    },
+    {
+      "id": "s004",
+      "start": 60.0,
+      "end": 76.0,
+      "speaker": "题目4",
+      "module": "M1",
+      "text": "Peter said he would look for supplies."
+    },
+    {
+      "id": "s005",
+      "start": 76.0,
+      "end": 91.0,
+      "speaker": "题目5",
+      "module": "M1",
+      "text": "Why are you going to the museum?"
+    },
+    {
+      "id": "s006",
+      "start": 91.0,
+      "end": 106.0,
+      "speaker": "题目6",
+      "module": "M1",
+      "text": "Maybe the power went out for this whole area."
+    },
+    {
+      "id": "s007",
+      "start": 106.0,
+      "end": 124.0,
+      "speaker": "题目7",
+      "module": "M1",
+      "text": "Are you going to the conference on the evolution of modernist poetry?"
+    },
+    {
+      "id": "s008",
+      "start": 124.0,
+      "end": 140.0,
+      "speaker": "题目8",
+      "module": "M1",
+      "text": "Are you free to join the discussion?"
+    },
+    {
+      "id": "s009",
+      "start": 140.0,
+      "end": 157.0,
+      "speaker": "题目9",
+      "module": "M1",
+      "text": "Where is the nearest train station?"
+    },
+    {
+      "id": "s010",
+      "start": 157.0,
+      "end": 170.0,
+      "speaker": "题目10",
+      "module": "M1",
+      "text": "Can you turn down the volume?"
+    },
+    {
+      "id": "s011",
+      "start": 170.0,
+      "end": 186.0,
+      "speaker": "题目11",
+      "module": "M1",
+      "text": "Do you have any questions about the course requirements?"
+    },
+    {
+      "id": "s012",
+      "start": 186.0,
+      "end": 207.0,
+      "speaker": "题目12",
+      "module": "M1",
+      "text": "Who organized today's book sale?"
+    },
+    {
+      "id": "s013",
+      "start": 1070.0,
+      "end": 1086.0,
+      "speaker": "题目1",
+      "module": "M2",
+      "text": "Can you help me understand the instructions for this homework?"
+    },
+    {
+      "id": "s014",
+      "start": 1086.0,
+      "end": 1104.0,
+      "speaker": "题目2",
+      "module": "M2",
+      "text": "Who forgot to turn off the lights?"
+    }
+  ]
+}

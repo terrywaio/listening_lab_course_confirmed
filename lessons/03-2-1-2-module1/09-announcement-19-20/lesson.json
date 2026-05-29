@@ -1,0 +1,26 @@
+{
+  "title": "2.1-2 M1 公告 19-20",
+  "source": {
+    "textId": "2.1-2__module1__listeningmodule1-mp3",
+    "textName": "ListeningModule1.mp3.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/2.1-2（答案+文本校对了/ListeningModule1.mp3.docx",
+    "audioSource": "D:\\TOELF\\1月+2月部分.zip::1月+2月部分/2.1-2（done)/ListeningModule1.mp3",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 2.1-2; part match module1; listening keyword",
+    "unitType": "announcement",
+    "unitLabel": "19-20"
+  },
+  "language": "en",
+  "audioSrc": "../audio.mp3",
+  "audioFileName": "audio.mp3",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 202.0,
+      "end": 246.0,
+      "speaker": "题目19/20",
+      "module": "",
+      "text": "Listen to an announcement by a university administration. We apologize for the cold temperatures in campus buildings today. Overnight, a large steam pipe failed. The entire steam distribution system must be temporarily shut down to allow for repairs to the pipe. Unfortunately, this means that most buildings are currently without heat and hot water. Science lab buildings have their own backup systems and should be unaffected. Please remember that the use of electric heaters is prohibited. These can overload buildings' electrical systems and cause a power outage. We'll update everyone when steam service is restored."
+    }
+  ]
+}

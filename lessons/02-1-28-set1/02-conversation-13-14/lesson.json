@@ -1,0 +1,26 @@
+{
+  "title": "1.28 套一 对话 13-14",
+  "source": {
+    "textId": "1.28__set1__1-28-part1-m4a-1",
+    "textName": "1.28套一听力part1.m4a(1).docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/1.28（答案+文本校对了/1.28套一听力part1.m4a(1).docx",
+    "audioSource": "D:\\TOELF\\1月+2月部分.zip::1月+2月部分/1.28-答案全对/1.28 套一听力音频/1.28套一听力part1.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 1.28; part match set1; listening keyword",
+    "unitType": "conversation",
+    "unitLabel": "13-14"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 209.0,
+      "end": 260.0,
+      "speaker": "题目13/14",
+      "module": "",
+      "text": "Listen to a conversation. I'm planning a trip to visit my aunt during spring break. What maintenance should I do on my car? Make sure to check the tire pressure and oil level. It's also a good idea to have your car inspected by a mechanic before you go. That's helpful. Can you recommend a mechanic? There's one on Street across from the grocery store. I'll give you a link to book an appointment. Thanks. I'll take care of that right away."
+    }
+  ]
+}

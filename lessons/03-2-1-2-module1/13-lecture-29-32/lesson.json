@@ -1,0 +1,26 @@
+{
+  "title": "2.1-2 M1 讲座 29-32",
+  "source": {
+    "textId": "2.1-2__module1__listeningmodule1-mp3",
+    "textName": "ListeningModule1.mp3.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/2.1-2（答案+文本校对了/ListeningModule1.mp3.docx",
+    "audioSource": "D:\\TOELF\\1月+2月部分.zip::1月+2月部分/2.1-2（done)/ListeningModule1.mp3",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 2.1-2; part match module1; listening keyword",
+    "unitType": "lecture",
+    "unitLabel": "29-32"
+  },
+  "language": "en",
+  "audioSrc": "../audio.mp3",
+  "audioFileName": "audio.mp3",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 412.0,
+      "end": null,
+      "speaker": "题目29/30/31/32",
+      "module": "",
+      "text": "Listen to a talk in a science class. Today, I want to tell you about an unusual phenomenon that scientists noticed in the Pacific Ocean. In the early 1990s, scientists were recording sounds using hydrophones positioned on the ocean floor in the North Pacific. Hydrophones are specially designed microphones that allow scientists to collect acoustic data underwater. While most of the undersea noises picked up by the hydrophones emanated from whales, ships, engines, or earthquakes, the scientists monitoring the hydrophones detected a number of sounds that they could not identify. One was a regular series of rising infrasonic tones—that is, of very short wavelengths below those humans can hear. The scientists labeled these very low frequency noises \"upsweep.\" At first, these sounds were thought to be the songs of whales migrating in the Pacific. However, scientists who study whale acoustics eventually ruled out this possibility, and the origin of the upsweep sounds remained unknown. So what is the source of the rising tones detected by the hydrophones? The sounds were ultimately tracked to an area of inferred volcanic seismic activity, a chain of undersea mountains in the South Pacific. Some scientists believe that if these mountains contain an active volcano, the source for the mysterious upsweep sounds may be hot volcanic lava coming in contact with cold seawater."
+    }
+  ]
+}

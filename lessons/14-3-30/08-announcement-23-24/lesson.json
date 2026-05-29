@@ -1,0 +1,26 @@
+{
+  "title": "3.30 公告 23-24",
+  "source": {
+    "textId": "3.30__3-30-m4a",
+    "textName": "3.30-听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/3.30(答案+文本校对了/3.30-听力.m4a.docx",
+    "audioSource": "D:\\TOELF\\3.30\\3.30 听力.m4a\\3.30 听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 3.30; listening keyword; plain file",
+    "unitType": "announcement",
+    "unitLabel": "23-24"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 575.0,
+      "end": 651.0,
+      "speaker": "题目23/24",
+      "module": "",
+      "text": "Listen to a school radio announcement. Students, don't forget that we set our clocks one hour ahead this weekend. Especially be aware of this if you have a class early Monday morning. We've had many students show up late to class in the past. Also, as you're walking around the campus, keep an eye out for all the spring focused editions made by our gardening club. Their work to beautify our campus is always appreciated."
+    }
+  ]
+}

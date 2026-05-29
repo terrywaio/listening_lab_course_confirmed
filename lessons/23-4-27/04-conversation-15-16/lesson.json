@@ -1,0 +1,26 @@
+{
+  "title": "4.27 对话 15-16",
+  "source": {
+    "textId": "4.27__4-27-m4a",
+    "textName": "4.27 听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/4.27 听力.m4a.docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-05\\4.27.zip::4.27/4.27 听力.m4a/4.27 听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 4.27; listening keyword",
+    "unitType": "conversation",
+    "unitLabel": "15-16"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 315.0,
+      "end": 380.0,
+      "speaker": "题目15/16",
+      "module": "",
+      "text": "Listen to a conversation. Hi, I received a parking ticket at the Smith Street parking garage yesterday. It said I was parked in an area reserved for faculty. Were you parked on the 1st level? Yes, but I've been parking there for months now. I thought it was a student area. It was, but we changed it last week. There are signs posted outside the garage. Oh, honestly, I probably wasn't paying attention anyway. Can I go ahead and pay it now?"
+    }
+  ]
+}

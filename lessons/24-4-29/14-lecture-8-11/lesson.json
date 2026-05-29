@@ -1,0 +1,26 @@
+{
+  "title": "4.29 讲座 8-11",
+  "source": {
+    "textId": "4.29__4-29-m4a",
+    "textName": "4.29 听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/4.29 听力.m4a.docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-05\\4.29.zip::4.29/4.29 听力.m4a/4.29 听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 4.29; listening keyword",
+    "unitType": "lecture",
+    "unitLabel": "8-11"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 1072.0,
+      "end": 1220.0,
+      "speaker": "讲话人8/9/10/11",
+      "module": "",
+      "text": "Listen to it talk in a history class. Before we say any more about textile production, let's talk about the historical indigo trade. Indigo is a natural blue dye coming from the leaves of indigo fera plants. Today you see it most often in blue jeans. Indigo is a staple export for hundreds of years. There was a time when only rice was more valuable. The English began importing it during the early 16 hundreds from India, and British colonists started growing it in North America about a century later. Natural indigo nearly vanished from industrial use by the early 20​th century, after German chemists invented a synthetic indigo. Of course, this was cheaper and more efficient in large scale production, and for decades the natural stuff survived only in niche applications and local traditions. Today, indigo is back as a viable commercial crop in places like Bangladesh and the us. This is partly thanks to the fashion industry's efforts to be more environmentally sustainable, and many now see natural indigo as a symbol of ethical consumption. Its value as a commodity also lies in its versatility. It's also used in cosmetics and food coloring. Farmers find it to be low maintenance with high returns. One hectare can yield thousands of kilograms of leaves, the economic incentive is clear, minimal input, high output and growing international interest. That said, the traditional fermentation techniques for extracting the dye are extremely labor intensive, which makes natural indigo expensive, and some producers claiming natural methods still rely on harsh chemicals, which undermines the dyes eco-friendly reputation."
+    }
+  ]
+}

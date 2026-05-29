@@ -1,0 +1,26 @@
+{
+  "title": "3.4 M1 对话 15-16",
+  "source": {
+    "textId": "3.4__3-4-m4a",
+    "textName": "3.4-听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/3.4（答案+文本校对了/3.4-听力.m4a.docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\3.4.zip::3.4/听力/3.4-听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 3.4; listening keyword",
+    "unitType": "conversation",
+    "unitLabel": "15-16"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 309.0,
+      "end": 376.0,
+      "speaker": "题目15/16",
+      "module": "M1",
+      "text": "Listen to a conversation. I've been put in charge of food for the city football team's holiday party next week, and I don't know where to start. How many people will be there? Around 40. That's a big group. The 1st thing you need to do is find out people's likes and dislikes and see if anyone has any dietary restrictions. That makes sense. How do I go about it? Just write up a little questionnaire and send it to everyone. Then based on the responses, write up a menu and go shopping. Nice. I'll work on that now."
+    }
+  ]
+}

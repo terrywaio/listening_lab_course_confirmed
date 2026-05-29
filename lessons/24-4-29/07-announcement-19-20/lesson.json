@@ -1,0 +1,26 @@
+{
+  "title": "4.29 公告 19-20",
+  "source": {
+    "textId": "4.29__4-29-m4a",
+    "textName": "4.29 听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/4.29 听力.m4a.docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-05\\4.29.zip::4.29/4.29 听力.m4a/4.29 听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 4.29; listening keyword",
+    "unitType": "announcement",
+    "unitLabel": "19-20"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 387.0,
+      "end": 443.0,
+      "speaker": "讲话人19/20",
+      "module": "",
+      "text": "Listen to an announcement in a classroom. Hi everyone. Unfortunately, there's been an issue with the University's system update last week, and your papers from last week did not get saved in the system. I've been working with the it department and they've resolved the issue, but I'll need you all to reupload your last assignments so I can grade them. I apologize for this. I'll be keeping a close eye on the portal in case this happens again."
+    }
+  ]
+}

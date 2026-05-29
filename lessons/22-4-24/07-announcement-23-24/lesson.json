@@ -1,0 +1,26 @@
+{
+  "title": "4.24 公告 23-24",
+  "source": {
+    "textId": "4.24__4-24-m4a",
+    "textName": "4.24听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/4.24听力.m4a.docx",
+    "audioSource": "D:\\4.24\\4.24听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 4.24; listening keyword; plain file",
+    "unitType": "announcement",
+    "unitLabel": "23-24"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 603.0,
+      "end": 679.0,
+      "speaker": "题目23/24",
+      "module": "",
+      "text": "Let's listen to a campus radio announcement. The due date for submitting photographs to the campus photography contest is today at 3:00p.m.. If you would like to enter but have not yet suba photograph, remember to do so today. After all submissions are in selected photography, students will judge the photos and declare a winner. The winner's name and winning photo will be printed in the campus newspaper, and all photographs entered will be posted on the University website next Wednesday."
+    }
+  ]
+}

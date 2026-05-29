@@ -1,0 +1,26 @@
+{
+  "title": "3.8 对话 17-18",
+  "source": {
+    "textId": "3.8__3-8-m4a",
+    "textName": "3.8 听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/3.8（答案+文本校对了/3.8 听力.m4a.docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\3.8线下【后续继续补充】.zip::3.8线下【后续继续补充】/3.8 -完整一套/3.8 听力/3.8 听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 3.8; listening keyword",
+    "unitType": "conversation",
+    "unitLabel": "17-18"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 304.0,
+      "end": 368.0,
+      "speaker": "讲话人17/18",
+      "module": "",
+      "text": "Listen to a conversation. I'm excited our universities merging with Clark University. there will be more classes to choose from and even some new degree programs. I've heard they're thinking about eliminating some majors that only have a small number of students. And right now, we only have ten students in my program. I wasn't aware of that. Hopefully get rid of yours. Yeah. If they do, I'll have to think about transferring elsewhere to finish my degree."
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "title": "3.30 M2 对话 6-7",
+  "source": {
+    "textId": "3.30__3-30-m4a",
+    "textName": "3.30-听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/3.30(答案+文本校对了/3.30-听力.m4a.docx",
+    "audioSource": "D:\\TOELF\\3.30\\3.30 听力.m4a\\3.30 听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 3.30; listening keyword; plain file",
+    "unitType": "conversation",
+    "unitLabel": "6-7"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 1182.0,
+      "end": 1258.0,
+      "speaker": "题目6/7",
+      "module": "M2",
+      "text": "Listen to a conversation. Christy,hey, I'm glad I bumped into you. I'm starting a side hustle with a couple of friends. We're going to do lawn care in the local neighborhoods around our campus. Oh, wow. That sounds like a great idea. We were wondering if you like to join us doing what though? I don't have much experience with lawnmowers. That's okay. It doesn't have to be mowing. You could keep the books or make appointments. We're open to different options. I'm on my way to class now, but I'll call you this afternoon."
+    }
+  ]
+}

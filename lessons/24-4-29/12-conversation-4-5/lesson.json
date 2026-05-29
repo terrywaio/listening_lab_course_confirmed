@@ -1,0 +1,26 @@
+{
+  "title": "4.29 对话 4-5",
+  "source": {
+    "textId": "4.29__4-29-m4a",
+    "textName": "4.29 听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/4.29 听力.m4a.docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-05\\4.29.zip::4.29/4.29 听力.m4a/4.29 听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 4.29; listening keyword",
+    "unitType": "conversation",
+    "unitLabel": "4-5"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 950.0,
+      "end": 1016.0,
+      "speaker": "讲话人4/5",
+      "module": "",
+      "text": "Listen to a conversation. I heard you got an internship at an advertising agency in town for the summer. That's so exciting. I know I start the 1​st week of June. I actually just found out. I also got offered an internship at an agency in Detroit. The company has a good reputation, but I'd have to move to another city, find an apartment. I see. Well, I'm glad one of us is having luck with internships. You still haven't heard back from the architecture firm. Now considering the semester's over in a couple weeks, I think I should make other plans."
+    }
+  ]
+}

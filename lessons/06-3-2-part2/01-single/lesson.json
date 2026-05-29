@@ -1,0 +1,122 @@
+{
+  "title": "3.2 Part 2 单句",
+  "source": {
+    "textId": "3.2__part2__3-2-m4a",
+    "textName": "3.2 听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/3.2（答案+文本校对了/3.2 听力.m4a.docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\3.2 听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 3.2; part match part2; listening keyword; plain file",
+    "unitType": "single",
+    "unitLabel": "单句"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 26.0,
+      "end": 38.0,
+      "speaker": "题目2",
+      "module": "M1",
+      "text": "I don't know how many people will join us tonight for study group."
+    },
+    {
+      "id": "s002",
+      "start": 49.0,
+      "end": 63.0,
+      "speaker": "题目4",
+      "module": "M1",
+      "text": "Peter said he would look for supplies."
+    },
+    {
+      "id": "s003",
+      "start": 63.0,
+      "end": 74.0,
+      "speaker": "题目5",
+      "module": "M1",
+      "text": "Why is your desk so cluttered?"
+    },
+    {
+      "id": "s004",
+      "start": 74.0,
+      "end": 87.0,
+      "speaker": "题目6",
+      "module": "M1",
+      "text": "Maybe the power went out for this whole area."
+    },
+    {
+      "id": "s005",
+      "start": 87.0,
+      "end": 100.0,
+      "speaker": "题目7",
+      "module": "M1",
+      "text": "Which bus goes from campus to city center?"
+    },
+    {
+      "id": "s006",
+      "start": 100.0,
+      "end": 117.0,
+      "speaker": "题目8",
+      "module": "M1",
+      "text": "When is our return flight after the intramural championships?"
+    },
+    {
+      "id": "s007",
+      "start": 117.0,
+      "end": 130.0,
+      "speaker": "题目9",
+      "module": "M1",
+      "text": "Who will be at the student Leadership Conference?"
+    },
+    {
+      "id": "s008",
+      "start": 130.0,
+      "end": 140.0,
+      "speaker": "题目10",
+      "module": "M1",
+      "text": "Can you turn down the volume?"
+    },
+    {
+      "id": "s009",
+      "start": 140.0,
+      "end": 152.0,
+      "speaker": "题目11",
+      "module": "M1",
+      "text": "Why haven't you finished your math homework?"
+    },
+    {
+      "id": "s010",
+      "start": 152.0,
+      "end": 174.0,
+      "speaker": "题目12",
+      "module": "M1",
+      "text": "What is the status of our student club registration?"
+    },
+    {
+      "id": "s011",
+      "start": 819.0,
+      "end": 829.0,
+      "speaker": "题目1",
+      "module": "M2",
+      "text": "Is there enough space for everyone?"
+    },
+    {
+      "id": "s012",
+      "start": 829.0,
+      "end": 843.0,
+      "speaker": "题目2",
+      "module": "M2",
+      "text": "It should be nice weather for the hiking club's trip today."
+    },
+    {
+      "id": "s013",
+      "start": 843.0,
+      "end": 856.0,
+      "speaker": "题目3",
+      "module": "M2",
+      "text": "Have you seen the new art exhibition at the student gallery?"
+    }
+  ]
+}

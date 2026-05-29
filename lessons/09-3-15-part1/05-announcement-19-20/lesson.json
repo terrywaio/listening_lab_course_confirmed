@@ -1,0 +1,26 @@
+{
+  "title": "3.15 M1 公告 19-20",
+  "source": {
+    "textId": "3.15__part1__3-15-part1-m4a",
+    "textName": "3.15 听力part1.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/3.15（答案+文本校对了/3.15 听力part1.m4a.docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\3.15.zip::3.15/3.15 听力part1/3.15 听力part1.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 3.15; part match part1; listening keyword",
+    "unitType": "announcement",
+    "unitLabel": "19-20"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 365.0,
+      "end": 426.0,
+      "speaker": "题目19/20",
+      "module": "M1",
+      "text": "Listen listen to an announcement before a University event. Good evening, everyone. In preparation for tonight's gala, go over some important instructions. When you arrive, please check in at the registration desk to receive your name, badge and program booklet. Dinner will be served at 7:00p.m.and will be followed by a series of speeches and a musical performance. Scan the qr code in your booklet for more information on any of the participants. Special thanks to the student government for its financial backing of this event."
+    }
+  ]
+}

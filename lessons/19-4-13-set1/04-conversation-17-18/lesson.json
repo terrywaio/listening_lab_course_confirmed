@@ -1,0 +1,26 @@
+{
+  "title": "4.13 套一 对话 17-18",
+  "source": {
+    "textId": "4.13__set1__4-13-m4a",
+    "textName": "4.13 套一 听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/4.13 套一 听力.m4a.docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\4.13.zip::4.13/4.13 套一 听力.m4a/4.13 套一 听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 4.13; part match set1; listening keyword",
+    "unitType": "conversation",
+    "unitLabel": "17-18"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 354.0,
+      "end": 407.0,
+      "speaker": "题目17/18",
+      "module": "",
+      "text": "Listen to a conversation. I'm off to lunch. I think I'll try out that new sushi restaurant. Really? I was there just last night. The sushi was incredibly fresh and tasty. Awesome. I love good sushi. The service left a lot to be desired, but the food is definitely worth it. Tell me what you think about it. I sure will."
+    }
+  ]
+}

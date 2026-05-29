@@ -1,0 +1,26 @@
+{
+  "title": "4.13 套一 对话 13-14",
+  "source": {
+    "textId": "4.13__set1__4-13-m4a",
+    "textName": "4.13 套一 听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/4.13 套一 听力.m4a.docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\4.13.zip::4.13/4.13 套一 听力.m4a/4.13 套一 听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 4.13; part match set1; listening keyword",
+    "unitType": "conversation",
+    "unitLabel": "13-14"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 225.0,
+      "end": 292.0,
+      "speaker": "题目13/14",
+      "module": "",
+      "text": "Listen to a conversation. Did you visit the amusement park during spring break? I did. The grounds were clean and the rides were fun, but I had to wait in line for half an hour just to be told they had run out of ice cream. That last part wasn't my experience. I did hear they hired a new vendor to run concessions this year though. Actually, the entire park is under new management. Give them some time to get settled in. There's an adjustment period."
+    }
+  ]
+}

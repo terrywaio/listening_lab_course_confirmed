@@ -1,0 +1,26 @@
+{
+  "title": "4.24 长文本 21-22",
+  "source": {
+    "textId": "4.24__4-24-m4a",
+    "textName": "4.24听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/4.24听力.m4a.docx",
+    "audioSource": "D:\\4.24\\4.24听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 4.24; listening keyword; plain file",
+    "unitType": "long",
+    "unitLabel": "21-22"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 523.0,
+      "end": 603.0,
+      "speaker": "题目21/22",
+      "module": "",
+      "text": "Listen to a campus radio event. Campus technology services would like to inform everyone of some exciting changes to our offerings starting next week. Anyone whose laptop is with us for service can borrow a loaner device. Laner laptops include the standard suite of campus software, and there is no charge unless the device is damaged or lost. In addition, you will now need to swipe your campus ID to access computer labs between 10:00p.m.and 9:00a.m., since student staff are typically not present during these times."
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "title": "2.1-2 M2 对话 6-7",
+  "source": {
+    "textId": "2.1-2__module2__listeningmodule2-mp3",
+    "textName": "ListeningModule2.mp3.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/2.1-2（答案+文本校对了/ListeningModule2.mp3.docx",
+    "audioSource": "D:\\TOELF\\1月+2月部分.zip::1月+2月部分/2.1-2（done)/ListeningModule2.mp3",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 2.1-2; part match module2; listening keyword",
+    "unitType": "conversation",
+    "unitLabel": "6-7"
+  },
+  "language": "en",
+  "audioSrc": "../audio.mp3",
+  "audioFileName": "audio.mp3",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 100.0,
+      "end": 143.0,
+      "speaker": "题目6/7",
+      "module": "",
+      "text": "Listen to a conversation. How was the photography workshop? Last week we learned techniques for taking portraits. Next week we'll do action photography. That sounds so interesting. I've always wanted to take pictures of tennis matches. The instructor who will lead the class next week has photographed state championships in six different sports. I'd love to attend. I'll buy a new camera for the occasion. Are all ability levels welcome? Yes, I'll email you the link to sign up. Just be aware that spots are going fast."
+    }
+  ]
+}

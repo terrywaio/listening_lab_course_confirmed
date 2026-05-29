@@ -1,0 +1,26 @@
+{
+  "title": "4.8 讲座 2",
+  "source": {
+    "textId": "4.8__4-8-m4a",
+    "textName": "4.8听力音频.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/4.8听力音频.m4a.docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\4.8.zip::4.8/4.8听力音频.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 4.8; listening keyword",
+    "unitType": "lecture",
+    "unitLabel": "2"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 18.0,
+      "end": 34.0,
+      "speaker": "题目2",
+      "module": "",
+      "text": "Who will be giving the lecture?"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "title": "3.30 M2 讲座 12-15",
+  "source": {
+    "textId": "3.30__3-30-m4a",
+    "textName": "3.30-听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/3.30(答案+文本校对了/3.30-听力.m4a.docx",
+    "audioSource": "D:\\TOELF\\3.30\\3.30 听力.m4a\\3.30 听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 3.30; listening keyword; plain file",
+    "unitType": "lecture",
+    "unitLabel": "12-15"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 1432.0,
+      "end": null,
+      "speaker": "题目12/13/14/15",
+      "module": "M2",
+      "text": "Listen to a talk on an ecology podcast. The Galapagos Islands, a popular tourist attraction located approximately 1000 km of mainland Ecuador, have long been home to many interesting species of animals, including giant tortoises. Historically, these reptiles could be found on many different Galapagos Islands, but in some of these locations they've gone extinct, due in part to human activities. To deal with this situation, conservationists employed a strategy called animal translocation to move tortoises from one island to another. So why did conservationists do this? The main reason was to promote ecosystem recovery on affected islands. One place tortoises went extinct was on Santa Fe island. When these reptiles died out, the island was without its main ecosystem engineer. This affected the island in many ways, including causing plant diversity to decline. To help the ecosystem recover, conservationists have released more than 400 tortoises from Espanola island onto Santa Fe island. This was done to help restore natural processes like seed dispersal and vegetation control. The goal is to reach about 4000 individuals to match historical densities, and there are signs that this project is having success. For example, a type of cactus that many animals on the island rely on for food has shown improved reproduction and growth since the tortoises returned. This is no doubt because tortoises eat this cactus fruit and spread seeds in their nutrient rich droppings. This finding is encouraging, but we can't declare the project of victory. Yet more time needs to pass(?) before conservationists can deem it a success."
+    }
+  ]
+}

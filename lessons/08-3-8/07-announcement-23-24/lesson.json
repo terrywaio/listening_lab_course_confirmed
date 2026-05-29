@@ -1,0 +1,26 @@
+{
+  "title": "3.8 公告 23-24",
+  "source": {
+    "textId": "3.8__3-8-m4a",
+    "textName": "3.8 听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/3.8（答案+文本校对了/3.8 听力.m4a.docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\3.8线下【后续继续补充】.zip::3.8线下【后续继续补充】/3.8 -完整一套/3.8 听力/3.8 听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 3.8; listening keyword",
+    "unitType": "announcement",
+    "unitLabel": "23-24"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 506.0,
+      "end": 582.0,
+      "speaker": "讲话人23/24",
+      "module": "",
+      "text": "Listen to an announcement in a University dormitory. Attention residents. Based on communications with the custodial staff, we felt it was necessary to provide a refresher on the dormitory policies for trash and recycling. Please be mindful of the separate bins for paper, plastic, glass and trash, and don't forget to sort before you dispose of it. Cardboard boxes should be broken down and placed against the wall. Lastly, please be mindful of materials that can not be recycled. Lists of the most common items have been posted on each floor."
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "title": "3.8 单句",
+  "source": {
+    "textId": "3.8__3-8-m4a",
+    "textName": "3.8 听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/3.8（答案+文本校对了/3.8 听力.m4a.docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\3.8线下【后续继续补充】.zip::3.8线下【后续继续补充】/3.8 -完整一套/3.8 听力/3.8 听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 3.8; listening keyword",
+    "unitType": "single",
+    "unitLabel": "单句"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": null,
+      "end": null,
+      "speaker": "",
+      "module": "",
+      "text": "Module 1:"
+    },
+    {
+      "id": "s002",
+      "start": 22.0,
+      "end": 35.0,
+      "speaker": "讲话人1",
+      "module": "",
+      "text": "Are you planning to go hiking this weekend?"
+    },
+    {
+      "id": "s003",
+      "start": 35.0,
+      "end": 46.0,
+      "speaker": "讲话人2",
+      "module": "",
+      "text": "These textbooks are very expensive."
+    },
+    {
+      "id": "s004",
+      "start": 46.0,
+      "end": 58.0,
+      "speaker": "讲话人3",
+      "module": "",
+      "text": "The seminar starts at 9:00."
+    },
+    {
+      "id": "s005",
+      "start": 58.0,
+      "end": 72.0,
+      "speaker": "讲话人4",
+      "module": "",
+      "text": "I just learned that Abby and I have the same advisor."
+    },
+    {
+      "id": "s006",
+      "start": 72.0,
+      "end": 82.0,
+      "speaker": "讲话人5",
+      "module": "",
+      "text": "Can you share your seminar notes?"
+    },
+    {
+      "id": "s007",
+      "start": 82.0,
+      "end": 95.0,
+      "speaker": "讲话人6",
+      "module": "",
+      "text": "Did your class presentation go well?"
+    },
+    {
+      "id": "s008",
+      "start": 95.0,
+      "end": 113.0,
+      "speaker": "讲话人7",
+      "module": "",
+      "text": "The nature hike starts at 7:00a.m.."
+    },
+    {
+      "id": "s009",
+      "start": 113.0,
+      "end": 124.0,
+      "speaker": "讲话人8",
+      "module": "",
+      "text": "Who is the guest speaker?"
+    },
+    {
+      "id": "s010",
+      "start": 124.0,
+      "end": 136.0,
+      "speaker": "讲话人9",
+      "module": "",
+      "text": "How can I improve my reading comprehension?"
+    },
+    {
+      "id": "s011",
+      "start": 136.0,
+      "end": 149.0,
+      "speaker": "讲话人10",
+      "module": "",
+      "text": "Wouldn't it be better to just buy a new computer?"
+    },
+    {
+      "id": "s012",
+      "start": 149.0,
+      "end": 164.0,
+      "speaker": "讲话人11",
+      "module": "",
+      "text": "Are you planning to join the running club?"
+    },
+    {
+      "id": "s013",
+      "start": 164.0,
+      "end": 179.0,
+      "speaker": "讲话人12",
+      "module": "",
+      "text": "Why didn't you answer my phone call?"
+    },
+    {
+      "id": "s014",
+      "start": 962.0,
+      "end": 975.0,
+      "speaker": "讲话人1",
+      "module": "",
+      "text": "The museum art tour was very educational."
+    },
+    {
+      "id": "s015",
+      "start": 975.0,
+      "end": 986.0,
+      "speaker": "讲话人2",
+      "module": "",
+      "text": "How did you enjoy the hiking trail?"
+    }
+  ]
+}

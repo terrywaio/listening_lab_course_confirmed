@@ -1,0 +1,26 @@
+{
+  "title": "4.6 对话 13-14",
+  "source": {
+    "textId": "4.6__part1__4-6-q1-m4a-1",
+    "textName": "4.6 听力(缺q1).m4a(1).docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/4.6 听力(缺q1).m4a(1).docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\4.6.zip::4.6/4.6 听力(缺q1).m4a/4.6 听力(缺q1).m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 4.6; part match part1; listening keyword",
+    "unitType": "conversation",
+    "unitLabel": "13-14"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 191.0,
+      "end": 253.0,
+      "speaker": "题目13/14",
+      "module": "",
+      "text": "Listen to a conversation. I need to improve my fitness. And I saw the physical education department is offering water aerobics classes next term. I hope the timing works out because those sound like a lot of fun. Well, just to warn you, I strained my back a little doing aquatic jumping jacks a few years ago. Oh, no. Have you recovered? Yes. it wasn't that bad. And it hasn't scared me away from water. I swim laps to stay in shape. I hadn't thought about swimming laps. That sounds even better."
+    }
+  ]
+}

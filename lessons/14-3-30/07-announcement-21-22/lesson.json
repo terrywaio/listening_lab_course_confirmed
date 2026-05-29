@@ -1,0 +1,26 @@
+{
+  "title": "3.30 公告 21-22",
+  "source": {
+    "textId": "3.30__3-30-m4a",
+    "textName": "3.30-听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/3.30(答案+文本校对了/3.30-听力.m4a.docx",
+    "audioSource": "D:\\TOELF\\3.30\\3.30 听力.m4a\\3.30 听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 3.30; listening keyword; plain file",
+    "unitType": "announcement",
+    "unitLabel": "21-22"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 503.0,
+      "end": 575.0,
+      "speaker": "题目21/22",
+      "module": "",
+      "text": "Listen to a school radio announcement. Attention, students, starting next week, there will be some changes to our computer lab equipment usage policy. All computers in the lab must be logged out and shut down by 10:00p.m.to allow for nightly maintenance of our systems. This will ensure that our equipment remains in optimal condition for everyone's use. If you plan to use the lab during peak hours, especially in the afternoons, we urge you to reserve a workstation in advance to guarantee access."
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "title": "4.1 公告 21-22",
+  "source": {
+    "textId": "4.1__part1__4-1-m4a-1",
+    "textName": "4.1听力.m4a(1).docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/4.1听力.m4a(1).docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\4.1.zip::4.1/4.1听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 4.1; part match part1; listening keyword",
+    "unitType": "announcement",
+    "unitLabel": "21-22"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 422.0,
+      "end": 480.0,
+      "speaker": "题目21/22",
+      "module": "",
+      "text": "Listen to an announcement at a school event. Good evening, students. The annual campus film festival is being held next weekend. This event will feature a variety of films from different genres, including documentaries, comedies and dramas. Will also feature several films by local filmmakers, including one by a fellow student. Screenings take place in the University auditorium from Friday to Sunday, starting at noon each day. There will also be QA sessions with the filmmakers. After selected screenings, we hope you'll join us for a weekend of great films and engaging discussions."
+    }
+  ]
+}

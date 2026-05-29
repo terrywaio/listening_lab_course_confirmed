@@ -1,0 +1,1858 @@
+{
+  "title": "Confirmed TOEFL Listening Course",
+  "source": {
+    "auditDir": "C:\\Users\\ok304\\Documents\\New project\\output\\listening_audio_audit",
+    "textZip": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-05\\Done-4月为止(文本和答案单独校对）(1).zip",
+    "filter": "status == matched"
+  },
+  "lessons": [
+    {
+      "title": "1.27 单句",
+      "path": "lessons/01-1-27-part1/01-single/lesson.json",
+      "dateKey": "1.27",
+      "partKey": "part1"
+    },
+    {
+      "title": "1.27 M1 对话 13-14",
+      "path": "lessons/01-1-27-part1/02-conversation-13-14/lesson.json",
+      "dateKey": "1.27",
+      "partKey": "part1"
+    },
+    {
+      "title": "1.27 M1 对话 15-16",
+      "path": "lessons/01-1-27-part1/03-conversation-15-16/lesson.json",
+      "dateKey": "1.27",
+      "partKey": "part1"
+    },
+    {
+      "title": "1.27 M1 对话 17-18",
+      "path": "lessons/01-1-27-part1/04-conversation-17-18/lesson.json",
+      "dateKey": "1.27",
+      "partKey": "part1"
+    },
+    {
+      "title": "1.27 M1 公告 19-20",
+      "path": "lessons/01-1-27-part1/05-announcement-19-20/lesson.json",
+      "dateKey": "1.27",
+      "partKey": "part1"
+    },
+    {
+      "title": "1.27 M1 公告 21-22",
+      "path": "lessons/01-1-27-part1/06-announcement-21-22/lesson.json",
+      "dateKey": "1.27",
+      "partKey": "part1"
+    },
+    {
+      "title": "1.27 M1 公告 23-24",
+      "path": "lessons/01-1-27-part1/07-announcement-23-24/lesson.json",
+      "dateKey": "1.27",
+      "partKey": "part1"
+    },
+    {
+      "title": "1.27 M1 讲座 25-28",
+      "path": "lessons/01-1-27-part1/08-lecture-25-28/lesson.json",
+      "dateKey": "1.27",
+      "partKey": "part1"
+    },
+    {
+      "title": "1.27 M1 讲座 29-32",
+      "path": "lessons/01-1-27-part1/09-lecture-29-32/lesson.json",
+      "dateKey": "1.27",
+      "partKey": "part1"
+    },
+    {
+      "title": "1.27 M2 对话 4-5",
+      "path": "lessons/01-1-27-part1/10-conversation-4-5/lesson.json",
+      "dateKey": "1.27",
+      "partKey": "part1"
+    },
+    {
+      "title": "1.27 M2 对话 6-7",
+      "path": "lessons/01-1-27-part1/11-conversation-6-7/lesson.json",
+      "dateKey": "1.27",
+      "partKey": "part1"
+    },
+    {
+      "title": "1.27 M2 讲座 8-11",
+      "path": "lessons/01-1-27-part1/12-lecture-8-11/lesson.json",
+      "dateKey": "1.27",
+      "partKey": "part1"
+    },
+    {
+      "title": "1.27 M2 讲座 12-15",
+      "path": "lessons/01-1-27-part1/13-lecture-12-15/lesson.json",
+      "dateKey": "1.27",
+      "partKey": "part1"
+    },
+    {
+      "title": "1.28 套一 单句",
+      "path": "lessons/02-1-28-set1/01-single/lesson.json",
+      "dateKey": "1.28",
+      "partKey": "set1"
+    },
+    {
+      "title": "1.28 套一 对话 13-14",
+      "path": "lessons/02-1-28-set1/02-conversation-13-14/lesson.json",
+      "dateKey": "1.28",
+      "partKey": "set1"
+    },
+    {
+      "title": "1.28 套一 对话 15-16",
+      "path": "lessons/02-1-28-set1/03-conversation-15-16/lesson.json",
+      "dateKey": "1.28",
+      "partKey": "set1"
+    },
+    {
+      "title": "1.28 套一 对话 17-18",
+      "path": "lessons/02-1-28-set1/04-conversation-17-18/lesson.json",
+      "dateKey": "1.28",
+      "partKey": "set1"
+    },
+    {
+      "title": "1.28 套一 公告 19-20",
+      "path": "lessons/02-1-28-set1/05-announcement-19-20/lesson.json",
+      "dateKey": "1.28",
+      "partKey": "set1"
+    },
+    {
+      "title": "1.28 套一 公告 21-22",
+      "path": "lessons/02-1-28-set1/06-announcement-21-22/lesson.json",
+      "dateKey": "1.28",
+      "partKey": "set1"
+    },
+    {
+      "title": "1.28 套一 公告 23-24",
+      "path": "lessons/02-1-28-set1/07-announcement-23-24/lesson.json",
+      "dateKey": "1.28",
+      "partKey": "set1"
+    },
+    {
+      "title": "1.28 套一 讲座 25-28",
+      "path": "lessons/02-1-28-set1/08-lecture-25-28/lesson.json",
+      "dateKey": "1.28",
+      "partKey": "set1"
+    },
+    {
+      "title": "1.28 套一 讲座 29-32",
+      "path": "lessons/02-1-28-set1/09-lecture-29-32/lesson.json",
+      "dateKey": "1.28",
+      "partKey": "set1"
+    },
+    {
+      "title": "1.28 套一 对话 4-5",
+      "path": "lessons/02-1-28-set1/10-conversation-4-5/lesson.json",
+      "dateKey": "1.28",
+      "partKey": "set1"
+    },
+    {
+      "title": "1.28 套一 对话 6-7",
+      "path": "lessons/02-1-28-set1/11-conversation-6-7/lesson.json",
+      "dateKey": "1.28",
+      "partKey": "set1"
+    },
+    {
+      "title": "1.28 套一 讲座 12-15",
+      "path": "lessons/02-1-28-set1/12-lecture-12-15/lesson.json",
+      "dateKey": "1.28",
+      "partKey": "set1"
+    },
+    {
+      "title": "2.1-2 M1 单句",
+      "path": "lessons/03-2-1-2-module1/01-single/lesson.json",
+      "dateKey": "2.1-2",
+      "partKey": "module1"
+    },
+    {
+      "title": "2.1-2 M1 长文本 2-3",
+      "path": "lessons/03-2-1-2-module1/02-long-2-3/lesson.json",
+      "dateKey": "2.1-2",
+      "partKey": "module1"
+    },
+    {
+      "title": "2.1-2 M1 长文本 4-5",
+      "path": "lessons/03-2-1-2-module1/03-long-4-5/lesson.json",
+      "dateKey": "2.1-2",
+      "partKey": "module1"
+    },
+    {
+      "title": "2.1-2 M1 长文本 7-8",
+      "path": "lessons/03-2-1-2-module1/04-long-7-8/lesson.json",
+      "dateKey": "2.1-2",
+      "partKey": "module1"
+    },
+    {
+      "title": "2.1-2 M1 讲座 9-12",
+      "path": "lessons/03-2-1-2-module1/05-lecture-9-12/lesson.json",
+      "dateKey": "2.1-2",
+      "partKey": "module1"
+    },
+    {
+      "title": "2.1-2 M1 对话 13-14",
+      "path": "lessons/03-2-1-2-module1/06-conversation-13-14/lesson.json",
+      "dateKey": "2.1-2",
+      "partKey": "module1"
+    },
+    {
+      "title": "2.1-2 M1 对话 15-16",
+      "path": "lessons/03-2-1-2-module1/07-conversation-15-16/lesson.json",
+      "dateKey": "2.1-2",
+      "partKey": "module1"
+    },
+    {
+      "title": "2.1-2 M1 对话 17-18",
+      "path": "lessons/03-2-1-2-module1/08-conversation-17-18/lesson.json",
+      "dateKey": "2.1-2",
+      "partKey": "module1"
+    },
+    {
+      "title": "2.1-2 M1 公告 19-20",
+      "path": "lessons/03-2-1-2-module1/09-announcement-19-20/lesson.json",
+      "dateKey": "2.1-2",
+      "partKey": "module1"
+    },
+    {
+      "title": "2.1-2 M1 公告 21-22",
+      "path": "lessons/03-2-1-2-module1/10-announcement-21-22/lesson.json",
+      "dateKey": "2.1-2",
+      "partKey": "module1"
+    },
+    {
+      "title": "2.1-2 M1 公告 23-24",
+      "path": "lessons/03-2-1-2-module1/11-announcement-23-24/lesson.json",
+      "dateKey": "2.1-2",
+      "partKey": "module1"
+    },
+    {
+      "title": "2.1-2 M1 讲座 25-28",
+      "path": "lessons/03-2-1-2-module1/12-lecture-25-28/lesson.json",
+      "dateKey": "2.1-2",
+      "partKey": "module1"
+    },
+    {
+      "title": "2.1-2 M1 讲座 29-32",
+      "path": "lessons/03-2-1-2-module1/13-lecture-29-32/lesson.json",
+      "dateKey": "2.1-2",
+      "partKey": "module1"
+    },
+    {
+      "title": "2.1-2 M2 单句",
+      "path": "lessons/04-2-1-2-module2/01-single/lesson.json",
+      "dateKey": "2.1-2",
+      "partKey": "module2"
+    },
+    {
+      "title": "2.1-2 M2 长文本 1-2",
+      "path": "lessons/04-2-1-2-module2/02-long-1-2/lesson.json",
+      "dateKey": "2.1-2",
+      "partKey": "module2"
+    },
+    {
+      "title": "2.1-2 M2 对话 4-5",
+      "path": "lessons/04-2-1-2-module2/03-conversation-4-5/lesson.json",
+      "dateKey": "2.1-2",
+      "partKey": "module2"
+    },
+    {
+      "title": "2.1-2 M2 对话 6-7",
+      "path": "lessons/04-2-1-2-module2/04-conversation-6-7/lesson.json",
+      "dateKey": "2.1-2",
+      "partKey": "module2"
+    },
+    {
+      "title": "2.1-2 M2 讲座 8-11",
+      "path": "lessons/04-2-1-2-module2/05-lecture-8-11/lesson.json",
+      "dateKey": "2.1-2",
+      "partKey": "module2"
+    },
+    {
+      "title": "2.1-2 M2 讲座 12-15",
+      "path": "lessons/04-2-1-2-module2/06-lecture-12-15/lesson.json",
+      "dateKey": "2.1-2",
+      "partKey": "module2"
+    },
+    {
+      "title": "2.2 Part 2 单句",
+      "path": "lessons/05-2-2-part2/01-single/lesson.json",
+      "dateKey": "2.2",
+      "partKey": "part2"
+    },
+    {
+      "title": "2.2 Part 2 对话 13-14",
+      "path": "lessons/05-2-2-part2/02-conversation-13-14/lesson.json",
+      "dateKey": "2.2",
+      "partKey": "part2"
+    },
+    {
+      "title": "2.2 Part 2 对话 15-16",
+      "path": "lessons/05-2-2-part2/03-conversation-15-16/lesson.json",
+      "dateKey": "2.2",
+      "partKey": "part2"
+    },
+    {
+      "title": "2.2 Part 2 对话 17-18",
+      "path": "lessons/05-2-2-part2/04-conversation-17-18/lesson.json",
+      "dateKey": "2.2",
+      "partKey": "part2"
+    },
+    {
+      "title": "2.2 Part 2 公告 19-20",
+      "path": "lessons/05-2-2-part2/05-announcement-19-20/lesson.json",
+      "dateKey": "2.2",
+      "partKey": "part2"
+    },
+    {
+      "title": "2.2 Part 2 公告 21-22",
+      "path": "lessons/05-2-2-part2/06-announcement-21-22/lesson.json",
+      "dateKey": "2.2",
+      "partKey": "part2"
+    },
+    {
+      "title": "2.2 Part 2 公告 23-24",
+      "path": "lessons/05-2-2-part2/07-announcement-23-24/lesson.json",
+      "dateKey": "2.2",
+      "partKey": "part2"
+    },
+    {
+      "title": "2.2 Part 2 长文本 25-28",
+      "path": "lessons/05-2-2-part2/08-long-25-28/lesson.json",
+      "dateKey": "2.2",
+      "partKey": "part2"
+    },
+    {
+      "title": "2.2 Part 2 讲座 29-32",
+      "path": "lessons/05-2-2-part2/09-lecture-29-32/lesson.json",
+      "dateKey": "2.2",
+      "partKey": "part2"
+    },
+    {
+      "title": "2.2 Part 2 对话 4-5",
+      "path": "lessons/05-2-2-part2/10-conversation-4-5/lesson.json",
+      "dateKey": "2.2",
+      "partKey": "part2"
+    },
+    {
+      "title": "2.2 Part 2 对话 6-7",
+      "path": "lessons/05-2-2-part2/11-conversation-6-7/lesson.json",
+      "dateKey": "2.2",
+      "partKey": "part2"
+    },
+    {
+      "title": "2.2 Part 2 讲座 8-11",
+      "path": "lessons/05-2-2-part2/12-lecture-8-11/lesson.json",
+      "dateKey": "2.2",
+      "partKey": "part2"
+    },
+    {
+      "title": "2.2 Part 2 讲座 12-15",
+      "path": "lessons/05-2-2-part2/13-lecture-12-15/lesson.json",
+      "dateKey": "2.2",
+      "partKey": "part2"
+    },
+    {
+      "title": "3.2 Part 2 单句",
+      "path": "lessons/06-3-2-part2/01-single/lesson.json",
+      "dateKey": "3.2",
+      "partKey": "part2"
+    },
+    {
+      "title": "3.2 Part 2 讲座 1",
+      "path": "lessons/06-3-2-part2/02-lecture-1/lesson.json",
+      "dateKey": "3.2",
+      "partKey": "part2"
+    },
+    {
+      "title": "3.2 Part 2 讲座 3",
+      "path": "lessons/06-3-2-part2/03-lecture-3/lesson.json",
+      "dateKey": "3.2",
+      "partKey": "part2"
+    },
+    {
+      "title": "3.2 Part 2 对话 13-14",
+      "path": "lessons/06-3-2-part2/04-conversation-13-14/lesson.json",
+      "dateKey": "3.2",
+      "partKey": "part2"
+    },
+    {
+      "title": "3.2 Part 2 对话 15-16",
+      "path": "lessons/06-3-2-part2/05-conversation-15-16/lesson.json",
+      "dateKey": "3.2",
+      "partKey": "part2"
+    },
+    {
+      "title": "3.2 Part 2 对话 17-18",
+      "path": "lessons/06-3-2-part2/06-conversation-17-18/lesson.json",
+      "dateKey": "3.2",
+      "partKey": "part2"
+    },
+    {
+      "title": "3.2 Part 2 公告 19-20",
+      "path": "lessons/06-3-2-part2/07-announcement-19-20/lesson.json",
+      "dateKey": "3.2",
+      "partKey": "part2"
+    },
+    {
+      "title": "3.2 Part 2 公告 21-22",
+      "path": "lessons/06-3-2-part2/08-announcement-21-22/lesson.json",
+      "dateKey": "3.2",
+      "partKey": "part2"
+    },
+    {
+      "title": "3.2 Part 2 公告 23-24",
+      "path": "lessons/06-3-2-part2/09-announcement-23-24/lesson.json",
+      "dateKey": "3.2",
+      "partKey": "part2"
+    },
+    {
+      "title": "3.2 Part 2 讲座 25-28",
+      "path": "lessons/06-3-2-part2/10-lecture-25-28/lesson.json",
+      "dateKey": "3.2",
+      "partKey": "part2"
+    },
+    {
+      "title": "3.2 Part 2 讲座 29-32",
+      "path": "lessons/06-3-2-part2/11-lecture-29-32/lesson.json",
+      "dateKey": "3.2",
+      "partKey": "part2"
+    },
+    {
+      "title": "3.2 Part 2 对话 4-5",
+      "path": "lessons/06-3-2-part2/12-conversation-4-5/lesson.json",
+      "dateKey": "3.2",
+      "partKey": "part2"
+    },
+    {
+      "title": "3.2 Part 2 对话 6-7",
+      "path": "lessons/06-3-2-part2/13-conversation-6-7/lesson.json",
+      "dateKey": "3.2",
+      "partKey": "part2"
+    },
+    {
+      "title": "3.2 Part 2 讲座 8-11",
+      "path": "lessons/06-3-2-part2/14-lecture-8-11/lesson.json",
+      "dateKey": "3.2",
+      "partKey": "part2"
+    },
+    {
+      "title": "3.2 Part 2 讲座 12-15",
+      "path": "lessons/06-3-2-part2/15-lecture-12-15/lesson.json",
+      "dateKey": "3.2",
+      "partKey": "part2"
+    },
+    {
+      "title": "3.4 单句",
+      "path": "lessons/07-3-4/01-single/lesson.json",
+      "dateKey": "3.4",
+      "partKey": ""
+    },
+    {
+      "title": "3.4 M1 对话 13-14",
+      "path": "lessons/07-3-4/02-conversation-13-14/lesson.json",
+      "dateKey": "3.4",
+      "partKey": ""
+    },
+    {
+      "title": "3.4 M1 对话 15-16",
+      "path": "lessons/07-3-4/03-conversation-15-16/lesson.json",
+      "dateKey": "3.4",
+      "partKey": ""
+    },
+    {
+      "title": "3.4 M1 对话 17-18",
+      "path": "lessons/07-3-4/04-conversation-17-18/lesson.json",
+      "dateKey": "3.4",
+      "partKey": ""
+    },
+    {
+      "title": "3.4 M1 对话 19-20",
+      "path": "lessons/07-3-4/05-conversation-19-20/lesson.json",
+      "dateKey": "3.4",
+      "partKey": ""
+    },
+    {
+      "title": "3.4 M1 公告 21-22",
+      "path": "lessons/07-3-4/06-announcement-21-22/lesson.json",
+      "dateKey": "3.4",
+      "partKey": ""
+    },
+    {
+      "title": "3.4 M1 公告 23-24",
+      "path": "lessons/07-3-4/07-announcement-23-24/lesson.json",
+      "dateKey": "3.4",
+      "partKey": ""
+    },
+    {
+      "title": "3.4 M1 讲座 25-28",
+      "path": "lessons/07-3-4/08-lecture-25-28/lesson.json",
+      "dateKey": "3.4",
+      "partKey": ""
+    },
+    {
+      "title": "3.4 M1 讲座 29-32",
+      "path": "lessons/07-3-4/09-lecture-29-32/lesson.json",
+      "dateKey": "3.4",
+      "partKey": ""
+    },
+    {
+      "title": "3.4 M2 对话 4-5",
+      "path": "lessons/07-3-4/10-conversation-4-5/lesson.json",
+      "dateKey": "3.4",
+      "partKey": ""
+    },
+    {
+      "title": "3.4 M2 对话 6-7",
+      "path": "lessons/07-3-4/11-conversation-6-7/lesson.json",
+      "dateKey": "3.4",
+      "partKey": ""
+    },
+    {
+      "title": "3.4 M2 讲座 8-11",
+      "path": "lessons/07-3-4/12-lecture-8-11/lesson.json",
+      "dateKey": "3.4",
+      "partKey": ""
+    },
+    {
+      "title": "3.4 M2 讲座 12-15",
+      "path": "lessons/07-3-4/13-lecture-12-15/lesson.json",
+      "dateKey": "3.4",
+      "partKey": ""
+    },
+    {
+      "title": "3.8 单句",
+      "path": "lessons/08-3-8/01-single/lesson.json",
+      "dateKey": "3.8",
+      "partKey": ""
+    },
+    {
+      "title": "3.8 对话 13-14",
+      "path": "lessons/08-3-8/02-conversation-13-14/lesson.json",
+      "dateKey": "3.8",
+      "partKey": ""
+    },
+    {
+      "title": "3.8 对话 15-16",
+      "path": "lessons/08-3-8/03-conversation-15-16/lesson.json",
+      "dateKey": "3.8",
+      "partKey": ""
+    },
+    {
+      "title": "3.8 对话 17-18",
+      "path": "lessons/08-3-8/04-conversation-17-18/lesson.json",
+      "dateKey": "3.8",
+      "partKey": ""
+    },
+    {
+      "title": "3.8 公告 19-20",
+      "path": "lessons/08-3-8/05-announcement-19-20/lesson.json",
+      "dateKey": "3.8",
+      "partKey": ""
+    },
+    {
+      "title": "3.8 公告 21-22",
+      "path": "lessons/08-3-8/06-announcement-21-22/lesson.json",
+      "dateKey": "3.8",
+      "partKey": ""
+    },
+    {
+      "title": "3.8 公告 23-24",
+      "path": "lessons/08-3-8/07-announcement-23-24/lesson.json",
+      "dateKey": "3.8",
+      "partKey": ""
+    },
+    {
+      "title": "3.8 讲座 25-28",
+      "path": "lessons/08-3-8/08-lecture-25-28/lesson.json",
+      "dateKey": "3.8",
+      "partKey": ""
+    },
+    {
+      "title": "3.8 讲座 29-32",
+      "path": "lessons/08-3-8/09-lecture-29-32/lesson.json",
+      "dateKey": "3.8",
+      "partKey": ""
+    },
+    {
+      "title": "3.8 讲座 3",
+      "path": "lessons/08-3-8/10-lecture-3/lesson.json",
+      "dateKey": "3.8",
+      "partKey": ""
+    },
+    {
+      "title": "3.8 对话 4-5",
+      "path": "lessons/08-3-8/11-conversation-4-5/lesson.json",
+      "dateKey": "3.8",
+      "partKey": ""
+    },
+    {
+      "title": "3.8 对话 6-7",
+      "path": "lessons/08-3-8/12-conversation-6-7/lesson.json",
+      "dateKey": "3.8",
+      "partKey": ""
+    },
+    {
+      "title": "3.8 讲座 8-11",
+      "path": "lessons/08-3-8/13-lecture-8-11/lesson.json",
+      "dateKey": "3.8",
+      "partKey": ""
+    },
+    {
+      "title": "3.8 讲座 12-15",
+      "path": "lessons/08-3-8/14-lecture-12-15/lesson.json",
+      "dateKey": "3.8",
+      "partKey": ""
+    },
+    {
+      "title": "3.15 单句",
+      "path": "lessons/09-3-15-part1/01-single/lesson.json",
+      "dateKey": "3.15",
+      "partKey": "part1"
+    },
+    {
+      "title": "3.15 M1 对话 13-14",
+      "path": "lessons/09-3-15-part1/02-conversation-13-14/lesson.json",
+      "dateKey": "3.15",
+      "partKey": "part1"
+    },
+    {
+      "title": "3.15 M1 对话 15-16",
+      "path": "lessons/09-3-15-part1/03-conversation-15-16/lesson.json",
+      "dateKey": "3.15",
+      "partKey": "part1"
+    },
+    {
+      "title": "3.15 M1 对话 17-18",
+      "path": "lessons/09-3-15-part1/04-conversation-17-18/lesson.json",
+      "dateKey": "3.15",
+      "partKey": "part1"
+    },
+    {
+      "title": "3.15 M1 公告 19-20",
+      "path": "lessons/09-3-15-part1/05-announcement-19-20/lesson.json",
+      "dateKey": "3.15",
+      "partKey": "part1"
+    },
+    {
+      "title": "3.15 M1 公告 21-22",
+      "path": "lessons/09-3-15-part1/06-announcement-21-22/lesson.json",
+      "dateKey": "3.15",
+      "partKey": "part1"
+    },
+    {
+      "title": "3.15 M1 公告 23-24",
+      "path": "lessons/09-3-15-part1/07-announcement-23-24/lesson.json",
+      "dateKey": "3.15",
+      "partKey": "part1"
+    },
+    {
+      "title": "3.15 M1 讲座 25-28",
+      "path": "lessons/09-3-15-part1/08-lecture-25-28/lesson.json",
+      "dateKey": "3.15",
+      "partKey": "part1"
+    },
+    {
+      "title": "3.15 M1 讲座 29-32",
+      "path": "lessons/09-3-15-part1/09-lecture-29-32/lesson.json",
+      "dateKey": "3.15",
+      "partKey": "part1"
+    },
+    {
+      "title": "3.15 Part 2 单句",
+      "path": "lessons/10-3-15-part2/01-single/lesson.json",
+      "dateKey": "3.15",
+      "partKey": "part2"
+    },
+    {
+      "title": "3.15 Part 2 对话 4-5",
+      "path": "lessons/10-3-15-part2/02-conversation-4-5/lesson.json",
+      "dateKey": "3.15",
+      "partKey": "part2"
+    },
+    {
+      "title": "3.15 Part 2 对话 6-7",
+      "path": "lessons/10-3-15-part2/03-conversation-6-7/lesson.json",
+      "dateKey": "3.15",
+      "partKey": "part2"
+    },
+    {
+      "title": "3.15 Part 2 讲座 8-11",
+      "path": "lessons/10-3-15-part2/04-lecture-8-11/lesson.json",
+      "dateKey": "3.15",
+      "partKey": "part2"
+    },
+    {
+      "title": "3.15 Part 2 讲座 12-15",
+      "path": "lessons/10-3-15-part2/05-lecture-12-15/lesson.json",
+      "dateKey": "3.15",
+      "partKey": "part2"
+    },
+    {
+      "title": "3.17 单句",
+      "path": "lessons/11-3-17/01-single/lesson.json",
+      "dateKey": "3.17",
+      "partKey": ""
+    },
+    {
+      "title": "3.17 M1 对话 13-14",
+      "path": "lessons/11-3-17/02-conversation-13-14/lesson.json",
+      "dateKey": "3.17",
+      "partKey": ""
+    },
+    {
+      "title": "3.17 M1 对话 15-16",
+      "path": "lessons/11-3-17/03-conversation-15-16/lesson.json",
+      "dateKey": "3.17",
+      "partKey": ""
+    },
+    {
+      "title": "3.17 M1 对话 17-18",
+      "path": "lessons/11-3-17/04-conversation-17-18/lesson.json",
+      "dateKey": "3.17",
+      "partKey": ""
+    },
+    {
+      "title": "3.17 M1 公告 19-20",
+      "path": "lessons/11-3-17/05-announcement-19-20/lesson.json",
+      "dateKey": "3.17",
+      "partKey": ""
+    },
+    {
+      "title": "3.17 M1 公告 21-22",
+      "path": "lessons/11-3-17/06-announcement-21-22/lesson.json",
+      "dateKey": "3.17",
+      "partKey": ""
+    },
+    {
+      "title": "3.17 M1 公告 23-24",
+      "path": "lessons/11-3-17/07-announcement-23-24/lesson.json",
+      "dateKey": "3.17",
+      "partKey": ""
+    },
+    {
+      "title": "3.17 M1 讲座 25-28",
+      "path": "lessons/11-3-17/08-lecture-25-28/lesson.json",
+      "dateKey": "3.17",
+      "partKey": ""
+    },
+    {
+      "title": "3.17 M1 讲座 29-32",
+      "path": "lessons/11-3-17/09-lecture-29-32/lesson.json",
+      "dateKey": "3.17",
+      "partKey": ""
+    },
+    {
+      "title": "3.17 M2 讲座 3",
+      "path": "lessons/11-3-17/10-lecture-3/lesson.json",
+      "dateKey": "3.17",
+      "partKey": ""
+    },
+    {
+      "title": "3.17 M2 对话 4-5",
+      "path": "lessons/11-3-17/11-conversation-4-5/lesson.json",
+      "dateKey": "3.17",
+      "partKey": ""
+    },
+    {
+      "title": "3.17 M2 对话 6-7",
+      "path": "lessons/11-3-17/12-conversation-6-7/lesson.json",
+      "dateKey": "3.17",
+      "partKey": ""
+    },
+    {
+      "title": "3.17 M2 讲座 8-11",
+      "path": "lessons/11-3-17/13-lecture-8-11/lesson.json",
+      "dateKey": "3.17",
+      "partKey": ""
+    },
+    {
+      "title": "3.17 M2 讲座 12-15",
+      "path": "lessons/11-3-17/14-lecture-12-15/lesson.json",
+      "dateKey": "3.17",
+      "partKey": ""
+    },
+    {
+      "title": "3.18 单句",
+      "path": "lessons/12-3-18-part1/01-single/lesson.json",
+      "dateKey": "3.18",
+      "partKey": "part1"
+    },
+    {
+      "title": "3.18 对话 13-14",
+      "path": "lessons/12-3-18-part1/02-conversation-13-14/lesson.json",
+      "dateKey": "3.18",
+      "partKey": "part1"
+    },
+    {
+      "title": "3.18 对话 15-16",
+      "path": "lessons/12-3-18-part1/03-conversation-15-16/lesson.json",
+      "dateKey": "3.18",
+      "partKey": "part1"
+    },
+    {
+      "title": "3.18 对话 17-18",
+      "path": "lessons/12-3-18-part1/04-conversation-17-18/lesson.json",
+      "dateKey": "3.18",
+      "partKey": "part1"
+    },
+    {
+      "title": "3.18 公告 19-20",
+      "path": "lessons/12-3-18-part1/05-announcement-19-20/lesson.json",
+      "dateKey": "3.18",
+      "partKey": "part1"
+    },
+    {
+      "title": "3.18 公告 21-22",
+      "path": "lessons/12-3-18-part1/06-announcement-21-22/lesson.json",
+      "dateKey": "3.18",
+      "partKey": "part1"
+    },
+    {
+      "title": "3.18 公告 23-24",
+      "path": "lessons/12-3-18-part1/07-announcement-23-24/lesson.json",
+      "dateKey": "3.18",
+      "partKey": "part1"
+    },
+    {
+      "title": "3.18 讲座 25-28",
+      "path": "lessons/12-3-18-part1/08-lecture-25-28/lesson.json",
+      "dateKey": "3.18",
+      "partKey": "part1"
+    },
+    {
+      "title": "3.18 讲座 29-32",
+      "path": "lessons/12-3-18-part1/09-lecture-29-32/lesson.json",
+      "dateKey": "3.18",
+      "partKey": "part1"
+    },
+    {
+      "title": "3.18 讲座 1",
+      "path": "lessons/12-3-18-part1/10-lecture-1/lesson.json",
+      "dateKey": "3.18",
+      "partKey": "part1"
+    },
+    {
+      "title": "3.18 对话 4-5",
+      "path": "lessons/12-3-18-part1/11-conversation-4-5/lesson.json",
+      "dateKey": "3.18",
+      "partKey": "part1"
+    },
+    {
+      "title": "3.18 对话 6-7",
+      "path": "lessons/12-3-18-part1/12-conversation-6-7/lesson.json",
+      "dateKey": "3.18",
+      "partKey": "part1"
+    },
+    {
+      "title": "3.18 讲座 8-11",
+      "path": "lessons/12-3-18-part1/13-lecture-8-11/lesson.json",
+      "dateKey": "3.18",
+      "partKey": "part1"
+    },
+    {
+      "title": "3.18 讲座 12-15",
+      "path": "lessons/12-3-18-part1/14-lecture-12-15/lesson.json",
+      "dateKey": "3.18",
+      "partKey": "part1"
+    },
+    {
+      "title": "3.29 单句",
+      "path": "lessons/13-3-29/01-single/lesson.json",
+      "dateKey": "3.29",
+      "partKey": ""
+    },
+    {
+      "title": "3.29 讲座 5",
+      "path": "lessons/13-3-29/02-lecture-5/lesson.json",
+      "dateKey": "3.29",
+      "partKey": ""
+    },
+    {
+      "title": "3.29 对话 13-14",
+      "path": "lessons/13-3-29/03-conversation-13-14/lesson.json",
+      "dateKey": "3.29",
+      "partKey": ""
+    },
+    {
+      "title": "3.29 对话 15-16",
+      "path": "lessons/13-3-29/04-conversation-15-16/lesson.json",
+      "dateKey": "3.29",
+      "partKey": ""
+    },
+    {
+      "title": "3.29 对话 17-18",
+      "path": "lessons/13-3-29/05-conversation-17-18/lesson.json",
+      "dateKey": "3.29",
+      "partKey": ""
+    },
+    {
+      "title": "3.29 公告 19-20",
+      "path": "lessons/13-3-29/06-announcement-19-20/lesson.json",
+      "dateKey": "3.29",
+      "partKey": ""
+    },
+    {
+      "title": "3.29 公告 21-22",
+      "path": "lessons/13-3-29/07-announcement-21-22/lesson.json",
+      "dateKey": "3.29",
+      "partKey": ""
+    },
+    {
+      "title": "3.29 公告 23-24",
+      "path": "lessons/13-3-29/08-announcement-23-24/lesson.json",
+      "dateKey": "3.29",
+      "partKey": ""
+    },
+    {
+      "title": "3.29 讲座 25-28",
+      "path": "lessons/13-3-29/09-lecture-25-28/lesson.json",
+      "dateKey": "3.29",
+      "partKey": ""
+    },
+    {
+      "title": "3.29 讲座 29-32",
+      "path": "lessons/13-3-29/10-lecture-29-32/lesson.json",
+      "dateKey": "3.29",
+      "partKey": ""
+    },
+    {
+      "title": "3.29 讲座 1",
+      "path": "lessons/13-3-29/11-lecture-1/lesson.json",
+      "dateKey": "3.29",
+      "partKey": ""
+    },
+    {
+      "title": "3.29 对话 4-5",
+      "path": "lessons/13-3-29/12-conversation-4-5/lesson.json",
+      "dateKey": "3.29",
+      "partKey": ""
+    },
+    {
+      "title": "3.29 对话 6-7",
+      "path": "lessons/13-3-29/13-conversation-6-7/lesson.json",
+      "dateKey": "3.29",
+      "partKey": ""
+    },
+    {
+      "title": "3.29 讲座 8-11",
+      "path": "lessons/13-3-29/14-lecture-8-11/lesson.json",
+      "dateKey": "3.29",
+      "partKey": ""
+    },
+    {
+      "title": "3.29 讲座 12-15",
+      "path": "lessons/13-3-29/15-lecture-12-15/lesson.json",
+      "dateKey": "3.29",
+      "partKey": ""
+    },
+    {
+      "title": "3.30 单句",
+      "path": "lessons/14-3-30/01-single/lesson.json",
+      "dateKey": "3.30",
+      "partKey": ""
+    },
+    {
+      "title": "3.30 讲座 11",
+      "path": "lessons/14-3-30/02-lecture-11/lesson.json",
+      "dateKey": "3.30",
+      "partKey": ""
+    },
+    {
+      "title": "3.30 对话 13-14",
+      "path": "lessons/14-3-30/03-conversation-13-14/lesson.json",
+      "dateKey": "3.30",
+      "partKey": ""
+    },
+    {
+      "title": "3.30 对话 15-16",
+      "path": "lessons/14-3-30/04-conversation-15-16/lesson.json",
+      "dateKey": "3.30",
+      "partKey": ""
+    },
+    {
+      "title": "3.30 对话 17-18",
+      "path": "lessons/14-3-30/05-conversation-17-18/lesson.json",
+      "dateKey": "3.30",
+      "partKey": ""
+    },
+    {
+      "title": "3.30 公告 19-20",
+      "path": "lessons/14-3-30/06-announcement-19-20/lesson.json",
+      "dateKey": "3.30",
+      "partKey": ""
+    },
+    {
+      "title": "3.30 公告 21-22",
+      "path": "lessons/14-3-30/07-announcement-21-22/lesson.json",
+      "dateKey": "3.30",
+      "partKey": ""
+    },
+    {
+      "title": "3.30 公告 23-24",
+      "path": "lessons/14-3-30/08-announcement-23-24/lesson.json",
+      "dateKey": "3.30",
+      "partKey": ""
+    },
+    {
+      "title": "3.30 讲座 25-28",
+      "path": "lessons/14-3-30/09-lecture-25-28/lesson.json",
+      "dateKey": "3.30",
+      "partKey": ""
+    },
+    {
+      "title": "3.30 讲座 29-32",
+      "path": "lessons/14-3-30/10-lecture-29-32/lesson.json",
+      "dateKey": "3.30",
+      "partKey": ""
+    },
+    {
+      "title": "3.30 M2 对话 4-5",
+      "path": "lessons/14-3-30/11-conversation-4-5/lesson.json",
+      "dateKey": "3.30",
+      "partKey": ""
+    },
+    {
+      "title": "3.30 M2 对话 6-7",
+      "path": "lessons/14-3-30/12-conversation-6-7/lesson.json",
+      "dateKey": "3.30",
+      "partKey": ""
+    },
+    {
+      "title": "3.30 M2 讲座 8-11",
+      "path": "lessons/14-3-30/13-lecture-8-11/lesson.json",
+      "dateKey": "3.30",
+      "partKey": ""
+    },
+    {
+      "title": "3.30 M2 讲座 12-15",
+      "path": "lessons/14-3-30/14-lecture-12-15/lesson.json",
+      "dateKey": "3.30",
+      "partKey": ""
+    },
+    {
+      "title": "4.1 单句",
+      "path": "lessons/15-4-1-part1/01-single/lesson.json",
+      "dateKey": "4.1",
+      "partKey": "part1"
+    },
+    {
+      "title": "4.1 对话 13-14",
+      "path": "lessons/15-4-1-part1/02-conversation-13-14/lesson.json",
+      "dateKey": "4.1",
+      "partKey": "part1"
+    },
+    {
+      "title": "4.1 对话 15-16",
+      "path": "lessons/15-4-1-part1/03-conversation-15-16/lesson.json",
+      "dateKey": "4.1",
+      "partKey": "part1"
+    },
+    {
+      "title": "4.1 对话 17-18",
+      "path": "lessons/15-4-1-part1/04-conversation-17-18/lesson.json",
+      "dateKey": "4.1",
+      "partKey": "part1"
+    },
+    {
+      "title": "4.1 公告 19-20",
+      "path": "lessons/15-4-1-part1/05-announcement-19-20/lesson.json",
+      "dateKey": "4.1",
+      "partKey": "part1"
+    },
+    {
+      "title": "4.1 公告 21-22",
+      "path": "lessons/15-4-1-part1/06-announcement-21-22/lesson.json",
+      "dateKey": "4.1",
+      "partKey": "part1"
+    },
+    {
+      "title": "4.1 公告 23-24",
+      "path": "lessons/15-4-1-part1/07-announcement-23-24/lesson.json",
+      "dateKey": "4.1",
+      "partKey": "part1"
+    },
+    {
+      "title": "4.1 讲座 25-28",
+      "path": "lessons/15-4-1-part1/08-lecture-25-28/lesson.json",
+      "dateKey": "4.1",
+      "partKey": "part1"
+    },
+    {
+      "title": "4.1 讲座 29-32",
+      "path": "lessons/15-4-1-part1/09-lecture-29-32/lesson.json",
+      "dateKey": "4.1",
+      "partKey": "part1"
+    },
+    {
+      "title": "4.1 对话 4-5",
+      "path": "lessons/15-4-1-part1/10-conversation-4-5/lesson.json",
+      "dateKey": "4.1",
+      "partKey": "part1"
+    },
+    {
+      "title": "4.1 对话 6-7",
+      "path": "lessons/15-4-1-part1/11-conversation-6-7/lesson.json",
+      "dateKey": "4.1",
+      "partKey": "part1"
+    },
+    {
+      "title": "4.1 讲座 8-11",
+      "path": "lessons/15-4-1-part1/12-lecture-8-11/lesson.json",
+      "dateKey": "4.1",
+      "partKey": "part1"
+    },
+    {
+      "title": "4.1 讲座 12-15",
+      "path": "lessons/15-4-1-part1/13-lecture-12-15/lesson.json",
+      "dateKey": "4.1",
+      "partKey": "part1"
+    },
+    {
+      "title": "4.5 套一 单句",
+      "path": "lessons/16-4-5-set1/01-single/lesson.json",
+      "dateKey": "4.5",
+      "partKey": "set1"
+    },
+    {
+      "title": "4.5 套一 对话 13-14",
+      "path": "lessons/16-4-5-set1/02-conversation-13-14/lesson.json",
+      "dateKey": "4.5",
+      "partKey": "set1"
+    },
+    {
+      "title": "4.5 套一 对话 15-16",
+      "path": "lessons/16-4-5-set1/03-conversation-15-16/lesson.json",
+      "dateKey": "4.5",
+      "partKey": "set1"
+    },
+    {
+      "title": "4.5 套一 对话 17-18",
+      "path": "lessons/16-4-5-set1/04-conversation-17-18/lesson.json",
+      "dateKey": "4.5",
+      "partKey": "set1"
+    },
+    {
+      "title": "4.5 套一 公告 19-20",
+      "path": "lessons/16-4-5-set1/05-announcement-19-20/lesson.json",
+      "dateKey": "4.5",
+      "partKey": "set1"
+    },
+    {
+      "title": "4.5 套一 公告 21-22",
+      "path": "lessons/16-4-5-set1/06-announcement-21-22/lesson.json",
+      "dateKey": "4.5",
+      "partKey": "set1"
+    },
+    {
+      "title": "4.5 套一 公告 23-24",
+      "path": "lessons/16-4-5-set1/07-announcement-23-24/lesson.json",
+      "dateKey": "4.5",
+      "partKey": "set1"
+    },
+    {
+      "title": "4.5 套一 讲座 25-28",
+      "path": "lessons/16-4-5-set1/08-lecture-25-28/lesson.json",
+      "dateKey": "4.5",
+      "partKey": "set1"
+    },
+    {
+      "title": "4.5 套一 讲座 29-32",
+      "path": "lessons/16-4-5-set1/09-lecture-29-32/lesson.json",
+      "dateKey": "4.5",
+      "partKey": "set1"
+    },
+    {
+      "title": "4.5 套一 讲座 3",
+      "path": "lessons/16-4-5-set1/10-lecture-3/lesson.json",
+      "dateKey": "4.5",
+      "partKey": "set1"
+    },
+    {
+      "title": "4.5 套一 对话 4-5",
+      "path": "lessons/16-4-5-set1/11-conversation-4-5/lesson.json",
+      "dateKey": "4.5",
+      "partKey": "set1"
+    },
+    {
+      "title": "4.5 套一 对话 6-7",
+      "path": "lessons/16-4-5-set1/12-conversation-6-7/lesson.json",
+      "dateKey": "4.5",
+      "partKey": "set1"
+    },
+    {
+      "title": "4.5 套一 讲座 8-11",
+      "path": "lessons/16-4-5-set1/13-lecture-8-11/lesson.json",
+      "dateKey": "4.5",
+      "partKey": "set1"
+    },
+    {
+      "title": "4.5 套一 讲座 12-15",
+      "path": "lessons/16-4-5-set1/14-lecture-12-15/lesson.json",
+      "dateKey": "4.5",
+      "partKey": "set1"
+    },
+    {
+      "title": "4.6 单句",
+      "path": "lessons/17-4-6-part1/01-single/lesson.json",
+      "dateKey": "4.6",
+      "partKey": "part1"
+    },
+    {
+      "title": "4.6 对话 13-14",
+      "path": "lessons/17-4-6-part1/02-conversation-13-14/lesson.json",
+      "dateKey": "4.6",
+      "partKey": "part1"
+    },
+    {
+      "title": "4.6 对话 15-16",
+      "path": "lessons/17-4-6-part1/03-conversation-15-16/lesson.json",
+      "dateKey": "4.6",
+      "partKey": "part1"
+    },
+    {
+      "title": "4.6 对话 17-18",
+      "path": "lessons/17-4-6-part1/04-conversation-17-18/lesson.json",
+      "dateKey": "4.6",
+      "partKey": "part1"
+    },
+    {
+      "title": "4.6 公告 19-20",
+      "path": "lessons/17-4-6-part1/05-announcement-19-20/lesson.json",
+      "dateKey": "4.6",
+      "partKey": "part1"
+    },
+    {
+      "title": "4.6 公告 21-22",
+      "path": "lessons/17-4-6-part1/06-announcement-21-22/lesson.json",
+      "dateKey": "4.6",
+      "partKey": "part1"
+    },
+    {
+      "title": "4.6 公告 23-24",
+      "path": "lessons/17-4-6-part1/07-announcement-23-24/lesson.json",
+      "dateKey": "4.6",
+      "partKey": "part1"
+    },
+    {
+      "title": "4.6 讲座 25-28",
+      "path": "lessons/17-4-6-part1/08-lecture-25-28/lesson.json",
+      "dateKey": "4.6",
+      "partKey": "part1"
+    },
+    {
+      "title": "4.6 讲座 29-32",
+      "path": "lessons/17-4-6-part1/09-lecture-29-32/lesson.json",
+      "dateKey": "4.6",
+      "partKey": "part1"
+    },
+    {
+      "title": "4.6 讲座 2",
+      "path": "lessons/17-4-6-part1/10-lecture-2/lesson.json",
+      "dateKey": "4.6",
+      "partKey": "part1"
+    },
+    {
+      "title": "4.6 对话 4-5",
+      "path": "lessons/17-4-6-part1/11-conversation-4-5/lesson.json",
+      "dateKey": "4.6",
+      "partKey": "part1"
+    },
+    {
+      "title": "4.6 对话 6-7",
+      "path": "lessons/17-4-6-part1/12-conversation-6-7/lesson.json",
+      "dateKey": "4.6",
+      "partKey": "part1"
+    },
+    {
+      "title": "4.6 讲座 8-11",
+      "path": "lessons/17-4-6-part1/13-lecture-8-11/lesson.json",
+      "dateKey": "4.6",
+      "partKey": "part1"
+    },
+    {
+      "title": "4.6 讲座 12-15",
+      "path": "lessons/17-4-6-part1/14-lecture-12-15/lesson.json",
+      "dateKey": "4.6",
+      "partKey": "part1"
+    },
+    {
+      "title": "4.8 单句",
+      "path": "lessons/18-4-8/01-single/lesson.json",
+      "dateKey": "4.8",
+      "partKey": ""
+    },
+    {
+      "title": "4.8 讲座 2",
+      "path": "lessons/18-4-8/02-lecture-2/lesson.json",
+      "dateKey": "4.8",
+      "partKey": ""
+    },
+    {
+      "title": "4.8 对话 13-14",
+      "path": "lessons/18-4-8/03-conversation-13-14/lesson.json",
+      "dateKey": "4.8",
+      "partKey": ""
+    },
+    {
+      "title": "4.8 对话 15-16",
+      "path": "lessons/18-4-8/04-conversation-15-16/lesson.json",
+      "dateKey": "4.8",
+      "partKey": ""
+    },
+    {
+      "title": "4.8 对话 17-18",
+      "path": "lessons/18-4-8/05-conversation-17-18/lesson.json",
+      "dateKey": "4.8",
+      "partKey": ""
+    },
+    {
+      "title": "4.8 公告 19-20",
+      "path": "lessons/18-4-8/06-announcement-19-20/lesson.json",
+      "dateKey": "4.8",
+      "partKey": ""
+    },
+    {
+      "title": "4.8 公告 21-22",
+      "path": "lessons/18-4-8/07-announcement-21-22/lesson.json",
+      "dateKey": "4.8",
+      "partKey": ""
+    },
+    {
+      "title": "4.8 公告 23-24",
+      "path": "lessons/18-4-8/08-announcement-23-24/lesson.json",
+      "dateKey": "4.8",
+      "partKey": ""
+    },
+    {
+      "title": "4.8 讲座 25-28",
+      "path": "lessons/18-4-8/09-lecture-25-28/lesson.json",
+      "dateKey": "4.8",
+      "partKey": ""
+    },
+    {
+      "title": "4.8 讲座 29-32",
+      "path": "lessons/18-4-8/10-lecture-29-32/lesson.json",
+      "dateKey": "4.8",
+      "partKey": ""
+    },
+    {
+      "title": "4.8 对话 4-5",
+      "path": "lessons/18-4-8/11-conversation-4-5/lesson.json",
+      "dateKey": "4.8",
+      "partKey": ""
+    },
+    {
+      "title": "4.8 对话 6-7",
+      "path": "lessons/18-4-8/12-conversation-6-7/lesson.json",
+      "dateKey": "4.8",
+      "partKey": ""
+    },
+    {
+      "title": "4.8 讲座 8-11",
+      "path": "lessons/18-4-8/13-lecture-8-11/lesson.json",
+      "dateKey": "4.8",
+      "partKey": ""
+    },
+    {
+      "title": "4.8 讲座 12-15",
+      "path": "lessons/18-4-8/14-lecture-12-15/lesson.json",
+      "dateKey": "4.8",
+      "partKey": ""
+    },
+    {
+      "title": "4.13 套一 单句",
+      "path": "lessons/19-4-13-set1/01-single/lesson.json",
+      "dateKey": "4.13",
+      "partKey": "set1"
+    },
+    {
+      "title": "4.13 套一 对话 13-14",
+      "path": "lessons/19-4-13-set1/02-conversation-13-14/lesson.json",
+      "dateKey": "4.13",
+      "partKey": "set1"
+    },
+    {
+      "title": "4.13 套一 对话 15-16",
+      "path": "lessons/19-4-13-set1/03-conversation-15-16/lesson.json",
+      "dateKey": "4.13",
+      "partKey": "set1"
+    },
+    {
+      "title": "4.13 套一 对话 17-18",
+      "path": "lessons/19-4-13-set1/04-conversation-17-18/lesson.json",
+      "dateKey": "4.13",
+      "partKey": "set1"
+    },
+    {
+      "title": "4.13 套一 公告 19-20",
+      "path": "lessons/19-4-13-set1/05-announcement-19-20/lesson.json",
+      "dateKey": "4.13",
+      "partKey": "set1"
+    },
+    {
+      "title": "4.13 套一 公告 21-22",
+      "path": "lessons/19-4-13-set1/06-announcement-21-22/lesson.json",
+      "dateKey": "4.13",
+      "partKey": "set1"
+    },
+    {
+      "title": "4.13 套一 公告 23-24",
+      "path": "lessons/19-4-13-set1/07-announcement-23-24/lesson.json",
+      "dateKey": "4.13",
+      "partKey": "set1"
+    },
+    {
+      "title": "4.13 套一 讲座 25-28",
+      "path": "lessons/19-4-13-set1/08-lecture-25-28/lesson.json",
+      "dateKey": "4.13",
+      "partKey": "set1"
+    },
+    {
+      "title": "4.13 套一 讲座 29-32",
+      "path": "lessons/19-4-13-set1/09-lecture-29-32/lesson.json",
+      "dateKey": "4.13",
+      "partKey": "set1"
+    },
+    {
+      "title": "4.13 套一 对话 4-5",
+      "path": "lessons/19-4-13-set1/10-conversation-4-5/lesson.json",
+      "dateKey": "4.13",
+      "partKey": "set1"
+    },
+    {
+      "title": "4.13 套一 对话 6-7",
+      "path": "lessons/19-4-13-set1/11-conversation-6-7/lesson.json",
+      "dateKey": "4.13",
+      "partKey": "set1"
+    },
+    {
+      "title": "4.13 套一 讲座 8-11",
+      "path": "lessons/19-4-13-set1/12-lecture-8-11/lesson.json",
+      "dateKey": "4.13",
+      "partKey": "set1"
+    },
+    {
+      "title": "4.13 套一 讲座 12-15",
+      "path": "lessons/19-4-13-set1/13-lecture-12-15/lesson.json",
+      "dateKey": "4.13",
+      "partKey": "set1"
+    },
+    {
+      "title": "4.15 套二 单句",
+      "path": "lessons/20-4-15-set2/01-single/lesson.json",
+      "dateKey": "4.15",
+      "partKey": "set2"
+    },
+    {
+      "title": "4.15 套二 对话 13-14",
+      "path": "lessons/20-4-15-set2/02-conversation-13-14/lesson.json",
+      "dateKey": "4.15",
+      "partKey": "set2"
+    },
+    {
+      "title": "4.15 套二 对话 15-16",
+      "path": "lessons/20-4-15-set2/03-conversation-15-16/lesson.json",
+      "dateKey": "4.15",
+      "partKey": "set2"
+    },
+    {
+      "title": "4.15 套二 对话 17-18",
+      "path": "lessons/20-4-15-set2/04-conversation-17-18/lesson.json",
+      "dateKey": "4.15",
+      "partKey": "set2"
+    },
+    {
+      "title": "4.15 套二 公告 19-20",
+      "path": "lessons/20-4-15-set2/05-announcement-19-20/lesson.json",
+      "dateKey": "4.15",
+      "partKey": "set2"
+    },
+    {
+      "title": "4.15 套二 公告 21-22",
+      "path": "lessons/20-4-15-set2/06-announcement-21-22/lesson.json",
+      "dateKey": "4.15",
+      "partKey": "set2"
+    },
+    {
+      "title": "4.15 套二 公告 23-24",
+      "path": "lessons/20-4-15-set2/07-announcement-23-24/lesson.json",
+      "dateKey": "4.15",
+      "partKey": "set2"
+    },
+    {
+      "title": "4.15 套二 讲座 25-28",
+      "path": "lessons/20-4-15-set2/08-lecture-25-28/lesson.json",
+      "dateKey": "4.15",
+      "partKey": "set2"
+    },
+    {
+      "title": "4.15 套二 讲座 29-32",
+      "path": "lessons/20-4-15-set2/09-lecture-29-32/lesson.json",
+      "dateKey": "4.15",
+      "partKey": "set2"
+    },
+    {
+      "title": "4.15 套二 对话 4-5",
+      "path": "lessons/20-4-15-set2/10-conversation-4-5/lesson.json",
+      "dateKey": "4.15",
+      "partKey": "set2"
+    },
+    {
+      "title": "4.15 套二 对话 6-7",
+      "path": "lessons/20-4-15-set2/11-conversation-6-7/lesson.json",
+      "dateKey": "4.15",
+      "partKey": "set2"
+    },
+    {
+      "title": "4.15 套二 讲座 8-11",
+      "path": "lessons/20-4-15-set2/12-lecture-8-11/lesson.json",
+      "dateKey": "4.15",
+      "partKey": "set2"
+    },
+    {
+      "title": "4.15 套二 讲座 12-15",
+      "path": "lessons/20-4-15-set2/13-lecture-12-15/lesson.json",
+      "dateKey": "4.15",
+      "partKey": "set2"
+    },
+    {
+      "title": "4.20 单句",
+      "path": "lessons/21-4-20/01-single/lesson.json",
+      "dateKey": "4.20",
+      "partKey": ""
+    },
+    {
+      "title": "4.20 对话 13-14",
+      "path": "lessons/21-4-20/02-conversation-13-14/lesson.json",
+      "dateKey": "4.20",
+      "partKey": ""
+    },
+    {
+      "title": "4.20 对话 15-16",
+      "path": "lessons/21-4-20/03-conversation-15-16/lesson.json",
+      "dateKey": "4.20",
+      "partKey": ""
+    },
+    {
+      "title": "4.20 对话 17-18",
+      "path": "lessons/21-4-20/04-conversation-17-18/lesson.json",
+      "dateKey": "4.20",
+      "partKey": ""
+    },
+    {
+      "title": "4.20 公告 19-20",
+      "path": "lessons/21-4-20/05-announcement-19-20/lesson.json",
+      "dateKey": "4.20",
+      "partKey": ""
+    },
+    {
+      "title": "4.20 公告 21-22",
+      "path": "lessons/21-4-20/06-announcement-21-22/lesson.json",
+      "dateKey": "4.20",
+      "partKey": ""
+    },
+    {
+      "title": "4.20 公告 23-24",
+      "path": "lessons/21-4-20/07-announcement-23-24/lesson.json",
+      "dateKey": "4.20",
+      "partKey": ""
+    },
+    {
+      "title": "4.20 讲座 25-28",
+      "path": "lessons/21-4-20/08-lecture-25-28/lesson.json",
+      "dateKey": "4.20",
+      "partKey": ""
+    },
+    {
+      "title": "4.20 讲座 29-32",
+      "path": "lessons/21-4-20/09-lecture-29-32/lesson.json",
+      "dateKey": "4.20",
+      "partKey": ""
+    },
+    {
+      "title": "4.20 对话 4-5",
+      "path": "lessons/21-4-20/10-conversation-4-5/lesson.json",
+      "dateKey": "4.20",
+      "partKey": ""
+    },
+    {
+      "title": "4.20 对话 6-7",
+      "path": "lessons/21-4-20/11-conversation-6-7/lesson.json",
+      "dateKey": "4.20",
+      "partKey": ""
+    },
+    {
+      "title": "4.20 讲座 8-11",
+      "path": "lessons/21-4-20/12-lecture-8-11/lesson.json",
+      "dateKey": "4.20",
+      "partKey": ""
+    },
+    {
+      "title": "4.20 讲座 12-15",
+      "path": "lessons/21-4-20/13-lecture-12-15/lesson.json",
+      "dateKey": "4.20",
+      "partKey": ""
+    },
+    {
+      "title": "4.24 单句",
+      "path": "lessons/22-4-24/01-single/lesson.json",
+      "dateKey": "4.24",
+      "partKey": ""
+    },
+    {
+      "title": "4.24 对话 13-14",
+      "path": "lessons/22-4-24/02-conversation-13-14/lesson.json",
+      "dateKey": "4.24",
+      "partKey": ""
+    },
+    {
+      "title": "4.24 对话 15-16",
+      "path": "lessons/22-4-24/03-conversation-15-16/lesson.json",
+      "dateKey": "4.24",
+      "partKey": ""
+    },
+    {
+      "title": "4.24 对话 17-18",
+      "path": "lessons/22-4-24/04-conversation-17-18/lesson.json",
+      "dateKey": "4.24",
+      "partKey": ""
+    },
+    {
+      "title": "4.24 公告 19-20",
+      "path": "lessons/22-4-24/05-announcement-19-20/lesson.json",
+      "dateKey": "4.24",
+      "partKey": ""
+    },
+    {
+      "title": "4.24 长文本 21-22",
+      "path": "lessons/22-4-24/06-long-21-22/lesson.json",
+      "dateKey": "4.24",
+      "partKey": ""
+    },
+    {
+      "title": "4.24 公告 23-24",
+      "path": "lessons/22-4-24/07-announcement-23-24/lesson.json",
+      "dateKey": "4.24",
+      "partKey": ""
+    },
+    {
+      "title": "4.24 长文本 25-28",
+      "path": "lessons/22-4-24/08-long-25-28/lesson.json",
+      "dateKey": "4.24",
+      "partKey": ""
+    },
+    {
+      "title": "4.24 讲座 29-32",
+      "path": "lessons/22-4-24/09-lecture-29-32/lesson.json",
+      "dateKey": "4.24",
+      "partKey": ""
+    },
+    {
+      "title": "4.24 讲座 1",
+      "path": "lessons/22-4-24/10-lecture-1/lesson.json",
+      "dateKey": "4.24",
+      "partKey": ""
+    },
+    {
+      "title": "4.24 对话 4-5",
+      "path": "lessons/22-4-24/11-conversation-4-5/lesson.json",
+      "dateKey": "4.24",
+      "partKey": ""
+    },
+    {
+      "title": "4.24 对话 6-7",
+      "path": "lessons/22-4-24/12-conversation-6-7/lesson.json",
+      "dateKey": "4.24",
+      "partKey": ""
+    },
+    {
+      "title": "4.24 讲座 8-11",
+      "path": "lessons/22-4-24/13-lecture-8-11/lesson.json",
+      "dateKey": "4.24",
+      "partKey": ""
+    },
+    {
+      "title": "4.24 讲座 12-15",
+      "path": "lessons/22-4-24/14-lecture-12-15/lesson.json",
+      "dateKey": "4.24",
+      "partKey": ""
+    },
+    {
+      "title": "4.27 单句",
+      "path": "lessons/23-4-27/01-single/lesson.json",
+      "dateKey": "4.27",
+      "partKey": ""
+    },
+    {
+      "title": "4.27 讲座 4",
+      "path": "lessons/23-4-27/02-lecture-4/lesson.json",
+      "dateKey": "4.27",
+      "partKey": ""
+    },
+    {
+      "title": "4.27 对话 13-14",
+      "path": "lessons/23-4-27/03-conversation-13-14/lesson.json",
+      "dateKey": "4.27",
+      "partKey": ""
+    },
+    {
+      "title": "4.27 对话 15-16",
+      "path": "lessons/23-4-27/04-conversation-15-16/lesson.json",
+      "dateKey": "4.27",
+      "partKey": ""
+    },
+    {
+      "title": "4.27 对话 17-18",
+      "path": "lessons/23-4-27/05-conversation-17-18/lesson.json",
+      "dateKey": "4.27",
+      "partKey": ""
+    },
+    {
+      "title": "4.27 公告 19-20",
+      "path": "lessons/23-4-27/06-announcement-19-20/lesson.json",
+      "dateKey": "4.27",
+      "partKey": ""
+    },
+    {
+      "title": "4.27 公告 21-22",
+      "path": "lessons/23-4-27/07-announcement-21-22/lesson.json",
+      "dateKey": "4.27",
+      "partKey": ""
+    },
+    {
+      "title": "4.27 公告 23-24",
+      "path": "lessons/23-4-27/08-announcement-23-24/lesson.json",
+      "dateKey": "4.27",
+      "partKey": ""
+    },
+    {
+      "title": "4.27 讲座 25-28",
+      "path": "lessons/23-4-27/09-lecture-25-28/lesson.json",
+      "dateKey": "4.27",
+      "partKey": ""
+    },
+    {
+      "title": "4.27 讲座 29-32",
+      "path": "lessons/23-4-27/10-lecture-29-32/lesson.json",
+      "dateKey": "4.27",
+      "partKey": ""
+    },
+    {
+      "title": "4.27 讲座 3",
+      "path": "lessons/23-4-27/11-lecture-3/lesson.json",
+      "dateKey": "4.27",
+      "partKey": ""
+    },
+    {
+      "title": "4.27 对话 4-5",
+      "path": "lessons/23-4-27/12-conversation-4-5/lesson.json",
+      "dateKey": "4.27",
+      "partKey": ""
+    },
+    {
+      "title": "4.27 对话 6-7",
+      "path": "lessons/23-4-27/13-conversation-6-7/lesson.json",
+      "dateKey": "4.27",
+      "partKey": ""
+    },
+    {
+      "title": "4.27 讲座 8-11",
+      "path": "lessons/23-4-27/14-lecture-8-11/lesson.json",
+      "dateKey": "4.27",
+      "partKey": ""
+    },
+    {
+      "title": "4.27 讲座 12-15",
+      "path": "lessons/23-4-27/15-lecture-12-15/lesson.json",
+      "dateKey": "4.27",
+      "partKey": ""
+    },
+    {
+      "title": "4.29 单句",
+      "path": "lessons/24-4-29/01-single/lesson.json",
+      "dateKey": "4.29",
+      "partKey": ""
+    },
+    {
+      "title": "4.29 讲座 4",
+      "path": "lessons/24-4-29/02-lecture-4/lesson.json",
+      "dateKey": "4.29",
+      "partKey": ""
+    },
+    {
+      "title": "4.29 讲座 7",
+      "path": "lessons/24-4-29/03-lecture-7/lesson.json",
+      "dateKey": "4.29",
+      "partKey": ""
+    },
+    {
+      "title": "4.29 对话 13-14",
+      "path": "lessons/24-4-29/04-conversation-13-14/lesson.json",
+      "dateKey": "4.29",
+      "partKey": ""
+    },
+    {
+      "title": "4.29 对话 15-16",
+      "path": "lessons/24-4-29/05-conversation-15-16/lesson.json",
+      "dateKey": "4.29",
+      "partKey": ""
+    },
+    {
+      "title": "4.29 对话 17-18",
+      "path": "lessons/24-4-29/06-conversation-17-18/lesson.json",
+      "dateKey": "4.29",
+      "partKey": ""
+    },
+    {
+      "title": "4.29 公告 19-20",
+      "path": "lessons/24-4-29/07-announcement-19-20/lesson.json",
+      "dateKey": "4.29",
+      "partKey": ""
+    },
+    {
+      "title": "4.29 公告 21-22",
+      "path": "lessons/24-4-29/08-announcement-21-22/lesson.json",
+      "dateKey": "4.29",
+      "partKey": ""
+    },
+    {
+      "title": "4.29 公告 23-24",
+      "path": "lessons/24-4-29/09-announcement-23-24/lesson.json",
+      "dateKey": "4.29",
+      "partKey": ""
+    },
+    {
+      "title": "4.29 讲座 25-28",
+      "path": "lessons/24-4-29/10-lecture-25-28/lesson.json",
+      "dateKey": "4.29",
+      "partKey": ""
+    },
+    {
+      "title": "4.29 讲座 29-32",
+      "path": "lessons/24-4-29/11-lecture-29-32/lesson.json",
+      "dateKey": "4.29",
+      "partKey": ""
+    },
+    {
+      "title": "4.29 对话 4-5",
+      "path": "lessons/24-4-29/12-conversation-4-5/lesson.json",
+      "dateKey": "4.29",
+      "partKey": ""
+    },
+    {
+      "title": "4.29 对话 6-7",
+      "path": "lessons/24-4-29/13-conversation-6-7/lesson.json",
+      "dateKey": "4.29",
+      "partKey": ""
+    },
+    {
+      "title": "4.29 讲座 8-11",
+      "path": "lessons/24-4-29/14-lecture-8-11/lesson.json",
+      "dateKey": "4.29",
+      "partKey": ""
+    },
+    {
+      "title": "4.29 讲座 12-15",
+      "path": "lessons/24-4-29/15-lecture-12-15/lesson.json",
+      "dateKey": "4.29",
+      "partKey": ""
+    }
+  ]
+}

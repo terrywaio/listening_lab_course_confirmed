@@ -1,0 +1,26 @@
+{
+  "title": "3.4 M2 对话 4-5",
+  "source": {
+    "textId": "3.4__3-4-m4a",
+    "textName": "3.4-听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/3.4（答案+文本校对了/3.4-听力.m4a.docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\3.4.zip::3.4/听力/3.4-听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 3.4; listening keyword",
+    "unitType": "conversation",
+    "unitLabel": "4-5"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 1163.0,
+      "end": 1232.0,
+      "speaker": "题目4/5",
+      "module": "M2",
+      "text": "Listen to a conversation. Hi, Laura. This is I'm calling from the bookstore. Your online order has been filled and we can deliver it to your dormitory free of charge. That was fast. I'm meeting a friend at the cafe nearby, so I might as well just swing by and grab it. Certainly the only thing is we didn't have an item in stock, the red University T shirt in medium. Oh, it was going to be a gift. We do have it enlarge though, or Green in medium is also available. Large should be fine."
+    }
+  ]
+}

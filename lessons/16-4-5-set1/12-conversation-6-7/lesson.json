@@ -1,0 +1,26 @@
+{
+  "title": "4.5 套一 对话 6-7",
+  "source": {
+    "textId": "4.5__set1__4-5-m4a-2",
+    "textName": "4.5 套一 听力.m4a(2).docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/4.5 套一 听力.m4a(2).docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\4.5.zip::4.5/4.5 套一 听力.m4a/4.5 套一 听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 4.5; part match set1; listening keyword",
+    "unitType": "conversation",
+    "unitLabel": "6-7"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 992.0,
+      "end": 1052.0,
+      "speaker": "题目6/7",
+      "module": "",
+      "text": "Listen to a conversation. Hey, Sam. rob is telling me you've taken up painting. I've always thought about it, but I'm not sure I'm good enough, you know, talented enough. That was the same for me. It's why it took me so long to get started. But I'm glad I did. You just take your time with it. Go at your own pace. Have you taken any classes in the art department? Honestly, I've just been watching some online tutorials, nothing formal. Yesterday I finished a landscape with mountains, a lake and trees. I'm not a great artist yet. but maybe someday."
+    }
+  ]
+}

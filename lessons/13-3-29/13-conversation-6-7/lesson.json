@@ -1,0 +1,26 @@
+{
+  "title": "3.29 对话 6-7",
+  "source": {
+    "textId": "3.29__3-29-m4a",
+    "textName": "3.29 听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/3.29（答案+文本校对了/3.29 听力.m4a.docx",
+    "audioSource": "D:\\TOELF\\3.29\\听力\\3.29 听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 3.29; listening keyword; plain file",
+    "unitType": "conversation",
+    "unitLabel": "6-7"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 1154.0,
+      "end": 1224.0,
+      "speaker": "题目6/7",
+      "module": "",
+      "text": "Listen to a conversation. I heard you had an internship this summer at a marketing firm. How was it ？ Not bad. Everyone was friendly. I just wasn't thrilled with some of the work I had to do. Like what? Well, I thought I'd be spending most of my time doing market research, but I ended up doing quite a bit of administrative work, like organizing files. Hmm, I know a place where I want to be an intern next summer. One of my classmates interned there in the past. I should talk to him about his experience so I can avoid any issues."
+    }
+  ]
+}

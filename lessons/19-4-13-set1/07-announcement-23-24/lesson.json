@@ -1,0 +1,26 @@
+{
+  "title": "4.13 套一 公告 23-24",
+  "source": {
+    "textId": "4.13__set1__4-13-m4a",
+    "textName": "4.13 套一 听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/4.13 套一 听力.m4a.docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\4.13.zip::4.13/4.13 套一 听力.m4a/4.13 套一 听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 4.13; part match set1; listening keyword",
+    "unitType": "announcement",
+    "unitLabel": "23-24"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 535.0,
+      "end": 614.0,
+      "speaker": "题目23/24",
+      "module": "",
+      "text": "Listen to an announcement by a University administration. We apologize for the cold temperatures in campus buildings today. Overnight, a large steam pipe failed. The entire steam distribution system must be temporarily shut down to allow for repairs to the pipe. This means that most buildings are currently without heat and hot water. Science lab buildings have their own backup systems and should be unaffected. Please remember that the use of electric heaters is prohibited. These can overload buildings, electrical systems and cause a power outage. We'll update everyone when steam service is restored."
+    }
+  ]
+}

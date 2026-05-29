@@ -1,0 +1,26 @@
+{
+  "title": "4.20 对话 15-16",
+  "source": {
+    "textId": "4.20__4-20-m4a",
+    "textName": "4.20听力音频.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/4.20听力音频.m4a.docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\4.20.zip::4.20/4.20听力音频.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 4.20; listening keyword",
+    "unitType": "conversation",
+    "unitLabel": "15-16"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 356.0,
+      "end": 435.0,
+      "speaker": "题目15/16",
+      "module": "",
+      "text": "Listen to a conversation. Why weren't you at the book reading at the library yesterday? I wanted to go. but I got stuck helping out with a volunteer event. I didn't know you were still doing that. Only sometimes the animal shelter really needed help. I think I'm going to take myself off the volunteer list though. Well, the featured author yesterday was Courtney reimmer, and she mostly talked about her new book, the breath of life. I'm sorry I missed it. The only downside was that the question and answer session was so short, only two or three people had a chance to ask her anything."
+    }
+  ]
+}

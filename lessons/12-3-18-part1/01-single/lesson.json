@@ -1,0 +1,138 @@
+{
+  "title": "3.18 单句",
+  "source": {
+    "textId": "3.18__part1__3-18-m4a-1",
+    "textName": "3.18 听力.m4a(1).docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/3.18(答案+文本校对了/3.18 听力.m4a(1).docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\3.18-忘记放进去了.zip::3.18-忘记放进去了/3.18 听力/3.18 听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 3.18; part unknown; listening keyword",
+    "unitType": "single",
+    "unitLabel": "单句"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": null,
+      "end": null,
+      "speaker": "",
+      "module": "",
+      "text": "Module 1:"
+    },
+    {
+      "id": "s002",
+      "start": 6.0,
+      "end": 18.0,
+      "speaker": "题目1",
+      "module": "",
+      "text": "How long is the bus ride to the regional debate finals?"
+    },
+    {
+      "id": "s003",
+      "start": 18.0,
+      "end": 36.0,
+      "speaker": "题目2",
+      "module": "",
+      "text": "The store carries artisanal products."
+    },
+    {
+      "id": "s004",
+      "start": 36.0,
+      "end": 50.0,
+      "speaker": "题目3",
+      "module": "",
+      "text": "Why is the University's website down?"
+    },
+    {
+      "id": "s005",
+      "start": 50.0,
+      "end": 64.0,
+      "speaker": "题目4",
+      "module": "",
+      "text": "The seminar will commence at noon."
+    },
+    {
+      "id": "s006",
+      "start": 64.0,
+      "end": 79.0,
+      "speaker": "题目5",
+      "module": "",
+      "text": "The doctor recommends regular exercise."
+    },
+    {
+      "id": "s007",
+      "start": 79.0,
+      "end": 94.0,
+      "speaker": "题目6",
+      "module": "",
+      "text": "Are you planning to attend the December technology fair?"
+    },
+    {
+      "id": "s008",
+      "start": 94.0,
+      "end": 111.0,
+      "speaker": "题目7",
+      "module": "",
+      "text": "Did you find the workshop insightful?"
+    },
+    {
+      "id": "s009",
+      "start": 111.0,
+      "end": 128.0,
+      "speaker": "题目8",
+      "module": "",
+      "text": "Which artist is in the gallery's new exhibit?"
+    },
+    {
+      "id": "s010",
+      "start": 128.0,
+      "end": 141.0,
+      "speaker": "题目9",
+      "module": "",
+      "text": "Who will be at the student leadership training session?"
+    },
+    {
+      "id": "s011",
+      "start": 141.0,
+      "end": 153.0,
+      "speaker": "题目10",
+      "module": "",
+      "text": "The workshop is scheduled for morning."
+    },
+    {
+      "id": "s012",
+      "start": 153.0,
+      "end": 166.0,
+      "speaker": "题目11",
+      "module": "",
+      "text": "Are you free to join the discussion?"
+    },
+    {
+      "id": "s013",
+      "start": 166.0,
+      "end": 190.0,
+      "speaker": "题目12",
+      "module": "",
+      "text": "Why is the classroom so cold?"
+    },
+    {
+      "id": "s014",
+      "start": 935.0,
+      "end": 949.0,
+      "speaker": "题目2",
+      "module": "",
+      "text": "How often do you go to the gym?"
+    },
+    {
+      "id": "s015",
+      "start": 949.0,
+      "end": 963.0,
+      "speaker": "题目 3",
+      "module": "",
+      "text": "Are you planning to join the student choir?"
+    }
+  ]
+}

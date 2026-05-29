@@ -1,0 +1,26 @@
+{
+  "title": "2.2 Part 2 对话 15-16",
+  "source": {
+    "textId": "2.2__part2__2-2-m4a",
+    "textName": "2.2 听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/2.2（答案+文本校对了/2.2 听力.m4a.docx",
+    "audioSource": "D:\\TOELF\\1月+2月部分.zip::1月+2月部分/2.2（done)-答案全对/2.2 听力/2.2 听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 2.2; part match part2; listening keyword",
+    "unitType": "conversation",
+    "unitLabel": "15-16"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 284.0,
+      "end": 352.0,
+      "speaker": "题目15/16",
+      "module": "",
+      "text": "Listen to a conversation. I'm so excited for the outdoor concert this weekend. Have you seen the weather forecast? What gets that's disappointing? I was really looking forward to going. same here. Any thoughts on what to do instead? I heard there's a new exhibit opening on saturday. The art gallery tickets go on sale tomorrow. Count me in. We can meet up for breakfast that morning, too."
+    }
+  ]
+}

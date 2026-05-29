@@ -1,0 +1,26 @@
+{
+  "title": "3.30 公告 19-20",
+  "source": {
+    "textId": "3.30__3-30-m4a",
+    "textName": "3.30-听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/3.30(答案+文本校对了/3.30-听力.m4a.docx",
+    "audioSource": "D:\\TOELF\\3.30\\3.30 听力.m4a\\3.30 听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 3.30; listening keyword; plain file",
+    "unitType": "announcement",
+    "unitLabel": "19-20"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 432.0,
+      "end": 503.0,
+      "speaker": "题目19/20",
+      "module": "",
+      "text": "Listen to an announcement at a University event. We wanted to remind everyone of the logistics in decorum for tonight's event. Please remember that formal attire is required. Anyone not appropriately dressed will be denied entry. Additionally, after what happened last year, all mobile phones must now be turned off during the speeches to avoid disturbances. Your cooperation is essential for ensuring the success of the event. Also, please remember that we have largely moved to digital ticketing. If you need a paper ticket, please visit the box office before 6:00."
+    }
+  ]
+}

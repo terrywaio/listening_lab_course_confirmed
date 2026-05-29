@@ -1,0 +1,26 @@
+{
+  "title": "3.29 讲座 1",
+  "source": {
+    "textId": "3.29__3-29-m4a",
+    "textName": "3.29 听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/3.29（答案+文本校对了/3.29 听力.m4a.docx",
+    "audioSource": "D:\\TOELF\\3.29\\听力\\3.29 听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 3.29; listening keyword; plain file",
+    "unitType": "lecture",
+    "unitLabel": "1"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 1037.0,
+      "end": 1054.0,
+      "speaker": "题目1",
+      "module": "",
+      "text": "Lecture covered river pollution and conservation."
+    }
+  ]
+}

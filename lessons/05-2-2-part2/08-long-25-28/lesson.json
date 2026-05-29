@@ -1,0 +1,26 @@
+{
+  "title": "2.2 Part 2 长文本 25-28",
+  "source": {
+    "textId": "2.2__part2__2-2-m4a",
+    "textName": "2.2 听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/2.2（答案+文本校对了/2.2 听力.m4a.docx",
+    "audioSource": "D:\\TOELF\\1月+2月部分.zip::1月+2月部分/2.2（done)-答案全对/2.2 听力/2.2 听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 2.2; part match part2; listening keyword",
+    "unitType": "long",
+    "unitLabel": "25-28"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 601.0,
+      "end": 813.0,
+      "speaker": "题目25/26/27/28",
+      "module": "",
+      "text": "Listen to part of a psychology podcast. My brother Alex has always wanted to get a cat. He likes cats Better than dogs. One day, he sent me an online article titled which pet is right for you and says, see, even experts agree cats are Better. But when I read the article, nowhere did I say that the article presents balance facts. Dogs are loyal and trainable, while cats are independent and lower maintenance. My brother was not being dishonest. Simply photos s only on the parts that praise cats and skim over or dismiss the parts that highlight dogs advantages. This is called confirmation bias. Our brains are lazy. They'd like consistency information that aligns with what we already know is easier to understand and less mentally taxing. So our brain seek IT out and filter out the rest. This affects the decisions we make in our daily life. As we work, scientists are not immune to confirmation bias. Researchers may unintentionally design experiments or interpret data in ways that support their hypotheses, overlooking results that do not fit their expectations. Flawed conclusions in scientific studies can lead to serious consequences. So what can we do to minimize confirmation bias? The first step is to recognize the existence of confirmation bias. You might be biased, then actively seek out information that challenges your beliefs, don't only talk with people who hold the same views as yours, and slow down, don't make hasty decisions."
+    }
+  ]
+}

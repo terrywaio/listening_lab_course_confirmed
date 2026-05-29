@@ -1,0 +1,26 @@
+{
+  "title": "3.18 公告 23-24",
+  "source": {
+    "textId": "3.18__part1__3-18-m4a-1",
+    "textName": "3.18 听力.m4a(1).docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/3.18(答案+文本校对了/3.18 听力.m4a(1).docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\3.18-忘记放进去了.zip::3.18-忘记放进去了/3.18 听力/3.18 听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 3.18; part unknown; listening keyword",
+    "unitType": "announcement",
+    "unitLabel": "23-24"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 478.0,
+      "end": 545.0,
+      "speaker": "题目23/24",
+      "module": "",
+      "text": "Listen to an announcement classroom. Let me tell you about something exciting. Starting next week, all our course readings, assignments and lecture slides will be available through our new online platform. This should make it easier for you to stay organized and access everything in one place. Please create your account by Friday and take some time to explore the layout and features. There's also a tutorial video on the home page to help you get started. If you have any trouble logging in or locating materials, please let me know."
+    }
+  ]
+}

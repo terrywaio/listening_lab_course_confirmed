@@ -1,0 +1,26 @@
+{
+  "title": "4.24 长文本 25-28",
+  "source": {
+    "textId": "4.24__4-24-m4a",
+    "textName": "4.24听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/4.24听力.m4a.docx",
+    "audioSource": "D:\\4.24\\4.24听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 4.24; listening keyword; plain file",
+    "unitType": "long",
+    "unitLabel": "25-28"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 679.0,
+      "end": 917.0,
+      "speaker": "题目25/26/27/28",
+      "module": "",
+      "text": "Listen to a podcast about political science. Soft power refers to a country's ability to influence others through attraction, culture, and collaboration. The term was introduced by political scientist Joseph Nye in 1990. He noticed that some countries gain support not by using force or money, by being admired and respected. What ncontributed wasn't just a name. He offered a clear framework for understanding this kind of influence. He explained that power works in three ways by forcing others, by paying them, or by acting them. Attraction is what he called soft power. By classifying power this way, he made it easier for people to understand and talk about influence that comes from trust, culture and values. A modern example is South Korea's cultural wave, which has sparked global interest in Korean pop music, language and food. This kind of appeal fits directly into ni's idea of attraction. It shows how cultural influence can admiration and shape international relationships without pressure or incentives. Now, soft power takes time because it's built on trust, reputation and emotional connection. It spreads through cultural events, learning opportunities and other shared experiences, things that grow gradually, but once established, it tends to last, often shaping how future generations view a country. Like planting a tree, it needs patience and care, but its roots run deep and its impact endures."
+    }
+  ]
+}

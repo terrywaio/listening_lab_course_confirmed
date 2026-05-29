@@ -1,0 +1,26 @@
+{
+  "title": "1.27 M1 公告 23-24",
+  "source": {
+    "textId": "1.27__part1__1-27-m4a",
+    "textName": "1.27听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/1.27（答案+文本校对了/1.27听力.m4a.docx",
+    "audioSource": "D:\\TOELF\\1月+2月部分.zip::1月+2月部分/1.27-答案全对/1.27听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 1.27; part match part1; listening keyword",
+    "unitType": "announcement",
+    "unitLabel": "23-24"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 501.0,
+      "end": 565.0,
+      "speaker": "题目23/24",
+      "module": "M1",
+      "text": "Listen to an announcement in a classroom. Attention students, I want to explain the new campus recycling policy that will begin next Monday. Recycling bins for paper, plastic, and metal will be placed in all academic buildings and residence halls. Items must be sorted correctly to avoid contamination. This policy is part of our effort to reduce waste and support environmental sustainability. We hope all of you will do your best to support a more sustainable campus. If you have questions, please contact the campus sustainability office."
+    }
+  ]
+}

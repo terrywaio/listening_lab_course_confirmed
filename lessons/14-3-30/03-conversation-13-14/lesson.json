@@ -1,0 +1,26 @@
+{
+  "title": "3.30 对话 13-14",
+  "source": {
+    "textId": "3.30__3-30-m4a",
+    "textName": "3.30-听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/3.30(答案+文本校对了/3.30-听力.m4a.docx",
+    "audioSource": "D:\\TOELF\\3.30\\3.30 听力.m4a\\3.30 听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 3.30; listening keyword; plain file",
+    "unitType": "conversation",
+    "unitLabel": "13-14"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 247.0,
+      "end": 304.0,
+      "speaker": "题目13/14",
+      "module": "",
+      "text": "Listen to a conversation. I bought a traditional recipe book and started learning how to bake. That sounds great. How has it been going so far? Well, with mixed success. My chocolate cake turned out fabulous, but my cookies, well, let's say I'm not going to have anyone try them. I managed to eat a couple, but only because I have strong teeth. You'll do better next time. I hope so. In fact, I'm going to try again tonight. I'm headed to the store right now to get some extra flour and sugar."
+    }
+  ]
+}

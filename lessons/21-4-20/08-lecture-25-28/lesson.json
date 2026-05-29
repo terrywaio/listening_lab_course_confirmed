@@ -1,0 +1,26 @@
+{
+  "title": "4.20 讲座 25-28",
+  "source": {
+    "textId": "4.20__4-20-m4a",
+    "textName": "4.20听力音频.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/4.20听力音频.m4a.docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\4.20.zip::4.20/4.20听力音频.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 4.20; listening keyword",
+    "unitType": "lecture",
+    "unitLabel": "25-28"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 760.0,
+      "end": 986.0,
+      "speaker": "题目25/26/27/28",
+      "module": "",
+      "text": "Listen to a talk in a creative writing class. Have you ever stared at a blank page, trying to come up with an idea of what to write about? Waiting for inspiration? Storytelling. Dice are a simple way to break through that creative block. Yes, I'm talking about dice similar to ones you roll in some common board games to generate random numbers. But instead of numbers, each die is covered with pictorial symbols, like a tree, a key, or a lightning bolt. A typical set could have 96 sided dice. The magic lies in their unpredictability. You might roll a dragon, a locked door and a storm. Suddenly you're weaving a tale of, say, hidden realms and daring escapes. Storytelling dice are not just for writers. They can also serve as icebreakers at social gatherings. Imagine this. The party feels a little stiff, so you pull out the dice and say, everyone roll three. Someone gets a dragon, a ladder and a smiley face. Another rolls a spaceship, shoes and a storm cloud. Soon, people are laughing as they connect these random images into a wild story. The dragon was stuck on a ladder during a thunderstorm, and then a spaceship landed to rescue it. It's silly, spontaneous, and gets everyone talking. But now let's get back to creative writing and talk about a short story that a previous student of mine wrote last semester. While reading the story, try to guess what three images she rolled on her dice that inspired her to write it."
+    }
+  ]
+}

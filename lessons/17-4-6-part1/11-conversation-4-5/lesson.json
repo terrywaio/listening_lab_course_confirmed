@@ -1,0 +1,26 @@
+{
+  "title": "4.6 对话 4-5",
+  "source": {
+    "textId": "4.6__part1__4-6-q1-m4a-1",
+    "textName": "4.6 听力(缺q1).m4a(1).docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/4.6 听力(缺q1).m4a(1).docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\4.6.zip::4.6/4.6 听力(缺q1).m4a/4.6 听力(缺q1).m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 4.6; part match part1; listening keyword",
+    "unitType": "conversation",
+    "unitLabel": "4-5"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 971.0,
+      "end": 1034.0,
+      "speaker": "题目4/5",
+      "module": "",
+      "text": "Listen to a conversation. Are you still working on that project for your ecology class? Yes. but I'm almost finished. I just have to present my findings to the class next week. I see. Well, I'm glad I'm not in your shoes. Talking in front of people makes me nervous really. I had an internship as a tour guide at Dawson State Park last summer, so I think I can handle this. Oh, okay. Speaking of internships, I'm still waiting to hear back from the history museum downtown. I set my application in last month, but I still haven't heard anything."
+    }
+  ]
+}

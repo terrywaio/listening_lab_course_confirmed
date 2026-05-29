@@ -1,0 +1,26 @@
+{
+  "title": "3.15 M1 讲座 25-28",
+  "source": {
+    "textId": "3.15__part1__3-15-part1-m4a",
+    "textName": "3.15 听力part1.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/3.15（答案+文本校对了/3.15 听力part1.m4a.docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\3.15.zip::3.15/3.15 听力part1/3.15 听力part1.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 3.15; part match part1; listening keyword",
+    "unitType": "lecture",
+    "unitLabel": "25-28"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 543.0,
+      "end": 710.0,
+      "speaker": "题目25/26/27/28",
+      "module": "M1",
+      "text": "Listen to a talk in an architecture class. Have you ever thought about how ancient concrete structures like Roman amphitheatres and aqueducts have managed to last for thousands of years, while modern concrete buildings seem to fall apart and need replacing after just a few decades? For a long time, researchers thought the secret to Roman concrete durability was volcanic ash. That makes sense, since volcanic ash was a major ingredient, and it was described as such by architects and historians who were writing at the time. But it turns out the real secret was actually tiny chunks of calcium carbonate. These formed because the Romans used dry quiclime in their mix, instead of the way we make concrete to day, called Portland cement. Well, lime gets mixed with water 1​st, then blended with everything else. When cracks show up in Roman concrete and water, those calcium carbonate bits react with the water and seal up the cracks. So the concrete basically heals itself, fixes the cracks, and get stronger over time. Funny thing is, researchers have noticed these chunks in Roman concrete for ages, but they just figured they were a production floor, like someone didn't mix the ingredients well enough. Anyway, considering how short lived modern concrete is and the fact that making it is bad for the environment, it's pretty exciting to think we might use some of these ancient Roman tricks in future construction."
+    }
+  ]
+}

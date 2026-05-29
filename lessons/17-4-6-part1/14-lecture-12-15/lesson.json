@@ -1,0 +1,26 @@
+{
+  "title": "4.6 讲座 12-15",
+  "source": {
+    "textId": "4.6__part1__4-6-q1-m4a-1",
+    "textName": "4.6 听力(缺q1).m4a(1).docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/4.6 听力(缺q1).m4a(1).docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\4.6.zip::4.6/4.6 听力(缺q1).m4a/4.6 听力(缺q1).m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 4.6; part match part1; listening keyword",
+    "unitType": "lecture",
+    "unitLabel": "12-15"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 1256.0,
+      "end": null,
+      "speaker": "题目12/13/14/15",
+      "module": "",
+      "text": "Listen to a talk from a music podcast. During the early 20th century, technology was advancing rapidly, and music was undergoing a transformation of its own. Electrophones were at the forefront of this evolution, all so electrophones. They're the predecessors of today's synthesizes and electrophones challenged established musical conventions. They create sound using electronic means, a groundbreaking innovation for their time. Take, for example, the mine. The theemine is an instrument that lets you create melodies through the manipulation of electromagnetic fields. You don't even touch it. There's no direct physical contact with the instrument. The theremin made its mark on the landscape of music, and its tones became synonymous with experimental compositions. Similarly, the old Martineau gave musicians a new and expressive range of sounds. You play it by gliding a ring along a wire, kinda like how you move a bow across the strings of a violin. These electrophones the theremin and the orned Martineau, set the stage for the synthesizers that dominate today's music. Electrophones enabled composers of the early 20th century to explore new musical ideas. Despite being overshadowed by modern electronics, these early electrophones made an important and lasting mark on music, and they continue to influence music making. Artists are going to keep looking forward in their quest to redefine musical boundaries, but we can also look back to acknowledge the foundational role these early electrophones played in shaping the history of music."
+    }
+  ]
+}

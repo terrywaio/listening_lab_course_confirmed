@@ -1,0 +1,26 @@
+{
+  "title": "2.1-2 M2 讲座 8-11",
+  "source": {
+    "textId": "2.1-2__module2__listeningmodule2-mp3",
+    "textName": "ListeningModule2.mp3.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/2.1-2（答案+文本校对了/ListeningModule2.mp3.docx",
+    "audioSource": "D:\\TOELF\\1月+2月部分.zip::1月+2月部分/2.1-2（done)/ListeningModule2.mp3",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 2.1-2; part match module2; listening keyword",
+    "unitType": "lecture",
+    "unitLabel": "8-11"
+  },
+  "language": "en",
+  "audioSrc": "../audio.mp3",
+  "audioFileName": "audio.mp3",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 143.0,
+      "end": 255.0,
+      "speaker": "题目8/9/10/11",
+      "module": "",
+      "text": "Listen to a talk in a biology class. In the early 1900s, sea otters—marine mammals that feed on invertebrates, including sea urchins—were nearly wiped out along the United States Pacific coast by fur hunters. With otters gone, urchin numbers exploded, destroying kelp forests. Kelp is the type of seaweed that is sea urchins' favorite food. This left countless marine species without the protective habitat that kelp forests provided to them. In 1972, hunting sea otters was banned. As otters made a comeback, urchin numbers dropped, kelp forests grew back, and biodiversity flourished. Scientists realized otters were a keystone species—organisms whose impact on ecosystems is far greater than their numbers suggest. A similar case occurred in Yellowstone National Park. Wolves, the park's top predator, had been eradicated. Populations of elk—a deer-like animal and a favorite prey for wolves—soared, and their huge populations damaged local vegetation, including the willow and aspen trees for which the park had been famous. In the 1990s, wolves were reintroduced to the park to get the elk population under control. But the wolves didn't just cut elk numbers; they changed elk behavior. Afraid of being eaten by wolves, the elk avoided streamside areas where they're especially vulnerable. This helped willow and aspen trees reestablish themselves there, and the trees brought back beavers—animals that live in streams and build dams to create ponds for themselves. The beaver dams created habitats for fish, birds, and amphibians—a huge cascading effect because of this other keystone species."
+    }
+  ]
+}

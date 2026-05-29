@@ -1,0 +1,26 @@
+{
+  "title": "3.2 Part 2 公告 21-22",
+  "source": {
+    "textId": "3.2__part2__3-2-m4a",
+    "textName": "3.2 听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/3.2（答案+文本校对了/3.2 听力.m4a.docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\3.2 听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 3.2; part match part2; listening keyword; plain file",
+    "unitType": "announcement",
+    "unitLabel": "21-22"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 403.0,
+      "end": 458.0,
+      "speaker": "题目21/22",
+      "module": "M1",
+      "text": "Listen to an announcement at a school art exhibit. Thank you for touring this special collection of paintings we recently acquired from a donor. We're going to begin with late 18th century works in the hallway on your left. We'll then proceed to early 19th century in the next room and finish with the modern art collection on the next floor. But 1st, I'll pass out a detailed map of the collection, which includes some artist information on the back."
+    }
+  ]
+}

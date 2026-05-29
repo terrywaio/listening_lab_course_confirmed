@@ -1,0 +1,26 @@
+{
+  "title": "3.2 Part 2 讲座 29-32",
+  "source": {
+    "textId": "3.2__part2__3-2-m4a",
+    "textName": "3.2 听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/3.2（答案+文本校对了/3.2 听力.m4a.docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\3.2 听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 3.2; part match part2; listening keyword; plain file",
+    "unitType": "lecture",
+    "unitLabel": "29-32"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 657.0,
+      "end": 819.0,
+      "speaker": "题目29/30/31/32",
+      "module": "M1",
+      "text": "Listen to a talk in an art history class. If you've ever looked at a Picasso painting and thought, wait, is that a face or a guitar? You've already encountered the magic of cubism. This revolutionary movement shook up the art scene in the early 20th century. It wasn't just a new style. It was a complete reimagining of how we see and represent reality. Artists like Pablo Picasso and George Brag broke away from the traditional rules of perspective and instead chose to depict objects from multiple angles at once. Imagine seeing every side of a coffee cup, top, bottom and side, all in a single image, how this coffee cup is depicted. That's the kind of visual remix cubism brought to the canvas. But 1st, people didn't know what to make of it. Critics called it chaotic, even nonsensical. But over time, cubism proved to be a game changer, influencing not just painting and sculpture, but also music, literature and architecture. It encouraged creators to rethink structure, narrative and form, and to reconsider how we think about representation and abstraction. And it paved the way for other art movements like modernism. Modernism also embraced abstraction and conceptual depth, though in somewhat different ways."
+    }
+  ]
+}

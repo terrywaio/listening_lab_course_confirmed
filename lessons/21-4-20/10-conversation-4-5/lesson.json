@@ -1,0 +1,26 @@
+{
+  "title": "4.20 对话 4-5",
+  "source": {
+    "textId": "4.20__4-20-m4a",
+    "textName": "4.20听力音频.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/4.20听力音频.m4a.docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\4.20.zip::4.20/4.20听力音频.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 4.20; listening keyword",
+    "unitType": "conversation",
+    "unitLabel": "4-5"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 1323.0,
+      "end": 1407.0,
+      "speaker": "题目4/5",
+      "module": "",
+      "text": "Listen to a conversation. Have you tried the yoga class at the University recreation center? No, I haven't. But I've been meaning to. I really like the morning class. It's at 8:00a.m.with an instructor named Julie. I'll look into it. The only issue involves space. They have us packed so tightly in that room that you can barely move. Well, they must offer more than one session. right? Yeah, there's an evening one too, but it meets at the same time as my biology seminar."
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "title": "4.8 对话 13-14",
+  "source": {
+    "textId": "4.8__4-8-m4a",
+    "textName": "4.8听力音频.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/4.8听力音频.m4a.docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\4.8.zip::4.8/4.8听力音频.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 4.8; listening keyword",
+    "unitType": "conversation",
+    "unitLabel": "13-14"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 211.0,
+      "end": 272.0,
+      "speaker": "题目13/14",
+      "module": "",
+      "text": "Listen to a conversation. So have you finished the gardening book? My roommate wants to borrow it next. I have, but I'm afraid I've misplaced it. I'm sure it will turn up anyway. What did you think of it? It was really interesting. In fact, I think I may start an herb garden. That's exciting. But I feel bad about the book. I'll see if I can find a copy online. Please forget about it. I'm just glad it's inspired you to give it a try yourself."
+    }
+  ]
+}

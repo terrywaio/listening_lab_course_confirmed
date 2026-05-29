@@ -1,0 +1,26 @@
+{
+  "title": "3.17 M2 讲座 3",
+  "source": {
+    "textId": "3.17__3-17-listening-m4a",
+    "textName": "3.17-listening.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/3.17(答案+文本校对了/3.17-listening.m4a.docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-05\\3.17.zip::3.17/3.17-listening.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 3.17; listening keyword",
+    "unitType": "lecture",
+    "unitLabel": "3"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 1104.0,
+      "end": 1130.0,
+      "speaker": "题目3",
+      "module": "M2",
+      "text": "Can I borrow your headphones to listen to the recorded lecture?"
+    }
+  ]
+}

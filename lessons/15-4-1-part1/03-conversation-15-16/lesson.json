@@ -1,0 +1,26 @@
+{
+  "title": "4.1 对话 15-16",
+  "source": {
+    "textId": "4.1__part1__4-1-m4a-1",
+    "textName": "4.1听力.m4a(1).docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/4.1听力.m4a(1).docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\4.1.zip::4.1/4.1听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 4.1; part match part1; listening keyword",
+    "unitType": "conversation",
+    "unitLabel": "15-16"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 247.0,
+      "end": 300.0,
+      "speaker": "题目15/16",
+      "module": "",
+      "text": "Listen to a conversation. What do you know about this rock festival that's happening? Not much. Do you know what time it starts? It kicks off at 3:00p.m.. That's perfect. Oh, I remember hearing that. Therebe food trucks. Oh, right. And a dance floor. No way. You can't keep us away. Let's get there early so we can get a good spot."
+    }
+  ]
+}

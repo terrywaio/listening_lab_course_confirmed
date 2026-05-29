@@ -1,0 +1,26 @@
+{
+  "title": "4.27 公告 21-22",
+  "source": {
+    "textId": "4.27__4-27-m4a",
+    "textName": "4.27 听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/4.27 听力.m4a.docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-05\\4.27.zip::4.27/4.27 听力.m4a/4.27 听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 4.27; listening keyword",
+    "unitType": "announcement",
+    "unitLabel": "21-22"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 494.0,
+      "end": 559.0,
+      "speaker": "题目21/22",
+      "module": "",
+      "text": "Listen to an announcement at the University bookstore. Welcome trainees. Now that we've increased our building size, the bookstore has been busier than ever, and it's great to have you with us. So we'll start by talking about stocking shelves. Inventory is located in the back room, and your manager will let you know who' S Assigned to restock the shelves each day. Sometimes inventory arrives damaged from shipping. Just let a manager know, but don't put out the damaged merchandise. Our goal is for customers to have the best experience possible."
+    }
+  ]
+}

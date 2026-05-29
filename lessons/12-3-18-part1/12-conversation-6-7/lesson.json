@@ -1,0 +1,26 @@
+{
+  "title": "3.18 对话 6-7",
+  "source": {
+    "textId": "3.18__part1__3-18-m4a-1",
+    "textName": "3.18 听力.m4a(1).docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/3.18(答案+文本校对了/3.18 听力.m4a(1).docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\3.18-忘记放进去了.zip::3.18-忘记放进去了/3.18 听力/3.18 听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 3.18; part unknown; listening keyword",
+    "unitType": "conversation",
+    "unitLabel": "6-7"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 1028.0,
+      "end": 1090.0,
+      "speaker": "题目6/7",
+      "module": "",
+      "text": "Listen to a conversation. The results of our most recent student survey have been analyzed, and I have all the information in this report I've printed out. Thanks, Martin. This is wonderful. Let me take a quick look now to see if anything stands out. Of course, the results overall are better than the student survey we conducted. That's good. But I'm concerned about this finding that so many students still don't find our campus shuttle buses dependable. We should set up a meeting with the transportation department. I'll contact them right away."
+    }
+  ]
+}

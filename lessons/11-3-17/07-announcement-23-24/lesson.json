@@ -1,0 +1,26 @@
+{
+  "title": "3.17 M1 公告 23-24",
+  "source": {
+    "textId": "3.17__3-17-listening-m4a",
+    "textName": "3.17-listening.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/3.17(答案+文本校对了/3.17-listening.m4a.docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-05\\3.17.zip::3.17/3.17-listening.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 3.17; listening keyword",
+    "unitType": "announcement",
+    "unitLabel": "23-24"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 574.0,
+      "end": 657.0,
+      "speaker": "题目23/24",
+      "module": "M1",
+      "text": "Listen to an announcement from a University administrator. Starting next Monday, the office for student administrative activities will relocate to the newly renovated elm building. Office hours remain 9:00a.m.to 5:00p.m., Monday through Friday. The new location will have a modern cafe, which will offer premium coffee, Machcha Lattes and all kinds of tea. We hope this new feature will make administrative tasks like updating your financial aid paperwork or requesting transcript copies, something that you might even look forward to."
+    }
+  ]
+}

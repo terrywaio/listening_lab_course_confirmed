@@ -1,0 +1,26 @@
+{
+  "title": "3.30 对话 15-16",
+  "source": {
+    "textId": "3.30__3-30-m4a",
+    "textName": "3.30-听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/3.30(答案+文本校对了/3.30-听力.m4a.docx",
+    "audioSource": "D:\\TOELF\\3.30\\3.30 听力.m4a\\3.30 听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 3.30; listening keyword; plain file",
+    "unitType": "conversation",
+    "unitLabel": "15-16"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 304.0,
+      "end": 380.0,
+      "speaker": "题目15/16",
+      "module": "",
+      "text": "Listen to a conversation. Didn't you say WBSC in Washington was the best TV show you had ever seen? Did you finally get a chance to watch it? I beg to differ. I caught the 1st episode of the new season last night, and all the jokes were so predictable. Rumor is all the script authors this season are new. Give it some time. I'm sure things will improve. I hope so. I've been looking for a good late night show for a while."
+    }
+  ]
+}

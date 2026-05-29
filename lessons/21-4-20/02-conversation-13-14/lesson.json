@@ -1,0 +1,26 @@
+{
+  "title": "4.20 对话 13-14",
+  "source": {
+    "textId": "4.20__4-20-m4a",
+    "textName": "4.20听力音频.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/4.20听力音频.m4a.docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\4.20.zip::4.20/4.20听力音频.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 4.20; listening keyword",
+    "unitType": "conversation",
+    "unitLabel": "13-14"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 291.0,
+      "end": 356.0,
+      "speaker": "题目13/14",
+      "module": "",
+      "text": "Listen to a conversation. Did you see the new art exhibit over the weekend? Yeah. it was awesome. I was surprised that some of the sculptures seemed to really push the envelope. You mean in terms of how modern they are especially regarding social commentary? I guess there are some fairly progressive themes in the exhibit. Sounds cool. I should check it out. I think the exhibit is only up for a couple of weeks."
+    }
+  ]
+}

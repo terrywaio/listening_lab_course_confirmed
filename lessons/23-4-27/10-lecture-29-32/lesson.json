@@ -1,0 +1,26 @@
+{
+  "title": "4.27 讲座 29-32",
+  "source": {
+    "textId": "4.27__4-27-m4a",
+    "textName": "4.27 听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/4.27 听力.m4a.docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-05\\4.27.zip::4.27/4.27 听力.m4a/4.27 听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 4.27; listening keyword",
+    "unitType": "lecture",
+    "unitLabel": "29-32"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 774.0,
+      "end": 980.0,
+      "speaker": "题目29/30/31/32",
+      "module": "",
+      "text": "Listen to a talk in a music class. Hip hop is one of the world's most popular musical genres. I want to discuss a characteristic feature of this art form, sampling. Sampling refers to the reuse of a part of an existing song in a new composition. Hip hop artists might write a song that uses part of a vocal track or a drum beat, or some other sound from an existing song. For example, the singer Beyonce cee's 2003 hit crazy in love uses a Melody from a 1970 release by the band the shy lights. Sampling was especially common in the early days of hip hop. Before the landmark 1991 us district court case grand upright Music Limited versus Warner Brothers Records. The ruling in that case required artists to obtain permission to use samples in their recordings. Before that legal decision, sampling had been a relatively cheap and easy practice down to today, but in a more limited way. Critics often argue that sampling is a less creative approach than traditional music making. But I'd respond that all art, especially music, is referential in creating a new work. All artists borrow in one manner or another from existing works of art. Hip hop creativity comes in finding unusual sources or putting recognizable material into new contexts. But now I'd like to know what you think. Let's examine the sonic collage that is Paul's boutique, the 1989 album from the Beastie Boys, which utilizes a remarkable number of samples. Module 2:"
+    }
+  ]
+}

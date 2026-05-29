@@ -1,0 +1,26 @@
+{
+  "title": "3.4 M1 讲座 25-28",
+  "source": {
+    "textId": "3.4__3-4-m4a",
+    "textName": "3.4-听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/3.4（答案+文本校对了/3.4-听力.m4a.docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\3.4.zip::3.4/听力/3.4-听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 3.4; listening keyword",
+    "unitType": "lecture",
+    "unitLabel": "25-28"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 643.0,
+      "end": 853.0,
+      "speaker": "题目25/26/27/28",
+      "module": "M1",
+      "text": "Listen to a talk in an art history class . last week, we talked about realism, in which artists aimed to depict the world as it really exists today. We'll explore realism starting in France in the 19 twenties, surrealist artists focused on inner realities, concepts such as fantasy and the nature of dreams. Their works reflected a combination of these inner realities as well as outer realities, that is, things we physically experience. Their paintings often depicted a familiar scene, but in a dreamlike manner. Spaniard Joan Miro was especially adept at surrealism. Interestingly, Miro never wanted to be associated with any artistic movement, and he never called himself a surrealist. But his contemporaries did, and we can see why they did. When we look at Miro's work, Miro typically painted in two stages. The latter stage was carefully calculated. It was meticulous and precise. Miro knew exactly what he was doing in this stage, but in the initial stage, mio didn't plan what he was going to. He just started painting the form. Whatever it was, a bird, a building, whatever appeared on the canvas, the form suggested itself under his brush. That's how Miro described it. This method of creating art without conscious control is called automatism. Automatism is quite noticeable in a work of Miro that is titled simply painting even and Miro couldn't fully explain the Miro’s work. Presumably the images that appeared came from things deep inside him, things he may not have even known were there."
+    }
+  ]
+}

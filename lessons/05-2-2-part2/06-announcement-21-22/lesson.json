@@ -1,0 +1,26 @@
+{
+  "title": "2.2 Part 2 公告 21-22",
+  "source": {
+    "textId": "2.2__part2__2-2-m4a",
+    "textName": "2.2 听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/2.2（答案+文本校对了/2.2 听力.m4a.docx",
+    "audioSource": "D:\\TOELF\\1月+2月部分.zip::1月+2月部分/2.2（done)-答案全对/2.2 听力/2.2 听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 2.2; part match part2; listening keyword",
+    "unitType": "announcement",
+    "unitLabel": "21-22"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 465.0,
+      "end": 538.0,
+      "speaker": "题目21/22",
+      "module": "",
+      "text": "Listen to a school radio announcement. attention students, we apologize for the unions caused by the recent changes to our work study program application process. Unfortunately, due to system issues, some applications were not processed properly. We are working to resolve this problem as quickly as possible. Please resubmit your applications through the updated portal and phone the career center if you encounter any further issues. Additionally, were pleased to announce several new part time work opportunities available on campus to stop by the center to learn more."
+    }
+  ]
+}

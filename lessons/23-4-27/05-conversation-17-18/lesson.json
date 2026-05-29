@@ -1,0 +1,26 @@
+{
+  "title": "4.27 对话 17-18",
+  "source": {
+    "textId": "4.27__4-27-m4a",
+    "textName": "4.27 听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/4.27 听力.m4a.docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-05\\4.27.zip::4.27/4.27 听力.m4a/4.27 听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 4.27; listening keyword",
+    "unitType": "conversation",
+    "unitLabel": "17-18"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 380.0,
+      "end": 435.0,
+      "speaker": "题目17/18",
+      "module": "",
+      "text": "Listen to a conversation. Should we take the train or fly to the conference? The train is slower, but the train station is a quick walk from the conference hotel. The airport is at least half an hour away. Train it is. Then I hope the hotel has nice views of the city that I can't answer. Just be ready to leave at 7:00a.m.. 7:00. That's awfully early. Is that the only option I thought . we should take an early trains, so we have time to sightsee when we get there."
+    }
+  ]
+}

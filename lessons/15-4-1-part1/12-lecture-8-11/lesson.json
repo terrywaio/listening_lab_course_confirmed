@@ -1,0 +1,26 @@
+{
+  "title": "4.1 讲座 8-11",
+  "source": {
+    "textId": "4.1__part1__4-1-m4a-1",
+    "textName": "4.1听力.m4a(1).docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/4.1听力.m4a(1).docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\4.1.zip::4.1/4.1听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 4.1; part match part1; listening keyword",
+    "unitType": "lecture",
+    "unitLabel": "8-11"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 1049.0,
+      "end": 1222.0,
+      "speaker": "题目8/9/10/11",
+      "module": "",
+      "text": "Listen to a talk in an anthropology class. Previously, we discussed the significance of pottery to ancient cultures, including pottery as an art form and pottery's crucial role in trade. Today, we'll focus on the development of pottery over time. One breakthrough was the invention of the Potter's wheel around 3500 bce in Mesopotamia. Before this, pottery was shaped mostly by hand, which was slow and produced less uniform results. The Potter's wheel allowed artisans to spin and shape the clay more quickly and evenly, making it possible to create symmetrical vessels with greater precision and speed. Firing technology also advanced. Early pots were fired in open pits, which limited temperature control, resulting in uneven or fragile pots, so kilns were developed. Enclosed ovens that could reach higher and more consistent temperatures allowed for stronger, more durable pottery. Another advance was the updraft kiln, which directed heat upward through the chamber. By adjusting the airflow, potters could control how much oxygen reached the fire. This helped them produce pottery with specific colors like red or black, depending on how the clay reacted to the firing atmosphere. Then in ancient China, potters developed kilns that could reach very high temperatures. This allowed them to create stoneware and eventually porcelain. Porcelain is made from a special mix of fine clay and minerals and must be fired at ten, 100 degrees. The result is a smoowhite ceramic that is strong, lightweight and slightly translucent. Porcelain was a major breakthrough because it was more durable and versatile than earlier pottery."
+    }
+  ]
+}

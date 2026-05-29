@@ -1,0 +1,26 @@
+{
+  "title": "3.30 对话 17-18",
+  "source": {
+    "textId": "3.30__3-30-m4a",
+    "textName": "3.30-听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/3.30(答案+文本校对了/3.30-听力.m4a.docx",
+    "audioSource": "D:\\TOELF\\3.30\\3.30 听力.m4a\\3.30 听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 3.30; listening keyword; plain file",
+    "unitType": "conversation",
+    "unitLabel": "17-18"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 380.0,
+      "end": 432.0,
+      "speaker": "题目17/18",
+      "module": "",
+      "text": "Listen to a conversation. I heard that the local theater is staging hamlet next weekend. Really? I've always wanted to see that play live. Do you know if tickets for the performance are still available? Yeah, I checked online this morning. They still have some seats left. The cheapest ones, funny enough, but we should buy them soon before they sell out. Great，I'll do it."
+    }
+  ]
+}

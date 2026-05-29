@@ -1,0 +1,26 @@
+{
+  "title": "3.29 对话 17-18",
+  "source": {
+    "textId": "3.29__3-29-m4a",
+    "textName": "3.29 听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/3.29（答案+文本校对了/3.29 听力.m4a.docx",
+    "audioSource": "D:\\TOELF\\3.29\\听力\\3.29 听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 3.29; listening keyword; plain file",
+    "unitType": "conversation",
+    "unitLabel": "17-18"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 389.0,
+      "end": 455.0,
+      "speaker": "题目17/18",
+      "module": "",
+      "text": "Listen to a conversation. My mobile phone is a few years old, and I've heard that updating to the newest operating system software can really slow it down. That would be annoying. So why not just keep the current operating system. An app I use requires the new one. I see. Well, if all else failed, a lot of stores are offering good deals on new phones right now for the holidays. You know, that's not a bad idea. I'll definitely look into it now that I've got a job at the campus bookstore, I think it's feasible."
+    }
+  ]
+}

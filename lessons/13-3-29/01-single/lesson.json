@@ -1,0 +1,130 @@
+{
+  "title": "3.29 单句",
+  "source": {
+    "textId": "3.29__3-29-m4a",
+    "textName": "3.29 听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/3.29（答案+文本校对了/3.29 听力.m4a.docx",
+    "audioSource": "D:\\TOELF\\3.29\\听力\\3.29 听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 3.29; listening keyword; plain file",
+    "unitType": "single",
+    "unitLabel": "单句"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": null,
+      "end": null,
+      "speaker": "",
+      "module": "",
+      "text": "Module 1："
+    },
+    {
+      "id": "s002",
+      "start": 32.0,
+      "end": 51.0,
+      "speaker": "题目1",
+      "module": "",
+      "text": "Are you planning to go hiking this weekend?"
+    },
+    {
+      "id": "s003",
+      "start": 51.0,
+      "end": 68.0,
+      "speaker": "题目2",
+      "module": "",
+      "text": "How can I access the campus Bulletin board?"
+    },
+    {
+      "id": "s004",
+      "start": 68.0,
+      "end": 85.0,
+      "speaker": "题目3",
+      "module": "",
+      "text": "What time is the next family dinner?"
+    },
+    {
+      "id": "s005",
+      "start": 85.0,
+      "end": 103.0,
+      "speaker": "题目4",
+      "module": "",
+      "text": "The movie starts at 6:00."
+    },
+    {
+      "id": "s006",
+      "start": 121.0,
+      "end": 139.0,
+      "speaker": "题目6",
+      "module": "",
+      "text": "Why did you choose this movie?"
+    },
+    {
+      "id": "s007",
+      "start": 139.0,
+      "end": 155.0,
+      "speaker": "题目7",
+      "module": "",
+      "text": "Are you attending the nature photography workshop?"
+    },
+    {
+      "id": "s008",
+      "start": 155.0,
+      "end": 173.0,
+      "speaker": "题目8",
+      "module": "",
+      "text": "How can I learn more about the team?"
+    },
+    {
+      "id": "s009",
+      "start": 173.0,
+      "end": 190.0,
+      "speaker": "题目9",
+      "module": "",
+      "text": "When is the assignment due?"
+    },
+    {
+      "id": "s010",
+      "start": 190.0,
+      "end": 211.0,
+      "speaker": "题目10",
+      "module": "",
+      "text": "Can you share information about this year's school fundraiser?"
+    },
+    {
+      "id": "s011",
+      "start": 211.0,
+      "end": 232.0,
+      "speaker": "题目11",
+      "module": "",
+      "text": "When is the next research grant application due?"
+    },
+    {
+      "id": "s012",
+      "start": 232.0,
+      "end": 255.0,
+      "speaker": "题目12",
+      "module": "",
+      "text": "How can I access the local archives?"
+    },
+    {
+      "id": "s013",
+      "start": 1054.0,
+      "end": 1071.0,
+      "speaker": "题目2",
+      "module": "",
+      "text": "Did you enjoy the research seminar?"
+    },
+    {
+      "id": "s014",
+      "start": 1071.0,
+      "end": 1094.0,
+      "speaker": "题目3",
+      "module": "",
+      "text": "What time does the campus cafe close?"
+    }
+  ]
+}

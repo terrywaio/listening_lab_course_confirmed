@@ -1,0 +1,26 @@
+{
+  "title": "3.8 讲座 8-11",
+  "source": {
+    "textId": "3.8__3-8-m4a",
+    "textName": "3.8 听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/3.8（答案+文本校对了/3.8 听力.m4a.docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\3.8线下【后续继续补充】.zip::3.8线下【后续继续补充】/3.8 -完整一套/3.8 听力/3.8 听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 3.8; listening keyword",
+    "unitType": "lecture",
+    "unitLabel": "8-11"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 1128.0,
+      "end": 1299.0,
+      "speaker": "讲话人8/9/10/11",
+      "module": "",
+      "text": "Listen to a talk on a science podcast. Let's move on in our renewable energy series to discuss solar power, which is arguably the most abundant resource available. Solar power takes energy from the sun's rays and converts it to electricity or heat. The primary technology for this is solar panels made up of photo voltaic cells, which generate an electric current when sunlight hits them. The advantages of solar power are well known, and the most important may be the fact that it produces zero harmful pollutants. Any industrial endeavor will produce carbon dioxide in one way or another, and manufacturing solar panels itself requires energy sourced from fossil fuels. But on the whole, the industry has a much lower carbon footprint than coal or natural gas, and this makes it key to reducing greenhouse gas emissions. Another advantage, in one we don't talk about enough, is that solar power can provide access in remote and underserved areas far from the grid. So what are the disadvantages? Solar panel efficiency is affected by cloud cover and other weather, which of course reduces the amount of sunlight reaching the panels. That said, innovations in battery storage systems do allow for the storage of solar energy for use during non Sunny periods. Panel lifespan is quite good at 25 to 30 years, but improvements in efficiency are paradoxically driving panels to be replaced much earlier than that is increasing faster than expected. This is a problem because recycling them is expensive and most panels end up in landfills."
+    }
+  ]
+}

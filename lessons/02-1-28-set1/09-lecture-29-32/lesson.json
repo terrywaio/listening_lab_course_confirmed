@@ -1,0 +1,26 @@
+{
+  "title": "1.28 套一 讲座 29-32",
+  "source": {
+    "textId": "1.28__set1__1-28-part1-m4a-1",
+    "textName": "1.28套一听力part1.m4a(1).docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/1.28（答案+文本校对了/1.28套一听力part1.m4a(1).docx",
+    "audioSource": "D:\\TOELF\\1月+2月部分.zip::1月+2月部分/1.28-答案全对/1.28 套一听力音频/1.28套一听力part1.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 1.28; part match set1; listening keyword",
+    "unitType": "lecture",
+    "unitLabel": "29-32"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 797.0,
+      "end": 997.0,
+      "speaker": "题目29/30/31/32",
+      "module": "",
+      "text": "Listen to a talk in a psychology class. Have you ever been so engrossed in a task that you completely missed something obvious? This is called inattentional blindness, a phenomenon where concentrating on one thing can make us overlook something happening right in front of us. A classic study illustrates this perfectly. Participants watched a video of people passing a basketball and were asked to count passes made by players in white shirts. Midway through the video, a person in a gorilla suit walked into the scene, thumped its chest, and left. Astonishingly, about half the viewers never saw the gorilla. Their attention was locked on counting passes. In real-world situations, inattentional blindness can have serious consequences. For example, while driving, focusing on finding a street sign might make you miss a pedestrian stepping into the road. Recognizing this tendency can help us stay safer and more aware. Interestingly, psychologists trace this phenomenon to a useful ability: selective attention. This is the brain's way of filtering sensory input to avoid overload, allowing us to concentrate on important tasks. Think about sitting in a noisy open-plan office writing a report. Phones are ringing, people are talking, but you manage to tune it all out and focus on your work. That's selective attention at its best. 听力Module 2"
+    }
+  ]
+}

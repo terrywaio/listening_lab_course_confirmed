@@ -1,0 +1,26 @@
+{
+  "title": "3.18 讲座 8-11",
+  "source": {
+    "textId": "3.18__part1__3-18-m4a-1",
+    "textName": "3.18 听力.m4a(1).docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/3.18(答案+文本校对了/3.18 听力.m4a(1).docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\3.18-忘记放进去了.zip::3.18-忘记放进去了/3.18 听力/3.18 听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 3.18; part unknown; listening keyword",
+    "unitType": "lecture",
+    "unitLabel": "8-11"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 1090.0,
+      "end": 1249.0,
+      "speaker": "题目8/9/10/11",
+      "module": "",
+      "text": "Listen to a talk in a business class. Today, we're discussing the concept of dark stores, that is, retail centers that resemble warehouses and are usually located near city centers. Unlike traditional storefronts, they are not designed for walk in customers, but function as fulfillment hubs optimized for rapid online delivery. The rise of dark stores has been fueled by the growing demand for online shopping, especially in urban areas where space is limited and rent is high. The main appeal of dark stores lies in their efficiency. By eliminating the traditional storefront, businesses can reduce and pass savings on to consumers through lower prices. Their proximity to dense urban areas also allows for faster delivery times, meeting the expectations of customers who value speed and convenience. For instance, a company might deliver groceries in under an hour, giving it a major competitive advantage over traditional supermarkets. However, dark stores are not without drawbacks. Their expansion can contribute to the decline of traditional retail spaces, creating economic challenges for local businesses. Employment is another concern. While these centers generate jobs in logistics and delivery, they may reduce the number of customer facing roles available in physical stores ahead. Many experts predict that dark stores will continue to reshape the retail landscape. Some may adopt advanced automation, further reducing the need for human labor and potentially redefining the shopping experience itself. As with other technological shifts, the key challenge will be balancing efficiency with the broader social and economic implications of these changes."
+    }
+  ]
+}

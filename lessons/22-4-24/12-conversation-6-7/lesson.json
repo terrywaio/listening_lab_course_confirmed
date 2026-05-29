@@ -1,0 +1,26 @@
+{
+  "title": "4.24 对话 6-7",
+  "source": {
+    "textId": "4.24__4-24-m4a",
+    "textName": "4.24听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/4.24听力.m4a.docx",
+    "audioSource": "D:\\4.24\\4.24听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 4.24; listening keyword; plain file",
+    "unitType": "conversation",
+    "unitLabel": "6-7"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 1282.0,
+      "end": 1362.0,
+      "speaker": "题目6/7",
+      "module": "",
+      "text": "Listen to a conversation. I saw your photos from the Louvre Museum. Was it as amazing as people say? Yes. But honestly, it was overwhelming. We only had a few hours and there's just too much to see in one visit. I've always wanted to go. Did you plan your visit in advance? We tried, but the ticket site crashed the day before. We ended up waiting in line for over an hour. It was frustrating. Would you still recommend it? Definitely. But focus on a few sectionally. Trying to see everything in one go is impossible."
+    }
+  ]
+}

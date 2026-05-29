@@ -1,0 +1,146 @@
+{
+  "title": "2.2 Part 2 单句",
+  "source": {
+    "textId": "2.2__part2__2-2-m4a",
+    "textName": "2.2 听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/2.2（答案+文本校对了/2.2 听力.m4a.docx",
+    "audioSource": "D:\\TOELF\\1月+2月部分.zip::1月+2月部分/2.2（done)-答案全对/2.2 听力/2.2 听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 2.2; part match part2; listening keyword",
+    "unitType": "single",
+    "unitLabel": "单句"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": null,
+      "end": null,
+      "speaker": "",
+      "module": "",
+      "text": "听力Module 1"
+    },
+    {
+      "id": "s002",
+      "start": 27.0,
+      "end": 47.0,
+      "speaker": "题目1",
+      "module": "",
+      "text": "Would you like to visit the campus museum or the park?"
+    },
+    {
+      "id": "s003",
+      "start": 47.0,
+      "end": 62.0,
+      "speaker": "题目2",
+      "module": "",
+      "text": "Did you enjoy the work shop?"
+    },
+    {
+      "id": "s004",
+      "start": 62.0,
+      "end": 76.0,
+      "speaker": "题目3",
+      "module": "",
+      "text": "What should we do tonight after classes?"
+    },
+    {
+      "id": "s005",
+      "start": 76.0,
+      "end": 91.0,
+      "speaker": "题目4",
+      "module": "",
+      "text": "I had to study late last week."
+    },
+    {
+      "id": "s006",
+      "start": 91.0,
+      "end": 105.0,
+      "speaker": "题目5",
+      "module": "",
+      "text": "What time does the dining hall open？"
+    },
+    {
+      "id": "s007",
+      "start": 105.0,
+      "end": 121.0,
+      "speaker": "题目6",
+      "module": "",
+      "text": "When do you usually wake up for wednesday classes?"
+    },
+    {
+      "id": "s008",
+      "start": 121.0,
+      "end": 134.0,
+      "speaker": "题目7",
+      "module": "",
+      "text": "Did you finish the presentation slides?"
+    },
+    {
+      "id": "s009",
+      "start": 134.0,
+      "end": 150.0,
+      "speaker": "题目8",
+      "module": "",
+      "text": "Do you have any questions about the course requirements?"
+    },
+    {
+      "id": "s010",
+      "start": 150.0,
+      "end": 165.0,
+      "speaker": "题目9",
+      "module": "",
+      "text": "I recommend pasta here."
+    },
+    {
+      "id": "s011",
+      "start": 165.0,
+      "end": 183.0,
+      "speaker": "题目10",
+      "module": "",
+      "text": "The soup at the dining hall today was delicious."
+    },
+    {
+      "id": "s012",
+      "start": 183.0,
+      "end": 204.0,
+      "speaker": "题目11",
+      "module": "",
+      "text": "We need to finish the class project by tomorrow."
+    },
+    {
+      "id": "s013",
+      "start": 204.0,
+      "end": 221.0,
+      "speaker": "题目12",
+      "module": "",
+      "text": "Is the campus coffee shop open today?"
+    },
+    {
+      "id": "s014",
+      "start": 1043.0,
+      "end": 1061.0,
+      "speaker": "题目1",
+      "module": "",
+      "text": "Are you going to join the practice session tomorrow?"
+    },
+    {
+      "id": "s015",
+      "start": 1061.0,
+      "end": 1076.0,
+      "speaker": "题目2",
+      "module": "",
+      "text": "I love your clubs presentation."
+    },
+    {
+      "id": "s016",
+      "start": 1076.0,
+      "end": 1089.0,
+      "speaker": "题目3",
+      "module": "",
+      "text": "Can you help me with the homework?"
+    }
+  ]
+}

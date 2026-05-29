@@ -1,0 +1,26 @@
+{
+  "title": "3.4 M1 讲座 29-32",
+  "source": {
+    "textId": "3.4__3-4-m4a",
+    "textName": "3.4-听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/3.4（答案+文本校对了/3.4-听力.m4a.docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\3.4.zip::3.4/听力/3.4-听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 3.4; listening keyword",
+    "unitType": "lecture",
+    "unitLabel": "29-32"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 853.0,
+      "end": 1096.0,
+      "speaker": "题目29/30/31/32",
+      "module": "M1",
+      "text": "Listen to a talk in a social sciences class. Let's talk about how ideas and values are transmitted across national borders, leading to an interconnected and interdependent world. This process, known as cultural globalization, has been going on for year, but it has been accelerated by advancements in communication, technology and transportation. Certainly, one of the most visible aspects of cultural globalization, it is the spread of popular culture, movies, music, fashion and food from one part of the world often become popular in other regions. American films, for instance, are watched all over the world, and American fast fusions are found in numerous countries as well. This diffusion of culture can lead to greater cultural understanding and exchange, fostering a sense of global community. However, it also raises concerns about the erosion of local cultures and identities. The dominance of western culture, in particular, can overshadow indigenous traditions and practices, leading to worldwide cultural homogenization. This can result in the loss of cultural diversity, as unique customs and languages may fade away. There's also the issue, cultural appropriation. Cultural appropriation occurs when elements of one culture are taken and used by another, often without understanding or respect. On the other hand, cultural globalization can empower local by providing platforms for them to reach a global audience. Social media, for example, allows artists and creators from diverse backgrounds to share their work with people worldwide. Understanding cultural globalization involves both its benefits and its drawbacks, and finding ways to preserve cultural diversity while embracing global interconnectedness."
+    }
+  ]
+}

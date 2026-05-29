@@ -1,0 +1,138 @@
+{
+  "title": "4.5 套一 单句",
+  "source": {
+    "textId": "4.5__set1__4-5-m4a-2",
+    "textName": "4.5 套一 听力.m4a(2).docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/4.5 套一 听力.m4a(2).docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\4.5.zip::4.5/4.5 套一 听力.m4a/4.5 套一 听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 4.5; part match set1; listening keyword",
+    "unitType": "single",
+    "unitLabel": "单句"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": null,
+      "end": null,
+      "speaker": "",
+      "module": "",
+      "text": "Module 1："
+    },
+    {
+      "id": "s002",
+      "start": 15.0,
+      "end": 30.0,
+      "speaker": "题目1",
+      "module": "",
+      "text": "Where can I find the books on history?"
+    },
+    {
+      "id": "s003",
+      "start": 30.0,
+      "end": 46.0,
+      "speaker": "题目2",
+      "module": "",
+      "text": "I don't know how many people will join tonight for study group."
+    },
+    {
+      "id": "s004",
+      "start": 46.0,
+      "end": 56.0,
+      "speaker": "题目3",
+      "module": "",
+      "text": "Why are you late to class?"
+    },
+    {
+      "id": "s005",
+      "start": 56.0,
+      "end": 72.0,
+      "speaker": "题目4",
+      "module": "",
+      "text": "Peter said he will look for supplies?"
+    },
+    {
+      "id": "s006",
+      "start": 72.0,
+      "end": 84.0,
+      "speaker": "题目5",
+      "module": "",
+      "text": "Where do the study group meet?"
+    },
+    {
+      "id": "s007",
+      "start": 84.0,
+      "end": 95.0,
+      "speaker": "题目6",
+      "module": "",
+      "text": "Maybe the power went out for this whole area."
+    },
+    {
+      "id": "s008",
+      "start": 95.0,
+      "end": 110.0,
+      "speaker": "题目7",
+      "module": "",
+      "text": "Who is organizing the annual conference?"
+    },
+    {
+      "id": "s009",
+      "start": 110.0,
+      "end": 123.0,
+      "speaker": "题目8",
+      "module": "",
+      "text": "And does the library open?"
+    },
+    {
+      "id": "s010",
+      "start": 123.0,
+      "end": 135.0,
+      "speaker": "题目9",
+      "module": "",
+      "text": "What should we do tonight after classes?"
+    },
+    {
+      "id": "s011",
+      "start": 135.0,
+      "end": 146.0,
+      "speaker": "题目10",
+      "module": "",
+      "text": "Can you turn down the volume?"
+    },
+    {
+      "id": "s012",
+      "start": 146.0,
+      "end": 160.0,
+      "speaker": "题目11",
+      "module": "",
+      "text": "Have you finished your seminar paper?"
+    },
+    {
+      "id": "s013",
+      "start": 160.0,
+      "end": 173.0,
+      "speaker": "题目12",
+      "module": "",
+      "text": "Are you attending the organic farming seminar?"
+    },
+    {
+      "id": "s014",
+      "start": 897.0,
+      "end": 909.0,
+      "speaker": "题目1",
+      "module": "",
+      "text": "Can you help me understand the instructions for this homework?"
+    },
+    {
+      "id": "s015",
+      "start": 909.0,
+      "end": 923.0,
+      "speaker": "题目2",
+      "module": "",
+      "text": "Who forgot to turn off the lights?"
+    }
+  ]
+}

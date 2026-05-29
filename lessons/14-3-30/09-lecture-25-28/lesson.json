@@ -1,0 +1,26 @@
+{
+  "title": "3.30 讲座 25-28",
+  "source": {
+    "textId": "3.30__3-30-m4a",
+    "textName": "3.30-听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/3.30(答案+文本校对了/3.30-听力.m4a.docx",
+    "audioSource": "D:\\TOELF\\3.30\\3.30 听力.m4a\\3.30 听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 3.30; listening keyword; plain file",
+    "unitType": "lecture",
+    "unitLabel": "25-28"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 651.0,
+      "end": 855.0,
+      "speaker": "题目25/26/27/28",
+      "module": "",
+      "text": "Listen to a talk in an archaeology class. Imagine an ancient garden or field, and imagine organic material in its soil, things like plant roots or wooden irrigation pipes. When this organic material decays over the centuries, it often leaves behind voids in the soil. Researchers can fill these voids by injecting plaster into the empty spaces. When the plaster hardens, it creates casts, essentially three dimensional negatives that replicate what existed centuries ago. For example, at the ancient Maya village of Hoyadeserin in El Salvador, Central America, casts taken from root cavities have revealed a diverse mix of crops, including manioc, maize and beans. These species were identified in part by the shape and size of the root voids by comparing them with modern plant root systems. This layout of plants in the garden wasn't random at all. It showed the garden to be an early example of the Milper system, a traditional inter-cropping method still practiced in Central America and Mexico today, where the tall maize plants provides stalks for bean plants to climb, the beans enrich the soil with nitrogen, and squash plants growing along the ground provides shade that suppresses weeds and retains moisture. Soil casts have also been used at the sites of ancient Roman villa gardens, revealing irrigation channels and beds planted with species such as grapevines and roses. The findings show a deliberate integration of ornamental plants with edible plants, suggesting a Roman design ethos that's sought to balance aesthetics with utility."
+    }
+  ]
+}

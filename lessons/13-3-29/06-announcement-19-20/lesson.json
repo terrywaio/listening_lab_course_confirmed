@@ -1,0 +1,26 @@
+{
+  "title": "3.29 公告 19-20",
+  "source": {
+    "textId": "3.29__3-29-m4a",
+    "textName": "3.29 听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/3.29（答案+文本校对了/3.29 听力.m4a.docx",
+    "audioSource": "D:\\TOELF\\3.29\\听力\\3.29 听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 3.29; listening keyword; plain file",
+    "unitType": "announcement",
+    "unitLabel": "19-20"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 455.0,
+      "end": 511.0,
+      "speaker": "题目19/20",
+      "module": "",
+      "text": "Listen to an announcement in a classroom. I've noticed that some of you bring food to class. I understand that this is the 1st class of the day, and you may not have time to finish your breakfast at home. I don't mind if you eat in class. If that's what it takes to keep you alert, I just ask that you clean up after yourselves. Facilities has alerted me that this room is often a mess at the end of the day, so please your part to keep it tidy."
+    }
+  ]
+}

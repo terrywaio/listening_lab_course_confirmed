@@ -1,0 +1,26 @@
+{
+  "title": "4.6 公告 21-22",
+  "source": {
+    "textId": "4.6__part1__4-6-q1-m4a-1",
+    "textName": "4.6 听力(缺q1).m4a(1).docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/4.6 听力(缺q1).m4a(1).docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\4.6.zip::4.6/4.6 听力(缺q1).m4a/4.6 听力(缺q1).m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 4.6; part match part1; listening keyword",
+    "unitType": "announcement",
+    "unitLabel": "21-22"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 412.0,
+      "end": 477.0,
+      "speaker": "题目21/22",
+      "module": "",
+      "text": "Listen to an announcement in a University dormitory. Attention, students, we apologize for the lack of clarity related to the recent changes to our recycling program. Some of the bin labels were misleading, which led to some misunderstandings about where to dispose of certain items. Please make sure to check the updated labels on the bins. Please also see the new detailed guidelines that have been posted on every floor in each dormitory."
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "title": "3.8 对话 13-14",
+  "source": {
+    "textId": "3.8__3-8-m4a",
+    "textName": "3.8 听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/3.8（答案+文本校对了/3.8 听力.m4a.docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\3.8线下【后续继续补充】.zip::3.8线下【后续继续补充】/3.8 -完整一套/3.8 听力/3.8 听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 3.8; listening keyword",
+    "unitType": "conversation",
+    "unitLabel": "13-14"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 179.0,
+      "end": 242.0,
+      "speaker": "讲话人13/14",
+      "module": "",
+      "text": "Listen to a conversation. Have you booked the tickets for the sculpture? I'm working on it. Now I'm trying to find out if there's a day when admission is free. That's a good idea. In fact, they offer free entry on the 1st Saturday of the month. Perfect. That's next weekend. Should we plan to go then? Sounds great. I'll check the hours and send you the details. Why don't you reach out to others in our art class and see if they want to go? Good idea. I'll send a message to everybody right now."
+    }
+  ]
+}

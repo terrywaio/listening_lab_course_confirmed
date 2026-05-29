@@ -1,0 +1,42 @@
+{
+  "title": "3.15 Part 2 单句",
+  "source": {
+    "textId": "3.15__part2__3-15-part2-m4a",
+    "textName": "3.15 听力 part2.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/3.15（答案+文本校对了/3.15 听力 part2.m4a.docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\3.15.zip::3.15/3.15  听力 part2/3.15 听力 part2.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 3.15; part match part2; listening keyword",
+    "unitType": "single",
+    "unitLabel": "单句"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 12.0,
+      "end": 24.0,
+      "speaker": "题目1",
+      "module": "M2",
+      "text": "Are you attending the electric vehicle seminar?"
+    },
+    {
+      "id": "s002",
+      "start": 24.0,
+      "end": 39.0,
+      "speaker": "题目2",
+      "module": "M2",
+      "text": "We might need to reschedule our study group."
+    },
+    {
+      "id": "s003",
+      "start": 39.0,
+      "end": 94.0,
+      "speaker": "题目3",
+      "module": "M2",
+      "text": "Why did the student union close early today?"
+    }
+  ]
+}

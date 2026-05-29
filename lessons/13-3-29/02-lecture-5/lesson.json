@@ -1,0 +1,26 @@
+{
+  "title": "3.29 讲座 5",
+  "source": {
+    "textId": "3.29__3-29-m4a",
+    "textName": "3.29 听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/3.29（答案+文本校对了/3.29 听力.m4a.docx",
+    "audioSource": "D:\\TOELF\\3.29\\听力\\3.29 听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 3.29; listening keyword; plain file",
+    "unitType": "lecture",
+    "unitLabel": "5"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 103.0,
+      "end": 121.0,
+      "speaker": "题目5",
+      "module": "",
+      "text": "The lecture covered advancements in vehicle technology."
+    }
+  ]
+}

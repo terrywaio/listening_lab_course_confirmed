@@ -1,0 +1,26 @@
+{
+  "title": "3.29 公告 23-24",
+  "source": {
+    "textId": "3.29__3-29-m4a",
+    "textName": "3.29 听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/3.29（答案+文本校对了/3.29 听力.m4a.docx",
+    "audioSource": "D:\\TOELF\\3.29\\听力\\3.29 听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 3.29; listening keyword; plain file",
+    "unitType": "announcement",
+    "unitLabel": "23-24"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 582.0,
+      "end": 642.0,
+      "speaker": "题目23/24",
+      "module": "",
+      "text": "Listen to an announcement at a University Club meeting. I see we have a lot of new members here this evening. Tonight, we'll focus on getting to know each other. And starting next week, we'll be talking about some exciting new projects, including volunteering at local elementary schools, fundraising for local charities and planting trees in city park. I hope you're as excited about giving back to the broader community around our University as I am. I'll start by telling you a bit about myself, and then we'll go around the room."
+    }
+  ]
+}

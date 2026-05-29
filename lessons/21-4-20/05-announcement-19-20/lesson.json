@@ -1,0 +1,26 @@
+{
+  "title": "4.20 公告 19-20",
+  "source": {
+    "textId": "4.20__4-20-m4a",
+    "textName": "4.20听力音频.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/4.20听力音频.m4a.docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\4.20.zip::4.20/4.20听力音频.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 4.20; listening keyword",
+    "unitType": "announcement",
+    "unitLabel": "19-20"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 512.0,
+      "end": 584.0,
+      "speaker": "题目19/20",
+      "module": "",
+      "text": "Listen to an announcement in a University classroom. Since a lot of you have expressed an interest in a career in education once you've graduated, I thought I'd share something that I think will be very helpful to you. It's a list of professional organizations and networking opportunities for aspiring new teachers. I've attached a copy with an email I sent everyone just before class. If you're one of the students I'm referring to, I highly recommend you check it out."
+    }
+  ]
+}

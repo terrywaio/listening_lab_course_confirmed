@@ -1,0 +1,26 @@
+{
+  "title": "4.27 公告 19-20",
+  "source": {
+    "textId": "4.27__4-27-m4a",
+    "textName": "4.27 听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/4.27 听力.m4a.docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-05\\4.27.zip::4.27/4.27 听力.m4a/4.27 听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 4.27; listening keyword",
+    "unitType": "announcement",
+    "unitLabel": "19-20"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 435.0,
+      "end": 494.0,
+      "speaker": "题目19/20",
+      "module": "",
+      "text": "Listen to an announcement in a classroom. Before we get started today, I want to talk about the new recycling regulations going into effect on Monday. All recyclable materials, including paper, plastics and glass, must be placed in the designated blue bins located throughout the campus. Non recyclable waste should go in the black bins. These measures are part of our University wide effort to promote sustainability. If you are unsure about whether your waste is recyclable, please refer to the informational posters around campus. You'll see them everywhere."
+    }
+  ]
+}

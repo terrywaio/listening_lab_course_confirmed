@@ -1,0 +1,146 @@
+{
+  "title": "4.1 单句",
+  "source": {
+    "textId": "4.1__part1__4-1-m4a-1",
+    "textName": "4.1听力.m4a(1).docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/4.1听力.m4a(1).docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\4.1.zip::4.1/4.1听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 4.1; part match part1; listening keyword",
+    "unitType": "single",
+    "unitLabel": "单句"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": null,
+      "end": null,
+      "speaker": "",
+      "module": "",
+      "text": "Module 1："
+    },
+    {
+      "id": "s002",
+      "start": 8.0,
+      "end": 27.0,
+      "speaker": "题目1",
+      "module": "",
+      "text": "How long is the flight home for that exchange student?"
+    },
+    {
+      "id": "s003",
+      "start": 27.0,
+      "end": 40.0,
+      "speaker": "题目2",
+      "module": "",
+      "text": "Did you enjoy the workshop?"
+    },
+    {
+      "id": "s004",
+      "start": 40.0,
+      "end": 59.0,
+      "speaker": "题目3",
+      "module": "",
+      "text": "Are you going to attend the jazz concert?"
+    },
+    {
+      "id": "s005",
+      "start": 59.0,
+      "end": 74.0,
+      "speaker": "题目4",
+      "module": "",
+      "text": "I had to study late every day last week."
+    },
+    {
+      "id": "s006",
+      "start": 74.0,
+      "end": 89.0,
+      "speaker": "题目5",
+      "module": "",
+      "text": "Who's interested in being the science club treasurer?"
+    },
+    {
+      "id": "s007",
+      "start": 89.0,
+      "end": 106.0,
+      "speaker": "题目6",
+      "module": "",
+      "text": "When do you usually wake up for Wednesday classes?"
+    },
+    {
+      "id": "s008",
+      "start": 106.0,
+      "end": 119.0,
+      "speaker": "题目7",
+      "module": "",
+      "text": "When is the next concert?"
+    },
+    {
+      "id": "s009",
+      "start": 119.0,
+      "end": 131.0,
+      "speaker": "题目8",
+      "module": "",
+      "text": "What did you think of the pottery workshop?"
+    },
+    {
+      "id": "s010",
+      "start": 131.0,
+      "end": 144.0,
+      "speaker": "题目9",
+      "module": "",
+      "text": "Where can I get a good coffee around here?"
+    },
+    {
+      "id": "s011",
+      "start": 144.0,
+      "end": 160.0,
+      "speaker": "题目10",
+      "module": "",
+      "text": "The soup at the dining hall today was delicious."
+    },
+    {
+      "id": "s012",
+      "start": 160.0,
+      "end": 176.0,
+      "speaker": "题目11",
+      "module": "",
+      "text": "The museum has an exhibit on ancient civilizations."
+    },
+    {
+      "id": "s013",
+      "start": 176.0,
+      "end": 191.0,
+      "speaker": "题目12",
+      "module": "",
+      "text": "Should we get a sandwich from the cafeteria?"
+    },
+    {
+      "id": "s014",
+      "start": 892.0,
+      "end": 908.0,
+      "speaker": "题目1",
+      "module": "",
+      "text": "Are you going to join the practice session tomorrow?"
+    },
+    {
+      "id": "s015",
+      "start": 908.0,
+      "end": 923.0,
+      "speaker": "题目2",
+      "module": "",
+      "text": "I loved your class presentation."
+    },
+    {
+      "id": "s016",
+      "start": 923.0,
+      "end": 935.0,
+      "speaker": "题目3",
+      "module": "",
+      "text": "Can you help me with the homework?"
+    }
+  ]
+}

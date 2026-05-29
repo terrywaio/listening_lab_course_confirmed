@@ -1,0 +1,26 @@
+{
+  "title": "4.8 公告 19-20",
+  "source": {
+    "textId": "4.8__4-8-m4a",
+    "textName": "4.8听力音频.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/4.8听力音频.m4a.docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\4.8.zip::4.8/4.8听力音频.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 4.8; listening keyword",
+    "unitType": "announcement",
+    "unitLabel": "19-20"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 400.0,
+      "end": 481.0,
+      "speaker": "题目19/20",
+      "module": "",
+      "text": "Listen to a University radio announcement. Due to plumbing issues, the student gym will be closed for the next two weeks. We apologize for the disruption to your workout routine. We will be offering a shuttle bus service to a nearby facility off. In the meantime, you can check the bus schedules online on the University website. Under campus recreation, there will be no charge for the bus or use of the temporary facility. Also remember that our outdoor sports facilities can be used at any time."
+    }
+  ]
+}

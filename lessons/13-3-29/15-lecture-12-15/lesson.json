@@ -1,0 +1,26 @@
+{
+  "title": "3.29 讲座 12-15",
+  "source": {
+    "textId": "3.29__3-29-m4a",
+    "textName": "3.29 听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/3.29（答案+文本校对了/3.29 听力.m4a.docx",
+    "audioSource": "D:\\TOELF\\3.29\\听力\\3.29 听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 3.29; listening keyword; plain file",
+    "unitType": "lecture",
+    "unitLabel": "12-15"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 1433.0,
+      "end": null,
+      "speaker": "题目12/13/14/15",
+      "module": "",
+      "text": "Listen to a talk in a biology podcast. Have you ever heard of Tardigrades? These are animals about half a millimeter in size, just about large enough to be visible to the naked eye. Tardigrades are renowned for their ability to survive a variety of extreme conditions, an ability that is unique among animals. They are found in diverse environments, ranging from the deep sea to high mountain tops. They can also withstand temperatures from just above absolute zero to over 150 degrees Celsius. They even survive intense radiation and the vacuum of space. The secret to Tardigrades survival, a process called Cryptobiosis. During Cryptobiosis, Tardigrades lose almost all their water content and produce unique proteins that protect their cells from damage. But remember, no metabolic activity, meaning no bodily process, can happen without water. So all metabolism essentially shuts down. When favorable conditions return, Tardigrades rehydrate and resume norm functions. Scientists are fascinated by Tardigrades because understanding their survival mechanisms could have important implications. Take healthcare, for example. If we can figure out how Tardigrades protect their cells from radiation, it might lead to breakthroughs in radiation therapy for cancer patients. Astronomers are intrigued by Tardigrades because of their ability to endure the vacuum of space. In a research study in 2007, Tardigrades were sent to the harsh realms of space. Some not only survived, but they successfully reproduced upon their return to earth. If Tardigrades can survive in space, it suggests life might exist in the extreme environments of other planets."
+    }
+  ]
+}

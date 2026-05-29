@@ -1,0 +1,26 @@
+{
+  "title": "2.1-2 M1 讲座 25-28",
+  "source": {
+    "textId": "2.1-2__module1__listeningmodule1-mp3",
+    "textName": "ListeningModule1.mp3.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/2.1-2（答案+文本校对了/ListeningModule1.mp3.docx",
+    "audioSource": "D:\\TOELF\\1月+2月部分.zip::1月+2月部分/2.1-2（done)/ListeningModule1.mp3",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 2.1-2; part match module1; listening keyword",
+    "unitType": "lecture",
+    "unitLabel": "25-28"
+  },
+  "language": "en",
+  "audioSrc": "../audio.mp3",
+  "audioFileName": "audio.mp3",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 317.0,
+      "end": 412.0,
+      "speaker": "题目25/26/27/28",
+      "module": "",
+      "text": "Listen to a talk in an economics class. Imagine that you have a full-time job, but you want to take a year off to go back to school. What is it going to cost you? Of course, there's the cost of tuition for your classes plus living expenses. But what about the money you're no longer earning at your job because you're now a student? We call that the opportunity cost. Opportunity cost refers to the value of the next best alternative that must be given up when making a choice. It's a fundamental principle in economics that helps individuals and businesses understand the true cost of their decisions. This exercise in imagination illustrates a personal decision. But businesses also face opportunity costs in their operations. For instance, a company may choose to invest in new equipment rather than spend money to expand its product line. The opportunity cost of this decision is the potential revenue that could have been generated from the new products. Understanding opportunity cost helps individuals as well as businesses make informed decisions that maximize their benefits and minimize their losses. It's important to note that opportunity cost is not always measured in financial terms. It can also be related to factors like time, convenience, or personal satisfaction. For that reason, opportunity cost can be difficult to quantify, especially when dealing with non-monetary factors. Have you ever had to make a decision that included an opportunity cost? Take a few minutes now to think, and then I'll ask for volunteers to share."
+    }
+  ]
+}

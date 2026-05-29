@@ -1,0 +1,130 @@
+{
+  "title": "4.27 单句",
+  "source": {
+    "textId": "4.27__4-27-m4a",
+    "textName": "4.27 听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/4.27 听力.m4a.docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-05\\4.27.zip::4.27/4.27 听力.m4a/4.27 听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 4.27; listening keyword",
+    "unitType": "single",
+    "unitLabel": "单句"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": null,
+      "end": null,
+      "speaker": "",
+      "module": "",
+      "text": "Module 1:"
+    },
+    {
+      "id": "s002",
+      "start": 13.0,
+      "end": 38.0,
+      "speaker": "题目1",
+      "module": "",
+      "text": "Where can I buy your most recent book?"
+    },
+    {
+      "id": "s003",
+      "start": 38.0,
+      "end": 53.0,
+      "speaker": "题目2",
+      "module": "",
+      "text": "When will the equipment for our photography workshop be delivered?"
+    },
+    {
+      "id": "s004",
+      "start": 53.0,
+      "end": 75.0,
+      "speaker": "题目3",
+      "module": "",
+      "text": "How many pages do we need to write for this assignment?"
+    },
+    {
+      "id": "s005",
+      "start": 86.0,
+      "end": 111.0,
+      "speaker": "题目5",
+      "module": "",
+      "text": "Who is speaking at the seminar?"
+    },
+    {
+      "id": "s006",
+      "start": 111.0,
+      "end": 136.0,
+      "speaker": "题目6",
+      "module": "",
+      "text": "Julia just bought a new car."
+    },
+    {
+      "id": "s007",
+      "start": 136.0,
+      "end": 162.0,
+      "speaker": "题目7",
+      "module": "",
+      "text": "Why did the quad open later than usual?"
+    },
+    {
+      "id": "s008",
+      "start": 162.0,
+      "end": 189.0,
+      "speaker": "题目8",
+      "module": "",
+      "text": "How will this change affect our debate team?"
+    },
+    {
+      "id": "s009",
+      "start": 189.0,
+      "end": 215.0,
+      "speaker": "题目9",
+      "module": "",
+      "text": "I just learned that Abby and I have the same advisor."
+    },
+    {
+      "id": "s010",
+      "start": 215.0,
+      "end": 226.0,
+      "speaker": "题目10",
+      "module": "",
+      "text": "How come you volunteered?"
+    },
+    {
+      "id": "s011",
+      "start": 226.0,
+      "end": 240.0,
+      "speaker": "题目11",
+      "module": "",
+      "text": "We are completely out of paper."
+    },
+    {
+      "id": "s012",
+      "start": 240.0,
+      "end": 259.0,
+      "speaker": "题目12",
+      "module": "",
+      "text": "Could you please send me the art class trip permission form?"
+    },
+    {
+      "id": "s013",
+      "start": 980.0,
+      "end": 999.0,
+      "speaker": "题目1",
+      "module": "",
+      "text": "Which route should we take to the conference?"
+    },
+    {
+      "id": "s014",
+      "start": 999.0,
+      "end": 1009.0,
+      "speaker": "题目2",
+      "module": "",
+      "text": "How tall is the student affairs building?"
+    }
+  ]
+}

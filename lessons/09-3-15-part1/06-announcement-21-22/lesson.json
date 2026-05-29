@@ -1,0 +1,26 @@
+{
+  "title": "3.15 M1 公告 21-22",
+  "source": {
+    "textId": "3.15__part1__3-15-part1-m4a",
+    "textName": "3.15 听力part1.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/3.15（答案+文本校对了/3.15 听力part1.m4a.docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\3.15.zip::3.15/3.15 听力part1/3.15 听力part1.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 3.15; part match part1; listening keyword",
+    "unitType": "announcement",
+    "unitLabel": "21-22"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 426.0,
+      "end": 492.0,
+      "speaker": "题目21/22",
+      "module": "M1",
+      "text": "Let's listen to an announcement in a classroom. Attention, students, I need to inform you about a change to our class schedule next week. I will be at a conference on Monday, so class will not meet that day. Your assignment is to watch the customer talk on the newly discovered moons of Saturn, which will take place at the same time. Also don't forget to reserve a time to use the telescope for your practical exam. Please visit the class website and complete the sign up sheet. It it's at the bottom of the page, just put your name for one of the half hour slots."
+    }
+  ]
+}

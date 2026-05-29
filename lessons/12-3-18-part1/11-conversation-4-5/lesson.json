@@ -1,0 +1,26 @@
+{
+  "title": "3.18 对话 4-5",
+  "source": {
+    "textId": "3.18__part1__3-18-m4a-1",
+    "textName": "3.18 听力.m4a(1).docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/3.18(答案+文本校对了/3.18 听力.m4a(1).docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\3.18-忘记放进去了.zip::3.18-忘记放进去了/3.18 听力/3.18 听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 3.18; part unknown; listening keyword",
+    "unitType": "conversation",
+    "unitLabel": "4-5"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 963.0,
+      "end": 1028.0,
+      "speaker": "题目4/5",
+      "module": "",
+      "text": "Listen to a conversation. How do you like living an apartment? Well, it's definitely different from last year in the dorms. I have a kitchen now so I can cook my own meals. That must be nice. Yeah, kind of. My roommate and I aren't very good at cooking. We downloaded some apps to try to improve our skills, but it's been a bit overwhelming trying to find apps we want to use. You wouldn't believe how many are out there. Oh, interesting. I've never used anything like that. My mom is a professional chef at a restaurant."
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "title": "4.8 公告 23-24",
+  "source": {
+    "textId": "4.8__4-8-m4a",
+    "textName": "4.8听力音频.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/4.8听力音频.m4a.docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\4.8.zip::4.8/4.8听力音频.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 4.8; listening keyword",
+    "unitType": "announcement",
+    "unitLabel": "23-24"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 547.0,
+      "end": 614.0,
+      "speaker": "题目23/24",
+      "module": "",
+      "text": "Listen to an announcement at a school art exhibit. Thank you for touring this special collection of paintings we recently acquired from a donor. We're going to begin with late 18​th century works in the hallway on your left. We'll then proceed to early 19​th century in the next room and finish with the modern art collection on the next floor. But 1​st, I'll PaaS out a detailed map of the collection, which includes some artist information on the back."
+    }
+  ]
+}

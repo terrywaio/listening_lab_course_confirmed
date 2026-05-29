@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>精听工作台</title>
+    <link rel="stylesheet" href="./styles.css?v=20260529-1" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">
+        <h1>精听工作台</h1>
+        <p id="lessonMeta">本地课程</p>
+      </div>
+      <div class="top-actions">
+        <button class="ghost-button" id="refreshLibrary" type="button">刷新课包</button>
+        <button class="ghost-button" id="loadDemo" type="button">示例</button>
+        <button class="primary-button" id="exportProgress" type="button">导出记录</button>
+      </div>
+    </header>
+
+    <main class="workspace">
+      <section class="panel asset-panel" aria-labelledby="courseTitle">
+        <div class="panel-heading">
+          <h2 id="courseTitle">课程</h2>
+          <span id="libraryStatus" class="status-pill">等待课包</span>
+        </div>
+
+        <div class="library-box">
+          <label for="lessonSelect">课包</label>
+          <select id="lessonSelect" disabled>
+            <option value="">暂无课包</option>
+          </select>
+        </div>
+        <div id="audioStatus" class="course-status">未加载音频</div>
+
+        <details class="debug-tools">
+          <summary>调试导入</summary>
+          <label class="file-card">
+            <span>音频</span>
+            <input id="audioFile" type="file" accept="audio/*,video/mp4,video/webm" />
+          </label>
+
+          <label class="file-card">
+            <span>字幕 / 文稿</span>
+            <input id="transcriptFile" type="file" accept=".vtt,.srt,.txt,.json,.md" />
+          </label>
+
+          <label class="text-block" for="pasteTranscript">粘贴文稿</label>
+          <textarea id="pasteTranscript" rows="8" placeholder="每行一句，或直接粘贴整段英文。"></textarea>
+          <div class="inline-actions">
+            <button class="secondary-button" id="buildFromText" type="button">分句</button>
+            <button class="ghost-button" id="exportLesson" type="button">导出课程</button>
+            <button class="ghost-button" id="clearSession" type="button">清空</button>
+          </div>
+        </details>
+      </section>
+
+      <section class="panel listen-panel" aria-labelledby="listenTitle">
+        <div class="panel-heading compact-heading">
+          <div>
+            <h2 id="listenTitle">练习</h2>
+            <span id="segmentCounter" class="muted">0 / 0</span>
+          </div>
+          <div class="mode-switch" role="group" aria-label="练习模式">
+            <button class="mode-button is-active" data-mode="dictation" type="button">听写</button>
+            <button class="mode-button" data-mode="shadow" type="button">跟读</button>
+            <button class="mode-button" data-mode="review" type="button">校对</button>
+          </div>
+        </div>
+
+        <div class="wave-shell">
+          <canvas id="waveform" height="144" aria-label="音频波形"></canvas>
+          <audio id="audio" preload="metadata"></audio>
+        </div>
+
+        <div class="transport">
+          <button class="icon-button" id="previousSegment" type="button" title="上一句" aria-label="上一句">‹</button>
+          <button class="icon-button" id="replaySegment" type="button" title="重听本句" aria-label="重听本句">↺</button>
+          <button class="play-button" id="togglePlay" type="button" title="播放/暂停" aria-label="播放/暂停">▶</button>
+          <button class="icon-button" id="nextSegment" type="button" title="下一句" aria-label="下一句">›</button>
+
+          <label class="select-label" for="playbackRate">速度</label>
+          <select id="playbackRate">
+            <option value="0.75">0.75x</option>
+            <option value="0.9">0.9x</option>
+            <option value="1" selected>1.0x</option>
+            <option value="1.15">1.15x</option>
+            <option value="1.3">1.3x</option>
+          </select>
+
+          <label class="check-label">
+            <input id="loopSegment" type="checkbox" checked />
+            单句循环
+          </label>
+          <label class="check-label">
+            <input id="hideTranscript" type="checkbox" checked />
+            隐藏原文
+          </label>
+        </div>
+
+        <article class="focus-box">
+          <div class="focus-meta">
+            <span id="timeRange">--:-- - --:--</span>
+            <span id="sentenceStatus" class="sentence-status">待开始</span>
+            <span id="scoreBadge" class="score-badge">未作答</span>
+          </div>
+          <div id="answerText" class="answer-text"></div>
+          <textarea id="dictationInput" rows="5" spellcheck="false" placeholder="输入听到的内容"></textarea>
+          <div class="inline-actions">
+            <button class="secondary-button" id="checkAnswer" type="button">提交答案</button>
+            <button class="ghost-button" id="revealAnswer" type="button" disabled>显示原文</button>
+            <button class="ghost-button" id="copySegment" type="button" disabled>复制本句</button>
+          </div>
+        </article>
+      </section>
+
+      <section class="panel side-panel" aria-labelledby="segmentsTitle">
+        <div class="panel-heading">
+          <h2 id="segmentsTitle">句段</h2>
+          <span id="progressText" class="muted">0%</span>
+        </div>
+        <div id="segmentsList" class="segments-list" aria-live="polite"></div>
+
+        <div class="notes-box">
+          <div class="panel-heading small-heading">
+            <h2>记录</h2>
+            <button class="ghost-button small-button" id="bookmarkSegment" type="button">标记</button>
+          </div>
+          <textarea id="notesInput" rows="6" placeholder="错因、连读、弱读、专有名词"></textarea>
+          <div id="bookmarkList" class="bookmark-list"></div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./app.js?v=20260529-1"></script>
+  </body>
+</html>

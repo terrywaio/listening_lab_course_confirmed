@@ -1,0 +1,26 @@
+{
+  "title": "4.27 讲座 25-28",
+  "source": {
+    "textId": "4.27__4-27-m4a",
+    "textName": "4.27 听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/4.27 听力.m4a.docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-05\\4.27.zip::4.27/4.27 听力.m4a/4.27 听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 4.27; listening keyword",
+    "unitType": "lecture",
+    "unitLabel": "25-28"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 615.0,
+      "end": 774.0,
+      "speaker": "题目25/26/27/28",
+      "module": "",
+      "text": "Listen to a talk in an art history class. when we think of the Renaissance, we often picture grand paintings and sculptures, but a lesser known art form also flourished during this period. Tapestry weaving tapestries were not only decorative pieces, but also served practical purposes, such as insulating the cold stone walls of castles. Artists of the era use tapestries to depict intricate scenes from mythology, religion and daily life, often incorporating vibrant colors and rich textures. An advantage of tapestries was their portability. Unlike frescoes, which were fixed to walls, tapestries could be rolled up and transported from one location to another, allowing their owners to display their wealth wherever they went. This portability also had a downside, however, tapestries were susceptible to damage during transit. Even today, museums face challenges preserving these unique artworks due to their fragile nature. The creation of a tapestry was a labor intensive process requiring collaboration between designers, weavers and dres. Unlike paintings, which could be completed by a single artist, tapestries were team efforts, and it was common for a designer's sketches to be translated by skilled weavers into woven masterpieces. The intricate craftsmanship required to produce these artworks offers a glimpse into the collaborative spirit of the Renaissance era."
+    }
+  ]
+}

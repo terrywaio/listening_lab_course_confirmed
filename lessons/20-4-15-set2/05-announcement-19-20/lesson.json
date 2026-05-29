@@ -1,0 +1,26 @@
+{
+  "title": "4.15 套二 公告 19-20",
+  "source": {
+    "textId": "4.15__set2__4-15-m4a",
+    "textName": "4.15 套二 听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/4.15 套二 听力.m4a.docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\4.15.zip::4.15/4.15 套一 听力.m4a/4.15 套二 听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 4.15; part match set2; listening keyword",
+    "unitType": "announcement",
+    "unitLabel": "19-20"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 393.0,
+      "end": 458.0,
+      "speaker": "题目19/20",
+      "module": "",
+      "text": "Listen to an announcement at a University Club meeting. The environmental club will be hosting a campus cleanup session Saturday starting at 9:00a.m.. It's not too late to sign up, and the activity is open to all. Participants will spend two hours picking up trash around campus and will receive free t shirts and refreshments. And next weekend, we'll be hosting the 1st ever multi University symposium. Student leaders from four different schools will discuss ways our students can work together to improve recycling efforts. The complete agenda is available on our club web page."
+    }
+  ]
+}

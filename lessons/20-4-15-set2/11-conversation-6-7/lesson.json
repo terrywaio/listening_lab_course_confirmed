@@ -1,0 +1,26 @@
+{
+  "title": "4.15 套二 对话 6-7",
+  "source": {
+    "textId": "4.15__set2__4-15-m4a",
+    "textName": "4.15 套二 听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/4.15 套二 听力.m4a.docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\4.15.zip::4.15/4.15 套一 听力.m4a/4.15 套二 听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 4.15; part match set2; listening keyword",
+    "unitType": "conversation",
+    "unitLabel": "6-7"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 1094.0,
+      "end": 1162.0,
+      "speaker": "题目6/7",
+      "module": "",
+      "text": "Listen to a conversation. Caroline. I've got a question for you. Sure, professor. I'm not sure if you're aware, but the University is redesigning its website and I'm involved in the process for the academic pages. That's great. It's long overdue. if you ask me. I agree. We're looking for some students to be testers for us. Try out the new site, point out things you like and things that aren't working properly. Make suggestions. Those sorts of things. Would you be interested? I don't see why not."
+    }
+  ]
+}

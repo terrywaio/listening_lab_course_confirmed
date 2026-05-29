@@ -1,0 +1,26 @@
+{
+  "title": "4.24 对话 15-16",
+  "source": {
+    "textId": "4.24__4-24-m4a",
+    "textName": "4.24听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/4.24听力.m4a.docx",
+    "audioSource": "D:\\4.24\\4.24听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 4.24; listening keyword; plain file",
+    "unitType": "conversation",
+    "unitLabel": "15-16"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 274.0,
+      "end": 355.0,
+      "speaker": "题目15/16",
+      "module": "",
+      "text": "Listen to a conversation. Have you decided where you want to go for your summer trip? Going to to vert. Be using it so I have a free place to stay. Nice. Is it in a pretty area? Beautiful. It's in the woods, but close to a town with some. Before I go, though, I really need to get some new hiking boots. When I get home, I'll need to do some research and figure out what will be best for me."
+    }
+  ]
+}

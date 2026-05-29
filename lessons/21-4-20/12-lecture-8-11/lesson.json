@@ -1,0 +1,26 @@
+{
+  "title": "4.20 讲座 8-11",
+  "source": {
+    "textId": "4.20__4-20-m4a",
+    "textName": "4.20听力音频.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/4.20听力音频.m4a.docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\4.20.zip::4.20/4.20听力音频.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 4.20; listening keyword",
+    "unitType": "lecture",
+    "unitLabel": "8-11"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 1485.0,
+      "end": 1709.0,
+      "speaker": "题目8/9/10/11",
+      "module": "",
+      "text": "Listen to a talk in a history class. The age of exploration extended from the 15​th century to the 17​th century, but long before this, seafarers were venturing into unfamiliar waters using remarkably sophisticated techniques. One notable example is Pythius of masaa, a Greek explorer from the 4​th century bce. He sailed from the Mediterranean to the northern reaches of Europe, possibly reaching Britain and even Iceland. Without modern instruments, Pythius relied on coastal landmarks, the position of the sun and stars, and careful observation of ocean tides and daylight patterns. His journey demonstrated that long distance navigation was possible through keen environmental awareness and methodical planning. Centuries later, European explorers expanded on these early achievements with the help of new technologies. Among the most transformative was the magnetic compass, which used a magnetized needle to indicate direction. Originally developed in China and later adopted in Europe, the compass allowed sailors to maintain a heading even when celestial bodies were obscured by clouds or fog. This innovation enabled mariners to venture into open seas with greater confidence and precision. Historians note that the compass didn't just improve navigation, it transformed it. It allowed explorers like Vasco de Gama and fernammagellan to chart new maritime routes across vast oceans, connecting continents and reshaping global trade. Combined with other tools like the astrolabe and improved ship designs, the compass helped usher in the age of exploration."
+    }
+  ]
+}

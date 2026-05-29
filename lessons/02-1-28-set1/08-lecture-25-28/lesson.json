@@ -1,0 +1,26 @@
+{
+  "title": "1.28 套一 讲座 25-28",
+  "source": {
+    "textId": "1.28__set1__1-28-part1-m4a-1",
+    "textName": "1.28套一听力part1.m4a(1).docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/1.28（答案+文本校对了/1.28套一听力part1.m4a(1).docx",
+    "audioSource": "D:\\TOELF\\1月+2月部分.zip::1月+2月部分/1.28-答案全对/1.28 套一听力音频/1.28套一听力part1.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 1.28; part match set1; listening keyword",
+    "unitType": "lecture",
+    "unitLabel": "25-28"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 586.0,
+      "end": 797.0,
+      "speaker": "题目25/26/27/28",
+      "module": "",
+      "text": "Listen to a talk on an art podcast. Humans have been expressing themselves through art for thousands of years. Consider ancient cave paintings that have been discovered throughout the world, some of them more than forty thousand years old. Caves in Sulawesi, Indonesia, that include figurative art are an example of this. Some forms of art, though, have much more recent origins. Take, for example, decalcomania, a really cool art technique that originated in the 18th century. So what is decalcomania? At its core, it's a simple process. You begin by spreading paint onto a surface like a sheet of paper. Then you press another surface, let's say canvas, onto the paper. So you press the two surfaces together. At this point, you pull them apart while the paint is still wet. The resulting image is often rich with organic abstract patterns. Decalcomania was first used to decorate pottery in the 18th century, but it really took off in the 20th century, especially with the Surrealist movement. Artists like Max Ernst loved this technique because it helped them tap into the subconscious and explore the unexpected. Ernst was enchanted by the process that allowed him to create shapes that the artist could not fully control. What's especially intriguing about decalcomania is the balance struck between control and chaos. Sure, the artist chooses the colors and the materials, but once the process is complete, the final result is mostly up to chance."
+    }
+  ]
+}

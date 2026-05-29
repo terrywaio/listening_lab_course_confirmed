@@ -1,0 +1,26 @@
+{
+  "title": "4.24 对话 13-14",
+  "source": {
+    "textId": "4.24__4-24-m4a",
+    "textName": "4.24听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/4.24听力.m4a.docx",
+    "audioSource": "D:\\4.24\\4.24听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 4.24; listening keyword; plain file",
+    "unitType": "conversation",
+    "unitLabel": "13-14"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 197.0,
+      "end": 274.0,
+      "speaker": "题目13/14",
+      "module": "",
+      "text": "Listen to a conversation. So Jennifer, how's the apartment hunting going? It's okay. I was just looking some online listings. It's tough to find something I like in my price range. I'd love to be able to walk to classes. Having to drive and park in the lot near the student union every day like I do now is kind of a hassle. I understand that. And even though it would help with rent, I don't want to live with anyone. My last roommate was so messy, it was kind of a disaster."
+    }
+  ]
+}

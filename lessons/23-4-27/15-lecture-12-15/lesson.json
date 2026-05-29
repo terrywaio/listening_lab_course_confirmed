@@ -1,0 +1,26 @@
+{
+  "title": "4.27 讲座 12-15",
+  "source": {
+    "textId": "4.27__4-27-m4a",
+    "textName": "4.27 听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/4.27 听力.m4a.docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-05\\4.27.zip::4.27/4.27 听力.m4a/4.27 听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 4.27; listening keyword",
+    "unitType": "lecture",
+    "unitLabel": "12-15"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 1378.0,
+      "end": null,
+      "speaker": "题目12/13/14/15",
+      "module": "",
+      "text": "Listen to a talk on a psychology podcast. There are many different factors that influence human behavior. One is related to social influence, or the idea that our behavior can be shaped by group pressure. To test this idea, a psychologist named Solomon ash conducted a famous study in the 19 fifties, which has become hugely influential in the field. In his experiment, ash invited American University students to take part in a simple visual judgment task. Each participant was placed in a group of seven to nine people, all but one of whom were working with the researcher. The group members were shown a standard line on one card and three comparison lines on another card. One comparison line matched the standard, while the other two were clearly different lengths. Basically, the correct choice was totally obvious. Each person announced a oud which line matched the standard, and those who were in on the study deliberately gave the wrong answer 1​st. The real participant answered last. Across twelve trials, 75% of participants conformed with the incorrect answers that people in the group had given before them at least once, so they chose the line that was clearly wrong. This indicates strong influence of group pressure. This study was replicated in 1980, roughly 30 years after ash conducted his experiment. The subjects in this experiment were British University students. Interestingly, conformity was much lower with these participants. This suggests that conformity may be influenced by culture and the country people grow up in."
+    }
+  ]
+}

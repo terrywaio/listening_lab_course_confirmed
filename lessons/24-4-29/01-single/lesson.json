@@ -1,0 +1,130 @@
+{
+  "title": "4.29 单句",
+  "source": {
+    "textId": "4.29__4-29-m4a",
+    "textName": "4.29 听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/4.29 听力.m4a.docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-05\\4.29.zip::4.29/4.29 听力.m4a/4.29 听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 4.29; listening keyword",
+    "unitType": "single",
+    "unitLabel": "单句"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": null,
+      "end": null,
+      "speaker": "",
+      "module": "",
+      "text": "Module 1:"
+    },
+    {
+      "id": "s002",
+      "start": 6.0,
+      "end": 21.0,
+      "speaker": "讲话人1",
+      "module": "",
+      "text": "The garden has been beautifully landscaped."
+    },
+    {
+      "id": "s003",
+      "start": 21.0,
+      "end": 39.0,
+      "speaker": "讲话人2",
+      "module": "",
+      "text": "How do you usually prepare for presentations?"
+    },
+    {
+      "id": "s004",
+      "start": 39.0,
+      "end": 53.0,
+      "speaker": "讲话人3",
+      "module": "",
+      "text": "How come you Canel the study session with our new classmates?"
+    },
+    {
+      "id": "s005",
+      "start": 68.0,
+      "end": 83.0,
+      "speaker": "讲话人5",
+      "module": "",
+      "text": "What time does the concert start in the auditorium?"
+    },
+    {
+      "id": "s006",
+      "start": 83.0,
+      "end": 99.0,
+      "speaker": "讲话人6",
+      "module": "",
+      "text": "Can you lend your expertise to help me learn a new dance?"
+    },
+    {
+      "id": "s007",
+      "start": 115.0,
+      "end": 131.0,
+      "speaker": "讲话人8",
+      "module": "",
+      "text": "How can I learn more about the chemistry course?"
+    },
+    {
+      "id": "s008",
+      "start": 131.0,
+      "end": 146.0,
+      "speaker": "讲话人9",
+      "module": "",
+      "text": "Are you going to the dance recital?"
+    },
+    {
+      "id": "s009",
+      "start": 146.0,
+      "end": 162.0,
+      "speaker": "讲话人10",
+      "module": "",
+      "text": "How long will it take to receive the package?"
+    },
+    {
+      "id": "s010",
+      "start": 162.0,
+      "end": 176.0,
+      "speaker": "讲话人11",
+      "module": "",
+      "text": "Would you prefer tea or coffee while we study?"
+    },
+    {
+      "id": "s011",
+      "start": 176.0,
+      "end": 194.0,
+      "speaker": "讲话人12",
+      "module": "",
+      "text": "How can I register for this seminar?"
+    },
+    {
+      "id": "s012",
+      "start": 909.0,
+      "end": 925.0,
+      "speaker": "讲话人1",
+      "module": "",
+      "text": "How did you enjoy the forensic science workshop?"
+    },
+    {
+      "id": "s013",
+      "start": 925.0,
+      "end": 938.0,
+      "speaker": "讲话人2",
+      "module": "",
+      "text": "The research workshop is scheduled for Friday afternoon."
+    },
+    {
+      "id": "s014",
+      "start": 938.0,
+      "end": 950.0,
+      "speaker": "讲话人3",
+      "module": "",
+      "text": "Our art history project is due on Friday."
+    }
+  ]
+}

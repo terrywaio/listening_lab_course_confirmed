@@ -1,0 +1,26 @@
+{
+  "title": "4.15 套二 对话 17-18",
+  "source": {
+    "textId": "4.15__set2__4-15-m4a",
+    "textName": "4.15 套二 听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/4.15 套二 听力.m4a.docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\4.15.zip::4.15/4.15 套一 听力.m4a/4.15 套二 听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 4.15; part match set2; listening keyword",
+    "unitType": "conversation",
+    "unitLabel": "17-18"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 338.0,
+      "end": 393.0,
+      "speaker": "题目17/18",
+      "module": "",
+      "text": "Listen to a conversation. Have you gone out to get the food and drinks we need for the astronomy club meeting tomorrow? It's our 1​st meeting of the year. Not yet. I've been working on setting up the outdoor space behind the student center for our stargazing activities. There was more to do than I thought. That actually works out perfectly. I've got a few more things to add to the list. All right, jot them down and I'll take care of that now."
+    }
+  ]
+}

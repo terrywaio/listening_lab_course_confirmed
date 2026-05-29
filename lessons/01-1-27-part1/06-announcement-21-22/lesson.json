@@ -1,0 +1,26 @@
+{
+  "title": "1.27 M1 公告 21-22",
+  "source": {
+    "textId": "1.27__part1__1-27-m4a",
+    "textName": "1.27听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/1.27（答案+文本校对了/1.27听力.m4a.docx",
+    "audioSource": "D:\\TOELF\\1月+2月部分.zip::1月+2月部分/1.27-答案全对/1.27听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 1.27; part match part1; listening keyword",
+    "unitType": "announcement",
+    "unitLabel": "21-22"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 434.0,
+      "end": 501.0,
+      "speaker": "题目21/22",
+      "module": "M1",
+      "text": "Listen to an announcement on a university radio station. Are you someone who loves writing research papers? Do you find yourself often reading something and thinking, “This could use some work”? Become a peer writing mentor. An information session will be held next Tuesday at 7 PM in the campus center. Year after year, graduating students say the writing mentor program was the biggest factor in academic success. This is a great opportunity to meet new people, make a positive impact, and gain valuable experience. See you on Tuesday."
+    }
+  ]
+}

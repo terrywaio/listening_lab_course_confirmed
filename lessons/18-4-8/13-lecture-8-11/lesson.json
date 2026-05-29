@@ -1,0 +1,26 @@
+{
+  "title": "4.8 讲座 8-11",
+  "source": {
+    "textId": "4.8__4-8-m4a",
+    "textName": "4.8听力音频.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/4.8听力音频.m4a.docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\4.8.zip::4.8/4.8听力音频.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 4.8; listening keyword",
+    "unitType": "lecture",
+    "unitLabel": "8-11"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 1235.0,
+      "end": 1429.0,
+      "speaker": "题目8/9/10/11",
+      "module": "",
+      "text": "Listen to a talk in a biology class. The phenomenon of animal migration is a fascinating subject. In biology, migration involves the regular, often seasonal, movement of animals from one region to another, typically in search of food, breeding grounds or better climates. This behavior is observed in a wide variety of species, including birds, mammals, fish and insects. One of the most well known examples is the migration of monarch butterflies. These butterflies travel thousands of miles from North America to central Mexico to escape the cold winter. This journey involves multiple generations, as no single butterfly makes the round trip. Another remarkable example is the migration of humpback whales. These massive creatures travel from their feeding grounds in polar waters to warmer tropical regions where they breed and give birth. Birds like the Arctic turn undertake one of the longest migrations, traveling from the Arctic to the Antarctic and back each year. Despite their differences in size, species and reasons for migrating, they all migrate vast distances with precision. They navigate like seasoned human pilots flying transcontinental routes, only without aircraft, instruments or gps. Of course, migration is not without its challenges. Animals must navigate vast distances, often facing predators, adverse weather, and human made obstacles like buildings and roads. Protecting habitats and reducing human interference can help maintain the delicate balance that allows migration to occur. Understanding animal migration provides insight into the complex behaviors and survival strategies of various species."
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "title": "3.18 对话 13-14",
+  "source": {
+    "textId": "3.18__part1__3-18-m4a-1",
+    "textName": "3.18 听力.m4a(1).docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/3.18(答案+文本校对了/3.18 听力.m4a(1).docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\3.18-忘记放进去了.zip::3.18-忘记放进去了/3.18 听力/3.18 听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 3.18; part unknown; listening keyword",
+    "unitType": "conversation",
+    "unitLabel": "13-14"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 190.0,
+      "end": 241.0,
+      "speaker": "题目13/14",
+      "module": "",
+      "text": "Listen to a conversation. Hey, Rachel, are you still painting in your free time? Yes, I am. I've been experimenting with watercolors lately. That's cool. Have you taken classes or are you self taught? Up until recently, I just did it on my own, but I joined an online course last month, and it's been really helpful. I've learned some new techniques. Maybe I should try it too. I've always wanted to learn how to paint. You should. I'll send you the link to the course."
+    }
+  ]
+}

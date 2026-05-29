@@ -1,0 +1,26 @@
+{
+  "title": "4.20 公告 23-24",
+  "source": {
+    "textId": "4.20__4-20-m4a",
+    "textName": "4.20听力音频.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/4.20听力音频.m4a.docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\4.20.zip::4.20/4.20听力音频.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 4.20; listening keyword",
+    "unitType": "announcement",
+    "unitLabel": "23-24"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 672.0,
+      "end": 760.0,
+      "speaker": "题目23/24",
+      "module": "",
+      "text": "Listen to a school radio announcement. Attention, students, we need to inform you about updates to the course registration process starting next month, all registrations must be completed online through the new student portal. This change is intended to streamline the process and reduce paperwork. Please take the time to familiarize yourself with the portal, as it will be the primary method for handling course registration moving forward. Further instructions and a tutorial are available on the registrar's website. For registration questions not related to the portal, please see your advisor."
+    }
+  ]
+}

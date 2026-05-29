@@ -1,0 +1,26 @@
+{
+  "title": "3.15 Part 2 对话 4-5",
+  "source": {
+    "textId": "3.15__part2__3-15-part2-m4a",
+    "textName": "3.15 听力 part2.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/3.15（答案+文本校对了/3.15 听力 part2.m4a.docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\3.15.zip::3.15/3.15  听力 part2/3.15 听力 part2.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 3.15; part match part2; listening keyword",
+    "unitType": "conversation",
+    "unitLabel": "4-5"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 94.0,
+      "end": 174.0,
+      "speaker": "题目4/5",
+      "module": "M2",
+      "text": "Listen to a conversation. Hey, did you see that documentary on urban development last night? The one we were assigned to watch? It was way more interesting than I expected. Yes, the part about how cities are redesigning public spaces was fascinating. I thought I'd have a hard time getting through it. It makes me look forward to our field trip to the city even more. I mean, I've been a million times. but I know what you mean after this and the things our professor will probably point out. Ita, totally new experience."
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "title": "1.28 套一 对话 15-16",
+  "source": {
+    "textId": "1.28__set1__1-28-part1-m4a-1",
+    "textName": "1.28套一听力part1.m4a(1).docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/1.28（答案+文本校对了/1.28套一听力part1.m4a(1).docx",
+    "audioSource": "D:\\TOELF\\1月+2月部分.zip::1月+2月部分/1.28-答案全对/1.28 套一听力音频/1.28套一听力part1.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 1.28; part match set1; listening keyword",
+    "unitType": "conversation",
+    "unitLabel": "15-16"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 260.0,
+      "end": 320.0,
+      "speaker": "题目15/16",
+      "module": "",
+      "text": "Listen to a conversation. I just heard that the art store in the mall is going out of business. Oh no, I get my painting supplies for my senior art project there. I know. That's why I came looking for you. What will you do now? Well, I have a couple of options. I could get them online, or I can go to the store in Portersville, ten miles away. It seems to me like you'd want to buy that kind of stuff in person. It looks like I'll be making regular trips to Portersville."
+    }
+  ]
+}

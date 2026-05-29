@@ -1,0 +1,339 @@
+# Confirmed Listening Course Build
+
+- Output: `C:\Users\ok304\Documents\New project\output\listening_lab_course_confirmed`
+- Transcript zip: `C:\Users\ok304\Documents\WXWork\1688855946770783\Cache\File\2026-05\Done-4月为止(文本和答案单独校对）(1).zip`
+- Included matched lessons: 308
+- Skipped uncertain: 17
+- Skipped missing: 1
+
+## Included Lessons
+
+- 1.27 单句 | segments=15 | text=`1.27听力.m4a.docx`
+- 1.27 M1 对话 13-14 | segments=1 | text=`1.27听力.m4a.docx`
+- 1.27 M1 对话 15-16 | segments=1 | text=`1.27听力.m4a.docx`
+- 1.27 M1 对话 17-18 | segments=1 | text=`1.27听力.m4a.docx`
+- 1.27 M1 公告 19-20 | segments=1 | text=`1.27听力.m4a.docx`
+- 1.27 M1 公告 21-22 | segments=1 | text=`1.27听力.m4a.docx`
+- 1.27 M1 公告 23-24 | segments=1 | text=`1.27听力.m4a.docx`
+- 1.27 M1 讲座 25-28 | segments=1 | text=`1.27听力.m4a.docx`
+- 1.27 M1 讲座 29-32 | segments=1 | text=`1.27听力.m4a.docx`
+- 1.27 M2 对话 4-5 | segments=1 | text=`1.27听力.m4a.docx`
+- 1.27 M2 对话 6-7 | segments=1 | text=`1.27听力.m4a.docx`
+- 1.27 M2 讲座 8-11 | segments=1 | text=`1.27听力.m4a.docx`
+- 1.27 M2 讲座 12-15 | segments=1 | text=`1.27听力.m4a.docx`
+- 1.28 套一 单句 | segments=16 | text=`1.28套一听力part1.m4a(1).docx`
+- 1.28 套一 对话 13-14 | segments=1 | text=`1.28套一听力part1.m4a(1).docx`
+- 1.28 套一 对话 15-16 | segments=1 | text=`1.28套一听力part1.m4a(1).docx`
+- 1.28 套一 对话 17-18 | segments=1 | text=`1.28套一听力part1.m4a(1).docx`
+- 1.28 套一 公告 19-20 | segments=1 | text=`1.28套一听力part1.m4a(1).docx`
+- 1.28 套一 公告 21-22 | segments=1 | text=`1.28套一听力part1.m4a(1).docx`
+- 1.28 套一 公告 23-24 | segments=1 | text=`1.28套一听力part1.m4a(1).docx`
+- 1.28 套一 讲座 25-28 | segments=1 | text=`1.28套一听力part1.m4a(1).docx`
+- 1.28 套一 讲座 29-32 | segments=1 | text=`1.28套一听力part1.m4a(1).docx`
+- 1.28 套一 对话 4-5 | segments=1 | text=`1.28套一听力part1.m4a(1).docx`
+- 1.28 套一 对话 6-7 | segments=1 | text=`1.28套一听力part1.m4a(1).docx`
+- 1.28 套一 讲座 12-15 | segments=1 | text=`1.28套一听力part1.m4a(1).docx`
+- 2.1-2 M1 单句 | segments=3 | text=`ListeningModule1.mp3.docx`
+- 2.1-2 M1 长文本 2-3 | segments=1 | text=`ListeningModule1.mp3.docx`
+- 2.1-2 M1 长文本 4-5 | segments=1 | text=`ListeningModule1.mp3.docx`
+- 2.1-2 M1 长文本 7-8 | segments=1 | text=`ListeningModule1.mp3.docx`
+- 2.1-2 M1 讲座 9-12 | segments=1 | text=`ListeningModule1.mp3.docx`
+- 2.1-2 M1 对话 13-14 | segments=1 | text=`ListeningModule1.mp3.docx`
+- 2.1-2 M1 对话 15-16 | segments=1 | text=`ListeningModule1.mp3.docx`
+- 2.1-2 M1 对话 17-18 | segments=1 | text=`ListeningModule1.mp3.docx`
+- 2.1-2 M1 公告 19-20 | segments=1 | text=`ListeningModule1.mp3.docx`
+- 2.1-2 M1 公告 21-22 | segments=1 | text=`ListeningModule1.mp3.docx`
+- 2.1-2 M1 公告 23-24 | segments=1 | text=`ListeningModule1.mp3.docx`
+- 2.1-2 M1 讲座 25-28 | segments=1 | text=`ListeningModule1.mp3.docx`
+- 2.1-2 M1 讲座 29-32 | segments=1 | text=`ListeningModule1.mp3.docx`
+- 2.1-2 M2 单句 | segments=2 | text=`ListeningModule2.mp3.docx`
+- 2.1-2 M2 长文本 1-2 | segments=1 | text=`ListeningModule2.mp3.docx`
+- 2.1-2 M2 对话 4-5 | segments=1 | text=`ListeningModule2.mp3.docx`
+- 2.1-2 M2 对话 6-7 | segments=1 | text=`ListeningModule2.mp3.docx`
+- 2.1-2 M2 讲座 8-11 | segments=1 | text=`ListeningModule2.mp3.docx`
+- 2.1-2 M2 讲座 12-15 | segments=1 | text=`ListeningModule2.mp3.docx`
+- 2.2 Part 2 单句 | segments=16 | text=`2.2 听力.m4a.docx`
+- 2.2 Part 2 对话 13-14 | segments=1 | text=`2.2 听力.m4a.docx`
+- 2.2 Part 2 对话 15-16 | segments=1 | text=`2.2 听力.m4a.docx`
+- 2.2 Part 2 对话 17-18 | segments=1 | text=`2.2 听力.m4a.docx`
+- 2.2 Part 2 公告 19-20 | segments=1 | text=`2.2 听力.m4a.docx`
+- 2.2 Part 2 公告 21-22 | segments=1 | text=`2.2 听力.m4a.docx`
+- 2.2 Part 2 公告 23-24 | segments=1 | text=`2.2 听力.m4a.docx`
+- 2.2 Part 2 长文本 25-28 | segments=1 | text=`2.2 听力.m4a.docx`
+- 2.2 Part 2 讲座 29-32 | segments=1 | text=`2.2 听力.m4a.docx`
+- 2.2 Part 2 对话 4-5 | segments=1 | text=`2.2 听力.m4a.docx`
+- 2.2 Part 2 对话 6-7 | segments=1 | text=`2.2 听力.m4a.docx`
+- 2.2 Part 2 讲座 8-11 | segments=1 | text=`2.2 听力.m4a.docx`
+- 2.2 Part 2 讲座 12-15 | segments=1 | text=`2.2 听力.m4a.docx`
+- 3.2 Part 2 单句 | segments=13 | text=`3.2 听力.m4a.docx`
+- 3.2 Part 2 讲座 1 | segments=1 | text=`3.2 听力.m4a.docx`
+- 3.2 Part 2 讲座 3 | segments=1 | text=`3.2 听力.m4a.docx`
+- 3.2 Part 2 对话 13-14 | segments=1 | text=`3.2 听力.m4a.docx`
+- 3.2 Part 2 对话 15-16 | segments=1 | text=`3.2 听力.m4a.docx`
+- 3.2 Part 2 对话 17-18 | segments=1 | text=`3.2 听力.m4a.docx`
+- 3.2 Part 2 公告 19-20 | segments=1 | text=`3.2 听力.m4a.docx`
+- 3.2 Part 2 公告 21-22 | segments=1 | text=`3.2 听力.m4a.docx`
+- 3.2 Part 2 公告 23-24 | segments=1 | text=`3.2 听力.m4a.docx`
+- 3.2 Part 2 讲座 25-28 | segments=1 | text=`3.2 听力.m4a.docx`
+- 3.2 Part 2 讲座 29-32 | segments=1 | text=`3.2 听力.m4a.docx`
+- 3.2 Part 2 对话 4-5 | segments=1 | text=`3.2 听力.m4a.docx`
+- 3.2 Part 2 对话 6-7 | segments=1 | text=`3.2 听力.m4a.docx`
+- 3.2 Part 2 讲座 8-11 | segments=1 | text=`3.2 听力.m4a.docx`
+- 3.2 Part 2 讲座 12-15 | segments=1 | text=`3.2 听力.m4a.docx`
+- 3.4 单句 | segments=15 | text=`3.4-听力.m4a.docx`
+- 3.4 M1 对话 13-14 | segments=1 | text=`3.4-听力.m4a.docx`
+- 3.4 M1 对话 15-16 | segments=1 | text=`3.4-听力.m4a.docx`
+- 3.4 M1 对话 17-18 | segments=1 | text=`3.4-听力.m4a.docx`
+- 3.4 M1 对话 19-20 | segments=1 | text=`3.4-听力.m4a.docx`
+- 3.4 M1 公告 21-22 | segments=1 | text=`3.4-听力.m4a.docx`
+- 3.4 M1 公告 23-24 | segments=1 | text=`3.4-听力.m4a.docx`
+- 3.4 M1 讲座 25-28 | segments=1 | text=`3.4-听力.m4a.docx`
+- 3.4 M1 讲座 29-32 | segments=1 | text=`3.4-听力.m4a.docx`
+- 3.4 M2 对话 4-5 | segments=1 | text=`3.4-听力.m4a.docx`
+- 3.4 M2 对话 6-7 | segments=1 | text=`3.4-听力.m4a.docx`
+- 3.4 M2 讲座 8-11 | segments=1 | text=`3.4-听力.m4a.docx`
+- 3.4 M2 讲座 12-15 | segments=1 | text=`3.4-听力.m4a.docx`
+- 3.8 单句 | segments=15 | text=`3.8 听力.m4a.docx`
+- 3.8 对话 13-14 | segments=1 | text=`3.8 听力.m4a.docx`
+- 3.8 对话 15-16 | segments=1 | text=`3.8 听力.m4a.docx`
+- 3.8 对话 17-18 | segments=1 | text=`3.8 听力.m4a.docx`
+- 3.8 公告 19-20 | segments=1 | text=`3.8 听力.m4a.docx`
+- 3.8 公告 21-22 | segments=1 | text=`3.8 听力.m4a.docx`
+- 3.8 公告 23-24 | segments=1 | text=`3.8 听力.m4a.docx`
+- 3.8 讲座 25-28 | segments=1 | text=`3.8 听力.m4a.docx`
+- 3.8 讲座 29-32 | segments=1 | text=`3.8 听力.m4a.docx`
+- 3.8 讲座 3 | segments=1 | text=`3.8 听力.m4a.docx`
+- 3.8 对话 4-5 | segments=1 | text=`3.8 听力.m4a.docx`
+- 3.8 对话 6-7 | segments=1 | text=`3.8 听力.m4a.docx`
+- 3.8 讲座 8-11 | segments=1 | text=`3.8 听力.m4a.docx`
+- 3.8 讲座 12-15 | segments=1 | text=`3.8 听力.m4a.docx`
+- 3.15 单句 | segments=12 | text=`3.15 听力part1.m4a.docx`
+- 3.15 M1 对话 13-14 | segments=1 | text=`3.15 听力part1.m4a.docx`
+- 3.15 M1 对话 15-16 | segments=1 | text=`3.15 听力part1.m4a.docx`
+- 3.15 M1 对话 17-18 | segments=1 | text=`3.15 听力part1.m4a.docx`
+- 3.15 M1 公告 19-20 | segments=1 | text=`3.15 听力part1.m4a.docx`
+- 3.15 M1 公告 21-22 | segments=1 | text=`3.15 听力part1.m4a.docx`
+- 3.15 M1 公告 23-24 | segments=1 | text=`3.15 听力part1.m4a.docx`
+- 3.15 M1 讲座 25-28 | segments=1 | text=`3.15 听力part1.m4a.docx`
+- 3.15 M1 讲座 29-32 | segments=1 | text=`3.15 听力part1.m4a.docx`
+- 3.15 Part 2 单句 | segments=3 | text=`3.15 听力 part2.m4a.docx`
+- 3.15 Part 2 对话 4-5 | segments=1 | text=`3.15 听力 part2.m4a.docx`
+- 3.15 Part 2 对话 6-7 | segments=1 | text=`3.15 听力 part2.m4a.docx`
+- 3.15 Part 2 讲座 8-11 | segments=1 | text=`3.15 听力 part2.m4a.docx`
+- 3.15 Part 2 讲座 12-15 | segments=1 | text=`3.15 听力 part2.m4a.docx`
+- 3.17 单句 | segments=14 | text=`3.17-listening.m4a.docx`
+- 3.17 M1 对话 13-14 | segments=1 | text=`3.17-listening.m4a.docx`
+- 3.17 M1 对话 15-16 | segments=1 | text=`3.17-listening.m4a.docx`
+- 3.17 M1 对话 17-18 | segments=1 | text=`3.17-listening.m4a.docx`
+- 3.17 M1 公告 19-20 | segments=1 | text=`3.17-listening.m4a.docx`
+- 3.17 M1 公告 21-22 | segments=1 | text=`3.17-listening.m4a.docx`
+- 3.17 M1 公告 23-24 | segments=1 | text=`3.17-listening.m4a.docx`
+- 3.17 M1 讲座 25-28 | segments=1 | text=`3.17-listening.m4a.docx`
+- 3.17 M1 讲座 29-32 | segments=1 | text=`3.17-listening.m4a.docx`
+- 3.17 M2 讲座 3 | segments=1 | text=`3.17-listening.m4a.docx`
+- 3.17 M2 对话 4-5 | segments=1 | text=`3.17-listening.m4a.docx`
+- 3.17 M2 对话 6-7 | segments=1 | text=`3.17-listening.m4a.docx`
+- 3.17 M2 讲座 8-11 | segments=1 | text=`3.17-listening.m4a.docx`
+- 3.17 M2 讲座 12-15 | segments=1 | text=`3.17-listening.m4a.docx`
+- 3.18 单句 | segments=15 | text=`3.18 听力.m4a(1).docx`
+- 3.18 对话 13-14 | segments=1 | text=`3.18 听力.m4a(1).docx`
+- 3.18 对话 15-16 | segments=1 | text=`3.18 听力.m4a(1).docx`
+- 3.18 对话 17-18 | segments=1 | text=`3.18 听力.m4a(1).docx`
+- 3.18 公告 19-20 | segments=1 | text=`3.18 听力.m4a(1).docx`
+- 3.18 公告 21-22 | segments=1 | text=`3.18 听力.m4a(1).docx`
+- 3.18 公告 23-24 | segments=1 | text=`3.18 听力.m4a(1).docx`
+- 3.18 讲座 25-28 | segments=1 | text=`3.18 听力.m4a(1).docx`
+- 3.18 讲座 29-32 | segments=1 | text=`3.18 听力.m4a(1).docx`
+- 3.18 讲座 1 | segments=1 | text=`3.18 听力.m4a(1).docx`
+- 3.18 对话 4-5 | segments=1 | text=`3.18 听力.m4a(1).docx`
+- 3.18 对话 6-7 | segments=1 | text=`3.18 听力.m4a(1).docx`
+- 3.18 讲座 8-11 | segments=1 | text=`3.18 听力.m4a(1).docx`
+- 3.18 讲座 12-15 | segments=1 | text=`3.18 听力.m4a(1).docx`
+- 3.29 单句 | segments=14 | text=`3.29 听力.m4a.docx`
+- 3.29 讲座 5 | segments=1 | text=`3.29 听力.m4a.docx`
+- 3.29 对话 13-14 | segments=1 | text=`3.29 听力.m4a.docx`
+- 3.29 对话 15-16 | segments=1 | text=`3.29 听力.m4a.docx`
+- 3.29 对话 17-18 | segments=1 | text=`3.29 听力.m4a.docx`
+- 3.29 公告 19-20 | segments=1 | text=`3.29 听力.m4a.docx`
+- 3.29 公告 21-22 | segments=1 | text=`3.29 听力.m4a.docx`
+- 3.29 公告 23-24 | segments=1 | text=`3.29 听力.m4a.docx`
+- 3.29 讲座 25-28 | segments=1 | text=`3.29 听力.m4a.docx`
+- 3.29 讲座 29-32 | segments=1 | text=`3.29 听力.m4a.docx`
+- 3.29 讲座 1 | segments=1 | text=`3.29 听力.m4a.docx`
+- 3.29 对话 4-5 | segments=1 | text=`3.29 听力.m4a.docx`
+- 3.29 对话 6-7 | segments=1 | text=`3.29 听力.m4a.docx`
+- 3.29 讲座 8-11 | segments=1 | text=`3.29 听力.m4a.docx`
+- 3.29 讲座 12-15 | segments=1 | text=`3.29 听力.m4a.docx`
+- 3.30 单句 | segments=15 | text=`3.30-听力.m4a.docx`
+- 3.30 讲座 11 | segments=1 | text=`3.30-听力.m4a.docx`
+- 3.30 对话 13-14 | segments=1 | text=`3.30-听力.m4a.docx`
+- 3.30 对话 15-16 | segments=1 | text=`3.30-听力.m4a.docx`
+- 3.30 对话 17-18 | segments=1 | text=`3.30-听力.m4a.docx`
+- 3.30 公告 19-20 | segments=1 | text=`3.30-听力.m4a.docx`
+- 3.30 公告 21-22 | segments=1 | text=`3.30-听力.m4a.docx`
+- 3.30 公告 23-24 | segments=1 | text=`3.30-听力.m4a.docx`
+- 3.30 讲座 25-28 | segments=1 | text=`3.30-听力.m4a.docx`
+- 3.30 讲座 29-32 | segments=1 | text=`3.30-听力.m4a.docx`
+- 3.30 M2 对话 4-5 | segments=1 | text=`3.30-听力.m4a.docx`
+- 3.30 M2 对话 6-7 | segments=1 | text=`3.30-听力.m4a.docx`
+- 3.30 M2 讲座 8-11 | segments=1 | text=`3.30-听力.m4a.docx`
+- 3.30 M2 讲座 12-15 | segments=1 | text=`3.30-听力.m4a.docx`
+- 4.1 单句 | segments=16 | text=`4.1听力.m4a(1).docx`
+- 4.1 对话 13-14 | segments=1 | text=`4.1听力.m4a(1).docx`
+- 4.1 对话 15-16 | segments=1 | text=`4.1听力.m4a(1).docx`
+- 4.1 对话 17-18 | segments=1 | text=`4.1听力.m4a(1).docx`
+- 4.1 公告 19-20 | segments=1 | text=`4.1听力.m4a(1).docx`
+- 4.1 公告 21-22 | segments=1 | text=`4.1听力.m4a(1).docx`
+- 4.1 公告 23-24 | segments=1 | text=`4.1听力.m4a(1).docx`
+- 4.1 讲座 25-28 | segments=1 | text=`4.1听力.m4a(1).docx`
+- 4.1 讲座 29-32 | segments=1 | text=`4.1听力.m4a(1).docx`
+- 4.1 对话 4-5 | segments=1 | text=`4.1听力.m4a(1).docx`
+- 4.1 对话 6-7 | segments=1 | text=`4.1听力.m4a(1).docx`
+- 4.1 讲座 8-11 | segments=1 | text=`4.1听力.m4a(1).docx`
+- 4.1 讲座 12-15 | segments=1 | text=`4.1听力.m4a(1).docx`
+- 4.5 套一 单句 | segments=15 | text=`4.5 套一 听力.m4a(2).docx`
+- 4.5 套一 对话 13-14 | segments=1 | text=`4.5 套一 听力.m4a(2).docx`
+- 4.5 套一 对话 15-16 | segments=1 | text=`4.5 套一 听力.m4a(2).docx`
+- 4.5 套一 对话 17-18 | segments=1 | text=`4.5 套一 听力.m4a(2).docx`
+- 4.5 套一 公告 19-20 | segments=1 | text=`4.5 套一 听力.m4a(2).docx`
+- 4.5 套一 公告 21-22 | segments=1 | text=`4.5 套一 听力.m4a(2).docx`
+- 4.5 套一 公告 23-24 | segments=1 | text=`4.5 套一 听力.m4a(2).docx`
+- 4.5 套一 讲座 25-28 | segments=1 | text=`4.5 套一 听力.m4a(2).docx`
+- 4.5 套一 讲座 29-32 | segments=1 | text=`4.5 套一 听力.m4a(2).docx`
+- 4.5 套一 讲座 3 | segments=1 | text=`4.5 套一 听力.m4a(2).docx`
+- 4.5 套一 对话 4-5 | segments=1 | text=`4.5 套一 听力.m4a(2).docx`
+- 4.5 套一 对话 6-7 | segments=1 | text=`4.5 套一 听力.m4a(2).docx`
+- 4.5 套一 讲座 8-11 | segments=1 | text=`4.5 套一 听力.m4a(2).docx`
+- 4.5 套一 讲座 12-15 | segments=1 | text=`4.5 套一 听力.m4a(2).docx`
+- 4.6 单句 | segments=14 | text=`4.6 听力(缺q1).m4a(1).docx`
+- 4.6 对话 13-14 | segments=1 | text=`4.6 听力(缺q1).m4a(1).docx`
+- 4.6 对话 15-16 | segments=1 | text=`4.6 听力(缺q1).m4a(1).docx`
+- 4.6 对话 17-18 | segments=1 | text=`4.6 听力(缺q1).m4a(1).docx`
+- 4.6 公告 19-20 | segments=1 | text=`4.6 听力(缺q1).m4a(1).docx`
+- 4.6 公告 21-22 | segments=1 | text=`4.6 听力(缺q1).m4a(1).docx`
+- 4.6 公告 23-24 | segments=1 | text=`4.6 听力(缺q1).m4a(1).docx`
+- 4.6 讲座 25-28 | segments=1 | text=`4.6 听力(缺q1).m4a(1).docx`
+- 4.6 讲座 29-32 | segments=1 | text=`4.6 听力(缺q1).m4a(1).docx`
+- 4.6 讲座 2 | segments=1 | text=`4.6 听力(缺q1).m4a(1).docx`
+- 4.6 对话 4-5 | segments=1 | text=`4.6 听力(缺q1).m4a(1).docx`
+- 4.6 对话 6-7 | segments=1 | text=`4.6 听力(缺q1).m4a(1).docx`
+- 4.6 讲座 8-11 | segments=1 | text=`4.6 听力(缺q1).m4a(1).docx`
+- 4.6 讲座 12-15 | segments=1 | text=`4.6 听力(缺q1).m4a(1).docx`
+- 4.8 单句 | segments=15 | text=`4.8听力音频.m4a.docx`
+- 4.8 讲座 2 | segments=1 | text=`4.8听力音频.m4a.docx`
+- 4.8 对话 13-14 | segments=1 | text=`4.8听力音频.m4a.docx`
+- 4.8 对话 15-16 | segments=1 | text=`4.8听力音频.m4a.docx`
+- 4.8 对话 17-18 | segments=1 | text=`4.8听力音频.m4a.docx`
+- 4.8 公告 19-20 | segments=1 | text=`4.8听力音频.m4a.docx`
+- 4.8 公告 21-22 | segments=1 | text=`4.8听力音频.m4a.docx`
+- 4.8 公告 23-24 | segments=1 | text=`4.8听力音频.m4a.docx`
+- 4.8 讲座 25-28 | segments=1 | text=`4.8听力音频.m4a.docx`
+- 4.8 讲座 29-32 | segments=1 | text=`4.8听力音频.m4a.docx`
+- 4.8 对话 4-5 | segments=1 | text=`4.8听力音频.m4a.docx`
+- 4.8 对话 6-7 | segments=1 | text=`4.8听力音频.m4a.docx`
+- 4.8 讲座 8-11 | segments=1 | text=`4.8听力音频.m4a.docx`
+- 4.8 讲座 12-15 | segments=1 | text=`4.8听力音频.m4a.docx`
+- 4.13 套一 单句 | segments=16 | text=`4.13 套一 听力.m4a.docx`
+- 4.13 套一 对话 13-14 | segments=1 | text=`4.13 套一 听力.m4a.docx`
+- 4.13 套一 对话 15-16 | segments=1 | text=`4.13 套一 听力.m4a.docx`
+- 4.13 套一 对话 17-18 | segments=1 | text=`4.13 套一 听力.m4a.docx`
+- 4.13 套一 公告 19-20 | segments=1 | text=`4.13 套一 听力.m4a.docx`
+- 4.13 套一 公告 21-22 | segments=1 | text=`4.13 套一 听力.m4a.docx`
+- 4.13 套一 公告 23-24 | segments=1 | text=`4.13 套一 听力.m4a.docx`
+- 4.13 套一 讲座 25-28 | segments=1 | text=`4.13 套一 听力.m4a.docx`
+- 4.13 套一 讲座 29-32 | segments=1 | text=`4.13 套一 听力.m4a.docx`
+- 4.13 套一 对话 4-5 | segments=1 | text=`4.13 套一 听力.m4a.docx`
+- 4.13 套一 对话 6-7 | segments=1 | text=`4.13 套一 听力.m4a.docx`
+- 4.13 套一 讲座 8-11 | segments=1 | text=`4.13 套一 听力.m4a.docx`
+- 4.13 套一 讲座 12-15 | segments=1 | text=`4.13 套一 听力.m4a.docx`
+- 4.15 套二 单句 | segments=16 | text=`4.15 套二 听力.m4a.docx`
+- 4.15 套二 对话 13-14 | segments=1 | text=`4.15 套二 听力.m4a.docx`
+- 4.15 套二 对话 15-16 | segments=1 | text=`4.15 套二 听力.m4a.docx`
+- 4.15 套二 对话 17-18 | segments=1 | text=`4.15 套二 听力.m4a.docx`
+- 4.15 套二 公告 19-20 | segments=1 | text=`4.15 套二 听力.m4a.docx`
+- 4.15 套二 公告 21-22 | segments=1 | text=`4.15 套二 听力.m4a.docx`
+- 4.15 套二 公告 23-24 | segments=1 | text=`4.15 套二 听力.m4a.docx`
+- 4.15 套二 讲座 25-28 | segments=1 | text=`4.15 套二 听力.m4a.docx`
+- 4.15 套二 讲座 29-32 | segments=1 | text=`4.15 套二 听力.m4a.docx`
+- 4.15 套二 对话 4-5 | segments=1 | text=`4.15 套二 听力.m4a.docx`
+- 4.15 套二 对话 6-7 | segments=1 | text=`4.15 套二 听力.m4a.docx`
+- 4.15 套二 讲座 8-11 | segments=1 | text=`4.15 套二 听力.m4a.docx`
+- 4.15 套二 讲座 12-15 | segments=1 | text=`4.15 套二 听力.m4a.docx`
+- 4.20 单句 | segments=16 | text=`4.20听力音频.m4a.docx`
+- 4.20 对话 13-14 | segments=1 | text=`4.20听力音频.m4a.docx`
+- 4.20 对话 15-16 | segments=1 | text=`4.20听力音频.m4a.docx`
+- 4.20 对话 17-18 | segments=1 | text=`4.20听力音频.m4a.docx`
+- 4.20 公告 19-20 | segments=1 | text=`4.20听力音频.m4a.docx`
+- 4.20 公告 21-22 | segments=1 | text=`4.20听力音频.m4a.docx`
+- 4.20 公告 23-24 | segments=1 | text=`4.20听力音频.m4a.docx`
+- 4.20 讲座 25-28 | segments=1 | text=`4.20听力音频.m4a.docx`
+- 4.20 讲座 29-32 | segments=1 | text=`4.20听力音频.m4a.docx`
+- 4.20 对话 4-5 | segments=1 | text=`4.20听力音频.m4a.docx`
+- 4.20 对话 6-7 | segments=1 | text=`4.20听力音频.m4a.docx`
+- 4.20 讲座 8-11 | segments=1 | text=`4.20听力音频.m4a.docx`
+- 4.20 讲座 12-15 | segments=1 | text=`4.20听力音频.m4a.docx`
+- 4.24 单句 | segments=15 | text=`4.24听力.m4a.docx`
+- 4.24 对话 13-14 | segments=1 | text=`4.24听力.m4a.docx`
+- 4.24 对话 15-16 | segments=1 | text=`4.24听力.m4a.docx`
+- 4.24 对话 17-18 | segments=1 | text=`4.24听力.m4a.docx`
+- 4.24 公告 19-20 | segments=1 | text=`4.24听力.m4a.docx`
+- 4.24 长文本 21-22 | segments=1 | text=`4.24听力.m4a.docx`
+- 4.24 公告 23-24 | segments=1 | text=`4.24听力.m4a.docx`
+- 4.24 长文本 25-28 | segments=1 | text=`4.24听力.m4a.docx`
+- 4.24 讲座 29-32 | segments=1 | text=`4.24听力.m4a.docx`
+- 4.24 讲座 1 | segments=1 | text=`4.24听力.m4a.docx`
+- 4.24 对话 4-5 | segments=1 | text=`4.24听力.m4a.docx`
+- 4.24 对话 6-7 | segments=1 | text=`4.24听力.m4a.docx`
+- 4.24 讲座 8-11 | segments=1 | text=`4.24听力.m4a.docx`
+- 4.24 讲座 12-15 | segments=1 | text=`4.24听力.m4a.docx`
+- 4.27 单句 | segments=14 | text=`4.27 听力.m4a.docx`
+- 4.27 讲座 4 | segments=1 | text=`4.27 听力.m4a.docx`
+- 4.27 对话 13-14 | segments=1 | text=`4.27 听力.m4a.docx`
+- 4.27 对话 15-16 | segments=1 | text=`4.27 听力.m4a.docx`
+- 4.27 对话 17-18 | segments=1 | text=`4.27 听力.m4a.docx`
+- 4.27 公告 19-20 | segments=1 | text=`4.27 听力.m4a.docx`
+- 4.27 公告 21-22 | segments=1 | text=`4.27 听力.m4a.docx`
+- 4.27 公告 23-24 | segments=1 | text=`4.27 听力.m4a.docx`
+- 4.27 讲座 25-28 | segments=1 | text=`4.27 听力.m4a.docx`
+- 4.27 讲座 29-32 | segments=1 | text=`4.27 听力.m4a.docx`
+- 4.27 讲座 3 | segments=1 | text=`4.27 听力.m4a.docx`
+- 4.27 对话 4-5 | segments=1 | text=`4.27 听力.m4a.docx`
+- 4.27 对话 6-7 | segments=1 | text=`4.27 听力.m4a.docx`
+- 4.27 讲座 8-11 | segments=1 | text=`4.27 听力.m4a.docx`
+- 4.27 讲座 12-15 | segments=1 | text=`4.27 听力.m4a.docx`
+- 4.29 单句 | segments=14 | text=`4.29 听力.m4a.docx`
+- 4.29 讲座 4 | segments=1 | text=`4.29 听力.m4a.docx`
+- 4.29 讲座 7 | segments=1 | text=`4.29 听力.m4a.docx`
+- 4.29 对话 13-14 | segments=1 | text=`4.29 听力.m4a.docx`
+- 4.29 对话 15-16 | segments=1 | text=`4.29 听力.m4a.docx`
+- 4.29 对话 17-18 | segments=1 | text=`4.29 听力.m4a.docx`
+- 4.29 公告 19-20 | segments=1 | text=`4.29 听力.m4a.docx`
+- 4.29 公告 21-22 | segments=1 | text=`4.29 听力.m4a.docx`
+- 4.29 公告 23-24 | segments=1 | text=`4.29 听力.m4a.docx`
+- 4.29 讲座 25-28 | segments=1 | text=`4.29 听力.m4a.docx`
+- 4.29 讲座 29-32 | segments=1 | text=`4.29 听力.m4a.docx`
+- 4.29 对话 4-5 | segments=1 | text=`4.29 听力.m4a.docx`
+- 4.29 对话 6-7 | segments=1 | text=`4.29 听力.m4a.docx`
+- 4.29 讲座 8-11 | segments=1 | text=`4.29 听力.m4a.docx`
+- 4.29 讲座 12-15 | segments=1 | text=`4.29 听力.m4a.docx`
+
+## Skipped Items
+
+- uncertain: 1.21-2 module1 `1.21-2-听力M1.mp3.docx`
+- uncertain: 1.21-2 module2 `1.21-2-听力M2.mp3.docx`
+- uncertain: 1.21 part1 `1.21新托福真题Listening（全）.mp3.docx`
+- missing: 2.4 part2 `2.4 时间线.m4a.docx`
+- uncertain: 2.8-1 set1 `2.8-1 听力音频.docx`
+- uncertain: 2.8-2 set2 `2.8-2 听力音频.doc`
+- uncertain: 2.10  `2.10 听力音频.docx`
+- uncertain: 2.23  `2.23 听力音频.docx`
+- uncertain: 2.25  `2.25听力音频.docx`
+- uncertain: 2.28  `2.28 听力音频.docx`
+- uncertain: 3.6  `3.6-listening.m4a.docx`
+- uncertain: 3.10  `3.10-listening.m4a.docx`
+- uncertain: 3.11  `3.11-listening.m4a.docx`
+- uncertain: 3.21  `3.21-听力.m4a.docx`
+- uncertain: 3.23-1 set1 `3.23-1 听力.m4a.docx`
+- uncertain: 3.24  `3.24-听力.m4a.docx`
+- uncertain: 3.25-1 set1 `3.25-1-听力.m4a.docx`
+- uncertain: 3.27  `3.27-听力.m4a.docx`

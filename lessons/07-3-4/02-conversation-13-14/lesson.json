@@ -1,0 +1,26 @@
+{
+  "title": "3.4 M1 对话 13-14",
+  "source": {
+    "textId": "3.4__3-4-m4a",
+    "textName": "3.4-听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/3.4（答案+文本校对了/3.4-听力.m4a.docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\3.4.zip::3.4/听力/3.4-听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 3.4; listening keyword",
+    "unitType": "conversation",
+    "unitLabel": "13-14"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 229.0,
+      "end": 309.0,
+      "speaker": "题目13/14",
+      "module": "M1",
+      "text": "Listen to a conversation. Hi doctor chin. I know you usually don't have office hours on Fridays. I know how hectic things can get, especially at the end of the semester. So I'm interested in writing my paper about Piaget and the stages development, but I just wanted to make sure that topic would be okay. Well, it's pretty broad. It's only a five page paper, so I'd pick one stage instead of trying to cover all of them. That way, you'll have time to get into details and really delve into the research."
+    }
+  ]
+}

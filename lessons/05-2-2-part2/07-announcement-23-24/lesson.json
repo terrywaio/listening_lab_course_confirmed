@@ -1,0 +1,26 @@
+{
+  "title": "2.2 Part 2 公告 23-24",
+  "source": {
+    "textId": "2.2__part2__2-2-m4a",
+    "textName": "2.2 听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/2.2（答案+文本校对了/2.2 听力.m4a.docx",
+    "audioSource": "D:\\TOELF\\1月+2月部分.zip::1月+2月部分/2.2（done)-答案全对/2.2 听力/2.2 听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 2.2; part match part2; listening keyword",
+    "unitType": "announcement",
+    "unitLabel": "23-24"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 538.0,
+      "end": 601.0,
+      "speaker": "题目23/24",
+      "module": "",
+      "text": "Listen to an announcement in a classroom. Good afternoon. I'm sorry for the confusion regarding the deadlines for your upcoming assignments. As I wrote in this morning's email, the due dates on your system are incorrect. Your research paper is actually due on Wednesday, the thirty first and your group presentations are due the following Friday. I regret any inconvenience this is caused. On the other hand, this means you have some extra time to complete your assignments. If you have any questions, feel free to reach out during office hours."
+    }
+  ]
+}

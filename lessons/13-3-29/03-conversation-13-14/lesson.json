@@ -1,0 +1,26 @@
+{
+  "title": "3.29 对话 13-14",
+  "source": {
+    "textId": "3.29__3-29-m4a",
+    "textName": "3.29 听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/3.29（答案+文本校对了/3.29 听力.m4a.docx",
+    "audioSource": "D:\\TOELF\\3.29\\听力\\3.29 听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 3.29; listening keyword; plain file",
+    "unitType": "conversation",
+    "unitLabel": "13-14"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 255.0,
+      "end": 328.0,
+      "speaker": "题目13/14",
+      "module": "",
+      "text": "Listen to a conversation. Our efforts have paid off. We've received additional funding from the University as well as several grants to support our art program. Wonderful. I know how hard you worked on this. Everyone in the department contributed. Anyway, at the staff meeting we have scheduled, we'll discuss how to allocate the funds. The grants offer specific purposes, so we don't have much flexibility there. Did we get the one to update our computers and design software? Partially, so we'll need to upgrade in phases. We'll start with the hardware 1st because without it, we can't run the software."
+    }
+  ]
+}

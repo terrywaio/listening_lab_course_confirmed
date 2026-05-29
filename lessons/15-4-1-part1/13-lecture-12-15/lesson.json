@@ -1,0 +1,26 @@
+{
+  "title": "4.1 讲座 12-15",
+  "source": {
+    "textId": "4.1__part1__4-1-m4a-1",
+    "textName": "4.1听力.m4a(1).docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/4.1听力.m4a(1).docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\4.1.zip::4.1/4.1听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 4.1; part match part1; listening keyword",
+    "unitType": "lecture",
+    "unitLabel": "12-15"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 1222.0,
+      "end": null,
+      "speaker": "题目12/13/14/15",
+      "module": "",
+      "text": "Listen to a talk in a business class. Let's discuss the role of startup incubators in supporting new businesses. These are programs designed to help startups navigate the early stages of development and increase their chances of success by providing resources, mentorship and networking. What resources might a new business lack? Incubators often provide office space and equipment to help startups get off the ground, and they also steer new businesses toward funding opportunities. Many new entrepreneurs will lack the financial means to invest in basic necessities themselves, and this support can be invaluable. Another important element of incubators is mentorship. Experienced professionals and industry experts offer guidance and advice to startup founders. Starting a business is full of pitfalls, and a good mentor can help you avoid some of the more common ones, not to mention refine your business strategies. Networking opportunities are another significant benefit of incubators. What does a new enterprise need? More than anything else, investors being part of an incubator program allows you to connect with potential investors, other entrepreneurs and future business partners. Now participating in an incubator is not without its challenges. There's a lot of competition to get into some of these programs, so not all startups are accepted. Once you've been accepted, pressure to perform and meet milestones can be intense, and failure to do so can lose you the support of the incubator. That said, the benefits can be substantial. Incubators provide a supportive environment that fosters innovation and helps startups overcome the hurdles of early stage development."
+    }
+  ]
+}

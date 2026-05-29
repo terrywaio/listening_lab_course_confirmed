@@ -1,0 +1,26 @@
+{
+  "title": "4.20 公告 21-22",
+  "source": {
+    "textId": "4.20__4-20-m4a",
+    "textName": "4.20听力音频.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/4.20听力音频.m4a.docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\4.20.zip::4.20/4.20听力音频.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 4.20; listening keyword",
+    "unitType": "announcement",
+    "unitLabel": "21-22"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 584.0,
+      "end": 672.0,
+      "speaker": "题目21/22",
+      "module": "",
+      "text": "Listen to a school radio announcement. Attention, students, we apologize for the inconvenience caused by the recent changes to our work study program application process. Unfortunately, due to system issues, some applications were not processed properly. We are working to resolve this problem as quickly as possible. Please resubmit your applications through the updated portal and phone the career center if you encounter any further issues. Additionally, we're pleased to announce several new part time work opportunities available on campus. Feel free to stop by the center to learn more."
+    }
+  ]
+}

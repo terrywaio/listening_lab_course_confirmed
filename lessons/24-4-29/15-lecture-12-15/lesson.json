@@ -1,0 +1,26 @@
+{
+  "title": "4.29 讲座 12-15",
+  "source": {
+    "textId": "4.29__4-29-m4a",
+    "textName": "4.29 听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/4.29 听力.m4a.docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-05\\4.29.zip::4.29/4.29 听力.m4a/4.29 听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 4.29; listening keyword",
+    "unitType": "lecture",
+    "unitLabel": "12-15"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 1220.0,
+      "end": null,
+      "speaker": "讲话人12/13/14/15",
+      "module": "",
+      "text": "Listen to a talk on a sociology podcast. Picture a bustling town square. What makes it lively? Is it the buildings, the people, the signage? Sociologists argue that public spaces hold a mirror to a society's values. This concept, known as public sphere theory, suggests that the way we design and use our public spaces reveals much about our cultural identity. According to this theory, a city's parks, plazas and streetscapes serve not just as physical locations, but also as stages for social interaction and cultural exchange. The theory also examines how accessible these spaces are to the people who live near them. A public space that is inclusive, one that welcomes people from all walks of life, is reflective of a progressive society. On the flip side, spaces that are restrictive or that exclude certain people are often indicative of societal divisions and inequalities. Another aspect of public sphere theory is the struggle faced by cities to balance the need for open, accessible areas with issues like overcrowding and other safety concerns. In addition, city planners often face the dilemma of preserving cultural heritage while adapting to modern needs of a community. I should note that technology is also reshaping public spaces. Social media platforms offer new arenas for interaction, and these virtual public spaces are fundamentally altering the traditional public sphere. However, just as traditional public spaces face challenges, so too do these digital spaces. Most prominent are privacy concerns and the digital divide between those who have computer access and those who do not."
+    }
+  ]
+}

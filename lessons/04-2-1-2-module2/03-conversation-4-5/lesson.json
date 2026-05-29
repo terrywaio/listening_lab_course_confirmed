@@ -1,0 +1,26 @@
+{
+  "title": "2.1-2 M2 对话 4-5",
+  "source": {
+    "textId": "2.1-2__module2__listeningmodule2-mp3",
+    "textName": "ListeningModule2.mp3.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/2.1-2（答案+文本校对了/ListeningModule2.mp3.docx",
+    "audioSource": "D:\\TOELF\\1月+2月部分.zip::1月+2月部分/2.1-2（done)/ListeningModule2.mp3",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 2.1-2; part match module2; listening keyword",
+    "unitType": "conversation",
+    "unitLabel": "4-5"
+  },
+  "language": "en",
+  "audioSrc": "../audio.mp3",
+  "audioFileName": "audio.mp3",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 63.0,
+      "end": 100.0,
+      "speaker": "题目4/5",
+      "module": "",
+      "text": "Listen to a conversation. Did you go to the rock concert in the park yesterday afternoon? I went to a gardening workshop at the University Center instead. It's sad that I missed out on the concert, but I'm starting my own garden and I need to know all the ins and outs of growing herbs and vegetables. Nice. And to be honest, you didn't miss that much. No? Well, I love some of the songs they played, but the acoustics in the park aren't very good, so the sound quality was rather mediocre and didn't do justice to the songs."
+    }
+  ]
+}

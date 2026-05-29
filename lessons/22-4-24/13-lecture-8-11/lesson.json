@@ -1,0 +1,26 @@
+{
+  "title": "4.24 讲座 8-11",
+  "source": {
+    "textId": "4.24__4-24-m4a",
+    "textName": "4.24听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/4.24听力.m4a.docx",
+    "audioSource": "D:\\4.24\\4.24听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 4.24; listening keyword; plain file",
+    "unitType": "lecture",
+    "unitLabel": "8-11"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 1362.0,
+      "end": 1572.0,
+      "speaker": "题目8/9/10/11",
+      "module": "",
+      "text": "Listen to a talk on a psychology podcast. There are many different factors that influence human behavior. One is related to social influence, or the idea that our behavior can be shaped by group pressure. This idea, a psychologist named Solomon ash, conducted a famous study in the 19 fifties, which has become hugely influential in the field. In his experiment, invited American University students to take part in a simple visual judgment task. Each participant was placed in a group, seven to nine people, all but one of whom were working with the researcher. The group members were shown a standard line on one card and three comparison lines on another card. One comparison line matched the standard, while the other two were clearly different lengths. Basically, the correct choice was totally obvious. Each person announced a oud which line matched the standard, and those who were in on the study deliberately gave the wrong answer 1st. The real partiant answered at last. Across twelve trials, 75% of participants conformed with the incorrect answers that people in the group had given before them at least once, so they chose the line that was clearly wrong. This indicates strong influence of group pressure. This study was replicated in 1980, roughly 30 years after ash conducted his experiment. The subjects in this experiment were British University students. Interestingly, conformity was much lower with these participants. This suggests that conformity may be influenced by culture and the country people grow up in."
+    }
+  ]
+}

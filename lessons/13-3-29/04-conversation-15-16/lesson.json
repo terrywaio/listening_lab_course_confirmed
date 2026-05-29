@@ -1,0 +1,26 @@
+{
+  "title": "3.29 对话 15-16",
+  "source": {
+    "textId": "3.29__3-29-m4a",
+    "textName": "3.29 听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/3.29（答案+文本校对了/3.29 听力.m4a.docx",
+    "audioSource": "D:\\TOELF\\3.29\\听力\\3.29 听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 3.29; listening keyword; plain file",
+    "unitType": "conversation",
+    "unitLabel": "15-16"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 328.0,
+      "end": 389.0,
+      "speaker": "题目15/16",
+      "module": "",
+      "text": "Listen to a conversation. Hey, have you tried that new meditation app? Yep, it's been about a week now and I feel less stressed, which is the point. I could use a little less stress in my life. What else is good about this app? The guided sessions are easy to follow. The daily reminders are a bit annoying though. I'll and give it a try."
+    }
+  ]
+}

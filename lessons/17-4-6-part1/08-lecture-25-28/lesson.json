@@ -1,0 +1,26 @@
+{
+  "title": "4.6 讲座 25-28",
+  "source": {
+    "textId": "4.6__part1__4-6-q1-m4a-1",
+    "textName": "4.6 听力(缺q1).m4a(1).docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/4.6 听力(缺q1).m4a(1).docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\4.6.zip::4.6/4.6 听力(缺q1).m4a/4.6 听力(缺q1).m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 4.6; part match part1; listening keyword",
+    "unitType": "lecture",
+    "unitLabel": "25-28"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 535.0,
+      "end": 737.0,
+      "speaker": "题目25/26/27/28",
+      "module": "",
+      "text": "Listen to a talk on a history podcast. When you think of 19​th century inventors, what comes to mind? Maybe, like most people, you think of an inventor alone in his laboratory, tinkering with devices that no one else had ever dreamed of. Well, actually, there were often multiple people working on similar inventions at once, they improve on each other's work, compete or collaborate. Have you heard of Louis Latimer, who invented one kind of early air conditioner and improved the toilet systems in trains? Probably not. Latimer, as a black man, was excluded from many opportunities that his White peers enjoyed in the United States. He never even got to attend high school, but he taught himself, practiced on his own, to be a drafter, someone who makes technical drawings. Latimer's drawings were so skillful, they were practically works of art. He wrote poetry, and you can see his poetic sensibility even in his drafting work. Anyway, after practicing to learn drafting, Latimer worked with several famous inventors over the span of his career. One was hiramaxim. Working with hiramaxim, Latimer developed and patented a major innovation in carbon filaments. A carbon filament is a thin wire inside a light bulb that glows with electricity to produce light. Latimer made these filaments stronger and longer lasting and easier to make. This was a major step in making lighting feasible and affordable for the general public."
+    }
+  ]
+}

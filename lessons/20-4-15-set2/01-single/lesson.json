@@ -1,0 +1,146 @@
+{
+  "title": "4.15 套二 单句",
+  "source": {
+    "textId": "4.15__set2__4-15-m4a",
+    "textName": "4.15 套二 听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/4.15 套二 听力.m4a.docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\4.15.zip::4.15/4.15 套一 听力.m4a/4.15 套二 听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 4.15; part match set2; listening keyword",
+    "unitType": "single",
+    "unitLabel": "单句"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": null,
+      "end": null,
+      "speaker": "",
+      "module": "",
+      "text": "Module 1："
+    },
+    {
+      "id": "s002",
+      "start": 22.0,
+      "end": 38.0,
+      "speaker": "题目1",
+      "module": "",
+      "text": "What time does her store open?"
+    },
+    {
+      "id": "s003",
+      "start": 38.0,
+      "end": 50.0,
+      "speaker": "题目2",
+      "module": "",
+      "text": "When is the next train to Chicago for the intramural track races?"
+    },
+    {
+      "id": "s004",
+      "start": 50.0,
+      "end": 63.0,
+      "speaker": "题目3",
+      "module": "",
+      "text": "What time is the next online sales meeting?"
+    },
+    {
+      "id": "s005",
+      "start": 63.0,
+      "end": 75.0,
+      "speaker": "题目4",
+      "module": "",
+      "text": "When are they announcing the new graduation requirements?"
+    },
+    {
+      "id": "s006",
+      "start": 75.0,
+      "end": 89.0,
+      "speaker": "题目5",
+      "module": "",
+      "text": "Would you like to visit the campus museum or the park?"
+    },
+    {
+      "id": "s007",
+      "start": 89.0,
+      "end": 102.0,
+      "speaker": "题目6",
+      "module": "",
+      "text": "When is the next research grant application due?"
+    },
+    {
+      "id": "s008",
+      "start": 102.0,
+      "end": 117.0,
+      "speaker": "题目7",
+      "module": "",
+      "text": "What's your favorite way to spend a day off?"
+    },
+    {
+      "id": "s009",
+      "start": 117.0,
+      "end": 130.0,
+      "speaker": "题目8",
+      "module": "",
+      "text": "Does this campus have a grocery store?"
+    },
+    {
+      "id": "s010",
+      "start": 130.0,
+      "end": 145.0,
+      "speaker": "题目9",
+      "module": "",
+      "text": "What time does the dance studio open?"
+    },
+    {
+      "id": "s011",
+      "start": 145.0,
+      "end": 160.0,
+      "speaker": "题目10",
+      "module": "",
+      "text": "Could you recommend a good book?"
+    },
+    {
+      "id": "s012",
+      "start": 160.0,
+      "end": 178.0,
+      "speaker": "题目11",
+      "module": "",
+      "text": "The library offers free wireless Internet access."
+    },
+    {
+      "id": "s013",
+      "start": 178.0,
+      "end": 213.0,
+      "speaker": "题目12",
+      "module": "",
+      "text": "What time is the next chemistry lab?"
+    },
+    {
+      "id": "s014",
+      "start": 979.0,
+      "end": 997.0,
+      "speaker": "题目1",
+      "module": "",
+      "text": "How can I register for this seminar?"
+    },
+    {
+      "id": "s015",
+      "start": 997.0,
+      "end": 1009.0,
+      "speaker": "题目2",
+      "module": "",
+      "text": "The campus garden includes a wildlife habitat."
+    },
+    {
+      "id": "s016",
+      "start": 1009.0,
+      "end": 1023.0,
+      "speaker": "题目3",
+      "module": "",
+      "text": "Why is the cafeteria closed today?"
+    }
+  ]
+}

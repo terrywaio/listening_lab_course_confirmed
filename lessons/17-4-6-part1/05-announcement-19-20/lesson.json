@@ -1,0 +1,26 @@
+{
+  "title": "4.6 公告 19-20",
+  "source": {
+    "textId": "4.6__part1__4-6-q1-m4a-1",
+    "textName": "4.6 听力(缺q1).m4a(1).docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/4.6 听力(缺q1).m4a(1).docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\4.6.zip::4.6/4.6 听力(缺q1).m4a/4.6 听力(缺q1).m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 4.6; part match part1; listening keyword",
+    "unitType": "announcement",
+    "unitLabel": "19-20"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 343.0,
+      "end": 412.0,
+      "speaker": "题目19/20",
+      "module": "",
+      "text": "Listen to an announcement in a classroom . This Thursday at 7:00p.m.in the lecture hall, Professor George Benzi will give a guest lecture on recent advances in string theory. I've also uploaded one of professor benzy's papers to the cowebsite. I highly recommend reading the paper and going to the lecture. Our current units on black holes is largely based on professor benzy's work. If you attend the lecture, you'll be able to earn extra credit submitting a one page reflection on what you learn from it by next week."
+    }
+  ]
+}

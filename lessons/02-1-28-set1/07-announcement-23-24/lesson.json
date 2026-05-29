@@ -1,0 +1,26 @@
+{
+  "title": "1.28 套一 公告 23-24",
+  "source": {
+    "textId": "1.28__set1__1-28-part1-m4a-1",
+    "textName": "1.28套一听力part1.m4a(1).docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/1.28（答案+文本校对了/1.28套一听力part1.m4a(1).docx",
+    "audioSource": "D:\\TOELF\\1月+2月部分.zip::1月+2月部分/1.28-答案全对/1.28 套一听力音频/1.28套一听力part1.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 1.28; part match set1; listening keyword",
+    "unitType": "announcement",
+    "unitLabel": "23-24"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 510.0,
+      "end": 586.0,
+      "speaker": "题目23/24",
+      "module": "",
+      "text": "Listen to an announcement in a university classroom. Good afternoon, students. Just a quick reminder about the upcoming deadline for your digital storytelling project. Final submissions are due next Friday. Your project should include a narrated video that combines images, voiceover, and background music to tell a personal story. Please use a common file format, and it's very important that all media used is either original or properly credited to the source. If you have any questions about the technical requirements or need help with editing tools, feel free to reach out."
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "title": "4.20 讲座 12-15",
+  "source": {
+    "textId": "4.20__4-20-m4a",
+    "textName": "4.20听力音频.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/4.20听力音频.m4a.docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\4.20.zip::4.20/4.20听力音频.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 4.20; listening keyword",
+    "unitType": "lecture",
+    "unitLabel": "12-15"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 1709.0,
+      "end": null,
+      "speaker": "题目12/13/14/15",
+      "module": "",
+      "text": "Listen to a talk in an environmental science class. Soil isn't just dirt, it's alive. In healthy soil, microorganisms like bacteria and fungi help break down organic matter and cycle nutrients like nitrogen and phosphorus, which plants need to thrive. Not only that, but microbes create sticky substances called extracellular polymeric substances that bind soil particles together. Extracellular polymeric substances are important for maintaining soil structure, which means proper water retention, aeration and root growth. Without microbes, soil becomes compacted, dry, and less able to support life. Now, when we're trying to reverse damage to a degraded ecosystem, say, a forest that's been logged or farmland that's been overused, microbes can be key players. Scientists engaged in these efforts often begin by studying a reference site. A reference site is a nearby area that shows what the ecosystem should look like in its healthy state. For example, if they're restoring a grassland theylook at an untouched patch of native grassland, theyanalyze the soil there, its nutrients, texture and microbial communities to determine what's missing in the damaged site. After this research comes the intervention phase. Scientists might introduce microbial inocullants, custom blends of helpful microbes to the degraded soil. These microbes rebuild structure, cycle nutrients, and support plant growth. In one California vineyard, years of chemical use had depleted microbial diversity and compacted the soil, making it hard for vines to thrive. Researchers introduced various fungi and other beneficial microbes within a year, the soil structure improved, water retention increased, and grape yield and quality noticeably rebounded."
+    }
+  ]
+}

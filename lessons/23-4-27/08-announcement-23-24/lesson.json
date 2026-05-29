@@ -1,0 +1,26 @@
+{
+  "title": "4.27 公告 23-24",
+  "source": {
+    "textId": "4.27__4-27-m4a",
+    "textName": "4.27 听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/4.27 听力.m4a.docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-05\\4.27.zip::4.27/4.27 听力.m4a/4.27 听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 4.27; listening keyword",
+    "unitType": "announcement",
+    "unitLabel": "23-24"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 559.0,
+      "end": 615.0,
+      "speaker": "题目23/24",
+      "module": "",
+      "text": "Listen to a campus radio announcement. The due date for submitting photographs to the campus photography contest is today at 3:00p.m.. If you would like to enter but have not yet submitted a photograph, remember to do so today. After all submissions are in selected photography, students will judge the photos and declare a winner. The winner's name and winning photo will be printed in the campus newspaper, and all photographs entered will be posted on the University website next Wednesday."
+    }
+  ]
+}

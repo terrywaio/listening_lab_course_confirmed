@@ -1,0 +1,26 @@
+{
+  "title": "3.15 Part 2 讲座 8-11",
+  "source": {
+    "textId": "3.15__part2__3-15-part2-m4a",
+    "textName": "3.15 听力 part2.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/3.15（答案+文本校对了/3.15 听力 part2.m4a.docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\3.15.zip::3.15/3.15  听力 part2/3.15 听力 part2.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 3.15; part match part2; listening keyword",
+    "unitType": "lecture",
+    "unitLabel": "8-11"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 257.0,
+      "end": 544.0,
+      "speaker": "题目8/9/10/11",
+      "module": "M2",
+      "text": "Listen listen to a talk in a psychology class. Imagine working in an office where every employee is smiling and enthusiastic. How would it affect your productivity? You probably be more productive. But why? See, happy individuals can spread their positive energy, influencing the mood of those around them. This is called emotional contagion. You know, when somebody yawns because they're tired or bored, it can make others around them yawn. Well, in this case, instead of yawns, optimism and motive, motivation are spreading. Emotional contagion can happen because of mirror neurons. Mirror neurons fire when you. You notice someone else's emotion, which makes you feel importantly. This happens subconsciously. You aren't aware of it or thinking about it when it happens. Now, happiness doesn't just come from perks. Sure, free snacks can help office morale, but real happiness stems from meaningful work, autonomy and of appreciation. Leadership really sets. The tone for that in turn, happiness enhances creativity, problem solving skills, things like that. So when you're happy, you're not just feeling good. You're thinking better, which motivates you to work better. A study in a leading business magazine takes this further. The authors found that happiness spreads. Yes. From a company's leaders to its employees. But what I find remarkable is that the study found that it also extends to the customers or clients with a positive work environment. The employees feel more committed and engaged. They serve client, improving their sense of well being. And in healthcare settings, that means better health outcomes for clients."
+    }
+  ]
+}

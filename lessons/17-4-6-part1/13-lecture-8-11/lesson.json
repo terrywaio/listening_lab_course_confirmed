@@ -1,0 +1,26 @@
+{
+  "title": "4.6 讲座 8-11",
+  "source": {
+    "textId": "4.6__part1__4-6-q1-m4a-1",
+    "textName": "4.6 听力(缺q1).m4a(1).docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/4.6 听力(缺q1).m4a(1).docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\4.6.zip::4.6/4.6 听力(缺q1).m4a/4.6 听力(缺q1).m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 4.6; part match part1; listening keyword",
+    "unitType": "lecture",
+    "unitLabel": "8-11"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 1087.0,
+      "end": 1256.0,
+      "speaker": "题目8/9/10/11",
+      "module": "",
+      "text": "Listen to a talk in an art history class. Today, the Mexican visual artist Frida Carlo is a household name worldwide. But before her death in 1954, she was mainly known as the wife of another famous artist, Diego Rivera. And critics and the public barely heard of her until decades later, probably not until a Hollywood movie about her life in 2002. These days, Frida Carlos best known artworks are her paintings, especially her self portraits, showing her with a serious expression, thick eyebrows and traditional Mexican clothes. Carlos drawings, however, are rather obscure even now. One, drawing, a self portrait from 1946, was intended as a gift for a Mexican politician that Carlo and her husband knew. Similar to her paintings, Carlo drew herself with a serious facial expression, like she's asking, what's my life's meaning? Also, her eyebrows form the shape of a hummingbird, which seems ready to fly onto her forehead, where some cloud like shapes appear. My favorite part of this drawing is Carlo's hair. One side is arranged in a modest braid, while the other is loose and wild. I think it shows her inner struggle between two ways of being reserved versus free."
+    }
+  ]
+}

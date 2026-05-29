@@ -1,0 +1,26 @@
+{
+  "title": "3.4 M2 讲座 12-15",
+  "source": {
+    "textId": "3.4__3-4-m4a",
+    "textName": "3.4-听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/3.4（答案+文本校对了/3.4-听力.m4a.docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\3.4.zip::3.4/听力/3.4-听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 3.4; listening keyword",
+    "unitType": "lecture",
+    "unitLabel": "12-15"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 1524.0,
+      "end": null,
+      "speaker": "题目12/13/14/15",
+      "module": "M2",
+      "text": "Listen to a talk in a biology class. The Andes in South America are an impressively long mountain range. They stretch about 9000 km and go through seven different countries. The Andes mountains are also known for their rugged and challenging terrain. Now, are you familiar with the bromeliads family of plants? You probably know one of them, the pineapple. There's another bromeliad that's kinda like a pineapple, except that it's up to 12m tall. The bromeliads on earth, it's called the Puya raimondii, and it has a nickname, queen of the Andes. Actually, there are a few reasons for that name besides its stately height. For one thing, Puya raimondii are really an emblematic Andean plant. About half of all Puya raimondii are found in one place, a conservation area in Peru. Others are scattered outside of that safeguarded region in other parts of the Peruvian or Bolivian grasslands. But outside of botanical gardens, it's only found in the Andes. There's also its lifespan, 80 to 100 years. It's not like the giant sequoia tree, which can live 4000 years. But still, and despite its longevity, the queen of the Andes only blooms once, right at the end of its life. It produces majestic White flowers, scatters millions of seeds, and dies. After that, it can still stand upright, quite legally, for several more years. Furthermore, Puya raimondii occupies an elevated position, literally, it grows at or above the tree line at close to 5000m altitude, with ations（音频卡了） and rocky slopes pretty extreme."
+    }
+  ]
+}

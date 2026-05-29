@@ -1,0 +1,26 @@
+{
+  "title": "4.29 公告 21-22",
+  "source": {
+    "textId": "4.29__4-29-m4a",
+    "textName": "4.29 听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/4.29 听力.m4a.docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-05\\4.29.zip::4.29/4.29 听力.m4a/4.29 听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 4.29; listening keyword",
+    "unitType": "announcement",
+    "unitLabel": "21-22"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 443.0,
+      "end": 512.0,
+      "speaker": "讲话人21/22",
+      "module": "",
+      "text": "Listen to an announcement on the campus radio station. Students, due to unforeseen maintenance issues from the storm last weekend, the main library will be closed this weekend for repairs. Our smaller library at the north end of campus won't be affected, and additional librarians will be on site to assist students. We're also designating the main computer lab as a quiet space this weekend. And as always, you can access our collection of online resources through the library's website."
+    }
+  ]
+}

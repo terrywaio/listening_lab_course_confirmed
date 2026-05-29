@@ -1,0 +1,26 @@
+{
+  "title": "3.29 讲座 29-32",
+  "source": {
+    "textId": "3.29__3-29-m4a",
+    "textName": "3.29 听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/3.29（答案+文本校对了/3.29 听力.m4a.docx",
+    "audioSource": "D:\\TOELF\\3.29\\听力\\3.29 听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 3.29; listening keyword; plain file",
+    "unitType": "lecture",
+    "unitLabel": "29-32"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 853.0,
+      "end": 1037.0,
+      "speaker": "题目29/30/31/32",
+      "module": "",
+      "text": "Listen to a talk in an art history class. Now let's look at a 20th century artist and teacher named Lois Milu Jones. Lois Milu Jones was born in 1905 in the state of Massachusetts in the United States. Early on, her parents recognized her creative talent and gave her a good start by making sure she had crayons, paper and other supplies. As an adult, Jones took a sabbatical from her teaching job to study art in Paris in 1937. For the artistic communities and museums in Paris, it was a formative experience where Jones practiced painting landscapes, street scenes. She also learned more about impressionism and other painting styles. You can see this influence in her 1940 oil painting called Indian shops, which depicts a scene in Martha's vineyard, a coastal town in Massachusetts where Jones had spent time as a child. Indian shops shows a pretty realistic and calm summer scene of small stores with vendors. The ocean, the sky, the colors are warm and light. I appreciate the way it balances nature alongside human made structures. Now, Later in her career, Jones produced more abstract work. One striking example of this is an oil and collage piece called Moon Masque from 1971. In Moon Masque, Jones connected with her own African heritage using vibrant colors and geometric shapes. It's an emotional work where she incorporated a replica of a White African mask that appears to be crying. It's surrounded by black profiles of faces looking left and right. Module 2:"
+    }
+  ]
+}

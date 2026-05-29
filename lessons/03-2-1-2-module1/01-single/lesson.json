@@ -1,0 +1,42 @@
+{
+  "title": "2.1-2 M1 单句",
+  "source": {
+    "textId": "2.1-2__module1__listeningmodule1-mp3",
+    "textName": "ListeningModule1.mp3.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/2.1-2（答案+文本校对了/ListeningModule1.mp3.docx",
+    "audioSource": "D:\\TOELF\\1月+2月部分.zip::1月+2月部分/2.1-2（done)/ListeningModule1.mp3",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 2.1-2; part match module1; listening keyword",
+    "unitType": "single",
+    "unitLabel": "单句"
+  },
+  "language": "en",
+  "audioSrc": "../audio.mp3",
+  "audioFileName": "audio.mp3",
+  "segments": [
+    {
+      "id": "s001",
+      "start": null,
+      "end": null,
+      "speaker": "",
+      "module": "",
+      "text": "2.1听力Module 1"
+    },
+    {
+      "id": "s002",
+      "start": 42.0,
+      "end": 45.0,
+      "speaker": "题目1",
+      "module": "",
+      "text": "Why did enrollment increase last year?"
+    },
+    {
+      "id": "s003",
+      "start": 60.0,
+      "end": 62.0,
+      "speaker": "题目6",
+      "module": "",
+      "text": "We are completely out of paper."
+    }
+  ]
+}

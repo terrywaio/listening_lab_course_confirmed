@@ -1,0 +1,26 @@
+{
+  "title": "3.29 公告 21-22",
+  "source": {
+    "textId": "3.29__3-29-m4a",
+    "textName": "3.29 听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/3.29（答案+文本校对了/3.29 听力.m4a.docx",
+    "audioSource": "D:\\TOELF\\3.29\\听力\\3.29 听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 3.29; listening keyword; plain file",
+    "unitType": "announcement",
+    "unitLabel": "21-22"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 511.0,
+      "end": 582.0,
+      "speaker": "题目21/22",
+      "module": "",
+      "text": "Listen to an announcement at a University Club meeting. Attention, club members, we wanted to make you aware of the new attendance policy that will be implemented starting next month. Due to ongoing issues with excessive absences, we will now require all members to attend at least 75% of the meetings each term to maintain their membership. Failure to comply may result in dismissal from the club. Allowances will be made for extenuating circumstances, and members can appeal a dismissal. Please visit our website to view full policy."
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "title": "4.20 单句",
+  "source": {
+    "textId": "4.20__4-20-m4a",
+    "textName": "4.20听力音频.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/4.20听力音频.m4a.docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\4.20.zip::4.20/4.20听力音频.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 4.20; listening keyword",
+    "unitType": "single",
+    "unitLabel": "单句"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": null,
+      "end": null,
+      "speaker": "",
+      "module": "",
+      "text": "Module 1:"
+    },
+    {
+      "id": "s002",
+      "start": 2.0,
+      "end": 27.0,
+      "speaker": "题目1",
+      "module": "",
+      "text": "What time will you arrive on campus?"
+    },
+    {
+      "id": "s003",
+      "start": 27.0,
+      "end": 51.0,
+      "speaker": "题目2",
+      "module": "",
+      "text": "Would you like to join us for dinner?"
+    },
+    {
+      "id": "s004",
+      "start": 51.0,
+      "end": 78.0,
+      "speaker": "题目3",
+      "module": "",
+      "text": "I just learned that Abby and I have the same advisor."
+    },
+    {
+      "id": "s005",
+      "start": 78.0,
+      "end": 104.0,
+      "speaker": "题目4",
+      "module": "",
+      "text": "How many pages do we need to write for this assignment?"
+    },
+    {
+      "id": "s006",
+      "start": 104.0,
+      "end": 130.0,
+      "speaker": "题目5",
+      "module": "",
+      "text": "What did you think of the performance in the quad last week?"
+    },
+    {
+      "id": "s007",
+      "start": 130.0,
+      "end": 155.0,
+      "speaker": "题目6",
+      "module": "",
+      "text": "Where can I find the books on history?"
+    },
+    {
+      "id": "s008",
+      "start": 155.0,
+      "end": 180.0,
+      "speaker": "题目7",
+      "module": "",
+      "text": "How come you volunteered?"
+    },
+    {
+      "id": "s009",
+      "start": 180.0,
+      "end": 205.0,
+      "speaker": "题目8",
+      "module": "",
+      "text": "Maybe the power went out for this whole area."
+    },
+    {
+      "id": "s010",
+      "start": 205.0,
+      "end": 222.0,
+      "speaker": "题目9",
+      "module": "",
+      "text": "Where is the campus convenience store?"
+    },
+    {
+      "id": "s011",
+      "start": 222.0,
+      "end": 244.0,
+      "speaker": "题目10",
+      "module": "",
+      "text": "Who can I contact for volunteer opportunities?"
+    },
+    {
+      "id": "s012",
+      "start": 244.0,
+      "end": 263.0,
+      "speaker": "题目11",
+      "module": "",
+      "text": "Would you like beef or chicken curry?"
+    },
+    {
+      "id": "s013",
+      "start": 263.0,
+      "end": 291.0,
+      "speaker": "题目12",
+      "module": "",
+      "text": "How did you enjoy the dance class?"
+    },
+    {
+      "id": "s014",
+      "start": 1247.0,
+      "end": 1271.0,
+      "speaker": "题目1",
+      "module": "",
+      "text": "What time does the workshop start?"
+    },
+    {
+      "id": "s015",
+      "start": 1271.0,
+      "end": 1299.0,
+      "speaker": "题目2",
+      "module": "",
+      "text": "Do you enjoy reading books by the authors that our literature teacher recommended?"
+    },
+    {
+      "id": "s016",
+      "start": 1299.0,
+      "end": 1323.0,
+      "speaker": "题目3",
+      "module": "",
+      "text": "There's a concert on campus next week, isn't there?"
+    }
+  ]
+}

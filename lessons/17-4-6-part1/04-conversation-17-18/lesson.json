@@ -1,0 +1,26 @@
+{
+  "title": "4.6 对话 17-18",
+  "source": {
+    "textId": "4.6__part1__4-6-q1-m4a-1",
+    "textName": "4.6 听力(缺q1).m4a(1).docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/4.6 听力(缺q1).m4a(1).docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\4.6.zip::4.6/4.6 听力(缺q1).m4a/4.6 听力(缺q1).m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 4.6; part match part1; listening keyword",
+    "unitType": "conversation",
+    "unitLabel": "17-18"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 300.0,
+      "end": 343.0,
+      "speaker": "题目17/18",
+      "module": "",
+      "text": "Listen to a conversation. Where are you off to? We're about to try the new cafe next to the bookstore. Have you been there yet? No. Is it any good? They have the most amazing pastries. good coffee, of course. I was just on my way to the library. I have to review my notes before class."
+    }
+  ]
+}

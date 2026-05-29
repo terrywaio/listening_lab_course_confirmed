@@ -1,0 +1,26 @@
+{
+  "title": "3.17 M1 公告 19-20",
+  "source": {
+    "textId": "3.17__3-17-listening-m4a",
+    "textName": "3.17-listening.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/3.17(答案+文本校对了/3.17-listening.m4a.docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-05\\3.17.zip::3.17/3.17-listening.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 3.17; listening keyword",
+    "unitType": "announcement",
+    "unitLabel": "19-20"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 417.0,
+      "end": 497.0,
+      "speaker": "题目19/20",
+      "module": "M1",
+      "text": "Listen to an announcement at a school event. Good afternoon, students. I'd like to outline some new procedures for campus administrative activities. Beginning Monday, all administrative forms must be submitted electronically through the University's online portal. This change aims to streamline processes and reduce paper waste. Additionally, the administrative office will extend its hours to better accommodate student needs, opening at 9:00a.m.and closing at 6:00p.m.. These updates are meant to improve efficiency and accessibility for everyone. If you have any questions, please contact the administrative office by phone or email."
+    }
+  ]
+}

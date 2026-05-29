@@ -1,0 +1,26 @@
+{
+  "title": "4.13 套一 讲座 8-11",
+  "source": {
+    "textId": "4.13__set1__4-13-m4a",
+    "textName": "4.13 套一 听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/4.13 套一 听力.m4a.docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\4.13.zip::4.13/4.13 套一 听力.m4a/4.13 套一 听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 4.13; part match set1; listening keyword",
+    "unitType": "lecture",
+    "unitLabel": "8-11"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 1188.0,
+      "end": 1427.0,
+      "speaker": "题目8/9/10/11",
+      "module": "",
+      "text": "Listen to a talk in an ecology class. An invasive species is a plant, animal, or other organism that is introduced into an ecosystem, usually by humans. An invasive species can cause harm to its new environment. An example is when humans introduced goats to the Galapagos Islands. The Galapagos are a chain of islands roughly 1000 km off the coast of Ecuador. Throughout the 18 hundreds, people, mostly whalers and explorers, stopped at the islands during long ocean voyages. At that time, long ocean voyages made it hard to keep fresh meat on ships, so sailors released goats on some islands as a living food supply. They could hunt later when passing through. They most likely didn't know how much their actions we're going to damage the islands. Goats are very adaptable and can survive in harsh environments like the Galapagos. They definitely are not picky eaters. They consume everything from tough shrubs to grasses, so they didn't run out of food easily. With no natural predators, their population exploded. As time went on, the goat's eating habits caused native plants like one species of cactus to mostly disappear. And that was a huge problem for native animals like giant tortoises. These tortoises rely on plants like this cactus for food and shade. Without them, many tortoise populations collapsed. So how can we address this problem? Well, in the early two thousands, conservation efforts began to reintroduce tortoises to islands where they had gone extinct. Let's take a look at these efforts and determine how effective they've been."
+    }
+  ]
+}

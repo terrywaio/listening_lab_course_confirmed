@@ -1,0 +1,26 @@
+{
+  "title": "2.1-2 M1 对话 13-14",
+  "source": {
+    "textId": "2.1-2__module1__listeningmodule1-mp3",
+    "textName": "ListeningModule1.mp3.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/2.1-2（答案+文本校对了/ListeningModule1.mp3.docx",
+    "audioSource": "D:\\TOELF\\1月+2月部分.zip::1月+2月部分/2.1-2（done)/ListeningModule1.mp3",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 2.1-2; part match module1; listening keyword",
+    "unitType": "conversation",
+    "unitLabel": "13-14"
+  },
+  "language": "en",
+  "audioSrc": "../audio.mp3",
+  "audioFileName": "audio.mp3",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 98.0,
+      "end": 133.0,
+      "speaker": "题目13/14",
+      "module": "",
+      "text": "Listen to a conversation. Welcome to the student housing office. What can I do for you? Hi. I'm looking for a two-bedroom apartment, and I wondered if you have some available. Yes, we do. How much is the rent? It's $1,800 a month. But we also have some with a nice view of the lake. Those are $2,100. Twenty-one hundred is a bit much. Do you mind if I have a look at one of the standard two-bedrooms? Of course, let me grab the key from the drawer."
+    }
+  ]
+}

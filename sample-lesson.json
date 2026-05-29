@@ -1,0 +1,35 @@
+{
+  "title": "TOEFL Listening Demo",
+  "source": "local-demo",
+  "language": "en",
+  "segments": [
+    {
+      "id": "s1",
+      "start": 0,
+      "end": 4.8,
+      "speaker": "Narrator",
+      "text": "Listen to part of a lecture in an environmental science class."
+    },
+    {
+      "id": "s2",
+      "start": 4.8,
+      "end": 10.7,
+      "speaker": "Professor",
+      "text": "Today we are going to talk about how wetlands help control flooding in nearby towns."
+    },
+    {
+      "id": "s3",
+      "start": 10.7,
+      "end": 17.2,
+      "speaker": "Professor",
+      "text": "The key point is that the plants and soil can absorb water that would otherwise move very quickly downstream."
+    },
+    {
+      "id": "s4",
+      "start": 17.2,
+      "end": 23.6,
+      "speaker": "Student",
+      "text": "So restoring a wetland can sometimes be cheaper than building a new concrete barrier."
+    }
+  ]
+}

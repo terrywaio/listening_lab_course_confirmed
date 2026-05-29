@@ -1,0 +1,26 @@
+{
+  "title": "3.18 公告 21-22",
+  "source": {
+    "textId": "3.18__part1__3-18-m4a-1",
+    "textName": "3.18 听力.m4a(1).docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/3.18(答案+文本校对了/3.18 听力.m4a(1).docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\3.18-忘记放进去了.zip::3.18-忘记放进去了/3.18 听力/3.18 听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 3.18; part unknown; listening keyword",
+    "unitType": "announcement",
+    "unitLabel": "21-22"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 412.0,
+      "end": 478.0,
+      "speaker": "题目21/22",
+      "module": "",
+      "text": "Listen to an announcement at a school event. Good evening, students. We want to provide you with information regarding the upcoming Community Service Award ceremony. The event will take place next Friday at 6:00p.m.in the University auditorium and will recognize students who have spent time giving back to the community. This year, we will be introducing two new categories to recognize outstanding environmental service and ding service in public education. We encourage all students to attend and support their peers. Community service is an important part of the University experience."
+    }
+  ]
+}

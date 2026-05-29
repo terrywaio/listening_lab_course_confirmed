@@ -1,0 +1,26 @@
+{
+  "title": "4.24 讲座 12-15",
+  "source": {
+    "textId": "4.24__4-24-m4a",
+    "textName": "4.24听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/4.24听力.m4a.docx",
+    "audioSource": "D:\\4.24\\4.24听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 4.24; listening keyword; plain file",
+    "unitType": "lecture",
+    "unitLabel": "12-15"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 1572.0,
+      "end": null,
+      "speaker": "题目12/13/14/15",
+      "module": "",
+      "text": "Listen to a talk on an art podcast . Today. I'd like to talk about the color blue in art. Now, we might take blue for granted, but trees, it was one of the most elusive and expensive pigments an artists could use in ancient Egypt, artisans crafted blue from lapis lazuli, a brilliant stone mind in what is now Afghanistan. This mineral was so rare and so valuable that it was literally worth its weight in gold. Because of its scarcity, blue was reserved for the most honored subjects in art in medieval European paintings, often cloaked in deep blue robes. This wasn't just symbolic. A financial statement During the Renaissance，oil paints made the mixing and layering of colors easier, including the mixing of lapis lazuli powder with oil. Still, blue remained costly due to its natural sources. Then came a turning point in the 18​th century, synthetic dyes, Prussian blue, which was originally created in Germany quite by accident, was affordable, vibrant and widely accessible. Suddenly, artists from all walks of life could use blue freely. This democratization of color transformed artist pression and open doors for artistic movements like impressionism, where blue was used freely to evoke mood, atmosphere and emotion. Even today, blue carries echoes of its luxurious past. It's often linked to ideas of calm, depth and aspiration. Yet some traditionalists still argue that no synthetic pigment can match the richness and depth of lapis lazuli. The story of blue continues to reflect the evolving relationship between art, innovation and culture."
+    }
+  ]
+}

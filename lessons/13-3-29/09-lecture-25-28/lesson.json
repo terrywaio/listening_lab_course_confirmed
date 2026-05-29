@@ -1,0 +1,26 @@
+{
+  "title": "3.29 讲座 25-28",
+  "source": {
+    "textId": "3.29__3-29-m4a",
+    "textName": "3.29 听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/3.29（答案+文本校对了/3.29 听力.m4a.docx",
+    "audioSource": "D:\\TOELF\\3.29\\听力\\3.29 听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 3.29; listening keyword; plain file",
+    "unitType": "lecture",
+    "unitLabel": "25-28"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 642.0,
+      "end": 853.0,
+      "speaker": "题目25/26/27/28",
+      "module": "",
+      "text": "Listen to a talk in an art history class. Today, we're exploring the luminous world of stained glass. When you think of stained glass, you probably think of windows in churches, but it is found outside of churches as well. In fact, it used to brighten many homes across the United States. In the late 19th and early 20th centuries, stained glass windows became a beloved feature in domestic architecture thanks to the arts and crafts movement. The arts and crafts movement celebrated craftsmanship and natural beauty, and stained glass fit the bill perfectly. Artists use several techniques to bring their visions to life. The lead method, a traditional approach, involve joining pieces of glass with strips of lead, ideal for bold geometric designs. Then came the copper foil technique, popularized by the American artist and designer Leis Comfort Tiffany. This method wrapped each glass piece in thin copper foil, which allowed for more intricate designs like florals and landscapes. But these beautiful windows weren't without drawbacks. They often lack proper insulation, leading to heat loss. In colder climates, homeowners had to weigh aesthetics against practicality, sometimes adding storm windows or heavy drapes to compensate. Stained glass windows eventually faded from popularity in domestic architecture, but they're enjoying a quiet Renaissance in contemporary art. Modern artists blend old techniques with new technologies like laser cutting, digital design and fused glass methods to create contemporary pieces for homes, galleries and park spaces."
+    }
+  ]
+}

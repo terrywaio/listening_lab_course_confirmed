@@ -1,0 +1,26 @@
+{
+  "title": "2.1-2 M2 讲座 12-15",
+  "source": {
+    "textId": "2.1-2__module2__listeningmodule2-mp3",
+    "textName": "ListeningModule2.mp3.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/2.1-2（答案+文本校对了/ListeningModule2.mp3.docx",
+    "audioSource": "D:\\TOELF\\1月+2月部分.zip::1月+2月部分/2.1-2（done)/ListeningModule2.mp3",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 2.1-2; part match module2; listening keyword",
+    "unitType": "lecture",
+    "unitLabel": "12-15"
+  },
+  "language": "en",
+  "audioSrc": "../audio.mp3",
+  "audioFileName": "audio.mp3",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 255.0,
+      "end": null,
+      "speaker": "题目12/13/14/15",
+      "module": "",
+      "text": "Listen to a talk in an art history class. When we think about paintings, we often focus on their subject, their style, or even the type of paint used. What we often overlook is the material underneath the paint—what we call its support, or sometimes the substrate. This is the surface on which the paint is applied. The support is more important than you might think. Before the 14th century, most paintings were created on wooden panels. Wood was strong and durable, but it posed serious challenges. Large panels were extremely heavy, making transport difficult. Because of this, artists were limited in how big their works could be. Typical subjects for panel paintings were small devotional images, altarpieces, and portraits—works intended for private chapels or fixed locations rather than large public spaces. In the early 14th century, artists in Italy, especially in Venice, began turning to canvas as a support for their paintings, and by the late 15th century, its use had spread widely. Canvas was light and flexible, so paintings could be moved easily and made much larger. This portability meant that monumental works could be displayed in civic buildings, palaces, and even transported for festivals. This brought art beyond the confines of churches and into broader public life. This new use of canvas wasn't just a technical change; it transformed art because it enabled ambitious subjects like vast historical scenes and mythological narratives. For example, Paolo Veronese's \"The Wedding at Cana,\" which is a massive banquet scene filled with dozens of figures and rich architectural detail."
+    }
+  ]
+}

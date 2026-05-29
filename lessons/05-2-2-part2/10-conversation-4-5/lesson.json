@@ -1,0 +1,26 @@
+{
+  "title": "2.2 Part 2 对话 4-5",
+  "source": {
+    "textId": "2.2__part2__2-2-m4a",
+    "textName": "2.2 听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/2.2（答案+文本校对了/2.2 听力.m4a.docx",
+    "audioSource": "D:\\TOELF\\1月+2月部分.zip::1月+2月部分/2.2（done)-答案全对/2.2 听力/2.2 听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 2.2; part match part2; listening keyword",
+    "unitType": "conversation",
+    "unitLabel": "4-5"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 1089.0,
+      "end": 1144.0,
+      "speaker": "题目4/5",
+      "module": "",
+      "text": "Listen to a conversation. Have you heard they're finally updating the kitchen in the student lounge of the storm edge? It's about time. What are doing? Well, for one, all of the appliances are being replaced. Oh, that's great. The microwave hasn't been working properly for a while. I heard they're replacing some of the cabinets too. I hope he doesn't take too long. I me too. I think we'll have access to the place in the dorm next door though."
+    }
+  ]
+}

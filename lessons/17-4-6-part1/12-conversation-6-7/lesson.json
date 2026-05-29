@@ -1,0 +1,26 @@
+{
+  "title": "4.6 对话 6-7",
+  "source": {
+    "textId": "4.6__part1__4-6-q1-m4a-1",
+    "textName": "4.6 听力(缺q1).m4a(1).docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/4.6 听力(缺q1).m4a(1).docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\4.6.zip::4.6/4.6 听力(缺q1).m4a/4.6 听力(缺q1).m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 4.6; part match part1; listening keyword",
+    "unitType": "conversation",
+    "unitLabel": "6-7"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 1034.0,
+      "end": 1087.0,
+      "speaker": "题目6/7",
+      "module": "",
+      "text": "Listen to a conversation. I want to buy some cheese for the dinner party, for the lab. Any tips? What kind of dishes are you serving? Mostly Italian. I'd get Parmesan if you're serving pasta and mozzarella if you're serving lasagna. Thanks. One of my friends who's coming is allergic to dairy products, so I'll need to figure out a substitute for her. Actually, you can get plant based cheese in every grocery store. They make it from soy or from nuts like cashews and almonds."
+    }
+  ]
+}

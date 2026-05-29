@@ -1,0 +1,26 @@
+{
+  "title": "3.18 讲座 25-28",
+  "source": {
+    "textId": "3.18__part1__3-18-m4a-1",
+    "textName": "3.18 听力.m4a(1).docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/3.18(答案+文本校对了/3.18 听力.m4a(1).docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\3.18-忘记放进去了.zip::3.18-忘记放进去了/3.18 听力/3.18 听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 3.18; part unknown; listening keyword",
+    "unitType": "lecture",
+    "unitLabel": "25-28"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 545.0,
+      "end": 726.0,
+      "speaker": "题目25/26/27/28",
+      "module": "",
+      "text": "Listen to a talk in a biology class. You've probably heard that ants can Carry 50 times their own body weight. Amazing, right? Ants also out on the front of their heads, they have strong mandibles, are like jaws, though ants use them like pincers. Grippers, like how humans use our thumb and index finger to pick things up. Now, ants mandibles, their inner surfaces, are covered in tiny hairs. And researchers working on bibiimicry means imitating nature in human inventions. A group of researchers studying ant mandibles in their hairs recently wondered if they could use biology with a robot gripper. So a robot gripper is a device with flat plates that come together to pick things up. But it's difficult to pick up packaging with curved edges. ten use grippers with three plates for stability. But three plates are bulky and harder to operate. You know, awkward. So the researchers built a robot gripper with two plates with tiny artificial hairs, copying and mandibles, and another gripper with just the two smooth plates. They did an experiment with over 2000 tests, an astonishing number, I think, pairing how well the grippers picked up items like a cereal box and a shampoo bottle. Well, the hairy gripper was at least 29% better at grabbing and holding onto items. Its grip was more gentle and more secure."
+    }
+  ]
+}

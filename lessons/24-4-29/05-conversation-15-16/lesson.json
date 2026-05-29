@@ -1,0 +1,26 @@
+{
+  "title": "4.29 对话 15-16",
+  "source": {
+    "textId": "4.29__4-29-m4a",
+    "textName": "4.29 听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/4.29 听力.m4a.docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-05\\4.29.zip::4.29/4.29 听力.m4a/4.29 听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 4.29; listening keyword",
+    "unitType": "conversation",
+    "unitLabel": "15-16"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 250.0,
+      "end": 317.0,
+      "speaker": "讲话人15/16",
+      "module": "",
+      "text": "Listen to a conversation. I'm really struggling in my biology class. The material just doesn't make sense to me. I'm not sure what to do. You know, my roommate is a biology major, and she's worked at the tutoring center for about a year. Really? That could be useful. I can put you in touch with her. And what about your other classes this semester? I don't have any issues in the other ones. I really like my archaeology class. The professor is actually leading a program in Egypt this summer. If only I had some extra money lying around."
+    }
+  ]
+}

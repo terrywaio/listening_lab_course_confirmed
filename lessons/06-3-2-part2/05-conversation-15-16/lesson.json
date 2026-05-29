@@ -1,0 +1,26 @@
+{
+  "title": "3.2 Part 2 对话 15-16",
+  "source": {
+    "textId": "3.2__part2__3-2-m4a",
+    "textName": "3.2 听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/3.2（答案+文本校对了/3.2 听力.m4a.docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\3.2 听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 3.2; part match part2; listening keyword; plain file",
+    "unitType": "conversation",
+    "unitLabel": "15-16"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 233.0,
+      "end": 280.0,
+      "speaker": "题目15/16",
+      "module": "M1",
+      "text": "Listen to a conversation. Any fun plans for the weekend? Matt, Yeah, my cousin's getting married this weekend. Actually, I need a new suit for the wedding. So I'm going to go look today after class. You should check out that new boutique on Elm Street. They have a great selection and they offer custom tailoring . that sounds perfect. How are the prices? Pretty reasonable. I think my brother needed a suit for job interviews, and that's where he went."
+    }
+  ]
+}

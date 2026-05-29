@@ -1,0 +1,26 @@
+{
+  "title": "3.2 Part 2 对话 6-7",
+  "source": {
+    "textId": "3.2__part2__3-2-m4a",
+    "textName": "3.2 听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/3.2（答案+文本校对了/3.2 听力.m4a.docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\3.2 听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 3.2; part match part2; listening keyword; plain file",
+    "unitType": "conversation",
+    "unitLabel": "6-7"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 923.0,
+      "end": 1021.0,
+      "speaker": "题目6/7",
+      "module": "M2",
+      "text": "Listen to a conversation. You're taking a woodworking class right in the Fine Arts Department? Yes, with Professor Williams. I'm building a bookshelf right now. Cool. Do you like the class? I do. I was a little skeptical about the lectures I'd have to sit through, but there's a nice balance between theory and practice. I actually appreciate the lectures as much as working in the studio. That's good. Maybe you could take another class next semester with Professor Williams. Well, I'd really like to be exposed to lots of different teaching styles. The Fine Arts Department has so many great teachers."
+    }
+  ]
+}

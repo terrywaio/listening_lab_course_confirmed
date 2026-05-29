@@ -1,0 +1,26 @@
+{
+  "title": "4.15 套二 对话 15-16",
+  "source": {
+    "textId": "4.15__set2__4-15-m4a",
+    "textName": "4.15 套二 听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/4.15 套二 听力.m4a.docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\4.15.zip::4.15/4.15 套一 听力.m4a/4.15 套二 听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 4.15; part match set2; listening keyword",
+    "unitType": "conversation",
+    "unitLabel": "15-16"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 280.0,
+      "end": 338.0,
+      "speaker": "题目15/16",
+      "module": "",
+      "text": "Listen to a conversation. Hi, I need to return this sweater. I bought it yesterday, but it's too small for me. Sure. Do you have the receipt? Yes, I have it right here. Great. We can process the return. Do you want to exchange it for a larger size or get a refund? I'd like to exchange it please. No problem. I'll get another in that color for you from our stock. Thank you."
+    }
+  ]
+}

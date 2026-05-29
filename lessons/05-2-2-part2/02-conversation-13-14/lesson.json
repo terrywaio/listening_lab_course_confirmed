@@ -1,0 +1,26 @@
+{
+  "title": "2.2 Part 2 对话 13-14",
+  "source": {
+    "textId": "2.2__part2__2-2-m4a",
+    "textName": "2.2 听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/2.2（答案+文本校对了/2.2 听力.m4a.docx",
+    "audioSource": "D:\\TOELF\\1月+2月部分.zip::1月+2月部分/2.2（done)-答案全对/2.2 听力/2.2 听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 2.2; part match part2; listening keyword",
+    "unitType": "conversation",
+    "unitLabel": "13-14"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 221.0,
+      "end": 284.0,
+      "speaker": "题目13/14",
+      "module": "",
+      "text": "Listen to a conversation. Happy lisa, have you managed to set up the new software on your computer? Not yet. I tried installing IT, but I kick error message. Did you be check if your system meets the software requirements? Yes, my computer is definitely compatible, so I think that might be a network issue. You should contact IT support. They can help you sort IT out. Good idea. I'll give them a cool this afternoon. Let me know how IT goes."
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "title": "1.28 套一 公告 19-20",
+  "source": {
+    "textId": "1.28__set1__1-28-part1-m4a-1",
+    "textName": "1.28套一听力part1.m4a(1).docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/1.28（答案+文本校对了/1.28套一听力part1.m4a(1).docx",
+    "audioSource": "D:\\TOELF\\1月+2月部分.zip::1月+2月部分/1.28-答案全对/1.28 套一听力音频/1.28套一听力part1.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 1.28; part match set1; listening keyword",
+    "unitType": "announcement",
+    "unitLabel": "19-20"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 375.0,
+      "end": 433.0,
+      "speaker": "题目19/20",
+      "module": "",
+      "text": "Listen to an announcement at a university gym. Attention students. Starting next week, the gym will be open from 6 AM to 10 PM daily. Please ensure that you wear appropriate athletic attire and footwear while using the equipment. This helps us maintain a safe and hygienic environment and prevents damage to the machinery."
+    }
+  ]
+}

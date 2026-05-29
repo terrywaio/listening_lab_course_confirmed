@@ -1,0 +1,26 @@
+{
+  "title": "3.15 M1 对话 15-16",
+  "source": {
+    "textId": "3.15__part1__3-15-part1-m4a",
+    "textName": "3.15 听力part1.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/3.15（答案+文本校对了/3.15 听力part1.m4a.docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\3.15.zip::3.15/3.15 听力part1/3.15 听力part1.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 3.15; part match part1; listening keyword",
+    "unitType": "conversation",
+    "unitLabel": "15-16"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 251.0,
+      "end": 315.0,
+      "speaker": "题目15/16",
+      "module": "M1",
+      "text": "Listening to a conversation. did you bring the tickets for the play? I thought we could head in early and get coffee from the lobby cafe. There are some hand painted posters of old productions there too. Oh no, I just realized I left the tickets on the kitchen counter. Seriously, that's a bit of a problem. Wait. didn't you say you downloaded the digital versions last night, just in case? Oh, you're right. I completely forgot about that. Let me check my email. You just saved this, a trip back home, and now we still have time for that coffee."
+    }
+  ]
+}

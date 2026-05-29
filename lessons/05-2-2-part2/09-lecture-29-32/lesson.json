@@ -1,0 +1,26 @@
+{
+  "title": "2.2 Part 2 讲座 29-32",
+  "source": {
+    "textId": "2.2__part2__2-2-m4a",
+    "textName": "2.2 听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/2.2（答案+文本校对了/2.2 听力.m4a.docx",
+    "audioSource": "D:\\TOELF\\1月+2月部分.zip::1月+2月部分/2.2（done)-答案全对/2.2 听力/2.2 听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 2.2; part match part2; listening keyword",
+    "unitType": "lecture",
+    "unitLabel": "29-32"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 813.0,
+      "end": 1043.0,
+      "speaker": "题目29/30/31/32",
+      "module": "",
+      "text": "Listen to a talk in the literature class. So today we're looking at the Heros journey, a story telling pattern that shows up in myths, literature from all over the world. This structure was brought into the spotlight by Josef Cambell and American mythologist in his book the hero with a thousand and faces, Cambell studied myths across cold and noticed they shared a common structure. Cambell called the mono myth, and he believed that reflected something universal about the human experience. The journey usually kicks off with a call to adventure, some kind of invitation that pupils, the hero, out of their everyday life, they might resist at first, but eventually they accept, often with a mentors help. Then come the trials tests that push the hero to grow at the center of IT. All is the abyss, the toughest part where the hero faces their greatest fear or enemy. If they make IT through, they are transformed. And here's the key pot, turn with a gift, some kind of insight, wisdom or ability that can help others. That gift is what makes the journey meaningful, not just for the hero, but for their community. Now some critics argue this model oversimplifies storytelling IT can flat out cultural differences and forced diverse stories into a single mode. Still, I'd argue it's influential because IT taps into deeply human, the idea that struggle leads to growth and that we come back changed. 听力Module 2"
+    }
+  ]
+}

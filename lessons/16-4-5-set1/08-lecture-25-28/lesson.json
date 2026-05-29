@@ -1,0 +1,26 @@
+{
+  "title": "4.5 套一 讲座 25-28",
+  "source": {
+    "textId": "4.5__set1__4-5-m4a-2",
+    "textName": "4.5 套一 听力.m4a(2).docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/4.5 套一 听力.m4a(2).docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\4.5.zip::4.5/4.5 套一 听力.m4a/4.5 套一 听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 4.5; part match set1; listening keyword",
+    "unitType": "lecture",
+    "unitLabel": "25-28"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 509.0,
+      "end": 660.0,
+      "speaker": "题目25/26/27/28",
+      "module": "",
+      "text": "Listen to a talk in a physics class. We've been talking about the law of inertia. An object moving in a straight line will continue to move in a straight line unless it is acted upon by another force. So what does this mean in the real world? Let's look at something many people do all the time, riding a bicycle. Think about riding along in a straight line. Once the bike is moving, inertia will keep it going in a straight line. But we don't just ride in straight lines, do we? We turn at corners and steer around things that are in our way. So how do you get the bicycle not to go straight easy, right? Don't you just need to turn the front wheel in the direction you want to turn? In fact, if you only turn the front wheel, you you're likely to end up on the pavement. The wheel will turn, but because of inertia, your body and the rest of the bike will want to keep moving straight ahead. So how does a cyclist avoid this? The key is to lean in. Weight needs to shift in the direction of the turn, so that the force of gravity can work against the force of inertia. Professional cyclists who move at high speeds need to hit a sweet spot. They must lean more to keep their bicycles from sliding out of turns, but not too much. At a certain point, gravity will bring both rider and bicycle down to the ground."
+    }
+  ]
+}

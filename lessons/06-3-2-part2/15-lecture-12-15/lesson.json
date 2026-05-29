@@ -1,0 +1,26 @@
+{
+  "title": "3.2 Part 2 讲座 12-15",
+  "source": {
+    "textId": "3.2__part2__3-2-m4a",
+    "textName": "3.2 听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/3.2（答案+文本校对了/3.2 听力.m4a.docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\3.2 听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 3.2; part match part2; listening keyword; plain file",
+    "unitType": "lecture",
+    "unitLabel": "12-15"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 1219.0,
+      "end": null,
+      "speaker": "题目12/13/14/15",
+      "module": "M2",
+      "text": "Listen to a talk in a biology class. I once saw a video of a Lionfish with its intimidating long spikes. Then it suddenly turned into a snake. Well, it turns out I was actually watching a mimic octopus. The mimic octopus lives in relatively shallow ocean water, and it's the 1st animal known to show dynamic mimicry, which means it can shift quickly between multiple imitations. Now other creatures use mimicry. The owl butterfly's wings have markings resembling an owl's eye, which may keep the butterfly’s predators away. That's how the owl butterfly always looks with dynamic mimicry. By contrast, an animal can shift its shape in real time, contorts its body into different formations, often to confuse predators. A mimic octopus can imitate a Lionfish or a snake and it can quickly extend its arms and glide across the sea floor like a flat fish. But what uses is changing shape. If you can't also change color to look like a flat fish, well, this octopus has cells called chromatophores just under its skin. Each chromatopor has a pigment inside it that could be red, yellow, etcetera. Picture thousands of tiny balloons of different colors. If you stretch a balloon, it gets bigger, right? Well, the mimic octopus has muscles surrounding these chromatophores. They tighten to pull the necessary colors bigger and relax to make other colors smaller, making each color more or less visible. While this helps it hide from predators, it also aids in hunting, as unsuspecting prey often perceives the octopus as a non threatening species."
+    }
+  ]
+}

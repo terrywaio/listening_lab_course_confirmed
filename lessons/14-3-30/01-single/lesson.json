@@ -1,0 +1,138 @@
+{
+  "title": "3.30 单句",
+  "source": {
+    "textId": "3.30__3-30-m4a",
+    "textName": "3.30-听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/3.30(答案+文本校对了/3.30-听力.m4a.docx",
+    "audioSource": "D:\\TOELF\\3.30\\3.30 听力.m4a\\3.30 听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 3.30; listening keyword; plain file",
+    "unitType": "single",
+    "unitLabel": "单句"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": null,
+      "end": null,
+      "speaker": "",
+      "module": "",
+      "text": "Module 1:"
+    },
+    {
+      "id": "s002",
+      "start": 12.0,
+      "end": 26.0,
+      "speaker": "题目1",
+      "module": "",
+      "text": "When does the next bus to campus leave?"
+    },
+    {
+      "id": "s003",
+      "start": 26.0,
+      "end": 44.0,
+      "speaker": "题目 2",
+      "module": "",
+      "text": "What's the best way to enjoy a meal out?"
+    },
+    {
+      "id": "s004",
+      "start": 44.0,
+      "end": 60.0,
+      "speaker": "题目3",
+      "module": "",
+      "text": "When is the next bus for the satellite campus?"
+    },
+    {
+      "id": "s005",
+      "start": 60.0,
+      "end": 74.0,
+      "speaker": "题目4",
+      "module": "",
+      "text": "Are there any hiking trails close to campus?"
+    },
+    {
+      "id": "s006",
+      "start": 74.0,
+      "end": 88.0,
+      "speaker": "题目5",
+      "module": "",
+      "text": "The restaurant has ambience."
+    },
+    {
+      "id": "s007",
+      "start": 88.0,
+      "end": 104.0,
+      "speaker": "题目6",
+      "module": "",
+      "text": "My professor extended the deadline for my paper."
+    },
+    {
+      "id": "s008",
+      "start": 104.0,
+      "end": 129.0,
+      "speaker": "题目7",
+      "module": "",
+      "text": "How did you enjoy the kayaking trip on the river?"
+    },
+    {
+      "id": "s009",
+      "start": 129.0,
+      "end": 148.0,
+      "speaker": "题目8",
+      "module": "",
+      "text": "How long have you been doing classes here?"
+    },
+    {
+      "id": "s010",
+      "start": 148.0,
+      "end": 165.0,
+      "speaker": "题目9",
+      "module": "",
+      "text": "Are you interested in joining the University chorus?"
+    },
+    {
+      "id": "s011",
+      "start": 165.0,
+      "end": 180.0,
+      "speaker": "题目10",
+      "module": "",
+      "text": "Are you planning to start a new research project?"
+    },
+    {
+      "id": "s012",
+      "start": 194.0,
+      "end": 247.0,
+      "speaker": "题目12",
+      "module": "",
+      "text": "How long will it take to receive the package?"
+    },
+    {
+      "id": "s013",
+      "start": 1058.0,
+      "end": 1074.0,
+      "speaker": "题目1",
+      "module": "M2",
+      "text": "The store features vehicle accessories."
+    },
+    {
+      "id": "s014",
+      "start": 1074.0,
+      "end": 1088.0,
+      "speaker": "题目2",
+      "module": "M2",
+      "text": "The movie was a thrilling detective story."
+    },
+    {
+      "id": "s015",
+      "start": 1088.0,
+      "end": 1110.0,
+      "speaker": "题目3",
+      "module": "M2",
+      "text": "I saw you at the campus cafe."
+    }
+  ]
+}

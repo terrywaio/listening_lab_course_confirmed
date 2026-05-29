@@ -1,0 +1,26 @@
+{
+  "title": "4.15 套二 公告 21-22",
+  "source": {
+    "textId": "4.15__set2__4-15-m4a",
+    "textName": "4.15 套二 听力.m4a.docx",
+    "textZipEntry": "Done-4月为止(文本和答案单独校对）/4.15 套二 听力.m4a.docx",
+    "audioSource": "C:\\Users\\ok304\\Documents\\WXWork\\1688855946770783\\Cache\\File\\2026-04\\4.15.zip::4.15/4.15 套一 听力.m4a/4.15 套二 听力.m4a",
+    "confidence": 100,
+    "matchReason": "exact expected filename; date and listening match 4.15; part match set2; listening keyword",
+    "unitType": "announcement",
+    "unitLabel": "21-22"
+  },
+  "language": "en",
+  "audioSrc": "../audio.m4a",
+  "audioFileName": "audio.m4a",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 458.0,
+      "end": 533.0,
+      "speaker": "题目21/22",
+      "module": "",
+      "text": "Listen to an announcement in a University dormitory. Attention, residents, we would like to remind everyone of the shared responsibility for maintaining the kitchen. Beginning this week, any dirty dishes left in the sink on Sunday will be thrown out. Please remember that sponges and dish soap are available and are replenished daily by the custodial staff. In addition, please be sure to remove anything in the refrigerator that's past its expiration date, and don't forget to put your name on everything that's yours. If there' S No Name, it's considered communal property."
+    }
+  ]
+}
