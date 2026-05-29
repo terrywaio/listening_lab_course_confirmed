@@ -7,6 +7,7 @@ const state = {
   supabase: null,
   session: null,
   profile: null,
+  pendingProfileName: "",
   library: [],
   students: [],
   teacherAssignments: [],
@@ -52,6 +53,7 @@ const lessonRepository = {
 
 document.addEventListener("DOMContentLoaded", async () => {
   bindElements();
+  hydrateAuthForm();
   bindEvents();
   initializeSupabase();
   await loadLibrary();
@@ -244,64 +246,47 @@ async function signIn() {
     return;
   }
   setAuthStatus("登录中...");
+  disableAuthControls(true);
   const { error } = await state.supabase.auth.signInWithPassword({ email, password });
-  if (error) setAuthStatus(error.message);
+  if (error) {
+    setAuthStatus(error.message);
+    disableAuthControls(false);
+  }
 }
 
 async function signUp() {
   if (!state.supabase) return;
-  const email = els.emailInput.value.trim();
-  const password = els.passwordInput.value;
   const fullName = els.fullNameInput.value.trim();
-  if (!email || !password) {
-    setAuthStatus("请输入邮箱和密码。");
+  if (!fullName) {
+    setAuthStatus("学生进入前请先填写姓名。");
     return;
   }
 
-  setAuthStatus("正在检查账号...");
-  const signInAttempt = await state.supabase.auth.signInWithPassword({ email, password });
-  if (!signInAttempt.error) {
-    setAuthStatus("账号已存在，已直接登录。");
-    return;
-  }
-  if (isEmailNotConfirmedError(signInAttempt.error)) {
-    setAuthStatus("这个账号已存在但还未确认邮箱。你已关闭邮箱验证后，请在 Supabase Auth 用户列表里确认该用户，或删除后重新注册。");
-    return;
-  }
-  if (!isInvalidLoginError(signInAttempt.error)) {
-    setAuthStatus(signInAttempt.error.message);
-    return;
-  }
-
-  setAuthStatus("注册中...");
-  const { data, error } = await state.supabase.auth.signUp({
-    email,
-    password,
-    options: { data: { full_name: fullName } },
-  });
+  state.pendingProfileName = fullName;
+  localStorage.setItem(studentNameKey(), fullName);
+  setAuthStatus("正在进入学生端...");
+  disableAuthControls(true);
+  const { error } = await state.supabase.auth.signInAnonymously();
   if (error) {
-    if (isEmailRateLimitError(error)) {
-      setAuthStatus("Supabase 注册邮箱限流了：如果这个邮箱已注册，请点“登录”；新账号请稍后再试，或在 Supabase 调整 Auth 邮件限制。");
+    disableAuthControls(false);
+    if (isAnonymousAuthDisabledError(error)) {
+      setAuthStatus("Supabase 还没开启匿名登录。请在 Authentication > Sign In / Providers 里开启 Anonymous sign-ins。");
+    } else if (isRateLimitError(error)) {
+      setAuthStatus("Supabase Auth 仍在限流，请稍后再试；现在已不再发送邮箱注册请求。");
     } else {
       setAuthStatus(error.message);
     }
     return;
   }
-  if (!data.session) {
-    setAuthStatus("注册成功。若开启了邮箱确认，请先去邮箱完成确认。");
-  }
+  setAuthStatus("已进入学生端。老师分配任务后会显示在这里。");
 }
 
-function isInvalidLoginError(error) {
+function isAnonymousAuthDisabledError(error) {
   const message = String(error?.message || "").toLowerCase();
-  return message.includes("invalid login credentials");
+  return message.includes("anonymous") || message.includes("provider is not enabled") || message.includes("unsupported provider");
 }
 
-function isEmailNotConfirmedError(error) {
-  return String(error?.message || "").toLowerCase().includes("email not confirmed");
-}
-
-function isEmailRateLimitError(error) {
+function isRateLimitError(error) {
   return String(error?.message || "").toLowerCase().includes("rate limit");
 }
 
@@ -343,18 +328,31 @@ function resetUserState() {
 
 async function ensureProfile() {
   const user = state.session.user;
+  const preferredName = preferredProfileName(user);
   const { data, error } = await state.supabase
     .from("profiles")
     .select("id,email,full_name,role,created_at")
     .eq("id", user.id)
     .maybeSingle();
   if (error) throw error;
-  if (data) return data;
+  if (data) {
+    if (preferredName && data.role === "student" && data.full_name !== preferredName) {
+      const { data: updated, error: updateError } = await state.supabase
+        .from("profiles")
+        .update({ full_name: preferredName, email: user.email || data.email || null })
+        .eq("id", user.id)
+        .select("id,email,full_name,role,created_at")
+        .single();
+      if (!updateError && updated) return updated;
+      return { ...data, full_name: preferredName };
+    }
+    return data;
+  }
 
-  const fallbackName = user.user_metadata?.full_name || user.email?.split("@")[0] || "Student";
+  const fallbackName = preferredName || user.email?.split("@")[0] || "Student";
   const { error: insertError } = await state.supabase.from("profiles").insert({
     id: user.id,
-    email: user.email,
+    email: user.email || null,
     full_name: fallbackName,
     role: "student",
   });
@@ -367,6 +365,23 @@ async function ensureProfile() {
     .single();
   if (fetchError) throw fetchError;
   return created;
+}
+
+function preferredProfileName(user) {
+  return (
+    state.pendingProfileName ||
+    localStorage.getItem(studentNameKey()) ||
+    user?.user_metadata?.full_name ||
+    user?.email?.split("@")[0] ||
+    ""
+  );
+}
+
+function hydrateAuthForm() {
+  const studentName = localStorage.getItem(studentNameKey());
+  if (studentName && els.fullNameInput && !els.fullNameInput.value) {
+    els.fullNameInput.value = studentName;
+  }
 }
 
 async function loadLibrary() {
@@ -1326,6 +1341,10 @@ function progressStorageKey() {
 
 function selectedAssignmentKey() {
   return `${STORAGE_PREFIX}${state.session?.user?.id || "anon"}:selected-assignment`;
+}
+
+function studentNameKey() {
+  return `${STORAGE_PREFIX}student-name`;
 }
 
 function updateSentenceStatus(segment) {
