@@ -1,4 +1,4 @@
-const APP_VERSION = "20260529-lms-2";
+const APP_VERSION = "20260529-lms-3";
 const STORAGE_PREFIX = "listening-lab-lms:v1:";
 const MAX_PRE_SUBMIT_LISTENS = 3;
 
