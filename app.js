@@ -264,6 +264,10 @@ async function signUp() {
     setAuthStatus("账号已存在，已直接登录。");
     return;
   }
+  if (isEmailNotConfirmedError(signInAttempt.error)) {
+    setAuthStatus("这个账号已存在但还未确认邮箱。你已关闭邮箱验证后，请在 Supabase Auth 用户列表里确认该用户，或删除后重新注册。");
+    return;
+  }
   if (!isInvalidLoginError(signInAttempt.error)) {
     setAuthStatus(signInAttempt.error.message);
     return;
@@ -290,7 +294,11 @@ async function signUp() {
 
 function isInvalidLoginError(error) {
   const message = String(error?.message || "").toLowerCase();
-  return message.includes("invalid login credentials") || message.includes("email not confirmed");
+  return message.includes("invalid login credentials");
+}
+
+function isEmailNotConfirmedError(error) {
+  return String(error?.message || "").toLowerCase().includes("email not confirmed");
 }
 
 function isEmailRateLimitError(error) {
