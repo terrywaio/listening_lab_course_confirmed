@@ -1,66 +1,62 @@
-const DEMO_LESSON = {
-  title: "TOEFL Listening Demo",
-  source: "local-demo",
-  language: "en",
-  segments: [
-    {
-      id: "s1",
-      start: 0,
-      end: 4.8,
-      speaker: "Narrator",
-      text: "Listen to part of a lecture in an environmental science class.",
-    },
-    {
-      id: "s2",
-      start: 4.8,
-      end: 10.7,
-      speaker: "Professor",
-      text: "Today we are going to talk about how wetlands help control flooding in nearby towns.",
-    },
-    {
-      id: "s3",
-      start: 10.7,
-      end: 17.2,
-      speaker: "Professor",
-      text: "The key point is that the plants and soil can absorb water that would otherwise move very quickly downstream.",
-    },
-    {
-      id: "s4",
-      start: 17.2,
-      end: 23.6,
-      speaker: "Student",
-      text: "So restoring a wetland can sometimes be cheaper than building a new concrete barrier.",
-    },
-  ],
-};
-
-const STORAGE_PREFIX = "listening-lab:v4:";
+const APP_VERSION = "20260529-lms-1";
+const STORAGE_PREFIX = "listening-lab-lms:v1:";
+const MAX_PRE_SUBMIT_LISTENS = 3;
 
 const state = {
-  lesson: normalizeLesson(DEMO_LESSON),
-  audioUrl: "",
+  configReady: false,
+  supabase: null,
+  session: null,
+  profile: null,
+  library: [],
+  students: [],
+  teacherAssignments: [],
+  teacherProgressRows: [],
+  selectedTeacherAssignmentId: "",
+  studentAssignments: [],
+  studentProgressRows: [],
+  assignment: null,
+  lesson: normalizeLesson({ title: "未选择任务", segments: [] }),
+  lessonPath: "",
+  lessonUrl: "",
   currentIndex: 0,
-  mode: "dictation",
-  hideTranscript: true,
-  loopSegment: true,
-  waveform: null,
   answers: {},
   submitted: {},
   playedThrough: {},
+  listenCounts: {},
+  scores: {},
+  submittedAt: {},
   unlockedIndex: 0,
   notes: "",
-  bookmarks: [],
-  library: [],
+  waveform: null,
+  activeListenSegmentId: "",
+  saving: false,
+  pendingSaveSegmentId: "",
 };
 
 const els = {};
+let cloudSaveTimer = null;
 
-document.addEventListener("DOMContentLoaded", () => {
+const lessonRepository = {
+  async list() {
+    const response = await fetch(`./library.json?v=${APP_VERSION}`, { cache: "no-store" });
+    if (!response.ok) throw new Error("library not found");
+    const library = await response.json();
+    return Array.isArray(library.lessons) ? library.lessons : [];
+  },
+  async load(path) {
+    const response = await fetch(path, { cache: "no-store" });
+    if (!response.ok) throw new Error("lesson not found");
+    return response.json();
+  },
+};
+
+document.addEventListener("DOMContentLoaded", async () => {
   bindElements();
   bindEvents();
-  loadStoredState();
-  loadLibrary();
-  render();
+  initializeSupabase();
+  await loadLibrary();
+  await initializeAuth();
+  renderShell();
   resizeWaveform();
   window.addEventListener("resize", () => {
     resizeWaveform();
@@ -70,20 +66,25 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function bindElements() {
   [
+    "appStatus",
+    "userBadge",
+    "signOutButton",
+    "authView",
+    "appView",
+    "configStatus",
+    "authStatus",
+    "fullNameInput",
+    "emailInput",
+    "passwordInput",
+    "signInButton",
+    "signUpButton",
+    "studentTasksPanel",
+    "assignmentCount",
+    "assignmentList",
+    "practicePanel",
     "lessonMeta",
-    "audioStatus",
-    "libraryStatus",
-    "audioFile",
-    "transcriptFile",
-    "pasteTranscript",
-    "buildFromText",
-    "clearSession",
-    "lessonSelect",
-    "refreshLibrary",
-    "loadDemo",
-    "exportLesson",
-    "exportProgress",
     "segmentCounter",
+    "syncStatus",
     "waveform",
     "audio",
     "previousSegment",
@@ -91,96 +92,754 @@ function bindElements() {
     "togglePlay",
     "nextSegment",
     "playbackRate",
-    "loopSegment",
-    "hideTranscript",
     "timeRange",
     "sentenceStatus",
+    "listenCountBadge",
     "scoreBadge",
     "answerText",
     "dictationInput",
     "checkAnswer",
-    "revealAnswer",
     "copySegment",
-    "segmentsList",
+    "audioStatus",
+    "progressPanel",
     "progressText",
-    "bookmarkSegment",
+    "progressSummary",
     "notesInput",
-    "bookmarkList",
+    "teacherPanel",
+    "teacherStatus",
+    "studentSelect",
+    "teacherLessonSelect",
+    "dueAtInput",
+    "assignmentNote",
+    "assignTaskButton",
+    "studentsList",
+    "refreshTeacherData",
+    "teacherAssignments",
+    "teacherProgress",
   ].forEach((id) => {
     els[id] = document.getElementById(id);
   });
 }
 
 function bindEvents() {
-  els.audioFile.addEventListener("change", handleAudioFile);
-  els.transcriptFile.addEventListener("change", handleTranscriptFile);
-  els.buildFromText.addEventListener("click", buildFromPastedText);
-  els.clearSession.addEventListener("click", clearSession);
-  els.refreshLibrary.addEventListener("click", () => loadLibrary(true));
-  els.loadDemo.addEventListener("click", () => loadLesson(DEMO_LESSON));
-  els.exportLesson.addEventListener("click", exportLesson);
-  els.exportProgress.addEventListener("click", exportProgress);
-  els.previousSegment.addEventListener("click", () => moveSegment(-1));
-  els.nextSegment.addEventListener("click", () => moveSegment(1));
-  els.replaySegment.addEventListener("click", () => playSegment(true));
-  els.togglePlay.addEventListener("click", togglePlay);
-  els.playbackRate.addEventListener("change", () => {
+  on(els.signInButton, "click", signIn);
+  on(els.signUpButton, "click", signUp);
+  on(els.signOutButton, "click", signOut);
+  on(els.assignTaskButton, "click", assignTask);
+  on(els.refreshTeacherData, "click", loadTeacherDashboard);
+  on(els.previousSegment, "click", () => moveSegment(-1));
+  on(els.nextSegment, "click", () => moveSegment(1));
+  on(els.replaySegment, "click", () => playCurrentSegment(true));
+  on(els.togglePlay, "click", togglePlay);
+  on(els.playbackRate, "change", () => {
     els.audio.playbackRate = Number(els.playbackRate.value);
   });
-  els.loopSegment.addEventListener("change", () => {
-    state.loopSegment = els.loopSegment.checked;
-    saveStoredState();
-    render();
-  });
-  els.hideTranscript.addEventListener("change", () => {
-    state.hideTranscript = els.hideTranscript.checked;
-    saveStoredState();
-    render();
-  });
-  document.querySelectorAll("[data-mode]").forEach((button) => {
-    button.addEventListener("click", () => {
-      state.mode = button.dataset.mode;
-      if (state.mode !== "dictation") {
-        state.hideTranscript = false;
-      }
-      render();
-      saveStoredState();
-    });
-  });
-  els.audio.addEventListener("loadedmetadata", () => {
-    els.audioStatus.textContent = `${formatTime(els.audio.duration)} 音频`;
+  on(els.waveform, "click", seekFromWaveform);
+  on(els.audio, "loadedmetadata", () => {
+    setAudioStatus(`${formatTime(els.audio.duration)} 音频已就绪`);
     drawWaveform();
   });
-  els.audio.addEventListener("timeupdate", onAudioTimeUpdate);
-  els.audio.addEventListener("play", () => {
+  on(els.audio, "timeupdate", onAudioTimeUpdate);
+  on(els.audio, "play", () => {
     els.togglePlay.textContent = "Ⅱ";
   });
-  els.audio.addEventListener("pause", () => {
+  on(els.audio, "pause", () => {
     els.togglePlay.textContent = "▶";
   });
-  els.waveform.addEventListener("click", seekFromWaveform);
-  els.dictationInput.addEventListener("input", () => {
+  on(els.dictationInput, "input", () => {
     const segment = currentSegment();
-    if (!segment) return;
+    if (!segment || isSubmitted(segment)) return;
     state.answers[segment.id] = els.dictationInput.value;
-    updateScore(false);
-    saveStoredState();
+    saveLocalProgress();
+    scheduleCloudSave(segment);
+    updateScoreBadge(segment);
   });
-  els.checkAnswer.addEventListener("click", submitAnswer);
-  els.revealAnswer.addEventListener("click", () => {
+  on(els.dictationInput, "paste", (event) => {
     const segment = currentSegment();
-    if (!segment || !isSubmitted(segment)) return;
-    state.hideTranscript = false;
-    render();
+    if (isStudent() && segment && !isSubmitted(segment)) {
+      event.preventDefault();
+      setAudioStatus("提交前不能粘贴答案");
+    }
   });
-  els.copySegment.addEventListener("click", copyCurrentSegment);
-  els.bookmarkSegment.addEventListener("click", bookmarkCurrentSegment);
-  els.notesInput.addEventListener("input", () => {
+  on(els.answerText, "copy", (event) => {
+    const segment = currentSegment();
+    if (!segment || !isSubmitted(segment)) {
+      event.preventDefault();
+    }
+  });
+  on(els.checkAnswer, "click", submitAnswer);
+  on(els.copySegment, "click", copyCurrentSegment);
+  on(els.notesInput, "input", () => {
     state.notes = els.notesInput.value;
-    saveStoredState();
+    saveLocalProgress();
+    scheduleCloudSave(null);
   });
-  els.lessonSelect.addEventListener("change", loadSelectedLibraryLesson);
   window.addEventListener("keydown", handleKeyboard);
+}
+
+function on(element, eventName, handler) {
+  if (element) element.addEventListener(eventName, handler);
+}
+
+function initializeSupabase() {
+  const config = window.LISTENING_LAB_SUPABASE || {};
+  const hasClient = Boolean(window.supabase && window.supabase.createClient);
+  const hasConfig = isFilledSupabaseConfig(config);
+  state.configReady = hasClient && hasConfig;
+
+  if (!hasClient) {
+    setConfigStatus("Supabase SDK 加载失败", "danger");
+    return;
+  }
+  if (!hasConfig) {
+    setConfigStatus("请先填写 supabase-config.js", "warning");
+    return;
+  }
+
+  state.supabase = window.supabase.createClient(config.url, config.anonKey);
+  setConfigStatus("Supabase 已连接", "");
+}
+
+function isFilledSupabaseConfig(config) {
+  return (
+    typeof config.url === "string" &&
+    config.url.startsWith("https://") &&
+    typeof config.anonKey === "string" &&
+    config.anonKey.length > 30 &&
+    !config.anonKey.includes("YOUR_")
+  );
+}
+
+function setConfigStatus(text, tone) {
+  els.configStatus.textContent = text;
+  els.configStatus.className = "status-pill";
+  if (tone) els.configStatus.classList.add(`is-${tone}`);
+}
+
+async function initializeAuth() {
+  if (!state.supabase) {
+    setAuthStatus("Supabase 未配置，先按文档创建项目并填写 anon key。");
+    disableAuthControls(true);
+    return;
+  }
+
+  const { data, error } = await state.supabase.auth.getSession();
+  if (error) setAuthStatus(error.message);
+  state.session = data?.session || null;
+
+  state.supabase.auth.onAuthStateChange((_event, session) => {
+    state.session = session;
+    handleSessionChanged();
+  });
+
+  await handleSessionChanged();
+}
+
+async function signIn() {
+  if (!state.supabase) return;
+  const email = els.emailInput.value.trim();
+  const password = els.passwordInput.value;
+  if (!email || !password) {
+    setAuthStatus("请输入邮箱和密码。");
+    return;
+  }
+  setAuthStatus("登录中...");
+  const { error } = await state.supabase.auth.signInWithPassword({ email, password });
+  if (error) setAuthStatus(error.message);
+}
+
+async function signUp() {
+  if (!state.supabase) return;
+  const email = els.emailInput.value.trim();
+  const password = els.passwordInput.value;
+  const fullName = els.fullNameInput.value.trim();
+  if (!email || !password) {
+    setAuthStatus("请输入邮箱和密码。");
+    return;
+  }
+  setAuthStatus("注册中...");
+  const { data, error } = await state.supabase.auth.signUp({
+    email,
+    password,
+    options: { data: { full_name: fullName } },
+  });
+  if (error) {
+    setAuthStatus(error.message);
+    return;
+  }
+  if (!data.session) {
+    setAuthStatus("注册成功。若开启了邮箱确认，请先去邮箱完成确认。");
+  }
+}
+
+async function signOut() {
+  if (!state.supabase) return;
+  await state.supabase.auth.signOut();
+}
+
+async function handleSessionChanged() {
+  if (!state.session) {
+    resetUserState();
+    renderShell();
+    return;
+  }
+
+  try {
+    state.profile = await ensureProfile();
+    if (isTeacher()) {
+      await loadTeacherDashboard();
+    } else {
+      await loadStudentAssignments();
+    }
+  } catch (error) {
+    setAuthStatus(`账号数据加载失败：${error.message}`);
+  }
+  renderShell();
+}
+
+function resetUserState() {
+  state.profile = null;
+  state.students = [];
+  state.teacherAssignments = [];
+  state.teacherProgressRows = [];
+  state.studentAssignments = [];
+  state.studentProgressRows = [];
+  state.assignment = null;
+  clearPracticeData();
+}
+
+async function ensureProfile() {
+  const user = state.session.user;
+  const { data, error } = await state.supabase
+    .from("profiles")
+    .select("id,email,full_name,role,created_at")
+    .eq("id", user.id)
+    .maybeSingle();
+  if (error) throw error;
+  if (data) return data;
+
+  const fallbackName = user.user_metadata?.full_name || user.email?.split("@")[0] || "Student";
+  const { error: insertError } = await state.supabase.from("profiles").upsert({
+    id: user.id,
+    email: user.email,
+    full_name: fallbackName,
+  });
+  if (insertError) throw insertError;
+
+  const { data: created, error: fetchError } = await state.supabase
+    .from("profiles")
+    .select("id,email,full_name,role,created_at")
+    .eq("id", user.id)
+    .single();
+  if (fetchError) throw fetchError;
+  return created;
+}
+
+async function loadLibrary() {
+  try {
+    state.library = await lessonRepository.list();
+  } catch (error) {
+    state.library = [];
+  }
+  renderTeacherLessonOptions();
+}
+
+async function loadTeacherDashboard() {
+  if (!isTeacher()) return;
+  els.teacherStatus.textContent = "加载中...";
+  const [studentsResult, assignmentsResult] = await Promise.all([
+    state.supabase.from("profiles").select("id,email,full_name,created_at").eq("role", "student").order("created_at"),
+    state.supabase
+      .from("assignments")
+      .select("*")
+      .eq("teacher_id", state.session.user.id)
+      .order("created_at", { ascending: false }),
+  ]);
+
+  if (studentsResult.error) throw studentsResult.error;
+  if (assignmentsResult.error) throw assignmentsResult.error;
+
+  state.students = studentsResult.data || [];
+  state.teacherAssignments = assignmentsResult.data || [];
+  await loadTeacherProgressRows();
+  if (!state.selectedTeacherAssignmentId && state.teacherAssignments.length) {
+    state.selectedTeacherAssignmentId = state.teacherAssignments[0].id;
+  }
+  renderTeacherDashboard();
+}
+
+async function loadTeacherProgressRows() {
+  const ids = state.teacherAssignments.map((assignment) => assignment.id);
+  if (!ids.length) {
+    state.teacherProgressRows = [];
+    return;
+  }
+  const { data, error } = await state.supabase
+    .from("segment_progress")
+    .select("*")
+    .in("assignment_id", ids)
+    .order("segment_index", { ascending: true });
+  if (error) throw error;
+  state.teacherProgressRows = data || [];
+}
+
+async function assignTask() {
+  if (!isTeacher()) return;
+  const studentId = els.studentSelect.value;
+  const lessonPath = els.teacherLessonSelect.value;
+  const lessonMeta = state.library.find((lesson) => lesson.path === lessonPath);
+  if (!studentId || !lessonMeta) {
+    els.teacherStatus.textContent = "请选择学生和课包";
+    return;
+  }
+
+  els.teacherStatus.textContent = "正在分配...";
+  try {
+    const rawLesson = await lessonRepository.load(lessonPath);
+    const lesson = normalizeLesson(rawLesson);
+    const dueAt = els.dueAtInput.value ? new Date(els.dueAtInput.value).toISOString() : null;
+    const { error } = await state.supabase.from("assignments").insert({
+      teacher_id: state.session.user.id,
+      student_id: studentId,
+      lesson_title: lesson.title || lessonMeta.title,
+      lesson_path: lessonPath,
+      lesson_segment_count: lesson.segments.length,
+      due_at: dueAt,
+      note: els.assignmentNote.value.trim() || null,
+      source_type: "static_lesson",
+      content_ref: {
+        path: lessonPath,
+        title: lesson.title || lessonMeta.title,
+        futureItemType: "sentence_item_set",
+      },
+    });
+    if (error) throw error;
+    els.assignmentNote.value = "";
+    els.teacherStatus.textContent = "任务已分配";
+    await loadTeacherDashboard();
+  } catch (error) {
+    els.teacherStatus.textContent = `分配失败：${error.message}`;
+  }
+}
+
+async function loadStudentAssignments() {
+  if (!isStudent()) return;
+  const { data, error } = await state.supabase
+    .from("assignments")
+    .select("*")
+    .eq("student_id", state.session.user.id)
+    .order("created_at", { ascending: false });
+  if (error) throw error;
+
+  state.studentAssignments = data || [];
+  await loadStudentProgressRows();
+  renderStudentAssignments();
+
+  if (!state.studentAssignments.length) {
+    state.assignment = null;
+    clearPracticeData();
+    renderPractice();
+    return;
+  }
+
+  const savedId = localStorage.getItem(selectedAssignmentKey());
+  const nextAssignment =
+    state.studentAssignments.find((assignment) => assignment.id === savedId) ||
+    state.studentAssignments.find((assignment) => assignmentProgressPercent(assignment) < 100) ||
+    state.studentAssignments[0];
+  await selectStudentAssignment(nextAssignment.id);
+}
+
+async function loadStudentProgressRows() {
+  const ids = state.studentAssignments.map((assignment) => assignment.id);
+  if (!ids.length) {
+    state.studentProgressRows = [];
+    return;
+  }
+  const { data, error } = await state.supabase
+    .from("segment_progress")
+    .select("*")
+    .in("assignment_id", ids)
+    .order("segment_index", { ascending: true });
+  if (error) throw error;
+  state.studentProgressRows = data || [];
+}
+
+async function selectStudentAssignment(assignmentId) {
+  const assignment = state.studentAssignments.find((item) => item.id === assignmentId);
+  if (!assignment) return;
+
+  state.assignment = assignment;
+  state.lessonPath = assignment.lesson_path;
+  localStorage.setItem(selectedAssignmentKey(), assignment.id);
+  clearPracticeData();
+  setSyncStatus("加载中", "");
+  setAudioStatus("正在加载课包...");
+
+  try {
+    const rawLesson = await lessonRepository.load(assignment.lesson_path);
+    state.lesson = normalizeLesson(rawLesson);
+    state.lessonUrl = new URL(assignment.lesson_path, window.location.href).toString();
+    if (state.lesson.audioSrc) {
+      const audioUrl = new URL(state.lesson.audioSrc, state.lessonUrl).toString();
+      els.audio.src = audioUrl;
+      els.audio.playbackRate = Number(els.playbackRate.value);
+      state.waveform = null;
+      setAudioStatus("音频已关联");
+    } else {
+      els.audio.removeAttribute("src");
+      setAudioStatus("此课包没有关联音频");
+    }
+    applyLocalProgress();
+    await loadCloudProgress();
+    renderShell();
+    saveLocalProgress();
+  } catch (error) {
+    setAudioStatus(`课包加载失败：${error.message}`);
+  }
+}
+
+async function loadCloudProgress() {
+  if (!state.assignment) return;
+  const [progressResult, rowsResult] = await Promise.all([
+    state.supabase.from("assignment_progress").select("*").eq("assignment_id", state.assignment.id).maybeSingle(),
+    state.supabase
+      .from("segment_progress")
+      .select("*")
+      .eq("assignment_id", state.assignment.id)
+      .order("segment_index", { ascending: true }),
+  ]);
+  if (progressResult.error) throw progressResult.error;
+  if (rowsResult.error) throw rowsResult.error;
+
+  const hasCloudData = Boolean(progressResult.data) || Boolean(rowsResult.data?.length);
+  if (hasCloudData) {
+    clearProgressOnly();
+    applyCloudProgress(progressResult.data, rowsResult.data || []);
+    setSyncStatus("已恢复", "");
+  } else {
+    setSyncStatus("本地缓存", "warning");
+    scheduleCloudSave(currentSegment());
+  }
+}
+
+function applyCloudProgress(progress, rows) {
+  rows.forEach((row) => {
+    state.answers[row.segment_id] = row.answer || "";
+    state.submitted[row.segment_id] = Boolean(row.submitted);
+    state.playedThrough[row.segment_id] = Boolean(row.heard_through);
+    state.listenCounts[row.segment_id] = Number(row.listen_count || 0);
+    if (row.score !== null && row.score !== undefined) state.scores[row.segment_id] = Number(row.score);
+    if (row.submitted_at) state.submittedAt[row.segment_id] = row.submitted_at;
+  });
+  state.notes = progress?.notes || "";
+  const savedIndex = Number.isInteger(progress?.current_segment_index) ? progress.current_segment_index : firstOpenIndex();
+  state.unlockedIndex = computeUnlockedIndex();
+  state.currentIndex = Math.max(0, Math.min(savedIndex, Math.max(0, state.lesson.segments.length - 1)));
+  if (!canSelectSegment(state.currentIndex)) state.currentIndex = Math.min(state.unlockedIndex, state.lesson.segments.length - 1);
+}
+
+function renderShell() {
+  const loggedIn = Boolean(state.session && state.profile);
+  els.authView.classList.toggle("is-hidden", loggedIn);
+  els.appView.classList.toggle("is-hidden", !loggedIn);
+  els.signOutButton.classList.toggle("is-hidden", !loggedIn);
+  els.userBadge.classList.toggle("is-hidden", !loggedIn);
+
+  if (!loggedIn) {
+    els.appStatus.textContent = "登录后进入作业";
+    return;
+  }
+
+  const roleLabel = isTeacher() ? "老师" : "学生";
+  const name = state.profile.full_name || state.profile.email || roleLabel;
+  els.userBadge.textContent = `${name} · ${roleLabel}`;
+  els.appStatus.textContent = isTeacher() ? "老师工作台" : "学生作业模式";
+  document.body.dataset.role = state.profile.role;
+
+  els.teacherPanel.classList.toggle("is-hidden", !isTeacher());
+  els.studentTasksPanel.classList.toggle("is-hidden", !isStudent());
+  els.practicePanel.classList.toggle("is-hidden", !isStudent());
+  els.progressPanel.classList.toggle("is-hidden", !isStudent());
+
+  if (isTeacher()) {
+    renderTeacherDashboard();
+  } else {
+    renderStudentAssignments();
+    renderPractice();
+  }
+}
+
+function renderStudentAssignments() {
+  if (!els.assignmentList) return;
+  els.assignmentCount.textContent = `${state.studentAssignments.length} 个`;
+  if (!state.studentAssignments.length) {
+    els.assignmentList.innerHTML = '<div class="empty-state">还没有分配给你的任务</div>';
+    return;
+  }
+
+  els.assignmentList.innerHTML = "";
+  state.studentAssignments.forEach((assignment) => {
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = `assignment-row${state.assignment?.id === assignment.id ? " is-active" : ""}`;
+    const progress = assignmentProgressPercent(assignment);
+    button.innerHTML = `
+      <strong>${escapeHtml(assignment.lesson_title)}</strong>
+      <span class="assignment-meta">
+        <span>${progress}% 完成</span>
+        <span>${assignment.due_at ? `截止 ${escapeHtml(formatDateTime(assignment.due_at))}` : "无截止时间"}</span>
+      </span>
+    `;
+    button.addEventListener("click", () => selectStudentAssignment(assignment.id));
+    els.assignmentList.appendChild(button);
+  });
+}
+
+function renderPractice() {
+  const segment = currentSegment();
+  const total = state.lesson.segments.length;
+  els.lessonMeta.textContent = state.assignment ? `${state.lesson.title} · ${total} 句` : "请选择任务";
+  els.segmentCounter.textContent = total ? `${state.currentIndex + 1} / ${total}` : "0 / 0";
+  els.notesInput.value = state.notes;
+
+  if (!segment) {
+    els.timeRange.textContent = "--:-- - --:--";
+    els.answerText.textContent = "暂无作业内容";
+    els.dictationInput.value = "";
+    els.dictationInput.readOnly = true;
+    els.checkAnswer.disabled = true;
+    els.copySegment.disabled = true;
+    els.previousSegment.disabled = true;
+    els.nextSegment.disabled = true;
+    els.replaySegment.disabled = true;
+    els.togglePlay.disabled = true;
+    updateSentenceStatus(null);
+    updateScoreBadge(null);
+    renderProgressSummary();
+    drawWaveform();
+    return;
+  }
+
+  els.timeRange.textContent = `${formatTime(segment.start)} - ${formatTime(segmentEnd(segment))}`;
+  els.dictationInput.value = state.answers[segment.id] || "";
+  els.dictationInput.readOnly = isSubmitted(segment);
+  els.checkAnswer.disabled = isSubmitted(segment);
+  els.copySegment.disabled = !isSubmitted(segment);
+  els.previousSegment.disabled = state.currentIndex <= 0;
+  els.nextSegment.disabled = state.currentIndex >= total - 1;
+  const nextIsGated = state.currentIndex < total - 1 && !canAdvanceFromCurrent();
+  els.nextSegment.classList.toggle("is-gated", nextIsGated);
+  els.nextSegment.title = nextGateMessage() || "下一句";
+  const blockedByListenCap = !isSubmitted(segment) && getListenCount(segment) >= MAX_PRE_SUBMIT_LISTENS;
+  els.replaySegment.disabled = !els.audio.src || blockedByListenCap;
+  els.togglePlay.disabled = !els.audio.src || blockedByListenCap;
+
+  renderAnswerText(segment);
+  updateSentenceStatus(segment);
+  updateListenCountBadge(segment);
+  updateScoreBadge(segment);
+  renderProgressSummary();
+  drawWaveform();
+}
+
+function renderAnswerText(segment) {
+  const shouldHide = !isSubmitted(segment);
+  els.answerText.classList.toggle("is-hidden", shouldHide);
+  if (shouldHide) {
+    els.answerText.innerHTML = maskText(segment.text);
+  } else {
+    els.answerText.textContent = segment.text || "暂无文本";
+  }
+}
+
+function renderProgressSummary() {
+  const total = state.lesson.segments.length;
+  const submittedCount = state.lesson.segments.filter((segment) => isSubmitted(segment)).length;
+  const heardCount = state.lesson.segments.filter((segment) => isPlayedThrough(segment)).length;
+  const listenTotal = state.lesson.segments.reduce((sum, segment) => sum + getListenCount(segment), 0);
+  const percent = total ? Math.round((submittedCount / total) * 100) : 0;
+  els.progressText.textContent = `${percent}%`;
+  els.progressSummary.innerHTML = `
+    <div class="summary-item"><strong>${submittedCount}/${total}</strong><span class="muted">已提交</span></div>
+    <div class="summary-item"><strong>${heardCount}/${total}</strong><span class="muted">已听完</span></div>
+    <div class="summary-item"><strong>${listenTotal}</strong><span class="muted">累计听句次数</span></div>
+    <div class="summary-item"><strong>${state.currentIndex + (total ? 1 : 0)}</strong><span class="muted">当前句</span></div>
+  `;
+}
+
+function renderTeacherDashboard() {
+  renderTeacherLessonOptions();
+  renderStudents();
+  renderTeacherAssignments();
+  renderTeacherProgressDetails();
+  if (els.teacherStatus) els.teacherStatus.textContent = `${state.students.length} 名学生 · ${state.teacherAssignments.length} 个任务`;
+}
+
+function renderTeacherLessonOptions() {
+  if (!els.teacherLessonSelect) return;
+  els.teacherLessonSelect.innerHTML = "";
+  if (!state.library.length) {
+    els.teacherLessonSelect.innerHTML = '<option value="">未找到课包</option>';
+    return;
+  }
+  state.library.forEach((lesson) => {
+    const option = document.createElement("option");
+    option.value = lesson.path;
+    option.textContent = lesson.title || lesson.path;
+    els.teacherLessonSelect.appendChild(option);
+  });
+}
+
+function renderStudents() {
+  if (!els.studentSelect || !els.studentsList) return;
+  els.studentSelect.innerHTML = "";
+  if (!state.students.length) {
+    els.studentSelect.innerHTML = '<option value="">暂无学生</option>';
+    els.studentsList.innerHTML = '<div class="empty-state">学生注册后会出现在这里</div>';
+    return;
+  }
+
+  els.studentsList.innerHTML = "";
+  state.students.forEach((student) => {
+    const option = document.createElement("option");
+    option.value = student.id;
+    option.textContent = student.full_name || student.email || student.id;
+    els.studentSelect.appendChild(option);
+
+    const row = document.createElement("div");
+    row.className = "compact-person";
+    row.innerHTML = `<strong>${escapeHtml(student.full_name || "未命名")}</strong><span class="muted">${escapeHtml(student.email || "")}</span>`;
+    els.studentsList.appendChild(row);
+  });
+}
+
+function renderTeacherAssignments() {
+  if (!els.teacherAssignments) return;
+  if (!state.teacherAssignments.length) {
+    els.teacherAssignments.innerHTML = '<div class="empty-state">还没有分配任务</div>';
+    return;
+  }
+
+  const studentById = new Map(state.students.map((student) => [student.id, student]));
+  const rowsByAssignment = groupProgressByAssignment(state.teacherProgressRows);
+  const rows = state.teacherAssignments
+    .map((assignment) => {
+      const progressRows = rowsByAssignment.get(assignment.id) || [];
+      const submittedCount = progressRows.filter((row) => row.submitted).length;
+      const listenTotal = progressRows.reduce((sum, row) => sum + Number(row.listen_count || 0), 0);
+      const scored = progressRows.filter((row) => row.submitted && row.score !== null && row.score !== undefined);
+      const avgScore = scored.length ? Math.round(scored.reduce((sum, row) => sum + Number(row.score || 0), 0) / scored.length) : "--";
+      const latest = latestSubmittedAt(progressRows);
+      const total = assignment.lesson_segment_count || 0;
+      const completion = total ? Math.round((submittedCount / total) * 100) : 0;
+      const student = studentById.get(assignment.student_id);
+      const active = state.selectedTeacherAssignmentId === assignment.id;
+      return `
+        <tr>
+          <td><button class="ghost-button small-button" data-view-assignment="${assignment.id}" type="button">${active ? "查看中" : "查看"}</button></td>
+          <td>${escapeHtml(student?.full_name || student?.email || "未知学生")}</td>
+          <td>${escapeHtml(assignment.lesson_title)}</td>
+          <td>${completion}% (${submittedCount}/${total})</td>
+          <td>${listenTotal}</td>
+          <td>${avgScore}</td>
+          <td>${latest ? escapeHtml(formatDateTime(latest)) : "--"}</td>
+        </tr>
+      `;
+    })
+    .join("");
+
+  els.teacherAssignments.innerHTML = `
+    <table>
+      <thead>
+        <tr>
+          <th>明细</th>
+          <th>学生</th>
+          <th>任务</th>
+          <th>完成率</th>
+          <th>听了几次</th>
+          <th>平均分</th>
+          <th>最近提交</th>
+        </tr>
+      </thead>
+      <tbody>${rows}</tbody>
+    </table>
+  `;
+  els.teacherAssignments.querySelectorAll("[data-view-assignment]").forEach((button) => {
+    button.addEventListener("click", () => {
+      state.selectedTeacherAssignmentId = button.dataset.viewAssignment;
+      renderTeacherDashboard();
+    });
+  });
+}
+
+function renderTeacherProgressDetails() {
+  if (!els.teacherProgress) return;
+  const assignment = state.teacherAssignments.find((item) => item.id === state.selectedTeacherAssignmentId);
+  if (!assignment) {
+    els.teacherProgress.innerHTML = '<div class="empty-state">选择一个任务查看句子明细</div>';
+    return;
+  }
+
+  const rows = state.teacherProgressRows
+    .filter((row) => row.assignment_id === assignment.id)
+    .sort((a, b) => Number(a.segment_index || 0) - Number(b.segment_index || 0));
+  if (!rows.length) {
+    els.teacherProgress.innerHTML = '<div class="empty-state">学生还没有开始这个任务</div>';
+    return;
+  }
+
+  els.teacherProgress.innerHTML = `
+    <table>
+      <thead>
+        <tr>
+          <th>句子</th>
+          <th>听了几次</th>
+          <th>是否提交</th>
+          <th>分数</th>
+          <th>提交时间</th>
+          <th>答案</th>
+        </tr>
+      </thead>
+      <tbody>
+        ${rows
+          .map(
+            (row) => `
+              <tr>
+                <td>${Number(row.segment_index || 0) + 1}</td>
+                <td>${Number(row.listen_count || 0)}</td>
+                <td>${row.submitted ? "已提交" : "未提交"}</td>
+                <td>${row.score ?? "--"}</td>
+                <td>${row.submitted_at ? escapeHtml(formatDateTime(row.submitted_at)) : "--"}</td>
+                <td>${escapeHtml(row.answer || "")}</td>
+              </tr>
+            `,
+          )
+          .join("")}
+      </tbody>
+    </table>
+  `;
+}
+
+function groupProgressByAssignment(rows) {
+  const grouped = new Map();
+  rows.forEach((row) => {
+    if (!grouped.has(row.assignment_id)) grouped.set(row.assignment_id, []);
+    grouped.get(row.assignment_id).push(row);
+  });
+  return grouped;
+}
+
+function latestSubmittedAt(rows) {
+  return rows
+    .filter((row) => row.submitted_at)
+    .map((row) => row.submitted_at)
+    .sort()
+    .at(-1);
+}
+
+function currentSegment() {
+  return state.lesson.segments[state.currentIndex] || null;
 }
 
 function normalizeLesson(rawLesson) {
@@ -188,10 +847,11 @@ function normalizeLesson(rawLesson) {
   const rawSegments = Array.isArray(lesson.segments) ? lesson.segments : [];
   const segments = rawSegments
     .map((segment, index) => ({
-      id: String(segment.id || `s${index + 1}`),
+      id: String(segment.id || `s${String(index + 1).padStart(3, "0")}`),
       start: toNumberOrNull(segment.start),
       end: toNumberOrNull(segment.end),
       speaker: segment.speaker || "",
+      module: segment.module || "",
       text: String(segment.text || "").trim(),
     }))
     .filter((segment) => segment.text || segment.start !== null || segment.end !== null);
@@ -206,215 +866,246 @@ function normalizeLesson(rawLesson) {
   };
 }
 
-function toNumberOrNull(value) {
-  if (value === null || value === undefined || value === "") return null;
-  const number = Number(value);
-  return Number.isFinite(number) ? number : null;
+function clearPracticeData() {
+  state.assignment = null;
+  state.lesson = normalizeLesson({ title: "未选择任务", segments: [] });
+  state.lessonPath = "";
+  state.lessonUrl = "";
+  clearProgressOnly();
+  state.waveform = null;
+  if (els.audio) els.audio.removeAttribute("src");
 }
 
-function currentSegment() {
-  return state.lesson.segments[state.currentIndex] || null;
+function clearProgressOnly() {
+  state.currentIndex = 0;
+  state.answers = {};
+  state.submitted = {};
+  state.playedThrough = {};
+  state.listenCounts = {};
+  state.scores = {};
+  state.submittedAt = {};
+  state.unlockedIndex = 0;
+  state.notes = "";
+  state.activeListenSegmentId = "";
 }
 
-function render() {
+function moveSegment(delta) {
+  const nextIndex = Math.max(0, Math.min(state.currentIndex + delta, state.lesson.segments.length - 1));
+  selectSegment(nextIndex);
+}
+
+function selectSegment(index) {
+  if (!canSelectSegment(index)) {
+    setAudioStatus(nextGateMessage());
+    renderPractice();
+    return;
+  }
+  state.currentIndex = index;
+  state.unlockedIndex = Math.max(state.unlockedIndex, index);
+  setAudioToSegmentStart();
+  els.audio.pause();
+  saveLocalProgress();
+  scheduleCloudSave(null);
+  renderPractice();
+}
+
+async function playCurrentSegment(restart) {
   const segment = currentSegment();
-  const total = state.lesson.segments.length;
-  els.lessonMeta.textContent = `${state.lesson.title} · ${total} 句`;
-  els.segmentCounter.textContent = total ? `${state.currentIndex + 1} / ${total}` : "0 / 0";
-  els.loopSegment.checked = state.loopSegment;
-  els.hideTranscript.checked = state.hideTranscript;
-  els.hideTranscript.disabled = !segment || !isSubmitted(segment);
-  els.previousSegment.disabled = !segment || state.currentIndex <= 0;
-  els.nextSegment.disabled = !segment || state.currentIndex >= total - 1;
-  const nextIsGated = Boolean(segment && state.currentIndex < total - 1 && !canAdvanceFromCurrent());
-  els.nextSegment.classList.toggle("is-gated", nextIsGated);
-  els.nextSegment.dataset.gated = String(nextIsGated);
-  els.nextSegment.title = nextGateMessage() || "下一句";
-  els.replaySegment.disabled = !segment || !els.audio.src;
-  els.togglePlay.disabled = !segment || !els.audio.src;
-  els.notesInput.value = state.notes;
-  document.querySelectorAll("[data-mode]").forEach((button) => {
-    button.classList.toggle("is-active", button.dataset.mode === state.mode);
-  });
+  if (!segment || !els.audio.src) return;
 
-  if (!segment) {
-    els.timeRange.textContent = "--:-- - --:--";
-    updateSentenceStatus(null);
-    els.answerText.textContent = "暂无句段";
-    els.dictationInput.value = "";
-    els.scoreBadge.textContent = "未作答";
-    els.revealAnswer.disabled = true;
-    els.copySegment.disabled = true;
-    els.previousSegment.disabled = true;
-    els.nextSegment.disabled = true;
-    els.nextSegment.classList.remove("is-gated");
-    els.nextSegment.dataset.gated = "false";
-    els.nextSegment.title = "下一句";
-    els.replaySegment.disabled = true;
-    els.togglePlay.disabled = true;
-    renderSegments();
-    renderBookmarks();
+  const start = isFiniteNumber(segment.start) ? Number(segment.start) : 0;
+  const end = segmentEnd(segment);
+  const outsideSegment =
+    els.audio.currentTime < start || (isFiniteNumber(end) && els.audio.currentTime >= Number(end) - 0.05);
+  const shouldRestart = restart || outsideSegment;
+  const shouldCount = shouldCountListen(segment, shouldRestart);
+  if (!isSubmitted(segment) && shouldCount && getListenCount(segment) >= MAX_PRE_SUBMIT_LISTENS) {
+    setAudioStatus("本句提交前最多听 3 次。请先提交答案。");
+    renderPractice();
+    return;
+  }
+  if (shouldRestart) els.audio.currentTime = start;
+
+  if (shouldCount) {
+    recordListenAttempt(segment);
+  }
+  state.activeListenSegmentId = segment.id;
+  await safePlay();
+}
+
+function shouldCountListen(segment, restarted) {
+  if (restarted) return true;
+  if (state.activeListenSegmentId !== segment.id) return true;
+  const start = isFiniteNumber(segment.start) ? Number(segment.start) : 0;
+  return Math.abs(els.audio.currentTime - start) < 0.35;
+}
+
+function recordListenAttempt(segment) {
+  state.listenCounts[segment.id] = getListenCount(segment) + 1;
+  saveLocalProgress();
+  scheduleCloudSave(segment);
+  updateListenCountBadge(segment);
+}
+
+async function togglePlay() {
+  if (!els.audio.src) return;
+  if (els.audio.paused) {
+    await playCurrentSegment(false);
+  } else {
+    els.audio.pause();
+  }
+}
+
+async function safePlay() {
+  try {
+    await els.audio.play();
+  } catch (error) {
+    setAudioStatus("浏览器阻止了自动播放，请再点一次播放。");
+  }
+}
+
+function onAudioTimeUpdate() {
+  const segment = currentSegment();
+  const end = segmentEnd(segment);
+  if (!segment || !isFiniteNumber(end)) {
     drawWaveform();
     return;
   }
-
-  els.timeRange.textContent = `${formatTime(segment.start)} - ${formatTime(segmentEnd(segment))}`;
-  updateSentenceStatus(segment);
-  els.dictationInput.value = state.answers[segment.id] || "";
-  els.revealAnswer.disabled = !isSubmitted(segment);
-  els.copySegment.disabled = !isSubmitted(segment);
-  renderAnswerText(segment);
-  renderSegments();
-  renderBookmarks();
-  updateScore(false);
-  drawWaveform();
-}
-
-function renderAnswerText(segment) {
-  const shouldHide = !isSubmitted(segment) || (state.mode === "dictation" && state.hideTranscript);
-  els.answerText.classList.toggle("is-hidden", shouldHide);
-  if (shouldHide) {
-    els.answerText.innerHTML = maskText(segment.text);
+  if (els.audio.currentTime >= Number(end) - 0.25) {
+    markSegmentPlayedThrough(segment);
+    els.audio.pause();
+    els.audio.currentTime = Number(end);
+    state.activeListenSegmentId = "";
+    drawWaveform();
     return;
-  }
-  els.answerText.textContent = segment.text || "暂无文本";
-}
-
-function maskText(text) {
-  const tokens = String(text || "").split(/(\s+)/);
-  return tokens
-    .map((token) => {
-      if (/^\s+$/.test(token)) return " ";
-      if (!token) return "";
-      const width = Math.max(22, Math.min(120, token.length * 11));
-      return `<span class="blank-token" style="width:${width}px"></span>`;
-    })
-    .join("");
-}
-
-function renderSegments() {
-  const segments = state.lesson.segments;
-  if (!segments.length) {
-    els.segmentsList.innerHTML = '<div class="empty-state">暂无句段</div>';
-    els.progressText.textContent = "0%";
-    return;
-  }
-
-  const answered = segments.filter((segment) => isSubmitted(segment)).length;
-  els.progressText.textContent = `${Math.round((answered / segments.length) * 100)}%`;
-  els.segmentsList.innerHTML = "";
-  segments.forEach((segment, index) => {
-    const row = document.createElement("button");
-    row.type = "button";
-    const selectable = canSelectSegment(index);
-    const completed = isSubmitted(segment) && isPlayedThrough(segment);
-    row.dataset.locked = String(!selectable);
-    row.className = [
-      "segment-row",
-      index === state.currentIndex ? "is-active" : "",
-      completed ? "is-complete" : "",
-      !selectable ? "is-locked" : "",
-    ]
-      .filter(Boolean)
-      .join(" ");
-    row.innerHTML = `
-      <span class="segment-index">
-        <strong>${String(index + 1).padStart(2, "0")}</strong>
-        <span>${formatTime(segment.start)}</span>
-      </span>
-      <span class="segment-preview${!isSubmitted(segment) || (state.mode === "dictation" && state.hideTranscript) ? " is-masked" : ""}">
-        ${escapeHtml(!isSubmitted(segment) || (state.mode === "dictation" && state.hideTranscript) ? maskedPreview(segment.text) : segment.text || "无文本")}
-      </span>
-    `;
-    row.addEventListener("click", () => selectSegment(index));
-    els.segmentsList.appendChild(row);
-  });
-}
-
-function maskedPreview(text) {
-  return String(text || "")
-    .split(/\s+/)
-    .filter(Boolean)
-    .map((word) => "·".repeat(Math.min(8, Math.max(2, word.length))))
-    .join(" ");
-}
-
-function renderBookmarks() {
-  if (!state.bookmarks.length) {
-    els.bookmarkList.innerHTML = "";
-    return;
-  }
-  els.bookmarkList.innerHTML = "";
-  state.bookmarks.forEach((bookmark, index) => {
-    const chip = document.createElement("div");
-    chip.className = "bookmark-chip";
-    chip.innerHTML = `<span>${escapeHtml(bookmark.label)}</span><button class="ghost-button small-button" type="button">移除</button>`;
-    chip.querySelector("button").addEventListener("click", () => {
-      state.bookmarks.splice(index, 1);
-      saveStoredState();
-      renderBookmarks();
-    });
-    chip.addEventListener("dblclick", () => selectSegment(bookmark.index));
-    els.bookmarkList.appendChild(chip);
-  });
-}
-
-async function handleAudioFile(event) {
-  const file = event.target.files[0];
-  if (!file) return;
-  if (state.audioUrl) URL.revokeObjectURL(state.audioUrl);
-  state.audioUrl = URL.createObjectURL(file);
-  state.lesson.audioFileName = file.name;
-  state.lesson.audioSrc = "";
-  els.audio.src = state.audioUrl;
-  els.audio.playbackRate = Number(els.playbackRate.value);
-  els.audioStatus.textContent = file.name;
-  await decodeWaveform(file);
-  render();
-}
-
-async function decodeWaveform(fileOrUrl) {
-  try {
-    const arrayBuffer =
-      typeof fileOrUrl === "string"
-        ? await fetch(fileOrUrl).then((response) => response.arrayBuffer())
-        : await fileOrUrl.arrayBuffer();
-    const AudioContextClass = window.AudioContext || window.webkitAudioContext;
-    if (!AudioContextClass) {
-      state.waveform = null;
-      drawWaveform();
-      return;
-    }
-    const context = new AudioContextClass();
-    const audioBuffer = await context.decodeAudioData(arrayBuffer.slice(0));
-    state.waveform = makePeaks(audioBuffer);
-    await context.close();
-  } catch (error) {
-    state.waveform = null;
   }
   drawWaveform();
 }
 
-function makePeaks(audioBuffer) {
-  const sampleCount = audioBuffer.length;
-  const channel = audioBuffer.getChannelData(0);
-  const points = 1200;
-  const blockSize = Math.max(1, Math.floor(sampleCount / points));
-  const peaks = [];
-  for (let i = 0; i < points; i += 1) {
-    const start = i * blockSize;
-    const end = Math.min(start + blockSize, sampleCount);
-    let peak = 0;
-    for (let j = start; j < end; j += 1) {
-      peak = Math.max(peak, Math.abs(channel[j]));
-    }
-    peaks.push(peak);
+function seekFromWaveform(event) {
+  const segment = currentSegment();
+  if (!segment || !els.audio.src) return;
+  if (isStudent() && !isSubmitted(segment)) {
+    setAudioStatus("提交前不能拖动音频");
+    return;
   }
-  return { peaks, duration: audioBuffer.duration };
+  const duration = getKnownDuration();
+  if (!duration) return;
+  const rect = els.waveform.getBoundingClientRect();
+  const ratio = Math.max(0, Math.min(1, (event.clientX - rect.left) / rect.width));
+  let targetTime = ratio * duration;
+  const end = segmentEnd(segment);
+  if (isFiniteNumber(segment.start) && isFiniteNumber(end)) {
+    targetTime = Math.max(Number(segment.start), Math.min(Number(end), targetTime));
+  }
+  els.audio.currentTime = targetTime;
+  drawWaveform();
+}
+
+function submitAnswer() {
+  const segment = currentSegment();
+  if (!segment || isSubmitted(segment)) return;
+  const value = els.dictationInput.value.trim();
+  if (!value) {
+    els.scoreBadge.className = "score-badge is-low";
+    els.scoreBadge.textContent = "请先输入";
+    return;
+  }
+
+  const now = new Date().toISOString();
+  const score = scoreAnswer(segment.text, value);
+  state.answers[segment.id] = els.dictationInput.value;
+  state.submitted[segment.id] = true;
+  state.scores[segment.id] = score;
+  state.submittedAt[segment.id] = now;
+  state.unlockedIndex = computeUnlockedIndex();
+
+  if (canAdvanceFromCurrent()) {
+    setAudioStatus("本句完成，可以进入下一句");
+  } else {
+    setAudioStatus("答案已提交，请继续播放到本句结束");
+  }
+  saveLocalProgress();
+  scheduleCloudSave(segment, 0);
+  renderPractice();
+}
+
+function markSegmentPlayedThrough(segment) {
+  if (!segment || state.playedThrough[segment.id]) return;
+  state.playedThrough[segment.id] = true;
+  state.unlockedIndex = computeUnlockedIndex();
+  setAudioStatus(isSubmitted(segment) ? "本句完成，可以进入下一句" : "已听到本句结束，请提交答案");
+  saveLocalProgress();
+  scheduleCloudSave(segment, 0);
+  renderPractice();
+}
+
+function canListenNow(segment) {
+  return isSubmitted(segment) || getListenCount(segment) < MAX_PRE_SUBMIT_LISTENS;
+}
+
+function canAdvanceFromCurrent() {
+  const segment = currentSegment();
+  if (!segment) return false;
+  const hasKnownEnd = isFiniteNumber(segmentEnd(segment));
+  return isSubmitted(segment) && (isPlayedThrough(segment) || !hasKnownEnd);
+}
+
+function canSelectSegment(index) {
+  if (!state.lesson.segments.length) return false;
+  if (index === state.currentIndex) return true;
+  if (index <= state.unlockedIndex) return true;
+  return index === state.unlockedIndex + 1 && state.currentIndex === state.unlockedIndex && canAdvanceFromCurrent();
+}
+
+function computeUnlockedIndex() {
+  if (!state.lesson.segments.length) return 0;
+  let unlocked = 0;
+  for (let index = 0; index < state.lesson.segments.length; index += 1) {
+    const segment = state.lesson.segments[index];
+    const hasKnownEnd = isFiniteNumber(segmentEnd(segment));
+    const done = isSubmitted(segment) && (isPlayedThrough(segment) || !hasKnownEnd);
+    if (!done) break;
+    unlocked = Math.min(index + 1, state.lesson.segments.length - 1);
+  }
+  return unlocked;
+}
+
+function firstOpenIndex() {
+  const index = state.lesson.segments.findIndex((segment) => !isSubmitted(segment));
+  return index >= 0 ? index : Math.max(0, state.lesson.segments.length - 1);
+}
+
+function nextGateMessage() {
+  const segment = currentSegment();
+  if (!segment || canAdvanceFromCurrent()) return "";
+  const heard = isPlayedThrough(segment) || !isFiniteNumber(segmentEnd(segment));
+  if (!heard && !isSubmitted(segment)) return "下一句锁定：请先听完整句并提交答案";
+  if (!heard) return "下一句锁定：请先听到本句结束";
+  if (!isSubmitted(segment)) return "下一句锁定：请先提交本句答案";
+  return "";
+}
+
+function setAudioToSegmentStart() {
+  const segment = currentSegment();
+  if (!segment || !els.audio.src) return;
+  els.audio.currentTime = isFiniteNumber(segment.start) ? Number(segment.start) : 0;
+}
+
+function segmentEnd(segment) {
+  if (!segment) return null;
+  if (isFiniteNumber(segment.end)) return Number(segment.end);
+  const segmentIndex = state.lesson.segments.findIndex((candidate) => candidate.id === segment.id);
+  const next = state.lesson.segments[segmentIndex + 1];
+  if (next && isFiniteNumber(next.start)) return Number(next.start);
+  const duration = getMediaDuration();
+  if (duration && (!isFiniteNumber(segment.start) || duration > Number(segment.start))) return duration;
+  return null;
 }
 
 function resizeWaveform() {
   const canvas = els.waveform;
+  if (!canvas) return;
   const rect = canvas.getBoundingClientRect();
   const ratio = window.devicePixelRatio || 1;
   canvas.width = Math.max(320, Math.floor(rect.width * ratio));
@@ -436,428 +1127,174 @@ function drawWaveform() {
   const active = currentSegment();
   const activeEnd = segmentEnd(active);
   if (active && duration && active.start !== null && activeEnd !== null) {
-    const startX = (active.start / duration) * width;
-    const endX = (activeEnd / duration) * width;
-    ctx.fillStyle = "rgba(15, 118, 110, 0.13)";
+    const startX = (Number(active.start) / duration) * width;
+    const endX = (Number(activeEnd) / duration) * width;
+    ctx.fillStyle = "rgba(15, 118, 110, 0.14)";
     ctx.fillRect(startX, 0, Math.max(3 * ratio, endX - startX), height);
   }
 
-  const peaks = state.waveform?.peaks || [];
-  ctx.strokeStyle = peaks.length ? "#2563eb" : "#aab8c5";
+  ctx.strokeStyle = "#aab8c5";
   ctx.lineWidth = Math.max(1, ratio);
   const midY = height / 2;
-  if (peaks.length) {
-    const step = Math.max(1, Math.floor(peaks.length / width));
-    for (let x = 0; x < width; x += 2 * ratio) {
-      const peakIndex = Math.min(peaks.length - 1, Math.floor((x / width) * peaks.length));
-      let peak = 0;
-      for (let p = peakIndex; p < Math.min(peaks.length, peakIndex + step); p += 1) {
-        peak = Math.max(peak, peaks[p]);
-      }
-      const bar = Math.max(2 * ratio, peak * height * 0.76);
-      ctx.beginPath();
-      ctx.moveTo(x, midY - bar / 2);
-      ctx.lineTo(x, midY + bar / 2);
-      ctx.stroke();
-    }
-  } else {
-    ctx.setLineDash([8 * ratio, 10 * ratio]);
+  for (let x = 0; x < width; x += 10 * ratio) {
+    const bar = ((x / width) * 0.5 + 0.35) * height * 0.42;
     ctx.beginPath();
-    ctx.moveTo(20 * ratio, midY);
-    ctx.lineTo(width - 20 * ratio, midY);
+    ctx.moveTo(x, midY - bar / 2);
+    ctx.lineTo(x, midY + bar / 2);
     ctx.stroke();
-    ctx.setLineDash([]);
   }
 
-  const progress = duration ? (els.audio.currentTime / duration) * width : 0;
-  ctx.fillStyle = "rgba(180, 83, 9, 0.9)";
-  ctx.fillRect(Math.max(0, progress - 1 * ratio), 0, 2 * ratio, height);
+  const current = duration ? (els.audio.currentTime / duration) * width : 0;
+  ctx.strokeStyle = "#be123c";
+  ctx.lineWidth = Math.max(2, ratio * 2);
+  ctx.beginPath();
+  ctx.moveTo(current, 0);
+  ctx.lineTo(current, height);
+  ctx.stroke();
 }
 
 function getKnownDuration() {
-  if (Number.isFinite(els.audio.duration) && els.audio.duration > 0) return els.audio.duration;
-  if (state.waveform?.duration) return state.waveform.duration;
+  const mediaDuration = getMediaDuration();
+  if (mediaDuration) return mediaDuration;
   const ends = state.lesson.segments.map((segment) => segment.end || 0);
   return Math.max(0, ...ends);
 }
 
-async function handleTranscriptFile(event) {
-  const file = event.target.files[0];
-  if (!file) return;
-  const text = await file.text();
-  const parsedLesson = parseTranscript(file.name, text);
-  loadLesson({
-    ...state.lesson,
-    title: parsedLesson.title,
-    segments: parsedLesson.segments,
-  });
+function getMediaDuration() {
+  if (Number.isFinite(els.audio.duration) && els.audio.duration > 0) return els.audio.duration;
+  return 0;
 }
 
-function buildFromPastedText() {
-  const text = els.pasteTranscript.value.trim();
-  if (!text) return;
-  const parsedLesson = {
-    title: state.lesson.title === DEMO_LESSON.title ? "粘贴文稿课程" : state.lesson.title,
-    segments: segmentsFromPlainText(text, getKnownDuration()),
+function saveLocalProgress() {
+  if (!state.assignment || !state.session) return;
+  localStorage.setItem(
+    progressStorageKey(),
+    JSON.stringify({
+      assignmentId: state.assignment.id,
+      lessonPath: state.lessonPath,
+      currentIndex: state.currentIndex,
+      answers: state.answers,
+      submitted: state.submitted,
+      playedThrough: state.playedThrough,
+      listenCounts: state.listenCounts,
+      scores: state.scores,
+      submittedAt: state.submittedAt,
+      unlockedIndex: state.unlockedIndex,
+      notes: state.notes,
+      savedAt: new Date().toISOString(),
+    }),
+  );
+}
+
+function applyLocalProgress() {
+  if (!state.assignment || !state.session) return;
+  try {
+    const saved = JSON.parse(localStorage.getItem(progressStorageKey()) || "{}");
+    if (saved.assignmentId !== state.assignment.id) return;
+    state.currentIndex = Number.isInteger(saved.currentIndex) ? saved.currentIndex : 0;
+    state.answers = saved.answers || {};
+    state.submitted = saved.submitted || {};
+    state.playedThrough = saved.playedThrough || {};
+    state.listenCounts = saved.listenCounts || {};
+    state.scores = saved.scores || {};
+    state.submittedAt = saved.submittedAt || {};
+    state.unlockedIndex = Number.isInteger(saved.unlockedIndex) ? saved.unlockedIndex : computeUnlockedIndex();
+    state.notes = saved.notes || "";
+  } catch (error) {
+    clearProgressOnly();
+  }
+}
+
+function scheduleCloudSave(segment, delay = 650) {
+  if (!state.assignment || !state.session || !isStudent()) return;
+  if (segment) state.pendingSaveSegmentId = segment.id;
+  clearTimeout(cloudSaveTimer);
+  cloudSaveTimer = setTimeout(() => saveCloudProgress(segment), delay);
+}
+
+async function saveCloudProgress(segment) {
+  if (!state.assignment || !state.session || !isStudent()) return;
+  if (state.saving) {
+    if (segment) state.pendingSaveSegmentId = segment.id;
+    return;
+  }
+
+  state.saving = true;
+  setSyncStatus("同步中", "warning");
+  try {
+    const completed = state.lesson.segments.length > 0 && state.lesson.segments.every((item) => {
+      const hasKnownEnd = isFiniteNumber(segmentEnd(item));
+      return isSubmitted(item) && (isPlayedThrough(item) || !hasKnownEnd);
+    });
+    const progressPayload = {
+      assignment_id: state.assignment.id,
+      student_id: state.session.user.id,
+      current_segment_index: state.currentIndex,
+      completed,
+      completed_at: completed ? new Date().toISOString() : null,
+      notes: state.notes || null,
+      updated_at: new Date().toISOString(),
+    };
+    const { error: progressError } = await state.supabase
+      .from("assignment_progress")
+      .upsert(progressPayload, { onConflict: "assignment_id" });
+    if (progressError) throw progressError;
+
+    const targetSegment = segment || currentSegment();
+    if (targetSegment) {
+      const { error: rowError } = await state.supabase
+        .from("segment_progress")
+        .upsert(segmentProgressPayload(targetSegment), { onConflict: "assignment_id,segment_id" });
+      if (rowError) throw rowError;
+    }
+
+    setSyncStatus("已保存", "");
+  } catch (error) {
+    setSyncStatus("仅本地缓存", "danger");
+    setAudioStatus(`云端保存失败：${error.message}`);
+  } finally {
+    state.saving = false;
+    const pendingId = state.pendingSaveSegmentId;
+    state.pendingSaveSegmentId = "";
+    if (pendingId && (!segment || pendingId !== segment.id)) {
+      const pending = state.lesson.segments.find((item) => item.id === pendingId);
+      if (pending) saveCloudProgress(pending);
+    }
+  }
+}
+
+function segmentProgressPayload(segment) {
+  return {
+    assignment_id: state.assignment.id,
+    student_id: state.session.user.id,
+    segment_id: segment.id,
+    segment_index: state.lesson.segments.findIndex((item) => item.id === segment.id),
+    listen_count: getListenCount(segment),
+    answer: state.answers[segment.id] || "",
+    submitted: isSubmitted(segment),
+    score: state.scores[segment.id] ?? null,
+    submitted_at: state.submittedAt[segment.id] || null,
+    heard_through: isPlayedThrough(segment),
+    updated_at: new Date().toISOString(),
   };
-  loadLesson({ ...state.lesson, ...parsedLesson });
 }
 
-function parseTranscript(fileName, text) {
-  const trimmed = text.trim();
-  if (!trimmed) return { title: fileBaseName(fileName), segments: [] };
-  if (/\.json$/i.test(fileName) || /^[\[{]/.test(trimmed)) {
-    try {
-      const payload = JSON.parse(trimmed);
-      if (Array.isArray(payload)) {
-        return { title: fileBaseName(fileName), segments: normalizeLesson({ segments: payload }).segments };
-      }
-      if (payload.sections) {
-        return lessonFromLegacyManifest(payload, fileBaseName(fileName));
-      }
-      return normalizeLesson({ title: payload.title || fileBaseName(fileName), ...payload });
-    } catch (error) {
-      return { title: fileBaseName(fileName), segments: segmentsFromPlainText(trimmed, getKnownDuration()) };
-    }
-  }
-  if (trimmed.includes("-->")) {
-    return { title: fileBaseName(fileName), segments: segmentsFromTimedText(trimmed) };
-  }
-  return { title: fileBaseName(fileName), segments: segmentsFromPlainText(trimmed, getKnownDuration()) };
+function assignmentProgressPercent(assignment) {
+  const rows = state.studentProgressRows.filter((row) => row.assignment_id === assignment.id);
+  const submittedCount = rows.filter((row) => row.submitted).length;
+  const total = assignment.lesson_segment_count || 0;
+  return total ? Math.round((submittedCount / total) * 100) : 0;
 }
 
-function lessonFromLegacyManifest(payload, fallbackTitle) {
-  const listening = (payload.sections || []).find((section) => section.type === "listening");
-  const segments = [];
-  (listening?.items || []).forEach((item, index) => {
-    const start = toNumberOrNull(item.start_time);
-    const end = toNumberOrNull(item.end_time);
-    segments.push({
-      id: `set${index + 1}`,
-      start,
-      end,
-      speaker: "",
-      text: item.title || `Listening set ${index + 1}`,
-    });
-  });
-  return { title: fallbackTitle, segments };
+function progressStorageKey() {
+  return `${STORAGE_PREFIX}${state.session.user.id}:${state.assignment.id}`;
 }
 
-function segmentsFromTimedText(text) {
-  const blocks = text
-    .replace(/\r/g, "")
-    .replace(/^WEBVTT.*\n/i, "")
-    .split(/\n{2,}/)
-    .map((block) => block.trim())
-    .filter(Boolean);
-  const segments = [];
-  blocks.forEach((block) => {
-    const lines = block.split("\n").map((line) => line.trim()).filter(Boolean);
-    const timingIndex = lines.findIndex((line) => line.includes("-->"));
-    if (timingIndex === -1) return;
-    const [startRaw, endRaw] = lines[timingIndex].split("-->").map((part) => part.trim().split(/\s+/)[0]);
-    const body = lines.slice(timingIndex + 1).join(" ").trim();
-    if (!body) return;
-    segments.push({
-      id: `s${segments.length + 1}`,
-      start: parseTimestamp(startRaw),
-      end: parseTimestamp(endRaw),
-      speaker: "",
-      text: body,
-    });
-  });
-  return normalizeLesson({ segments }).segments;
-}
-
-function segmentsFromPlainText(text, duration) {
-  const lines = text
-    .replace(/\r/g, "")
-    .split("\n")
-    .map((line) => line.trim())
-    .filter(Boolean);
-  const units = lines.length > 1 ? lines : splitSentences(text);
-  const usable = units.map((line) => line.trim()).filter(Boolean);
-  const hasDuration = Number.isFinite(duration) && duration > 0 && usable.length > 0;
-  const chunk = hasDuration ? duration / usable.length : null;
-  return usable.map((line, index) => ({
-    id: `s${index + 1}`,
-    start: chunk === null ? null : roundTime(index * chunk),
-    end: chunk === null ? null : roundTime((index + 1) * chunk),
-    speaker: "",
-    text: line,
-  }));
-}
-
-function splitSentences(text) {
-  const output = [];
-  let buffer = "";
-  for (const char of text.replace(/\s+/g, " ").trim()) {
-    buffer += char;
-    if (".!?。！？".includes(char) && buffer.trim().length > 0) {
-      output.push(buffer.trim());
-      buffer = "";
-    }
-  }
-  if (buffer.trim()) output.push(buffer.trim());
-  return output.length ? output : [text.trim()];
-}
-
-function parseTimestamp(value) {
-  const normalized = value.replace(",", ".");
-  const parts = normalized.split(":");
-  let seconds = 0;
-  parts.forEach((part) => {
-    seconds = seconds * 60 + Number(part);
-  });
-  return Number.isFinite(seconds) ? roundTime(seconds) : null;
-}
-
-function roundTime(value) {
-  return Math.round(value * 100) / 100;
-}
-
-function fileBaseName(name) {
-  return String(name || "未命名课程").replace(/\.[^.]+$/, "");
-}
-
-async function loadSelectedLibraryLesson() {
-  const path = els.lessonSelect.value;
-  if (!path) return;
-  try {
-    const lesson = await fetch(path, { cache: "no-store" }).then((response) => response.json());
-    await loadLesson(lesson, path);
-  } catch (error) {
-    els.audioStatus.textContent = "课包加载失败";
-  }
-}
-
-async function loadLesson(rawLesson, basePath = "") {
-  state.lesson = normalizeLesson(rawLesson);
-  state.currentIndex = 0;
-  state.answers = {};
-  state.submitted = {};
-  state.playedThrough = {};
-  state.unlockedIndex = 0;
-  state.notes = "";
-  state.bookmarks = [];
-  els.pasteTranscript.value = "";
-  if (state.lesson.audioSrc && basePath) {
-    const resolved = new URL(state.lesson.audioSrc, new URL(basePath, window.location.href)).toString();
-    els.audio.src = resolved;
-    els.audioStatus.textContent = state.lesson.audioFileName || "已关联音频";
-    await decodeWaveform(resolved);
-  } else if (!state.lesson.audioSrc && !state.audioUrl) {
-    els.audioStatus.textContent = "未加载音频";
-  }
-  loadStoredState();
-  render();
-  saveStoredState();
-}
-
-async function loadLibrary(forceReload = false) {
-  try {
-    const library = await fetch("./library.json", { cache: "no-store" }).then((response) => {
-      if (!response.ok) throw new Error("no library");
-      return response.json();
-    });
-    state.library = Array.isArray(library.lessons) ? library.lessons : [];
-    if (!state.library.length) {
-      els.libraryStatus.textContent = "暂无课包";
-      els.lessonSelect.disabled = true;
-      els.lessonSelect.innerHTML = '<option value="">暂无课包</option>';
-      return;
-    }
-    els.lessonSelect.disabled = false;
-    els.lessonSelect.innerHTML = '<option value="">选择课包</option>';
-    state.library.forEach((lesson) => {
-      const option = document.createElement("option");
-      option.value = lesson.path;
-      option.textContent = lesson.title || lesson.path;
-      els.lessonSelect.appendChild(option);
-    });
-    els.libraryStatus.textContent = `${state.library.length} 个课包`;
-    if (forceReload || state.lesson.title === DEMO_LESSON.title || state.lesson.segments.length === 0) {
-      els.lessonSelect.value = state.library[0].path;
-      await loadSelectedLibraryLesson();
-    }
-  } catch (error) {
-    state.library = [];
-    els.libraryStatus.textContent = "等待课包";
-    els.lessonSelect.disabled = true;
-    els.lessonSelect.innerHTML = '<option value="">暂无课包</option>';
-  }
-}
-
-function clearSession() {
-  const previousKey = storageKey();
-  state.lesson = normalizeLesson({ title: "空白课程", segments: [] });
-  state.currentIndex = 0;
-  state.answers = {};
-  state.submitted = {};
-  state.playedThrough = {};
-  state.unlockedIndex = 0;
-  state.notes = "";
-  state.bookmarks = [];
-  state.waveform = null;
-  els.audio.removeAttribute("src");
-  els.audioStatus.textContent = "未加载音频";
-  els.pasteTranscript.value = "";
-  localStorage.removeItem(previousKey);
-  render();
-}
-
-function selectSegment(index) {
-  const nextIndex = Math.max(0, Math.min(index, state.lesson.segments.length - 1));
-  if (!canSelectSegment(nextIndex)) {
-    showGateMessage();
-    render();
-    return false;
-  }
-  state.currentIndex = nextIndex;
-  state.unlockedIndex = Math.max(state.unlockedIndex, nextIndex);
-  setAudioToSegmentStart();
-  els.audio.pause();
-  render();
-  saveStoredState();
-  return true;
-}
-
-function moveSegment(delta) {
-  selectSegment(state.currentIndex + delta);
-}
-
-async function playSegment(restart) {
-  const segment = currentSegment();
-  if (!segment || !els.audio.src) return;
-  if (restart || isFiniteNumber(segment.start)) {
-    els.audio.currentTime = Math.max(0, segment.start || 0);
-  }
-  await safePlay();
-}
-
-async function togglePlay() {
-  if (!els.audio.src) return;
-  if (els.audio.paused) {
-    ensureAudioWithinCurrentSegment();
-    await safePlay();
-  } else {
-    els.audio.pause();
-  }
-}
-
-async function safePlay() {
-  try {
-    await els.audio.play();
-  } catch (error) {
-    els.audioStatus.textContent = "浏览器阻止了自动播放";
-  }
-}
-
-function onAudioTimeUpdate() {
-  const segment = currentSegment();
-  const end = segmentEnd(segment);
-  if (!segment || !isFiniteNumber(end)) {
-    drawWaveform();
-    return;
-  }
-
-  if (els.audio.currentTime >= end - 0.35) {
-    markSegmentPlayedThrough(segment);
-    if (state.loopSegment) {
-      els.audio.currentTime = Math.max(0, segment.start || 0);
-      safePlay();
-    } else {
-      els.audio.pause();
-      els.audio.currentTime = end;
-    }
-    drawWaveform();
-    return;
-  }
-
-  drawWaveform();
-}
-
-function seekFromWaveform(event) {
-  const duration = getKnownDuration();
-  if (!duration || !els.audio.src) return;
-  const rect = els.waveform.getBoundingClientRect();
-  const ratio = Math.max(0, Math.min(1, (event.clientX - rect.left) / rect.width));
-  let targetTime = ratio * duration;
-  const segment = currentSegment();
-  const end = segmentEnd(segment);
-  if (segment && isFiniteNumber(segment.start) && isFiniteNumber(end)) {
-    targetTime = Math.max(segment.start, Math.min(end, targetTime));
-  }
-  els.audio.currentTime = targetTime;
-  drawWaveform();
-}
-
-function updateScore(forceReveal) {
-  const segment = currentSegment();
-  if (!segment) return;
-  const value = els.dictationInput.value;
-  if (!isSubmitted(segment)) {
-    els.scoreBadge.className = "score-badge";
-    els.scoreBadge.textContent = value.trim() ? "未提交" : "未作答";
-    return;
-  }
-  if (!value.trim()) {
-    els.scoreBadge.className = "score-badge";
-    els.scoreBadge.textContent = "未作答";
-    return;
-  }
-  const score = scoreAnswer(segment.text, value);
-  els.scoreBadge.textContent = `${score}%`;
-  els.scoreBadge.className = "score-badge";
-  if (score >= 85) els.scoreBadge.classList.add("is-high");
-  else if (score >= 60) els.scoreBadge.classList.add("is-mid");
-  else els.scoreBadge.classList.add("is-low");
-  if (forceReveal) {
-    state.hideTranscript = false;
-    renderAnswerText(segment);
-  }
-}
-
-function submitAnswer() {
-  const segment = currentSegment();
-  if (!segment) return;
-  const value = els.dictationInput.value.trim();
-  if (!value) {
-    els.scoreBadge.className = "score-badge";
-    els.scoreBadge.textContent = "请先输入";
-    return;
-  }
-  state.answers[segment.id] = els.dictationInput.value;
-  state.submitted[segment.id] = true;
-  state.hideTranscript = true;
-  updateScore(false);
-  if (canAdvanceFromCurrent()) {
-    els.audioStatus.textContent = "本句完成，可以进入下一句";
-  } else {
-    els.audioStatus.textContent = "答案已提交，请继续播放到本句结束";
-  }
-  render();
-  saveStoredState();
-}
-
-function isSubmitted(segment) {
-  return Boolean(segment && state.submitted[segment.id]);
-}
-
-function isPlayedThrough(segment) {
-  return Boolean(segment && state.playedThrough[segment.id]);
-}
-
-function markSegmentPlayedThrough(segment) {
-  if (!segment || state.playedThrough[segment.id]) return;
-  state.playedThrough[segment.id] = true;
-  els.audioStatus.textContent = isSubmitted(segment) ? "本句完成，可以进入下一句" : "已听到本句结束，请提交答案";
-  render();
-  saveStoredState();
+function selectedAssignmentKey() {
+  return `${STORAGE_PREFIX}${state.session?.user?.id || "anon"}:selected-assignment`;
 }
 
 function updateSentenceStatus(segment) {
-  if (!els.sentenceStatus) return;
   if (!segment) {
     els.sentenceStatus.textContent = "待开始";
     els.sentenceStatus.dataset.state = "idle";
@@ -880,66 +1317,96 @@ function updateSentenceStatus(segment) {
   }
 }
 
-function canAdvanceFromCurrent() {
+function updateListenCountBadge(segment) {
+  if (!segment) {
+    els.listenCountBadge.textContent = "听 0/3";
+    return;
+  }
+  const count = getListenCount(segment);
+  els.listenCountBadge.textContent = isSubmitted(segment) ? `听 ${count} 次` : `听 ${count}/${MAX_PRE_SUBMIT_LISTENS}`;
+  els.listenCountBadge.className = "status-pill";
+  if (!isSubmitted(segment) && count >= MAX_PRE_SUBMIT_LISTENS) els.listenCountBadge.classList.add("is-danger");
+}
+
+function updateScoreBadge(segment) {
+  if (!segment) {
+    els.scoreBadge.className = "score-badge";
+    els.scoreBadge.textContent = "未作答";
+    return;
+  }
+  if (!isSubmitted(segment)) {
+    els.scoreBadge.className = "score-badge";
+    els.scoreBadge.textContent = (state.answers[segment.id] || "").trim() ? "未提交" : "未作答";
+    return;
+  }
+  const score = state.scores[segment.id] ?? scoreAnswer(segment.text, state.answers[segment.id] || "");
+  els.scoreBadge.textContent = `${score}%`;
+  els.scoreBadge.className = "score-badge";
+  if (score >= 85) els.scoreBadge.classList.add("is-high");
+  else if (score >= 60) els.scoreBadge.classList.add("is-mid");
+  else els.scoreBadge.classList.add("is-low");
+}
+
+function isSubmitted(segment) {
+  return Boolean(segment && state.submitted[segment.id]);
+}
+
+function isPlayedThrough(segment) {
+  return Boolean(segment && state.playedThrough[segment.id]);
+}
+
+function getListenCount(segment) {
+  return Number(state.listenCounts[segment?.id] || 0);
+}
+
+function isTeacher() {
+  return state.profile?.role === "teacher";
+}
+
+function isStudent() {
+  return state.profile?.role === "student";
+}
+
+function disableAuthControls(disabled) {
+  els.signInButton.disabled = disabled;
+  els.signUpButton.disabled = disabled;
+}
+
+function setAuthStatus(text) {
+  els.authStatus.textContent = text;
+}
+
+function setAudioStatus(text) {
+  if (text) els.audioStatus.textContent = text;
+}
+
+function setSyncStatus(text, tone) {
+  els.syncStatus.textContent = text;
+  els.syncStatus.className = "status-pill";
+  if (tone) els.syncStatus.classList.add(`is-${tone}`);
+}
+
+async function copyCurrentSegment() {
   const segment = currentSegment();
-  if (!segment) return false;
-  const hasKnownEnd = isFiniteNumber(segmentEnd(segment));
-  return isSubmitted(segment) && (isPlayedThrough(segment) || !hasKnownEnd);
-}
-
-function canSelectSegment(index) {
-  if (!state.lesson.segments.length) return false;
-  if (index === state.currentIndex) return true;
-  if (index <= state.unlockedIndex) return true;
-  return index === state.unlockedIndex + 1 && state.currentIndex === state.unlockedIndex && canAdvanceFromCurrent();
-}
-
-function showGateMessage() {
-  const message = nextGateMessage();
-  if (message) els.audioStatus.textContent = message;
-}
-
-function nextGateMessage() {
-  const segment = currentSegment();
-  if (!segment || canAdvanceFromCurrent()) return "";
-  const heard = isPlayedThrough(segment) || !isFiniteNumber(segmentEnd(segment));
-  if (!heard && !isSubmitted(segment)) return "下一句锁定：请先听完整句并提交答案";
-  if (!heard) return "下一句锁定：请先听到本句结束";
-  if (!isSubmitted(segment)) return "下一句锁定：请先提交本句答案";
-  return "";
-}
-
-function ensureAudioWithinCurrentSegment() {
-  const segment = currentSegment();
-  if (!segment) return;
-  const start = isFiniteNumber(segment.start) ? segment.start : 0;
-  const end = segmentEnd(segment);
-  if (els.audio.currentTime < start || (isFiniteNumber(end) && els.audio.currentTime >= end - 0.04)) {
-    els.audio.currentTime = start;
+  if (!segment || !isSubmitted(segment)) return;
+  try {
+    await navigator.clipboard.writeText(segment.text);
+    setAudioStatus("已复制本句原文");
+  } catch (error) {
+    setAudioStatus("浏览器不允许复制，请手动选择提交后的原文。");
   }
 }
 
-function setAudioToSegmentStart() {
-  const segment = currentSegment();
-  if (!segment || !els.audio.src || !isFiniteNumber(segment.start)) return;
-  els.audio.currentTime = Math.max(0, segment.start || 0);
-}
-
-function segmentEnd(segment) {
-  if (!segment) return null;
-  if (isFiniteNumber(segment.end)) return Number(segment.end);
-  const segmentIndex = state.lesson.segments.findIndex((candidate) => candidate.id === segment.id);
-  const next = state.lesson.segments[segmentIndex + 1];
-  if (next && isFiniteNumber(next.start)) return Number(next.start);
-  const duration = getMediaDuration();
-  if (duration && (!isFiniteNumber(segment.start) || duration > Number(segment.start))) return duration;
-  return null;
-}
-
-function getMediaDuration() {
-  if (Number.isFinite(els.audio.duration) && els.audio.duration > 0) return els.audio.duration;
-  if (state.waveform?.duration) return state.waveform.duration;
-  return 0;
+function maskText(text) {
+  return String(text || "")
+    .split(/(\s+)/)
+    .map((token) => {
+      if (/^\s+$/.test(token)) return " ";
+      if (!token) return "";
+      const width = Math.max(22, Math.min(120, token.length * 11));
+      return `<span class="blank-token" style="width:${width}px"></span>`;
+    })
+    .join("");
 }
 
 function scoreAnswer(reference, answer) {
@@ -972,137 +1439,31 @@ function levenshtein(a, b) {
   return dp[a.length][b.length];
 }
 
-async function copyCurrentSegment() {
-  const segment = currentSegment();
-  if (!segment) return;
-  if (!isSubmitted(segment)) return;
-  try {
-    await navigator.clipboard.writeText(segment.text);
-  } catch (error) {
-    els.dictationInput.value = segment.text;
-  }
-}
-
-function bookmarkCurrentSegment() {
-  const segment = currentSegment();
-  if (!segment) return;
-  const label = `${String(state.currentIndex + 1).padStart(2, "0")} · ${formatTime(segment.start)}`;
-  if (!state.bookmarks.some((bookmark) => bookmark.index === state.currentIndex)) {
-    state.bookmarks.push({ index: state.currentIndex, id: segment.id, label });
-    saveStoredState();
-    renderBookmarks();
-  }
-}
-
-function exportLesson() {
-  const lesson = {
-    ...state.lesson,
-    exportedAt: new Date().toISOString(),
-  };
-  downloadJson(`${slugify(state.lesson.title)}-lesson.json`, lesson);
-}
-
-function exportProgress() {
-  const progress = {
-    lessonTitle: state.lesson.title,
-    exportedAt: new Date().toISOString(),
-    answers: state.answers,
-    submitted: state.submitted,
-    playedThrough: state.playedThrough,
-    unlockedIndex: state.unlockedIndex,
-    notes: state.notes,
-    bookmarks: state.bookmarks,
-    scores: state.lesson.segments.map((segment, index) => ({
-      index: index + 1,
-      segmentId: segment.id,
-      score: state.answers[segment.id] ? scoreAnswer(segment.text, state.answers[segment.id]) : null,
-    })),
-  };
-  downloadJson(`${slugify(state.lesson.title)}-progress.json`, progress);
-}
-
-function downloadJson(fileName, payload) {
-  const blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json;charset=utf-8" });
-  const url = URL.createObjectURL(blob);
-  const link = document.createElement("a");
-  link.href = url;
-  link.download = fileName;
-  document.body.appendChild(link);
-  link.click();
-  link.remove();
-  URL.revokeObjectURL(url);
-}
-
-function loadStoredState() {
-  try {
-    const saved = JSON.parse(localStorage.getItem(storageKey()) || "{}");
-    state.answers = saved.answers || {};
-    state.submitted = saved.submitted || {};
-    state.playedThrough = saved.playedThrough || {};
-    const savedUnlockedIndex = Number.isInteger(saved.unlockedIndex) ? saved.unlockedIndex : 0;
-    state.unlockedIndex = Math.max(0, Math.min(savedUnlockedIndex, Math.max(0, state.lesson.segments.length - 1)));
-    state.notes = saved.notes || "";
-    state.bookmarks = Array.isArray(saved.bookmarks) ? saved.bookmarks : [];
-    state.hideTranscript = saved.hideTranscript ?? state.hideTranscript;
-    state.loopSegment = saved.loopSegment ?? state.loopSegment;
-    state.mode = saved.mode || state.mode;
-  } catch (error) {
-    state.answers = {};
-    state.submitted = {};
-    state.playedThrough = {};
-    state.unlockedIndex = 0;
-    state.notes = "";
-    state.bookmarks = [];
-  }
-}
-
-function saveStoredState() {
-  localStorage.setItem(
-    storageKey(),
-    JSON.stringify({
-      answers: state.answers,
-      submitted: state.submitted,
-      playedThrough: state.playedThrough,
-      unlockedIndex: state.unlockedIndex,
-      notes: state.notes,
-      bookmarks: state.bookmarks,
-      hideTranscript: state.hideTranscript,
-      loopSegment: state.loopSegment,
-      mode: state.mode,
-    }),
-  );
-}
-
-function storageKey() {
-  const text = state.lesson.segments.map((segment) => segment.text).join("|");
-  return `${STORAGE_PREFIX}${slugify(state.lesson.title)}:${simpleHash(text)}`;
-}
-
-function simpleHash(text) {
-  let hash = 0;
-  for (let i = 0; i < text.length; i += 1) {
-    hash = (hash * 31 + text.charCodeAt(i)) >>> 0;
-  }
-  return hash.toString(16);
-}
-
-function slugify(value) {
-  return String(value || "lesson")
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-|-$/g, "")
-    .slice(0, 48) || "lesson";
-}
-
-function formatTime(value) {
-  if (!isFiniteNumber(value)) return "--:--";
-  const minutes = Math.floor(value / 60);
-  const seconds = Math.floor(value % 60);
-  return `${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}`;
+function toNumberOrNull(value) {
+  if (value === null || value === undefined || value === "") return null;
+  const number = Number(value);
+  return Number.isFinite(number) ? number : null;
 }
 
 function isFiniteNumber(value) {
   return Number.isFinite(Number(value));
+}
+
+function formatTime(value) {
+  if (!isFiniteNumber(value)) return "--:--";
+  const minutes = Math.floor(Number(value) / 60);
+  const seconds = Math.floor(Number(value) % 60);
+  return `${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}`;
+}
+
+function formatDateTime(value) {
+  if (!value) return "";
+  return new Date(value).toLocaleString("zh-CN", {
+    month: "2-digit",
+    day: "2-digit",
+    hour: "2-digit",
+    minute: "2-digit",
+  });
 }
 
 function escapeHtml(value) {
@@ -1115,6 +1476,7 @@ function escapeHtml(value) {
 }
 
 function handleKeyboard(event) {
+  if (!isStudent()) return;
   if (event.target instanceof HTMLTextAreaElement || event.target instanceof HTMLInputElement) return;
   if (event.code === "Space") {
     event.preventDefault();
@@ -1124,6 +1486,6 @@ function handleKeyboard(event) {
   } else if (event.code === "ArrowRight") {
     moveSegment(1);
   } else if (event.code === "KeyR") {
-    playSegment(true);
+    playCurrentSegment(true);
   }
 }
