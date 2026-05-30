@@ -79,61 +79,47 @@
     {
       "id": "s011",
       "start": 614.06,
-      "end": 618.88,
+      "end": 623.32,
       "speaker": "Professor",
-      "text": "They might work hard today because they're aiming for a future goal, like earning a degree,"
+      "text": "They might work hard today because they're aiming for a future goal, like earning a degree, or they might feel motivated by praise even if the reward is intangible."
     },
     {
       "id": "s012",
-      "start": 619.06,
-      "end": 623.32,
-      "speaker": "Professor",
-      "text": "or they might feel motivated by praise even if the reward is intangible."
-    },
-    {
-      "id": "s013",
       "start": 623.88,
       "end": 626.86,
       "speaker": "Professor",
       "text": "But rewards must be used carefully."
     },
     {
-      "id": "s014",
+      "id": "s013",
       "start": 627.32,
       "end": 632.66,
       "speaker": "Professor",
       "text": "If a parent gives a child candy to stop whining, the child may learn that whining gets rewarded."
     },
     {
-      "id": "s015",
+      "id": "s014",
       "start": 633.26,
       "end": 635.56,
       "speaker": "Professor",
       "text": "It's like watering weeds instead of flowers."
     },
     {
-      "id": "s016",
+      "id": "s015",
       "start": 635.8,
       "end": 637.56,
       "speaker": "Professor",
       "text": "You're encouraging the wrong behavior."
     },
     {
-      "id": "s017",
+      "id": "s016",
       "start": 638.24,
-      "end": 643.16,
-      "speaker": "Professor",
-      "text": "And if rewards are given too frequently, they can reduce a person's internal motivation,"
-    },
-    {
-      "id": "s018",
-      "start": 643.66,
       "end": 647.06,
       "speaker": "Professor",
-      "text": "making them rely more on external incentives to take action."
+      "text": "And if rewards are given too frequently, they can reduce a person's internal motivation, making them rely more on external incentives to take action."
     },
     {
-      "id": "s019",
+      "id": "s017",
       "start": 647.78,
       "end": 654.46,
       "speaker": "Professor",

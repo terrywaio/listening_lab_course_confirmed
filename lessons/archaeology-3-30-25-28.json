@@ -16,163 +16,72 @@
     {
       "id": "s002",
       "start": 656.84,
-      "end": 662.64,
+      "end": 666.98,
       "speaker": "Professor",
-      "text": "Imagine an ancient garden or field, and imagine organic material in its soil."
+      "text": "Imagine an ancient garden or field, and imagine organic material in its soil, things like plant roots or wooden irrigation pipes."
     },
     {
       "id": "s003",
-      "start": 662.88,
-      "end": 666.98,
-      "speaker": "Professor",
-      "text": "things like plant roots or wooden irrigation pipes."
-    },
-    {
-      "id": "s004",
       "start": 667.84,
       "end": 674.82,
       "speaker": "Professor",
       "text": "When this organic material decays over the centuries, it often leaves behind voids in the soil."
     },
     {
-      "id": "s005",
+      "id": "s004",
       "start": 675.9,
       "end": 681.28,
       "speaker": "Professor",
       "text": "Researchers can fill these voids by injecting plaster into the empty spaces."
     },
     {
-      "id": "s006",
+      "id": "s005",
       "start": 681.28,
-      "end": 684.04,
+      "end": 692.62,
       "speaker": "Professor",
-      "text": "When the plaster hardens,"
+      "text": "When the plaster hardens, it creates casts, essentially three-dimensional negatives that replicate what existed centuries ago."
+    },
+    {
+      "id": "s006",
+      "start": 693.4,
+      "end": 710.18,
+      "speaker": "Professor",
+      "text": "For example, at the ancient Maya village of Joya de Ceren in El Salvador, Central America, casts taken from root cavities have revealed a diverse mix of crops, including manioc, maize, and beans."
     },
     {
       "id": "s007",
-      "start": 684.3,
-      "end": 686.0,
+      "start": 710.8,
+      "end": 720.98,
       "speaker": "Professor",
-      "text": "it creates casts,"
+      "text": "These species were identified in part by the shape and size of the root voids by comparing them with modern plant root systems."
     },
     {
       "id": "s008",
-      "start": 686.1,
-      "end": 692.62,
-      "speaker": "Professor",
-      "text": "essentially three-dimensional negatives that replicate what existed centuries ago."
-    },
-    {
-      "id": "s009",
-      "start": 693.4,
-      "end": 700.28,
-      "speaker": "Professor",
-      "text": "For example, at the ancient Maya village of Joya de Ceren in El Salvador, Central America."
-    },
-    {
-      "id": "s010",
-      "start": 700.6,
-      "end": 705.82,
-      "speaker": "Professor",
-      "text": "casts taken from root cavities have revealed a diverse mix of crops."
-    },
-    {
-      "id": "s011",
-      "start": 706.46,
-      "end": 710.18,
-      "speaker": "Professor",
-      "text": "including manioc, maize, and beans."
-    },
-    {
-      "id": "s012",
-      "start": 710.8,
-      "end": 716.867,
-      "speaker": "Professor",
-      "text": "These species were identified in part by the shape and size of the root voids."
-    },
-    {
-      "id": "s013",
-      "start": 716.867,
-      "end": 720.98,
-      "speaker": "Professor",
-      "text": "by comparing them with modern plant root systems."
-    },
-    {
-      "id": "s014",
       "start": 721.66,
       "end": 725.6,
       "speaker": "Professor",
       "text": "This layout of plants in the garden wasn't random at all."
     },
     {
-      "id": "s015",
+      "id": "s009",
       "start": 725.62,
-      "end": 730.42,
-      "speaker": "Professor",
-      "text": "It showed the garden to be an early example of the milpa system."
-    },
-    {
-      "id": "s016",
-      "start": 730.76,
-      "end": 736.38,
-      "speaker": "Professor",
-      "text": "a traditional intercropping method still practiced in Central America and Mexico today, where"
-    },
-    {
-      "id": "s017",
-      "start": 736.82,
-      "end": 742.12,
-      "speaker": "Professor",
-      "text": "the tall maize plants provide stalks for bean plants to climb."
-    },
-    {
-      "id": "s018",
-      "start": 742.38,
-      "end": 744.52,
-      "speaker": "Professor",
-      "text": "the beans enrich the soil with nitrogen."
-    },
-    {
-      "id": "s019",
-      "start": 744.52,
-      "end": 751.567,
-      "speaker": "Professor",
-      "text": "and squash plants growing along the ground provide shade that suppresses weeds."
-    },
-    {
-      "id": "s020",
-      "start": 751.567,
       "end": 753.54,
       "speaker": "Professor",
-      "text": "and retains moisture."
+      "text": "It showed the garden to be an early example of the milpa system, a traditional intercropping method still practiced in Central America and Mexico today, where the tall maize plants provide stalks for bean plants to climb, the beans enrich the soil with nitrogen, and squash plants growing along the ground provide shade that suppresses weeds and retains moisture."
     },
     {
-      "id": "s021",
+      "id": "s010",
       "start": 754.68,
-      "end": 758.92,
-      "speaker": "Professor",
-      "text": "Soil casts have also been used at the sites of ancient Roman villa"
-    },
-    {
-      "id": "s022",
-      "start": 760.22,
       "end": 767.22,
       "speaker": "Professor",
-      "text": "gardens, revealing irrigation channels and beds planted with species such as grapevines and roses."
+      "text": "Soil casts have also been used at the sites of ancient Roman villa gardens, revealing irrigation channels and beds planted with species such as grapevines and roses."
     },
     {
-      "id": "s023",
+      "id": "s011",
       "start": 768.04,
-      "end": 774.42,
-      "speaker": "Professor",
-      "text": "The findings show a deliberate integration of ornamental plants with edible plants."
-    },
-    {
-      "id": "s024",
-      "start": 774.42,
       "end": 781.14,
       "speaker": "Professor",
-      "text": "suggesting a Roman design ethos that sought to balance aesthetics with utility."
+      "text": "The findings show a deliberate integration of ornamental plants with edible plants, suggesting a Roman design ethos that sought to balance aesthetics with utility."
     }
   ]
 }

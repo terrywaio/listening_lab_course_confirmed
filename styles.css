@@ -145,6 +145,34 @@ button:focus-visible {
   font-size: 24px;
 }
 
+.auth-mode-toggle {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px;
+  padding: 4px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--soft);
+}
+
+.auth-mode-button {
+  min-height: 38px;
+  border-radius: 6px;
+  color: var(--muted);
+  background: transparent;
+  font-weight: 700;
+}
+
+.auth-mode-button.is-active {
+  color: #ffffff;
+  background: var(--teal);
+}
+
+.auth-mode-panel {
+  display: grid;
+  gap: 14px;
+}
+
 .workspace {
   display: grid;
   grid-template-columns: minmax(250px, 310px) minmax(420px, 1fr) minmax(280px, 360px);
@@ -477,6 +505,21 @@ table {
   min-width: 760px;
   border-collapse: collapse;
   font-size: 13px;
+}
+
+.teacher-progress-table {
+  min-width: 1120px;
+}
+
+.question-cell,
+.answer-cell {
+  max-width: 420px;
+  white-space: pre-wrap;
+  line-height: 1.5;
+}
+
+.answer-cell {
+  color: var(--ink);
 }
 
 th,

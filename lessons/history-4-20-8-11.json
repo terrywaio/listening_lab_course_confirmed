@@ -16,117 +16,82 @@
     {
       "id": "s002",
       "start": 1490.7,
-      "end": 1495.54,
+      "end": 1502.72,
       "speaker": "Professor",
-      "text": "The age of exploration extended from the 15th century to the 17th century."
+      "text": "The age of exploration extended from the 15th century to the 17th century, but long before this, seafarers were venturing into unfamiliar waters using remarkably sophisticated techniques."
     },
     {
       "id": "s003",
-      "start": 1495.82,
-      "end": 1502.72,
-      "speaker": "Professor",
-      "text": "but long before this, seafarers were venturing into unfamiliar waters using remarkably sophisticated techniques."
-    },
-    {
-      "id": "s004",
       "start": 1503.06,
       "end": 1509.1,
       "speaker": "Professor",
       "text": "One notable example is Pytheas of Massalia, a Greek explorer from the 4th century BCE."
     },
     {
-      "id": "s005",
+      "id": "s004",
       "start": 1509.5,
       "end": 1515.24,
       "speaker": "Professor",
       "text": "He sailed from the Mediterranean to the northern reaches of Europe, possibly reaching Britain and even Iceland."
     },
     {
-      "id": "s006",
+      "id": "s005",
       "start": 1515.24,
-      "end": 1519.42,
+      "end": 1525.1,
       "speaker": "Professor",
-      "text": "Without modern instruments, Pytheas relied on coastal landmarks."
+      "text": "Without modern instruments, Pytheas relied on coastal landmarks, the position of the sun and stars, and careful observation of ocean tides and daylight patterns."
+    },
+    {
+      "id": "s006",
+      "start": 1525.66,
+      "end": 1533.28,
+      "speaker": "Professor",
+      "text": "His journey demonstrated that long-distance navigation was possible through keen environmental awareness and methodical planning."
     },
     {
       "id": "s007",
-      "start": 1519.72,
-      "end": 1525.1,
-      "speaker": "Professor",
-      "text": "the position of the sun and stars, and careful observation of ocean tides and daylight patterns."
-    },
-    {
-      "id": "s008",
-      "start": 1525.66,
-      "end": 1531.714,
-      "speaker": "Professor",
-      "text": "His journey demonstrated that long-distance navigation was possible through keen environmental awareness"
-    },
-    {
-      "id": "s009",
-      "start": 1531.714,
-      "end": 1533.28,
-      "speaker": "Professor",
-      "text": "and methodical planning."
-    },
-    {
-      "id": "s010",
       "start": 1533.8,
       "end": 1539.26,
       "speaker": "Professor",
       "text": "Centuries later, European explorers expanded on these early achievements with the help of new technologies."
     },
     {
-      "id": "s011",
+      "id": "s008",
       "start": 1539.26,
       "end": 1546.3,
       "speaker": "Professor",
       "text": "Among the most transformative was the magnetic compass, which used a magnetized needle to indicate direction."
     },
     {
-      "id": "s012",
+      "id": "s009",
       "start": 1546.84,
-      "end": 1549.82,
-      "speaker": "Professor",
-      "text": "Originally developed in China and later adopted in Europe,"
-    },
-    {
-      "id": "s013",
-      "start": 1549.92,
       "end": 1555.76,
       "speaker": "Professor",
-      "text": "the compass allowed sailors to maintain a heading even when celestial bodies were obscured by clouds or fog."
+      "text": "Originally developed in China and later adopted in Europe, the compass allowed sailors to maintain a heading even when celestial bodies were obscured by clouds or fog."
     },
     {
-      "id": "s014",
+      "id": "s010",
       "start": 1556.16,
       "end": 1562.14,
       "speaker": "Professor",
       "text": "This innovation enabled mariners to venture into open seas with greater confidence and precision."
     },
     {
-      "id": "s015",
+      "id": "s011",
       "start": 1562.42,
       "end": 1567.44,
       "speaker": "Professor",
       "text": "Historians note that the compass didn't just improve navigation; it transformed it."
     },
     {
-      "id": "s016",
+      "id": "s012",
       "start": 1567.44,
-      "end": 1574.38,
-      "speaker": "Professor",
-      "text": "It allowed explorers like Vasco da Gama and Ferdinand Magellan to chart new maritime routes across vast oceans."
-    },
-    {
-      "id": "s017",
-      "start": 1574.46,
       "end": 1577.46,
       "speaker": "Professor",
-      "text": "connecting continents and reshaping global trade."
+      "text": "It allowed explorers like Vasco da Gama and Ferdinand Magellan to chart new maritime routes across vast oceans, connecting continents and reshaping global trade."
     },
     {
-      "id": "s018",
+      "id": "s013",
       "start": 1578.2,
       "end": 1584.8,
       "speaker": "Professor",

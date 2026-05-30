@@ -4,10 +4,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>精听 LMS</title>
-    <link rel="stylesheet" href="./styles.css?v=20260530-course-1" />
+    <link rel="stylesheet" href="./styles.css?v=20260530-lms-2" />
     <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-    <script defer src="./supabase-config.js?v=20260530-course-1"></script>
-    <script defer src="./app.js?v=20260530-course-1"></script>
+    <script defer src="./supabase-config.js?v=20260530-lms-2"></script>
+    <script defer src="./app.js?v=20260530-lms-2"></script>
   </head>
   <body>
     <header class="topbar">
@@ -26,27 +26,35 @@
         <div>
           <p id="configStatus" class="status-pill">检查 Supabase 配置</p>
           <h2>登录精听作业</h2>
-          <p class="muted">学生填姓名直接进入；老师用邮箱密码登录并分配课包。</p>
+          <p class="muted">学生和老师分别登录，进入后只显示对应工作区。</p>
         </div>
 
-        <label>
-          姓名
-          <input id="fullNameInput" autocomplete="name" placeholder="学生进入时填写" />
-        </label>
-        <label>
-          老师账号
-          <select id="teacherEmailSelect">
-            <option value="chensijruth@gmail.com">老师 1 · chensijruth@gmail.com</option>
-            <option value="terrywai7114@gmail.com">老师 2 · terrywai7114@gmail.com</option>
-          </select>
-        </label>
-        <label>
-          老师密码
-          <input id="passwordInput" autocomplete="current-password" type="password" placeholder="至少 6 位" />
-        </label>
-        <div class="inline-actions">
+        <div class="auth-mode-toggle" role="tablist" aria-label="登录身份">
+          <button class="auth-mode-button is-active" id="studentModeButton" type="button" data-auth-mode="student">学生登录</button>
+          <button class="auth-mode-button" id="teacherModeButton" type="button" data-auth-mode="teacher">老师登录</button>
+        </div>
+
+        <div class="auth-mode-panel" id="studentAuthPanel">
+          <label>
+            学生姓名
+            <input id="fullNameInput" autocomplete="name" placeholder="输入同一个姓名会进入同一个账户" />
+          </label>
+          <button class="secondary-button" id="signUpButton" type="button">进入学生端</button>
+        </div>
+
+        <div class="auth-mode-panel is-hidden" id="teacherAuthPanel">
+          <label>
+            老师账号
+            <select id="teacherEmailSelect">
+              <option value="chensijruth@gmail.com">老师 1 · chensijruth@gmail.com</option>
+              <option value="terrywai7114@gmail.com">老师 2 · terrywai7114@gmail.com</option>
+            </select>
+          </label>
+          <label>
+            老师密码
+            <input id="passwordInput" autocomplete="current-password" type="password" placeholder="至少 6 位" />
+          </label>
           <button class="primary-button" id="signInButton" type="button">老师登录</button>
-          <button class="secondary-button" id="signUpButton" type="button">学生免邮箱进入</button>
         </div>
         <p id="authStatus" class="course-status">等待登录</p>
       </div>

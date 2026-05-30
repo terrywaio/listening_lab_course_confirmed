@@ -16,149 +16,107 @@
     {
       "id": "s002",
       "start": 148.78,
-      "end": 153.5,
+      "end": 159.42,
       "speaker": "Professor",
-      "text": "In the early 1900s, sea otters, marine mammals that feed on invertebrates."
+      "text": "In the early 1900s, sea otters, marine mammals that feed on invertebrates, including sea urchins, were nearly wiped out along the United States Pacific coast by fur hunters."
     },
     {
       "id": "s003",
-      "start": 153.5,
-      "end": 159.42,
-      "speaker": "Professor",
-      "text": "including sea urchins, were nearly wiped out along the United States Pacific coast by fur hunters."
-    },
-    {
-      "id": "s004",
       "start": 159.94,
       "end": 164.7,
       "speaker": "Professor",
       "text": "With otters gone, urchin numbers exploded, destroying kelp forests."
     },
     {
-      "id": "s005",
+      "id": "s004",
       "start": 165.18,
       "end": 168.9,
       "speaker": "Professor",
       "text": "Kelp is the type of seaweed that is sea urchins' favorite food."
     },
     {
-      "id": "s006",
+      "id": "s005",
       "start": 168.9,
       "end": 175.52,
       "speaker": "Professor",
       "text": "This left countless marine species without the protective habitat that kelp forests provided to them."
     },
     {
-      "id": "s007",
+      "id": "s006",
       "start": 175.7,
       "end": 179.18,
       "speaker": "Professor",
       "text": "In 1972, hunting sea otters was banned."
     },
     {
-      "id": "s008",
+      "id": "s007",
       "start": 179.56,
       "end": 186.04,
       "speaker": "Professor",
       "text": "As otters made a comeback, urchin numbers dropped, kelp forests grew back, and biodiversity flourished."
     },
     {
-      "id": "s009",
+      "id": "s008",
       "start": 186.76,
-      "end": 190.54,
-      "speaker": "Professor",
-      "text": "Scientists realized otters were a keystone"
-    },
-    {
-      "id": "s010",
-      "start": 190.88,
       "end": 195.18,
       "speaker": "Professor",
-      "text": "species, organisms whose impact on ecosystems is far greater than their numbers suggest."
+      "text": "Scientists realized otters were a keystone species, organisms whose impact on ecosystems is far greater than their numbers suggest."
     },
     {
-      "id": "s011",
+      "id": "s009",
       "start": 195.18,
       "end": 199.12,
       "speaker": "Professor",
       "text": "A similar case occurred in Yellowstone National Park."
     },
     {
-      "id": "s012",
+      "id": "s010",
       "start": 199.58,
       "end": 202.68,
       "speaker": "Professor",
       "text": "Wolves, the park's top predator, had been eradicated."
     },
     {
-      "id": "s013",
+      "id": "s011",
       "start": 203.0,
-      "end": 208.24,
-      "speaker": "Professor",
-      "text": "Populations of elk, a deer-like animal and a favorite prey for wolves, soared."
-    },
-    {
-      "id": "s014",
-      "start": 208.46,
-      "end": 211.784,
-      "speaker": "Professor",
-      "text": "and their huge populations damaged local vegetation."
-    },
-    {
-      "id": "s015",
-      "start": 211.784,
       "end": 215.68,
       "speaker": "Professor",
-      "text": "including the willow and aspen trees for which the park had been famous."
+      "text": "Populations of elk, a deer-like animal and a favorite prey for wolves, soared, and their huge populations damaged local vegetation, including the willow and aspen trees for which the park had been famous."
     },
     {
-      "id": "s016",
+      "id": "s012",
       "start": 216.08,
       "end": 221.04,
       "speaker": "Professor",
       "text": "In the 1990s, wolves were reintroduced to the park to get the elk population under control."
     },
     {
-      "id": "s017",
+      "id": "s013",
       "start": 221.04,
       "end": 226.02,
       "speaker": "Professor",
       "text": "But the wolves didn't just cut elk numbers; they changed elk behavior."
     },
     {
-      "id": "s018",
+      "id": "s014",
       "start": 226.68,
       "end": 231.7,
       "speaker": "Professor",
       "text": "Afraid of being eaten by wolves, the elk avoided streamside areas where they're especially vulnerable."
     },
     {
-      "id": "s019",
+      "id": "s015",
       "start": 232.24,
-      "end": 237.68,
-      "speaker": "Professor",
-      "text": "This helped willow and aspen trees reestablish themselves there, and the trees brought back beavers, animals."
-    },
-    {
-      "id": "s020",
-      "start": 238.1,
       "end": 242.06,
       "speaker": "Professor",
-      "text": "that live in streams and build dams to create ponds for themselves."
+      "text": "This helped willow and aspen trees reestablish themselves there, and the trees brought back beavers, animals that live in streams and build dams to create ponds for themselves."
     },
     {
-      "id": "s021",
+      "id": "s016",
       "start": 242.66,
-      "end": 247.03,
-      "speaker": "Professor",
-      "text": "The beaver dams created habitats for fish, birds, and amphibians."
-    },
-    {
-      "id": "s022",
-      "start": 247.03,
       "end": 251.14,
       "speaker": "Professor",
-      "text": "a huge cascading effect because of this other keystone species."
+      "text": "The beaver dams created habitats for fish, birds, and amphibians, a huge cascading effect because of this other keystone species."
     }
   ]
 }

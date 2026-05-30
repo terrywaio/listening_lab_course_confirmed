@@ -139,6 +139,80 @@ as $$
   select coalesce(public.current_user_role() = 'teacher', false)
 $$;
 
+create or replace function public.normalize_student_name(input text)
+returns text
+language sql
+immutable
+set search_path = public
+as $$
+  select lower(regexp_replace(btrim(coalesce(input, '')), '\s+', ' ', 'g'))
+$$;
+
+create or replace function public.merge_student_identity_by_name(p_full_name text)
+returns integer
+language plpgsql
+security definer
+set search_path = public
+as $$
+declare
+  v_current_id uuid := auth.uid();
+  v_normalized_name text := public.normalize_student_name(p_full_name);
+  v_duplicate_ids uuid[] := '{}'::uuid[];
+  v_assignment_count integer := 0;
+begin
+  if v_current_id is null then
+    raise exception 'Not authenticated';
+  end if;
+
+  if v_normalized_name = '' then
+    return 0;
+  end if;
+
+  update public.profiles
+  set full_name = btrim(regexp_replace(p_full_name, '\s+', ' ', 'g')),
+      role = 'student'::public.user_role,
+      updated_at = now()
+  where id = v_current_id
+    and role = 'student'::public.user_role;
+
+  if not found then
+    raise exception 'Only student profiles can merge student identities';
+  end if;
+
+  select coalesce(array_agg(id), '{}'::uuid[])
+  into v_duplicate_ids
+  from public.profiles
+  where id <> v_current_id
+    and role = 'student'::public.user_role
+    and public.normalize_student_name(full_name) = v_normalized_name;
+
+  if coalesce(array_length(v_duplicate_ids, 1), 0) = 0 then
+    return 0;
+  end if;
+
+  update public.assignments
+  set student_id = v_current_id,
+      updated_at = now()
+  where student_id = any(v_duplicate_ids);
+  get diagnostics v_assignment_count = row_count;
+
+  update public.assignment_progress
+  set student_id = v_current_id,
+      updated_at = now()
+  where student_id = any(v_duplicate_ids);
+
+  update public.segment_progress
+  set student_id = v_current_id,
+      updated_at = now()
+  where student_id = any(v_duplicate_ids);
+
+  delete from public.profiles
+  where id = any(v_duplicate_ids);
+
+  return v_assignment_count;
+end;
+$$;
+
 alter table public.profiles enable row level security;
 alter table public.assignments enable row level security;
 alter table public.assignment_progress enable row level security;
@@ -297,6 +371,8 @@ with check (
 
 grant execute on function public.current_user_role() to authenticated;
 grant execute on function public.is_teacher() to authenticated;
+grant execute on function public.normalize_student_name(text) to authenticated;
+grant execute on function public.merge_student_identity_by_name(text) to authenticated;
 
 grant usage on schema public to authenticated;
 grant usage on type public.user_role to authenticated;

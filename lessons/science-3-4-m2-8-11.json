@@ -37,163 +37,100 @@
     {
       "id": "s005",
       "start": 1327.44,
-      "end": 1330.78,
+      "end": 1336.18,
       "speaker": "Host",
-      "text": "It's mainly because in 2006,"
+      "text": "It's mainly because in 2006, it was decided that planets had to meet three criteria."
     },
     {
       "id": "s006",
-      "start": 1330.78,
-      "end": 1336.18,
-      "speaker": "Host",
-      "text": "it was decided that planets had to meet three criteria."
-    },
-    {
-      "id": "s007",
       "start": 1336.94,
       "end": 1343.12,
       "speaker": "Host",
       "text": "They had to orbit the sun and be round in shape, check and check."
     },
     {
-      "id": "s008",
+      "id": "s007",
       "start": 1343.62,
-      "end": 1348.6,
-      "speaker": "Host",
-      "text": "But they also had to be the main object in their orbit."
-    },
-    {
-      "id": "s009",
-      "start": 1348.68,
-      "end": 1353.94,
-      "speaker": "Host",
-      "text": "which, well, Pluto is in the Kuiper Belt"
-    },
-    {
-      "id": "s010",
-      "start": 1354.72,
-      "end": 1358.52,
-      "speaker": "Host",
-      "text": "region, in the far outer reaches of the solar system."
-    },
-    {
-      "id": "s011",
-      "start": 1358.52,
       "end": 1362.26,
       "speaker": "Host",
-      "text": "with many other bodies that orbit the sun."
+      "text": "But they also had to be the main object in their orbit, which, well, Pluto is in the Kuiper Belt region, in the far outer reaches of the solar system, with many other bodies that orbit the sun."
     },
     {
-      "id": "s012",
+      "id": "s008",
       "start": 1363.16,
       "end": 1365.22,
       "speaker": "Host",
       "text": "So Pluto lost its planet status."
     },
     {
-      "id": "s013",
+      "id": "s009",
       "start": 1365.22,
       "end": 1371.58,
       "speaker": "Host",
       "text": "As a result, many scientists dismissed Pluto as just a ball of ice anyway."
     },
     {
-      "id": "s014",
+      "id": "s010",
       "start": 1372.16,
-      "end": 1374.8,
-      "speaker": "Host",
-      "text": "However, about ten years later."
-    },
-    {
-      "id": "s015",
-      "start": 1374.94,
-      "end": 1380.99,
-      "speaker": "Host",
-      "text": "the New Horizons spacecraft sent back new images and data showing that Pluto."
-    },
-    {
-      "id": "s016",
-      "start": 1380.99,
       "end": 1384.72,
       "speaker": "Host",
-      "text": "is far more complex than previously thought."
+      "text": "However, about ten years later, the New Horizons spacecraft sent back new images and data showing that Pluto is far more complex than previously thought."
     },
     {
-      "id": "s017",
+      "id": "s011",
       "start": 1385.34,
       "end": 1388.2,
       "speaker": "Host",
       "text": "We're talking volcanoes, dunes."
     },
     {
-      "id": "s018",
+      "id": "s012",
       "start": 1388.62,
       "end": 1390.32,
       "speaker": "Host",
       "text": "I mean, get this."
     },
     {
-      "id": "s019",
+      "id": "s013",
       "start": 1390.38,
-      "end": 1394.72,
-      "speaker": "Host",
-      "text": "Pluto has a deep basin with three types of ice."
-    },
-    {
-      "id": "s020",
-      "start": 1395.08,
       "end": 1400.56,
       "speaker": "Host",
-      "text": "and New Horizons images suggest there's convection in the basin of ice."
+      "text": "Pluto has a deep basin with three types of ice, and New Horizons images suggest there's convection in the basin of ice."
     },
     {
-      "id": "s021",
+      "id": "s014",
       "start": 1400.66,
-      "end": 1404.76,
-      "speaker": "Host",
-      "text": "With convection, warmer ice rises to the surface."
-    },
-    {
-      "id": "s022",
-      "start": 1404.98,
-      "end": 1410.02,
-      "speaker": "Host",
-      "text": "then cools and sinks at the edge of the basin, so"
-    },
-    {
-      "id": "s023",
-      "start": 1410.26,
       "end": 1415.94,
       "speaker": "Host",
-      "text": "the surface is continuously rejuvenating, renewing itself."
+      "text": "With convection, warmer ice rises to the surface, then cools and sinks at the edge of the basin, so the surface is continuously rejuvenating, renewing itself."
     },
     {
-      "id": "s024",
+      "id": "s015",
       "start": 1416.64,
       "end": 1422.04,
       "speaker": "Host",
       "text": "Moreover, under the basin of ice may be something astonishing."
     },
     {
-      "id": "s025",
+      "id": "s016",
       "start": 1422.6,
+      "end": 1424.3,
+      "speaker": "Host",
+      "text": "A saltwater ocean."
+    },
+    {
+      "id": "s017",
+      "start": 1424.3,
       "end": 1426.54,
       "speaker": "Host",
-      "text": "A saltwater ocean. Life could exist there."
+      "text": "Life could exist there."
     },
     {
-      "id": "s026",
+      "id": "s018",
       "start": 1426.74,
-      "end": 1432.383,
-      "speaker": "Host",
-      "text": "This means many neighboring bodies in the Kuiper Belt could also have oceans."
-    },
-    {
-      "id": "s027",
-      "start": 1432.383,
       "end": 1434.762,
       "speaker": "Host",
-      "text": "and potentially be habitable."
+      "text": "This means many neighboring bodies in the Kuiper Belt could also have oceans and potentially be habitable."
     }
   ]
 }

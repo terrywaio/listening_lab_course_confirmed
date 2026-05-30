@@ -7,7 +7,7 @@
       "category": "心理学",
       "source": "1.27 M1 讲座 25-28",
       "path": "./lessons/psychology-1-27-m1-25-28.json",
-      "segmentCount": 19
+      "segmentCount": 17
     },
     {
       "id": "biology-2-1-2-m2-8-11",
@@ -15,7 +15,7 @@
       "category": "生物学",
       "source": "2.1-2 M2 讲座 8-11",
       "path": "./lessons/biology-2-1-2-m2-8-11.json",
-      "segmentCount": 22
+      "segmentCount": 16
     },
     {
       "id": "art-4-6-29-32",
@@ -23,7 +23,7 @@
       "category": "艺术",
       "source": "4.6 讲座 29-32",
       "path": "./lessons/art-4-6-29-32.json",
-      "segmentCount": 21
+      "segmentCount": 13
     },
     {
       "id": "history-4-20-8-11",
@@ -31,7 +31,7 @@
       "category": "历史",
       "source": "4.20 讲座 8-11",
       "path": "./lessons/history-4-20-8-11.json",
-      "segmentCount": 18
+      "segmentCount": 13
     },
     {
       "id": "archaeology-3-30-25-28",
@@ -39,7 +39,7 @@
       "category": "考古学",
       "source": "3.30 讲座 25-28",
       "path": "./lessons/archaeology-3-30-25-28.json",
-      "segmentCount": 24
+      "segmentCount": 11
     },
     {
       "id": "science-3-4-m2-8-11",
@@ -47,7 +47,7 @@
       "category": "科学",
       "source": "3.4 M2 讲座 8-11",
       "path": "./lessons/science-3-4-m2-8-11.json",
-      "segmentCount": 27
+      "segmentCount": 18
     },
     {
       "id": "business-3-18-8-11",
@@ -55,7 +55,7 @@
       "category": "商业",
       "source": "3.18 讲座 8-11",
       "path": "./lessons/business-3-18-8-11.json",
-      "segmentCount": 23
+      "segmentCount": 15
     }
   ]
 }

@@ -1,6 +1,7 @@
-const APP_VERSION = "20260530-course-1";
+const APP_VERSION = "20260530-lms-2";
 const STORAGE_PREFIX = "listening-lab-lms:v1:";
-const MAX_PRE_SUBMIT_LISTENS = 3;
+const MAX_PRE_SUBMIT_LISTENS = 8;
+const STUDENT_AUTH_DOMAIN = "students.listeninglab.test";
 const FIXED_TEACHERS = [
   { email: "chensijruth@gmail.com", name: "老师 1" },
   { email: "terrywai7114@gmail.com", name: "老师 2" },
@@ -12,10 +13,12 @@ const state = {
   session: null,
   profile: null,
   pendingProfileName: "",
+  authMode: "student",
   library: [],
   students: [],
   teacherAssignments: [],
   teacherProgressRows: [],
+  teacherLessonDetails: {},
   selectedTeacherAssignmentId: "",
   studentAssignments: [],
   studentProgressRows: [],
@@ -59,6 +62,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   bindElements();
   hydrateAuthForm();
   bindEvents();
+  setAuthMode(state.authMode);
   initializeSupabase();
   await loadLibrary();
   await initializeAuth();
@@ -79,6 +83,10 @@ function bindElements() {
     "appView",
     "configStatus",
     "authStatus",
+    "studentModeButton",
+    "teacherModeButton",
+    "studentAuthPanel",
+    "teacherAuthPanel",
     "fullNameInput",
     "teacherEmailSelect",
     "passwordInput",
@@ -130,6 +138,8 @@ function bindElements() {
 function bindEvents() {
   on(els.signInButton, "click", signIn);
   on(els.signUpButton, "click", signUp);
+  on(els.studentModeButton, "click", () => setAuthMode("student"));
+  on(els.teacherModeButton, "click", () => setAuthMode("teacher"));
   on(els.signOutButton, "click", signOut);
   on(els.assignTaskButton, "click", assignTask);
   on(els.refreshTeacherData, "click", loadTeacherDashboard);
@@ -272,26 +282,61 @@ async function signUp() {
 
   state.pendingProfileName = fullName;
   localStorage.setItem(studentNameKey(), fullName);
+  const email = studentAuthEmail(fullName);
+  const password = studentAuthPassword(fullName);
   setAuthStatus("正在进入学生端...");
   disableAuthControls(true);
-  const { error } = await state.supabase.auth.signInAnonymously();
-  if (error) {
+  const signInResult = await state.supabase.auth.signInWithPassword({ email, password });
+  if (!signInResult.error) {
+    setAuthStatus("已进入学生端。正在同步同名历史记录...");
+    return;
+  }
+
+  const shouldCreate = isMissingStudentAccountError(signInResult.error);
+  if (!shouldCreate) {
     disableAuthControls(false);
-    if (isAnonymousAuthDisabledError(error)) {
-      setAuthStatus("Supabase 还没开启匿名登录。请在 Authentication > Sign In / Providers 里开启 Anonymous sign-ins。");
-    } else if (isRateLimitError(error)) {
-      setAuthStatus("Supabase Auth 仍在限流，请稍后再试；现在已不再发送邮箱注册请求。");
+    setAuthStatus(signInResult.error.message);
+    return;
+  }
+
+  const signUpResult = await state.supabase.auth.signUp({
+    email,
+    password,
+    options: {
+      data: {
+        full_name: fullName,
+        student_login_name: normalizeStudentLoginName(fullName),
+        role: "student",
+      },
+    },
+  });
+  if (signUpResult.error) {
+    if (isAlreadyRegisteredError(signUpResult.error)) {
+      const retryResult = await state.supabase.auth.signInWithPassword({ email, password });
+      if (!retryResult.error) {
+        setAuthStatus("已进入学生端。正在同步同名历史记录...");
+        return;
+      }
+      setAuthStatus(`学生账号已存在，但无法登录：${retryResult.error.message}`);
+    } else if (isRateLimitError(signUpResult.error)) {
+      setAuthStatus("Supabase Auth 正在限流，请稍后再试；同名学生账号只会创建一次。");
     } else {
-      setAuthStatus(error.message);
+      setAuthStatus(signUpResult.error.message);
     }
+    disableAuthControls(false);
     return;
   }
   setAuthStatus("已进入学生端。老师分配任务后会显示在这里。");
 }
 
-function isAnonymousAuthDisabledError(error) {
+function isMissingStudentAccountError(error) {
   const message = String(error?.message || "").toLowerCase();
-  return message.includes("anonymous") || message.includes("provider is not enabled") || message.includes("unsupported provider");
+  return message.includes("invalid login credentials") || message.includes("email not confirmed");
+}
+
+function isAlreadyRegisteredError(error) {
+  const message = String(error?.message || "").toLowerCase();
+  return message.includes("already registered") || message.includes("already been registered") || message.includes("user already exists");
 }
 
 function isRateLimitError(error) {
@@ -318,6 +363,7 @@ async function handleSessionChanged() {
     if (isTeacher()) {
       await loadTeacherDashboard();
     } else {
+      await reconcileStudentIdentity();
       await loadStudentAssignments();
     }
   } catch (error) {
@@ -332,6 +378,7 @@ function resetUserState() {
   state.students = [];
   state.teacherAssignments = [];
   state.teacherProgressRows = [];
+  state.teacherLessonDetails = {};
   state.studentAssignments = [];
   state.studentProgressRows = [];
   state.assignment = null;
@@ -394,11 +441,38 @@ function preferredProfileName(user) {
   );
 }
 
+async function reconcileStudentIdentity() {
+  if (!state.supabase || !isStudent()) return;
+  const fullName = preferredProfileName(state.session.user) || state.profile.full_name || "";
+  if (!fullName.trim()) return;
+  const { error } = await state.supabase.rpc("merge_student_identity_by_name", { p_full_name: fullName.trim() });
+  if (error) {
+    const message = String(error.message || "");
+    if (message.includes("merge_student_identity_by_name") || message.includes("Could not find the function")) {
+      setAuthStatus("学生账号已进入；同名历史记录合并 SQL 还未运行。");
+      return;
+    }
+    throw error;
+  }
+  state.profile.full_name = fullName.trim();
+}
+
 function hydrateAuthForm() {
   const studentName = localStorage.getItem(studentNameKey());
   if (studentName && els.fullNameInput && !els.fullNameInput.value) {
     els.fullNameInput.value = studentName;
   }
+}
+
+function setAuthMode(mode) {
+  state.authMode = mode === "teacher" ? "teacher" : "student";
+  const isTeacherMode = state.authMode === "teacher";
+  els.studentAuthPanel?.classList.toggle("is-hidden", isTeacherMode);
+  els.teacherAuthPanel?.classList.toggle("is-hidden", !isTeacherMode);
+  els.studentModeButton?.classList.toggle("is-active", !isTeacherMode);
+  els.teacherModeButton?.classList.toggle("is-active", isTeacherMode);
+  els.studentModeButton?.setAttribute("aria-selected", String(!isTeacherMode));
+  els.teacherModeButton?.setAttribute("aria-selected", String(isTeacherMode));
 }
 
 function selectedTeacherEmail() {
@@ -444,7 +518,20 @@ async function loadTeacherDashboard() {
   if (!state.selectedTeacherAssignmentId && state.teacherAssignments.length) {
     state.selectedTeacherAssignmentId = state.teacherAssignments[0].id;
   }
+  await ensureTeacherSelectedLessonLoaded();
   renderTeacherDashboard();
+}
+
+async function ensureTeacherSelectedLessonLoaded() {
+  const assignment = state.teacherAssignments.find((item) => item.id === state.selectedTeacherAssignmentId);
+  if (!assignment || !assignment.lesson_path) return;
+  if (state.teacherLessonDetails[assignment.lesson_path]) return;
+  try {
+    const rawLesson = await lessonRepository.load(assignment.lesson_path);
+    state.teacherLessonDetails[assignment.lesson_path] = { lesson: normalizeLesson(rawLesson) };
+  } catch (error) {
+    state.teacherLessonDetails[assignment.lesson_path] = { error: error.message || String(error) };
+  }
 }
 
 async function loadTeacherProgressRows() {
@@ -845,8 +932,10 @@ function renderTeacherAssignments() {
     </table>
   `;
   els.teacherAssignments.querySelectorAll("[data-view-assignment]").forEach((button) => {
-    button.addEventListener("click", () => {
+    button.addEventListener("click", async () => {
       state.selectedTeacherAssignmentId = button.dataset.viewAssignment;
+      renderTeacherDashboard();
+      await ensureTeacherSelectedLessonLoaded();
       renderTeacherDashboard();
     });
   });
@@ -863,39 +952,47 @@ function renderTeacherProgressDetails() {
   const rows = state.teacherProgressRows
     .filter((row) => row.assignment_id === assignment.id)
     .sort((a, b) => Number(a.segment_index || 0) - Number(b.segment_index || 0));
-  if (!rows.length) {
-    els.teacherProgress.innerHTML = '<div class="empty-state">学生还没有开始这个任务</div>';
+  const detail = state.teacherLessonDetails[assignment.lesson_path];
+  if (!detail) {
+    els.teacherProgress.innerHTML = '<div class="empty-state">正在加载题目明细...</div>';
     return;
   }
+  if (detail.error) {
+    els.teacherProgress.innerHTML = `<div class="empty-state">题目加载失败：${escapeHtml(detail.error)}</div>`;
+    return;
+  }
+  const segments = detail.lesson?.segments || [];
+  const rowsBySegmentId = new Map(rows.map((row) => [row.segment_id, row]));
+  const rowsByIndex = new Map(rows.map((row) => [Number(row.segment_index || 0), row]));
+  const detailRows = segments.map((segment, index) => {
+    const row = rowsBySegmentId.get(segment.id) || rowsByIndex.get(index) || {};
+    return `
+      <tr>
+        <td>${index + 1}</td>
+        <td class="question-cell">${escapeHtml(segment.text || "")}</td>
+        <td class="answer-cell">${escapeHtml(row.answer || "")}</td>
+        <td>${Number(row.listen_count || 0)}</td>
+        <td>${row.submitted ? "已提交" : "未提交"}</td>
+        <td>${row.score ?? "--"}</td>
+        <td>${row.submitted_at ? escapeHtml(formatDateTime(row.submitted_at)) : "--"}</td>
+      </tr>
+    `;
+  }).join("");
 
   els.teacherProgress.innerHTML = `
-    <table>
+    <table class="teacher-progress-table">
       <thead>
         <tr>
-          <th>句子</th>
+          <th>#</th>
+          <th>题目原文</th>
+          <th>学生答案</th>
           <th>听了几次</th>
-          <th>是否提交</th>
+          <th>状态</th>
           <th>分数</th>
           <th>提交时间</th>
-          <th>答案</th>
         </tr>
       </thead>
-      <tbody>
-        ${rows
-          .map(
-            (row) => `
-              <tr>
-                <td>${Number(row.segment_index || 0) + 1}</td>
-                <td>${Number(row.listen_count || 0)}</td>
-                <td>${row.submitted ? "已提交" : "未提交"}</td>
-                <td>${row.score ?? "--"}</td>
-                <td>${row.submitted_at ? escapeHtml(formatDateTime(row.submitted_at)) : "--"}</td>
-                <td>${escapeHtml(row.answer || "")}</td>
-              </tr>
-            `,
-          )
-          .join("")}
-      </tbody>
+      <tbody>${detailRows}</tbody>
     </table>
   `;
 }
@@ -996,10 +1093,11 @@ async function playCurrentSegment(restart) {
   const end = segmentEnd(segment);
   const outsideSegment =
     els.audio.currentTime < start || (isFiniteNumber(end) && els.audio.currentTime >= Number(end) - 0.05);
-  const shouldRestart = restart || outsideSegment;
-  const shouldCount = shouldCountListen(segment, shouldRestart);
+  const lockedStudentAttempt = isStudent() && !isSubmitted(segment);
+  const shouldRestart = lockedStudentAttempt || restart || outsideSegment;
+  const shouldCount = lockedStudentAttempt || shouldCountListen(segment, shouldRestart);
   if (!isSubmitted(segment) && shouldCount && getListenCount(segment) >= MAX_PRE_SUBMIT_LISTENS) {
-    setAudioStatus("本句提交前最多听 3 次。请先提交答案。");
+    setAudioStatus(`本句提交前最多听 ${MAX_PRE_SUBMIT_LISTENS} 次。请先提交答案。`);
     renderPractice();
     return;
   }
@@ -1377,6 +1475,29 @@ function studentNameKey() {
   return `${STORAGE_PREFIX}student-name`;
 }
 
+function normalizeStudentLoginName(fullName) {
+  return String(fullName || "").trim().replace(/\s+/g, " ").toLowerCase();
+}
+
+function studentAuthEmail(fullName) {
+  return `student-${stableHash(normalizeStudentLoginName(fullName))}@${STUDENT_AUTH_DOMAIN}`;
+}
+
+function studentAuthPassword(fullName) {
+  const normalized = normalizeStudentLoginName(fullName);
+  const reversed = [...normalized].reverse().join("");
+  return `Ll-${stableHash(normalized)}-${stableHash(reversed)}-2026`;
+}
+
+function stableHash(text) {
+  let hash = 2166136261;
+  for (const char of String(text || "")) {
+    hash ^= char.codePointAt(0);
+    hash = Math.imul(hash, 16777619);
+  }
+  return (hash >>> 0).toString(36);
+}
+
 function updateSentenceStatus(segment) {
   if (!segment) {
     els.sentenceStatus.textContent = "待开始";
@@ -1402,7 +1523,7 @@ function updateSentenceStatus(segment) {
 
 function updateListenCountBadge(segment) {
   if (!segment) {
-    els.listenCountBadge.textContent = "听 0/3";
+    els.listenCountBadge.textContent = `听 0/${MAX_PRE_SUBMIT_LISTENS}`;
     return;
   }
   const count = getListenCount(segment);
@@ -1451,8 +1572,10 @@ function isStudent() {
 }
 
 function disableAuthControls(disabled) {
-  els.signInButton.disabled = disabled;
-  els.signUpButton.disabled = disabled;
+  if (els.signInButton) els.signInButton.disabled = disabled;
+  if (els.signUpButton) els.signUpButton.disabled = disabled;
+  if (els.studentModeButton) els.studentModeButton.disabled = disabled;
+  if (els.teacherModeButton) els.teacherModeButton.disabled = disabled;
 }
 
 function setAuthStatus(text) {

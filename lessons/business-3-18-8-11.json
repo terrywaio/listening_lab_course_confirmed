@@ -16,156 +16,100 @@
     {
       "id": "s002",
       "start": 1095.59,
-      "end": 1098.59,
+      "end": 1104.39,
       "speaker": "Professor",
-      "text": "Today, we're discussing the concept of dark stores."
+      "text": "Today, we're discussing the concept of dark stores, that is, retail centers that resemble warehouses and are usually located near city centers."
     },
     {
       "id": "s003",
-      "start": 1098.71,
-      "end": 1104.39,
+      "start": 1104.55,
+      "end": 1112.81,
       "speaker": "Professor",
-      "text": "that is, retail centers that resemble warehouses and are usually located near city centers."
+      "text": "Unlike traditional storefronts, they are not designed for walk-in customers, but function as fulfillment hubs optimized for rapid online delivery."
     },
     {
       "id": "s004",
-      "start": 1104.55,
-      "end": 1108.51,
+      "start": 1113.11,
+      "end": 1120.69,
       "speaker": "Professor",
-      "text": "Unlike traditional storefronts, they are not designed for walk-in customers."
+      "text": "The rise of dark stores has been fueled by the growing demand for online shopping, especially in urban areas where space is limited and rent is high."
     },
     {
       "id": "s005",
-      "start": 1108.71,
-      "end": 1112.81,
-      "speaker": "Professor",
-      "text": "but function as fulfillment hubs optimized for rapid online delivery."
-    },
-    {
-      "id": "s006",
-      "start": 1113.11,
-      "end": 1117.17,
-      "speaker": "Professor",
-      "text": "The rise of dark stores has been fueled by the growing demand for online shopping."
-    },
-    {
-      "id": "s007",
-      "start": 1117.31,
-      "end": 1120.69,
-      "speaker": "Professor",
-      "text": "especially in urban areas where space is limited and rent is high."
-    },
-    {
-      "id": "s008",
       "start": 1120.69,
       "end": 1124.09,
       "speaker": "Professor",
       "text": "The main appeal of dark stores lies in their efficiency."
     },
     {
-      "id": "s009",
+      "id": "s006",
       "start": 1124.39,
-      "end": 1126.43,
-      "speaker": "Professor",
-      "text": "By eliminating the traditional storefront,"
-    },
-    {
-      "id": "s010",
-      "start": 1126.81,
       "end": 1132.27,
       "speaker": "Professor",
-      "text": "businesses can reduce costs and pass savings on to consumers through lower prices."
+      "text": "By eliminating the traditional storefront, businesses can reduce costs and pass savings on to consumers through lower prices."
     },
     {
-      "id": "s011",
+      "id": "s007",
       "start": 1132.53,
-      "end": 1137.57,
-      "speaker": "Professor",
-      "text": "Their proximity to dense urban areas also allows for faster delivery times."
-    },
-    {
-      "id": "s012",
-      "start": 1137.65,
       "end": 1141.49,
       "speaker": "Professor",
-      "text": "meeting the expectations of customers who value speed and convenience."
+      "text": "Their proximity to dense urban areas also allows for faster delivery times, meeting the expectations of customers who value speed and convenience."
     },
     {
-      "id": "s013",
+      "id": "s008",
       "start": 1141.79,
       "end": 1148.51,
       "speaker": "Professor",
       "text": "For instance, a company might deliver groceries in under an hour, giving it a major competitive advantage over traditional supermarkets."
     },
     {
-      "id": "s014",
+      "id": "s009",
       "start": 1148.51,
       "end": 1152.13,
       "speaker": "Professor",
       "text": "However, dark stores are not without drawbacks."
     },
     {
-      "id": "s015",
+      "id": "s010",
       "start": 1152.59,
       "end": 1159.17,
       "speaker": "Professor",
       "text": "Their expansion can contribute to the decline of traditional retail spaces, creating economic challenges for local businesses."
     },
     {
-      "id": "s016",
+      "id": "s011",
       "start": 1159.49,
       "end": 1161.07,
       "speaker": "Professor",
       "text": "Employment is another concern."
     },
     {
-      "id": "s017",
+      "id": "s012",
       "start": 1161.31,
-      "end": 1164.47,
-      "speaker": "Professor",
-      "text": "While these centers generate jobs in logistics and delivery,"
-    },
-    {
-      "id": "s018",
-      "start": 1164.63,
       "end": 1170.17,
       "speaker": "Professor",
-      "text": "they may reduce the number of customer-facing roles available in physical stores."
+      "text": "While these centers generate jobs in logistics and delivery, they may reduce the number of customer-facing roles available in physical stores."
     },
     {
-      "id": "s019",
+      "id": "s013",
       "start": 1170.31,
       "end": 1174.41,
       "speaker": "Professor",
       "text": "Many experts predict that dark stores will continue to reshape the retail landscape."
     },
     {
-      "id": "s020",
+      "id": "s014",
       "start": 1174.41,
-      "end": 1177.05,
-      "speaker": "Professor",
-      "text": "Some may adopt advanced automation,"
-    },
-    {
-      "id": "s021",
-      "start": 1177.39,
       "end": 1182.67,
       "speaker": "Professor",
-      "text": "further reducing the need for human labor and potentially redefining the shopping experience itself."
+      "text": "Some may adopt advanced automation, further reducing the need for human labor and potentially redefining the shopping experience itself."
     },
     {
-      "id": "s022",
+      "id": "s015",
       "start": 1182.91,
-      "end": 1185.01,
-      "speaker": "Professor",
-      "text": "As with other technological shifts,"
-    },
-    {
-      "id": "s023",
-      "start": 1185.07,
       "end": 1191.37,
       "speaker": "Professor",
-      "text": "the key challenge will be balancing efficiency with the broader social and economic implications of these changes."
+      "text": "As with other technological shifts, the key challenge will be balancing efficiency with the broader social and economic implications of these changes."
     }
   ]
 }
