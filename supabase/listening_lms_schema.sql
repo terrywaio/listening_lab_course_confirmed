@@ -369,10 +369,148 @@ with check (
   )
 );
 
+create or replace function public.save_student_progress(
+  p_assignment_id uuid,
+  p_current_segment_index integer,
+  p_completed boolean,
+  p_completed_at timestamptz,
+  p_notes text,
+  p_segment jsonb default null
+)
+returns jsonb
+language plpgsql
+security definer
+set search_path = public, pg_temp
+as $$
+declare
+  v_uid uuid := auth.uid();
+  v_student_id uuid;
+  v_segment_id text;
+  v_segment_index integer;
+  v_listen_count integer;
+  v_answer text;
+  v_submitted boolean;
+  v_score integer;
+  v_submitted_at timestamptz;
+  v_heard_through boolean;
+begin
+  if v_uid is null then
+    raise exception 'Not authenticated' using errcode = '28000';
+  end if;
+
+  select a.student_id into v_student_id
+  from public.assignments a
+  where a.id = p_assignment_id;
+
+  if v_student_id is null then
+    raise exception 'Assignment not found' using errcode = 'P0002';
+  end if;
+
+  if v_student_id <> v_uid then
+    raise exception 'Assignment does not belong to current student' using errcode = '42501';
+  end if;
+
+  insert into public.assignment_progress (
+    assignment_id,
+    student_id,
+    current_segment_index,
+    completed,
+    completed_at,
+    notes,
+    updated_at
+  )
+  values (
+    p_assignment_id,
+    v_uid,
+    greatest(0, coalesce(p_current_segment_index, 0)),
+    coalesce(p_completed, false),
+    case when coalesce(p_completed, false) then p_completed_at else null end,
+    p_notes,
+    now()
+  )
+  on conflict (assignment_id) do update
+  set student_id = excluded.student_id,
+      current_segment_index = excluded.current_segment_index,
+      completed = excluded.completed,
+      completed_at = excluded.completed_at,
+      notes = excluded.notes,
+      updated_at = now();
+
+  if p_segment is not null then
+    v_segment_id := nullif(p_segment->>'segment_id', '');
+    if v_segment_id is null then
+      raise exception 'Segment payload missing segment_id' using errcode = '22023';
+    end if;
+
+    v_segment_index := greatest(0, coalesce((p_segment->>'segment_index')::integer, 0));
+    v_listen_count := greatest(0, coalesce((p_segment->>'listen_count')::integer, 0));
+    v_answer := coalesce(p_segment->>'answer', '');
+    v_submitted := coalesce((p_segment->>'submitted')::boolean, false);
+    v_score := case
+      when p_segment ? 'score' and nullif(p_segment->>'score', '') is not null then (p_segment->>'score')::integer
+      else null
+    end;
+    v_submitted_at := case
+      when p_segment ? 'submitted_at' and nullif(p_segment->>'submitted_at', '') is not null then (p_segment->>'submitted_at')::timestamptz
+      else null
+    end;
+    v_heard_through := coalesce((p_segment->>'heard_through')::boolean, false);
+
+    if v_score is not null and (v_score < 0 or v_score > 100) then
+      raise exception 'Segment score out of range' using errcode = '22023';
+    end if;
+
+    insert into public.segment_progress (
+      assignment_id,
+      student_id,
+      segment_id,
+      segment_index,
+      listen_count,
+      answer,
+      submitted,
+      score,
+      submitted_at,
+      heard_through,
+      updated_at
+    )
+    values (
+      p_assignment_id,
+      v_uid,
+      v_segment_id,
+      v_segment_index,
+      v_listen_count,
+      v_answer,
+      v_submitted,
+      v_score,
+      v_submitted_at,
+      v_heard_through,
+      now()
+    )
+    on conflict (assignment_id, segment_id) do update
+    set student_id = excluded.student_id,
+        segment_index = excluded.segment_index,
+        listen_count = excluded.listen_count,
+        answer = excluded.answer,
+        submitted = excluded.submitted,
+        score = excluded.score,
+        submitted_at = excluded.submitted_at,
+        heard_through = excluded.heard_through,
+        updated_at = now();
+  end if;
+
+  return jsonb_build_object(
+    'assignment_id', p_assignment_id,
+    'segment_id', v_segment_id,
+    'saved_at', now()
+  );
+end;
+$$;
+
 grant execute on function public.current_user_role() to authenticated;
 grant execute on function public.is_teacher() to authenticated;
 grant execute on function public.normalize_student_name(text) to authenticated;
 grant execute on function public.merge_student_identity_by_name(text) to authenticated;
+grant execute on function public.save_student_progress(uuid, integer, boolean, timestamptz, text, jsonb) to authenticated;
 
 grant usage on schema public to authenticated;
 grant usage on type public.user_role to authenticated;

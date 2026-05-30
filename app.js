@@ -1,4 +1,4 @@
-const APP_VERSION = "20260530-lms-4";
+const APP_VERSION = "20260530-lms-5";
 const STORAGE_PREFIX = "listening-lab-lms:v1:";
 const MAX_PRE_SUBMIT_LISTENS = 8;
 const STUDENT_AUTH_DOMAIN = "students.listeninglab.app";
@@ -25,6 +25,7 @@ const state = {
   library: [],
   students: [],
   teacherAssignments: [],
+  teacherAssignmentProgressRows: [],
   teacherProgressRows: [],
   teacherLessonDetails: {},
   selectedTeacherAssignmentId: "",
@@ -47,6 +48,7 @@ const state = {
   activeListenSegmentId: "",
   saving: false,
   pendingSaveSegmentId: "",
+  pendingSaveRequested: false,
 };
 
 const els = {};
@@ -115,7 +117,6 @@ function bindElements() {
     "replaySegment",
     "togglePlay",
     "nextSegment",
-    "playbackRate",
     "timeRange",
     "sentenceStatus",
     "listenCountBadge",
@@ -157,14 +158,13 @@ function bindEvents() {
   on(els.nextSegment, "click", () => moveSegment(1));
   on(els.replaySegment, "click", () => playCurrentSegment(true));
   on(els.togglePlay, "click", togglePlay);
-  on(els.playbackRate, "change", () => {
-    els.audio.playbackRate = Number(els.playbackRate.value);
-  });
   on(els.waveform, "click", seekFromWaveform);
   on(els.audio, "loadedmetadata", () => {
+    enforceNormalPlaybackRate();
     setAudioStatus(`${formatTime(els.audio.duration)} 音频已就绪`);
     drawWaveform();
   });
+  on(els.audio, "ratechange", enforceNormalPlaybackRate);
   on(els.audio, "timeupdate", onAudioTimeUpdate);
   on(els.audio, "play", () => {
     els.togglePlay.textContent = "Ⅱ";
@@ -174,8 +174,11 @@ function bindEvents() {
   });
   on(els.dictationInput, "input", () => {
     const segment = currentSegment();
-    if (!segment || isSubmitted(segment)) return;
+    if (!segment) return;
     state.answers[segment.id] = els.dictationInput.value;
+    if (isSubmitted(segment)) {
+      state.scores[segment.id] = scoreAnswer(segment.text, els.dictationInput.value.trim());
+    }
     saveLocalProgress();
     scheduleCloudSave(segment);
     updateScoreBadge(segment);
@@ -352,6 +355,12 @@ function isAlreadyRegisteredError(error) {
 
 function isRateLimitError(error) {
   return String(error?.message || "").toLowerCase().includes("rate limit");
+}
+
+function isMissingRpcError(error) {
+  const message = String(error?.message || "").toLowerCase();
+  const code = String(error?.code || "");
+  return code === "PGRST202" || message.includes("save_student_progress") || (message.includes("function") && message.includes("not found"));
 }
 
 async function signOut() {
@@ -564,16 +573,18 @@ async function ensureTeacherSelectedLessonLoaded() {
 async function loadTeacherProgressRows() {
   const ids = state.teacherAssignments.map((assignment) => assignment.id);
   if (!ids.length) {
+    state.teacherAssignmentProgressRows = [];
     state.teacherProgressRows = [];
     return;
   }
-  const { data, error } = await state.supabase
-    .from("segment_progress")
-    .select("*")
-    .in("assignment_id", ids)
-    .order("segment_index", { ascending: true });
-  if (error) throw error;
-  state.teacherProgressRows = data || [];
+  const [assignmentProgressResult, segmentProgressResult] = await Promise.all([
+    state.supabase.from("assignment_progress").select("*").in("assignment_id", ids),
+    state.supabase.from("segment_progress").select("*").in("assignment_id", ids).order("segment_index", { ascending: true }),
+  ]);
+  if (assignmentProgressResult.error) throw assignmentProgressResult.error;
+  if (segmentProgressResult.error) throw segmentProgressResult.error;
+  state.teacherAssignmentProgressRows = assignmentProgressResult.data || [];
+  state.teacherProgressRows = segmentProgressResult.data || [];
 }
 
 async function assignTask() {
@@ -662,10 +673,10 @@ async function selectStudentAssignment(assignmentId) {
   const assignment = state.studentAssignments.find((item) => item.id === assignmentId);
   if (!assignment) return;
 
+  clearPracticeData();
   state.assignment = assignment;
   state.lessonPath = assignment.lesson_path;
   localStorage.setItem(selectedAssignmentKey(), assignment.id);
-  clearPracticeData();
   setSyncStatus("加载中", "");
   setAudioStatus("正在加载课包...");
 
@@ -676,7 +687,7 @@ async function selectStudentAssignment(assignmentId) {
     if (state.lesson.audioSrc) {
       const audioUrl = new URL(state.lesson.audioSrc, state.lessonUrl).toString();
       els.audio.src = audioUrl;
-      els.audio.playbackRate = Number(els.playbackRate.value);
+      enforceNormalPlaybackRate();
       state.waveform = null;
       setAudioStatus("音频已关联");
     } else {
@@ -689,30 +700,37 @@ async function selectStudentAssignment(assignmentId) {
     saveLocalProgress();
   } catch (error) {
     setAudioStatus(`课包加载失败：${error.message}`);
+    setSyncStatus(`课包加载失败：${error.message}`, "danger");
   }
 }
 
 async function loadCloudProgress() {
   if (!state.assignment) return;
-  const [progressResult, rowsResult] = await Promise.all([
-    state.supabase.from("assignment_progress").select("*").eq("assignment_id", state.assignment.id).maybeSingle(),
-    state.supabase
-      .from("segment_progress")
-      .select("*")
-      .eq("assignment_id", state.assignment.id)
-      .order("segment_index", { ascending: true }),
-  ]);
-  if (progressResult.error) throw progressResult.error;
-  if (rowsResult.error) throw rowsResult.error;
+  try {
+    const [progressResult, rowsResult] = await Promise.all([
+      state.supabase.from("assignment_progress").select("*").eq("assignment_id", state.assignment.id).maybeSingle(),
+      state.supabase
+        .from("segment_progress")
+        .select("*")
+        .eq("assignment_id", state.assignment.id)
+        .order("segment_index", { ascending: true }),
+    ]);
+    if (progressResult.error) throw progressResult.error;
+    if (rowsResult.error) throw rowsResult.error;
 
-  const hasCloudData = Boolean(progressResult.data) || Boolean(rowsResult.data?.length);
-  if (hasCloudData) {
-    clearProgressOnly();
-    applyCloudProgress(progressResult.data, rowsResult.data || []);
-    setSyncStatus("已恢复", "");
-  } else {
-    setSyncStatus("本地缓存", "warning");
-    scheduleCloudSave(currentSegment());
+    const rows = rowsResult.data || [];
+    const hasCloudData = Boolean(progressResult.data) || Boolean(rows.length);
+    if (hasCloudData) {
+      clearProgressOnly();
+      applyCloudProgress(progressResult.data, rows);
+      setSyncStatus("已恢复", "");
+      saveLocalProgress();
+    } else {
+      setSyncStatus("正在创建云端进度", "warning");
+      await saveCloudProgress(null, { statusText: "已保存" });
+    }
+  } catch (error) {
+    reportCloudError("云端进度加载失败", error);
   }
 }
 
@@ -816,7 +834,7 @@ function renderPractice() {
 
   els.timeRange.textContent = `${formatTime(segment.start)} - ${formatTime(segmentEnd(segment))}`;
   els.dictationInput.value = state.answers[segment.id] || "";
-  els.dictationInput.readOnly = isSubmitted(segment);
+  els.dictationInput.readOnly = false;
   els.checkAnswer.disabled = isSubmitted(segment);
   els.copySegment.disabled = !isSubmitted(segment);
   els.previousSegment.disabled = state.currentIndex <= 0;
@@ -1411,59 +1429,88 @@ function applyLocalProgress() {
 
 function scheduleCloudSave(segment, delay = 650) {
   if (!state.assignment || !state.session || !isStudent()) return;
+  state.pendingSaveRequested = true;
   if (segment) state.pendingSaveSegmentId = segment.id;
   clearTimeout(cloudSaveTimer);
   cloudSaveTimer = setTimeout(() => saveCloudProgress(segment), delay);
 }
 
-async function saveCloudProgress(segment) {
+async function saveCloudProgress(segment, options = {}) {
   if (!state.assignment || !state.session || !isStudent()) return;
   if (state.saving) {
+    state.pendingSaveRequested = true;
     if (segment) state.pendingSaveSegmentId = segment.id;
     return;
   }
 
   state.saving = true;
+  state.pendingSaveRequested = false;
   setSyncStatus("同步中", "warning");
   try {
-    const completed = state.lesson.segments.length > 0 && state.lesson.segments.every((item) => {
-      const hasKnownEnd = isFiniteNumber(segmentEnd(item));
-      return isSubmitted(item) && (isPlayedThrough(item) || !hasKnownEnd);
-    });
-    const progressPayload = {
-      assignment_id: state.assignment.id,
-      student_id: state.session.user.id,
-      current_segment_index: state.currentIndex,
-      completed,
-      completed_at: completed ? new Date().toISOString() : null,
-      notes: state.notes || null,
-      updated_at: new Date().toISOString(),
-    };
-    const { error: progressError } = await state.supabase
-      .from("assignment_progress")
-      .upsert(progressPayload, { onConflict: "assignment_id" });
-    if (progressError) throw progressError;
-
     const targetSegment = segment || currentSegment();
-    if (targetSegment) {
-      const { error: rowError } = await state.supabase
-        .from("segment_progress")
-        .upsert(segmentProgressPayload(targetSegment), { onConflict: "assignment_id,segment_id" });
-      if (rowError) throw rowError;
-    }
+    const segmentPayload = targetSegment ? segmentProgressPayload(targetSegment) : null;
+    await persistCloudProgress(assignmentProgressPayload(), segmentPayload);
+    if (segmentPayload) mergeStudentProgressRow(segmentPayload);
 
-    setSyncStatus("已保存", "");
+    setSyncStatus(options.statusText || "已保存", "");
   } catch (error) {
-    setSyncStatus("仅本地缓存", "danger");
-    setAudioStatus(`云端保存失败：${error.message}`);
+    reportCloudError("云端保存失败", error);
   } finally {
     state.saving = false;
     const pendingId = state.pendingSaveSegmentId;
+    const pendingRequested = state.pendingSaveRequested;
     state.pendingSaveSegmentId = "";
-    if (pendingId && (!segment || pendingId !== segment.id)) {
+    state.pendingSaveRequested = false;
+    if (pendingRequested || (pendingId && (!segment || pendingId !== segment.id))) {
       const pending = state.lesson.segments.find((item) => item.id === pendingId);
-      if (pending) saveCloudProgress(pending);
+      saveCloudProgress(pending || null);
     }
+  }
+}
+
+function assignmentProgressPayload() {
+  const completed = state.lesson.segments.length > 0 && state.lesson.segments.every((item) => {
+    const hasKnownEnd = isFiniteNumber(segmentEnd(item));
+    return isSubmitted(item) && (isPlayedThrough(item) || !hasKnownEnd);
+  });
+  return {
+    assignment_id: state.assignment.id,
+    student_id: state.session.user.id,
+    current_segment_index: state.currentIndex,
+    completed,
+    completed_at: completed ? new Date().toISOString() : null,
+    notes: state.notes || null,
+    updated_at: new Date().toISOString(),
+  };
+}
+
+async function persistCloudProgress(progressPayload, segmentPayload) {
+  const rpcParams = {
+    p_assignment_id: progressPayload.assignment_id,
+    p_current_segment_index: progressPayload.current_segment_index,
+    p_completed: progressPayload.completed,
+    p_completed_at: progressPayload.completed_at,
+    p_notes: progressPayload.notes,
+    p_segment: segmentPayload,
+  };
+  const { error } = await state.supabase.rpc("save_student_progress", rpcParams);
+  if (!error) return;
+  if (!isMissingRpcError(error)) throw error;
+  console.warn("save_student_progress RPC is missing; falling back to direct Supabase upsert.", error);
+  await persistCloudProgressDirect(progressPayload, segmentPayload);
+}
+
+async function persistCloudProgressDirect(progressPayload, segmentPayload) {
+  const { error: progressError } = await state.supabase
+    .from("assignment_progress")
+    .upsert(progressPayload, { onConflict: "assignment_id" });
+  if (progressError) throw progressError;
+
+  if (segmentPayload) {
+    const { error: rowError } = await state.supabase
+      .from("segment_progress")
+      .upsert(segmentPayload, { onConflict: "assignment_id,segment_id" });
+    if (rowError) throw rowError;
   }
 }
 
@@ -1481,6 +1528,15 @@ function segmentProgressPayload(segment) {
     heard_through: isPlayedThrough(segment),
     updated_at: new Date().toISOString(),
   };
+}
+
+function mergeStudentProgressRow(row) {
+  const index = state.studentProgressRows.findIndex(
+    (item) => item.assignment_id === row.assignment_id && item.segment_id === row.segment_id,
+  );
+  if (index >= 0) state.studentProgressRows[index] = { ...state.studentProgressRows[index], ...row };
+  else state.studentProgressRows.push({ ...row });
+  renderStudentAssignments();
 }
 
 function assignmentProgressPercent(assignment) {
@@ -1590,14 +1646,33 @@ function setAuthStatus(text) {
   els.authStatus.textContent = text;
 }
 
-function setAudioStatus(text) {
-  if (text) els.audioStatus.textContent = text;
+function setAudioStatus(text, tone = "") {
+  if (!text) return;
+  els.audioStatus.textContent = text;
+  els.audioStatus.className = "course-status";
+  if (tone) els.audioStatus.classList.add(`is-${tone}`);
 }
 
 function setSyncStatus(text, tone) {
   els.syncStatus.textContent = text;
   els.syncStatus.className = "status-pill";
   if (tone) els.syncStatus.classList.add(`is-${tone}`);
+}
+
+function reportCloudError(label, error) {
+  console.error(label, error);
+  const message = cloudErrorMessage(error);
+  setSyncStatus(`${label}：${message}`, "danger");
+  setAudioStatus(`${label}：${message}`, "danger");
+}
+
+function cloudErrorMessage(error) {
+  return error?.message || error?.error_description || error?.details || String(error);
+}
+
+function enforceNormalPlaybackRate() {
+  if (!els.audio || els.audio.playbackRate === 1) return;
+  els.audio.playbackRate = 1;
 }
 
 async function copyCurrentSegment() {

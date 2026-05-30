@@ -376,6 +376,12 @@ button:focus-visible {
   line-height: 1.5;
 }
 
+.course-status.is-danger {
+  border-color: rgba(190, 18, 60, 0.28);
+  color: var(--rose);
+  background: var(--rose-soft);
+}
+
 .wave-shell {
   overflow: hidden;
   border: 1px solid var(--line);
@@ -396,10 +402,6 @@ canvas {
 .select-label {
   color: var(--muted);
   font-size: 13px;
-}
-
-#playbackRate {
-  width: auto;
 }
 
 .focus-box {
